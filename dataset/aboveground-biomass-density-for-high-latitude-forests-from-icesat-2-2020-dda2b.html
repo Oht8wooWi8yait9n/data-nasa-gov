@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aboveground Biomass Density for High Latitude Forests from ICESat-2, 2020 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset provides estimates of Aboveground dry woody Biomass Density (AGBD) for high northern latitude forests at a 30-m spatial resolution. It is designed both for boreal-wide mapping and filling the northern spatial data gap from NASA&#x27;s Global Ecosystem Dynamics Investigati">
+<link rel="canonical" href="https://data.nasa.gov/dataset/aboveground-biomass-density-for-high-latitude-forests-from-icesat-2-2020-dda2b">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Aboveground Biomass Density for High Latitude Forests from ICESat-2, 2020</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/aboveground-biomass-density-for-high-latitude-forests-from-icesat-2-2020-dda2b">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset provides estimates of Aboveground dry woody Biomass Density (AGBD) for high northern latitude forests at a 30-m spatial resolution. It is designed both for boreal-wide mapping and filling the northern spatial data gap from NASA&#x27;s Global Ecosystem Dynamics Investigation (GEDI) project. Mapping forest aboveground biomass is essential for understanding, monitoring, and managing forest carbon stocks toward climate change mitigation. The AGBD estimates cover the extent of high latitude boreal forests and extend southward to 50 degrees latitude outside the boreal zone. AGBD was predicted using two modeling steps: 1) Ordinary Least Squares (OLS) regression related field plot measurements of AGBD to NASA&#x27;s ICESat-2 30-m lidar samples, and 2) random forest models were used to extend estimates beyond the field plots by relating ICESat-2 AGBD predictions to wall-to-wall covariate stacks from Harmonized Landsat Sentinel-2 (HLS) and the Copernicus DEM. Per-pixel uncertainties are estimated from bootstrapping both models. Non-vegetated areas (e.g. built up, water, rock, ice) were masked out. HLS composites and ICESat-2 data were from 2019-2021; three years of conditions were aggregated into the circa 2020 map. ICESat-2 data were filtered to include only strong beams, growing seasons (June through September), solar elevations less than 5 degrees, snow free land (snow flag set to 1), and &quot;msw_flag&quot; equal to 0 (clear skies and no observed atmospheric scattering). ICESat-2&#x27;s ATL08 product was resampled to a 30-m spatial resolution to better match both the field plots and mapped pixels. HLS data (L30HLS) were used to create a greenest pixel composite of growing season multispectral data, which was then used to compute a suite of vegetation indices: NDVI, NDWI, NBR, NBR2, TCW, TCG. These were then used, in combination with the slope and elevation data from the Copernicus DEM product, to predict 30-m AGBD per 90-km tile. Estimates of mean AGBD with standard deviation are provided in cloud-optimized GeoTIFF (CoG) format. Training data are in comma-separated values (CSV) format. A polygon map of data tiles is included as a GeoPackage file and a Shapefile.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>ORNL_DAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/aboveground-biomass-density-for-high-latitude-forests-from-icesat-2-2020-dda2b">https://data.nasa.gov/dataset/aboveground-biomass-density-for-high-latitude-forests-from-icesat-2-2020-dda2b</a></td></tr>
+<tr><th>Identifier</th><td>10.3334/ORNLDAAC/2186</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2019-06-01/2021-09-30</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 178.399, &quot;NorthBoundingCoordinate&quot;: 78.5313, &quot;SouthBoundingCoordinate&quot;: 43.705, &quot;WestBoundingCoordinate&quot;: -179.818}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2756302505-ORNL_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2756302505-ORNL_CLOUD</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.3334/ORNLDAAC/2186">https://doi.org/10.3334/ORNLDAAC/2186</a></td></tr><tr><td>JPEG</td><td><a href="https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_Fig1.jpg">https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_Fig1.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://above.nasa.gov">https://above.nasa.gov</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/above/Boreal_AGB_Density_ICESat2/comp/Boreal_AGB_Density_ICESat2.pdf">https://data.ornldaac.earthdata.nasa.gov/public/above/Boreal_AGB_Density_ICESat2/comp/Boreal_AGB_Density_ICESat2.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ecosystems-biosphere-terrestrial-ecosystems</span><span class="tag">earth-science-vegetation-biosphere-biomass</span></div>
+</article>
+</main>
+</body>
+</html>

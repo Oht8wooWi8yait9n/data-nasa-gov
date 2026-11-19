@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODIS/Terra+Aqua BRDF/Albedo Gap-Filled Snow-Free Daily L3 Global 30ArcSec CMG V061 — NASA Open Data Portal</title>
+<meta name="description" content="The Daily Moderate Resolution Imaging Spectroradiometer (MODIS) (Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) 30 arc second, Global Gap-Filled, Snow-Free, (MCD43GF) Version 6.1 is derived from the 30 arc second Climate Modeling Grid (CMG) MCD43D Versio">
+<link rel="canonical" href="https://data.nasa.gov/dataset/modis-terraaqua-brdf-albedo-gap-filled-snow-free-daily-l3-global-30arcsec-cmg-v061-55d76">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MODIS/Terra+Aqua BRDF/Albedo Gap-Filled Snow-Free Daily L3 Global 30ArcSec CMG V061</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/modis-terraaqua-brdf-albedo-gap-filled-snow-free-daily-l3-global-30arcsec-cmg-v061-55d76">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Daily Moderate Resolution Imaging Spectroradiometer (MODIS) (Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) 30 arc second, Global Gap-Filled, Snow-Free, (MCD43GF) Version 6.1 is derived from the 30 arc second Climate Modeling Grid (CMG) MCD43D Version 6.1 product suite, with additional processing to provide a gap-filled, snow-free product. The highest quality full inversion values were used for the temporal fitting effort and supplemented with lower quality pixels, spatial fitting, and spatial smoothing as needed. The status of each pixel can be found in the quality layer for each band. To generate a snow-free product, pixels with ephemeral snow were removed using the [MCD43D41](https://doi.org/10.5067/MODIS/MCD43D41.061) snow flags. The underlying MCD43D utilizes a BRDF model derived from all available high quality cloud clear reflectance data over a 16 day moving window centered on and emphasizing the daily day of interest (the ninth day of each retrieval period as reflected in the Julian date in the filename). This 30 arc second BRDF model is then used to produce the Albedo and NBAR products (MCD43D). These BRDF model parameters are computed for MODIS spectral bands 1 through 7 (0.47 um, 0.55 um, 0.67 um, 0.86 um, 1.24 um, 1.64 um, 2.1 um), as well as the shortwave infrared band (0.3-5.0 um), visible band (0.3-0.7 um), and near-infrared (0.7-5.0 um) broad bands.
+
+The MCD43GF product includes 67 layers containing black-sky albedo (BSA) at local solar noon, isotropic model parameter (ISO), volumetric model parameter (VOL), geometric model parameter (GEO), quality (QA), Nadir BRDF-Adjusted Reflectance (NBAR) at local solar noon, and white-sky albedo (WSA). Due to the large file size, each data layer is distributed as a separate HDF file. Users are encouraged to download the quality layers for each of the 10 bands to check quality assessment information before using the BRDF/Albedo data.
+
+The MCD43 product is not recommended for solar zenith angles beyond 70 degrees.
+
+Users are urged to use the band specific quality flags to isolate the highest quality full inversion results for their own science applications as described in the [User Guide](https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43gf-cmg-gap-filled-snow-free-products/).
+
+Known Issues
+
+* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sat=TerraAqua&amp;as=61) and the [User Guide](https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43gf-cmg-gap-filled-snow-free-products/).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/GSFC/SED/ESD/HBSL/BISB/MODAPS;UMASS-B/SFE</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/modis-terraaqua-brdf-albedo-gap-filled-snow-free-daily-l3-global-30arcsec-cmg-v061-55d76">https://data.nasa.gov/dataset/modis-terraaqua-brdf-albedo-gap-filled-snow-free-daily-l3-global-30arcsec-cmg-v061-55d76</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/MODIS/MCD43GF.061</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-03-03/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (9)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://landweb.modaps.eosdis.nasa.gov">https://landweb.modaps.eosdis.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/MODIS/MCD43GF.061">https://doi.org/10.5067/MODIS/MCD43GF.061</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3216719281-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3216719281-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43gf-cmg-gap-filled-snow-free-products/">https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43gf-cmg-gap-filled-snow-free-products/</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf">https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD43">https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD43</a></td></tr><tr><td>BIN</td><td><a href="https://landweb.modaps.eosdis.nasa.gov/knownissue?sat=TerraAqua&amp;as=61">https://landweb.modaps.eosdis.nasa.gov/knownissue?sat=TerraAqua&amp;as=61</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3216719281-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-albedo</span><span class="tag">earth-science-surface-radiative-properties-land-surface-anisotropy</span><span class="tag">earth-science-surface-radiative-properties-land-surface-reflectance</span></div>
+</article>
+</main>
+</body>
+</html>

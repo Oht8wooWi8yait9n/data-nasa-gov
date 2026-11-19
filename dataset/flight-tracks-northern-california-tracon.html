@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flight tracks, Northern California TRACON — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains the records of all the flights in the Northern California TRACON. The data was provided by the aircraft noise abatement office [(http://www.flyquietsfo.com/)](http://www.flyquietsfo.com/) of San Francisco International Airport. The data cover Jan-Mar 2006. I">
+<link rel="canonical" href="https://data.nasa.gov/dataset/flight-tracks-northern-california-tracon">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Flight tracks, Northern California TRACON</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/flight-tracks-northern-california-tracon">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains the records of all the flights in the Northern California TRACON. The data was provided by the aircraft noise abatement office [(http://www.flyquietsfo.com/)](http://www.flyquietsfo.com/) of San Francisco International Airport.
+The data cover Jan-Mar 2006. It is organized by day and flight. Each record contains some information about the flight and a sequence of 3D position and estimated speed.
+
+This data contains thousands of trajectories that can be used for trajectory clustering. The data is used by the Aircraft Noise Abatement Office
+to analyze the trajectories of aircraft flying in and out SFO. The objective is to minimize the noise pollution due to aircraft in the San Francisco Bay Area
+
+The files have the extension &quot;lt6&quot; and are organized as follow, one file per day.
+
+line number &amp; explaination
+
+&lt;pre&gt;1 TRACK OPNUM (TRACK header word and operation number)
+2 eventid (Corralation number)
+3 trackstart date (in time since 1900, A8 version four year digit)
+4 trackstart time HH:MM:SS
+
+5 trackend time HH:MM:SS
+6 airportid
+7 ACID (FLIGHTNUM/TAILNUMBER)
+8 owner name
+9 aircrafttype
+10 aircraft category
+11 beacon
+12 adflag
+13 waypoint
+14 other_port (dest/origin)
+15 runwayname
+
+16 min alt
+17 max alt
+18 min range
+19 max range
+20 Count of trackpoints (to follow)
+21 x,y,z,v,t (all points is meters relative to MRP, velocity and time from start of track)&lt;/pre&gt;</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/flight-tracks-northern-california-tracon">https://data.nasa.gov/dataset/flight-tracks-northern-california-tracon</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_132</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/132/">https://c3.nasa.gov/dashlink/resources/132/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>Nikunj Oza — Nikunj.C.Oza@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (5)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/SFO2006Q1-1.zip">SFO2006Q1-1.zip</a><br><small>Part 1</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/SFO2006Q1-2.zip">SFO2006Q1-2.zip</a><br><small>Part 2</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/SFO2006Q1-3.zip">SFO2006Q1-3.zip</a><br><small>Part 3</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/SFO2006Q1-4.zip">SFO2006Q1-4.zip</a><br><small>Part 4</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/SFO2006Q1-5.zip">SFO2006Q1-5.zip</a><br><small>part 5</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NISAR Provisional Geocoded Unwrapped Interferogram Product (Version 1) — NASA Open Data Portal</title>
+<meta name="description" content="The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding the unwrapped phase and associated">
+<link rel="canonical" href="https://data.nasa.gov/dataset/nisar-provisional-geocoded-unwrapped-interferogram-product-version-1-cea8a">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>NISAR Provisional Geocoded Unwrapped Interferogram Product (Version 1)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/nisar-provisional-geocoded-unwrapped-interferogram-product-version-1-cea8a">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding the unwrapped phase and associated data layers (i.e., coherence magnitude, ionospheric phase screen) on a geographical grid at 80 m posting.
+
+Geocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM) to project the data onto a predefined Universal Transverse Mercator (UTM) or Polar stereographic projection system map grid. The geocoding algorithm uses a bilinear interpolation for interpolating data layers with floating-point data types, Sinc for the complex wrapped interferogram, and nearest-neighbor interpolation for unsigned integer datasets (e.g., connected components mask).
+
+The GUNW products also include the wrapped complex interferogram (multilooked at 30 m in range-Doppler coordinates and geocoded at 20 m posting), the unwrapped interferometric phase in radians (80 m posting), the normalized interferometric coherence magnitude (20 m and 80 m posting), connected components mask, and sub-pixel offset layers obtained from incoherent cross-correlation. If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in GUNW are obtained by optimally blending the multi resolution offset layers included in ROFF.
+
+The GUNW product includes an ionospheric phase screen layer from the RUNW product and a layer quantifying its uncertainty. In the case of mode transitions where the continuity of spectral bands is impacted, a split spectrum ionospheric phase estimate is derived from the main imaging band frequency A. The estimated ionospheric phase screen is included in the product but not applied to the data layers within GUNW by default. The GUNW product also includes geocoded lookup tables for external phase corrections (e.g., solid Earth tides, hydrostatic and wet tropospheric phases). These phase corrections, when available, are not removed from the interferometric data.
+
+The products in this collection are considered Provisional products and are intended to facilitate data exploration and process studies that do not require rigorous validation. These data are partially validated, and improvements are continuing; quality may not be optimal since validation and quality assurance are ongoing.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>ASF;NASA/JPL/NISAR</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/nisar-provisional-geocoded-unwrapped-interferogram-product-version-1-cea8a">https://data.nasa.gov/dataset/nisar-provisional-geocoded-unwrapped-interferogram-product-version-1-cea8a</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/NIL1GUNW-P1</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2025-10-28/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (5)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.asf.alaska.edu/">https://search.asf.alaska.edu/</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2854335566-ASF">https://search.earthdata.nasa.gov/search/granules?p=C2854335566-ASF</a></td></tr><tr><td>BIN</td><td><a href="https://nisar.jpl.nasa.gov/">https://nisar.jpl.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://nisar-docs.asf.alaska.edu/gunw/">https://nisar-docs.asf.alaska.edu/gunw/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2854335566-ASF.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-forest-science-agriculture</span><span class="tag">earth-science-frozen-ground-cryosphere</span><span class="tag">earth-science-geomorphic-landforms-processes-land-surface</span><span class="tag">earth-science-glaciers-ice-sheets-cryosphere</span><span class="tag">earth-science-tectonics-solid-earth</span></div>
+</article>
+</main>
+</body>
+</html>

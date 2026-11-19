@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily 8-Hour Maximum and Annual O3 Concentrations for the Contiguous United States, 1-km Grids, Version 1.10 (2000-2016) — NASA Open Data Portal</title>
+<meta name="description" content="The Daily 8-Hour Maximum and Annual O3 Concentrations for the Contiguous United States, 1-km Grids, Version 1.10 (2000-2016) data set contains estimates of ozone concentrations at a high resolution spatially (1-km grid cells) and temporally (daily) for the years 2000 to 2016. The">
+<link rel="canonical" href="https://data.nasa.gov/dataset/daily-8-hour-maximum-and-annual-o3-concentrations-for-the-contiguous-united-states-1-2000--9a402">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Daily 8-Hour Maximum and Annual O3 Concentrations for the Contiguous United States, 1-km Grids, Version 1.10 (2000-2016)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/daily-8-hour-maximum-and-annual-o3-concentrations-for-the-contiguous-united-states-1-2000--9a402">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Daily 8-Hour Maximum and Annual O3 Concentrations for the Contiguous United States, 1-km Grids, Version 1.10 (2000-2016) data set contains estimates of ozone concentrations at a high resolution spatially (1-km grid cells) and temporally (daily) for the years 2000 to 2016. These predictions incorporated various predictor variables such as Ozone (O3) ground measurements from the U.S. Environmental Protection Agency (EPA) Air Quality System (AQS) monitoring data, land-use variables, meteorological variables, chemical transport models and remote sensing data, along with other data sources. After imputing missing data with machine learning algorithms, a geographically-weighted ensemble model was applied that combined estimates from three types of machine learners (neural network, random forest, and gradient boosting). The annual predictions were computed by averaging the daily 8-hour maximum predictions in each year for each grid cell. The results demonstrate high overall model performance with a cross-validated R-squared value against daily observations of 0.90 and 0.86 for annual averages. In version 1.10, we have enhanced the completeness of daily O3 predictions by employing linear interpolation to impute missing values. Specifically, for days with small spatial patches of missing data with less than 100 grid cells, we used inverse distance weighting interpolation to fill the missing grid cells. Other missing daily O3 predictions were interpolated from the nearest days with available data. Annual predictions were updated by averaging the imputed daily predictions for each year in each grid cell. These daily 8-hour maximum and annual O3 predictions allow public health researchers to respectively estimate the short- and long-term effects of O3 exposures on human health, supporting the U.S. EPA for the revision of the National Ambient Air Quality Standards for O3. The data are available in RDS and GeoTIFF formats for statistical research and geospatial analysis.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>ESDIS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/daily-8-hour-maximum-and-annual-o3-concentrations-for-the-contiguous-united-states-1-2000--9a402">https://data.nasa.gov/dataset/daily-8-hour-maximum-and-annual-o3-concentrations-for-the-contiguous-united-states-1-2000--9a402</a></td></tr>
+<tr><th>Identifier</th><td>10.7927/5tht-jg22</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-01-01/2016-12-31</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: -65, &quot;NorthBoundingCoordinate&quot;: 72, &quot;SouthBoundingCoordinate&quot;: 17, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (3)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>TXT</td><td><a href="https://sedac.ciesin.columbia.edu/downloads/docs-repo/aqdh-o3-concentrations-contiguous-us-1-km-v1-10-2000-2016-readme.txt">https://sedac.ciesin.columbia.edu/downloads/docs-repo/aqdh-o3-concentrations-contiguous-us-1-km-v1-10-2000-2016-readme.txt</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3540911201-ESDIS">https://search.earthdata.nasa.gov/search/granules?p=C3540911201-ESDIS</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3540911201-ESDIS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-chemistry-atmosphere-oxygen-compounds</span></div>
+</article>
+</main>
+</body>
+</html>

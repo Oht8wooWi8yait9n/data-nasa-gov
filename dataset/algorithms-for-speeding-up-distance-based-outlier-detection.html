@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Algorithms for Speeding up Distance-Based Outlier Detection — NASA Open Data Portal</title>
+<meta name="description" content="The problem of distance-based outlier detection is difficult to solve efficiently in very large datasets because of potential quadratic time complexity. We address this problem and develop sequential and distributed algorithms that are significantly more efficient than state-of-t">
+<link rel="canonical" href="https://data.nasa.gov/dataset/algorithms-for-speeding-up-distance-based-outlier-detection">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Algorithms for Speeding up Distance-Based Outlier Detection</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/algorithms-for-speeding-up-distance-based-outlier-detection">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The problem of distance-based outlier detection is difficult
+to solve efficiently in very large datasets because of potential
+quadratic time complexity. We address this problem and
+develop sequential and distributed algorithms that are significantly
+more efficient than state-of-the-art methods while
+still guaranteeing the same outliers. By combining simple
+but effective indexing and disk block accessing techniques,
+we have developed a sequential algorithm iOrca that is up to
+an order-of-magnitude faster than the state-of-the-art. The
+indexing scheme is based on sorting the data points in order
+of increasing distance from a fixed reference point and
+then accessing those points based on this sorted order. To
+speed up the basic outlier detection technique, we develop
+two distributed algorithms (DOoR and iDOoR) for modern
+distributed multi-core clusters of machines, connected
+on a ring topology. The first algorithm passes data blocks
+from each machine around the ring, incrementally updating
+the nearest neighbors of the points passed. By maintaining
+a cutoff threshold, it is able to prune a large number
+of points in a distributed fashion. The second distributed
+algorithm extends this basic idea with the indexing scheme
+discussed earlier. In our experiments, both distributed algorithms
+exhibit significant improvements compared to the
+state-of-the-art distributed methods.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/algorithms-for-speeding-up-distance-based-outlier-detection">https://data.nasa.gov/dataset/algorithms-for-speeding-up-distance-based-outlier-detection</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_450</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/450/">https://c3.nasa.gov/dashlink/resources/450/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2011-08-15</td></tr>
+<tr><th>Contact / Maintainer</th><td>Kanishka Bhaduri — kanishka.bhaduri-1@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/publication/KDD_11_outlier.pdf">KDD_11_outlier.pdf</a><br><small>Paper</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

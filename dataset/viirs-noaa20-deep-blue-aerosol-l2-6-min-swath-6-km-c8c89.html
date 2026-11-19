@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIIRS/NOAA20 Deep Blue Aerosol L2 6-Min Swath 6 km — NASA Open Data Portal</title>
+<meta name="description" content="The Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) Deep Blue aerosol products from the NOAA-20 — formerly known as the Joint Polar Satellite System (JPSS-1) — satellite provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and th">
+<link rel="canonical" href="https://data.nasa.gov/dataset/viirs-noaa20-deep-blue-aerosol-l2-6-min-swath-6-km-c8c89">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>VIIRS/NOAA20 Deep Blue Aerosol L2 6-Min Swath 6 km</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/viirs-noaa20-deep-blue-aerosol-l2-6-min-swath-6-km-c8c89">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) Deep Blue aerosol products from the NOAA-20 — formerly known as the Joint Polar Satellite System (JPSS-1) — satellite provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean in 6-minute data granules with daily global coverage. The Deep Blue algorithm draws its heritage from previous applications to retrieve AOT from the Sea‐viewing Wide Field‐of‐view Sensor (SeaWiFS) over both land and ocean, and the Moderate Resolution Imaging Spectroradiometer (MODIS) measurements over land. This L2 description pertains to the VIIRS Deep Blue Aerosol Version 2.0 (V2.0) product, whose record starts from February 17, 2018.
+
+This orbit-level product (Short-name: AERDB_L2_VIIRS_NOAA20) has an at-nadir resolution of 6 km x 6 km, and progressively increases away from nadir given the sensor’s scanning geometry and Earth’s curvature. Viewed differently, this product’s resolution accommodates 8 x 8 native VIIRS moderate-resolution (M-band) pixels that nominally have ~750 m horizontal pixel size. The L2 Deep Blue AOT data products, at 550 nm reference wavelengths, are derived from particular VIIRS bands using two primary AOT retrieval algorithms: Deep Blue algorithm over land, and the Satellite Ocean Aerosol Retrieval (SOAR) algorithm over ocean. Although this product is called Deep Blue based on retrievals for the land algorithm, the data includes over-water retrievals as well.
+
+The L2 netCDF product, acquired every 6 minutes, contains 55 Science Data Set (SDS) layers. They include the following:
+
+1. Aerosol_Optical_Thickness_550_Expected_Uncertainty_Land
+2. Aerosol_Optical_Thickness_550_Expected_Uncertainty_Ocean
+3. Aerosol_Optical_Thickness_550_Land
+4. Aerosol_Optical_Thickness_550_Land_Best_Estimate
+5. Aerosol_Optical_Thickness_550_Land_Ocean
+6. Aerosol_Optical_Thickness_550_Land_Ocean_Best_Estimate
+7. Aerosol_Optical_Thickness_550_Ocean
+8. Aerosol_Optical_Thickness_550_Ocean_Best_Estimate
+9. Aerosol_Optical_Thickness_550_STDV_Land
+10. Aerosol_Optical_Thickness_550_STDV_Ocean
+11. Aerosol_Optical_Thickness_QA_Flag_Land
+12. Aerosol_Optical_Thickness_QA_Flag_Ocean
+13. Aerosol_Type_Land
+14. Aerosol_Type_Land_Ocean
+15. Aerosol_Type_Ocean
+16. Algorithm_Flag_Land
+17. Algorithm_Flag_Ocean
+18. Angstrom_Exponent_Land
+19. Angstrom_Exponent_Land_Best_Estimate
+20. Angstrom_Exponent_Land_Ocean
+21. Angstrom_Exponent_Land_Ocean_Best_Estimate
+22. Angstrom_Exponent_Ocean
+23. Angstrom_Exponent_Ocean_Best_Estimate
+24. Cell_Average_Elevation_Land
+25. Cell_Average_Elevation_Ocean
+26. Fine_Mode_Fraction_550_Ocean
+27. Fine_Mode_Fraction_550_Ocean_Best_Estimate
+28. Idx_Atrack
+29. Idx_Xtrack
+30. Land_Bands
+31. Latitude
+32. Longitude
+33. Number_Of_Pixels_Used_Land
+34. Number_Of_Pixels_Used_Ocean
+35. Number_Valid_Pixels
+36. Ocean_Bands
+37. Ocean_Sum_Squares
+38. Precipitable_Water
+39. Reflectance_Bands
+40. Relative_Azimuth_Angle
+41. Scan_Start_Time
+42. Scattering_Angle
+43. Solar_Zenith_Angle
+44. Spectral_Aerosol_Optical_Thickness_Land
+45. Spectral_Aerosol_Optical_Thickness_Ocean
+46. Spectral_Single_Scattering_Albedo_Land
+47. Spectral_Surface_Reflectance
+48. Spectral_TOA_Reflectance_Land
+49. Spectral_TOA_Reflectance_Ocean
+50. TOA_NDVI
+51. Total_Column_Ozone
+52. Unsuitable_Pixel_Fraction_Land_Ocean
+53. Viewing_Zenith_Angle
+54. Wind_Direction
+55. Wind_Speed
+
+Differences between the V2.0 and V1.1 VIIRS Deep Blue Aerosol L2 product
+
+The V2.0 VIIRS deep blue aerosol products are available from both NOAA20 and SNPP platforms. Significant changes have been made to the V2.0 Deep Blue/SOAR algorithms to further improve the data quality. Changes in the retrieval algorithms and data products include the following:
+
+* NOAA20 VIIRS-derived products are now available besides the SNPP VIIRS-derived version.
+* New SDS suite for prognostic uncertainties of 550 nm AOT over both land and ocean is added. (Aerosol_Optical_Thickness_550_Expected_Uncertainty_Land, Aerosol_Optical_Thickness_550_Expected_Uncertainty_Ocean, Unsuitable_Pixel_Fraction_Land_Ocean).
+* Surface pressure is better accounted for both over-land and over-ocean retrievals by adding surface pressure nodes in the aerosol lookup table. This has improved retrieval accuracy over elevated land surfaces as well as water surfaces.
+* A new surface database describing the surface reflectance relationships between visible and 2.2 mm bands in each geographic grid is introduced for the over-land retrievals. This new database mitigates overall biases.
+* New fine-mode dominant aerosol optical models are added to existing nonspherical dust models, together replacing the original Deep Blue optical models over land. This has improved retrieval accuracy for fine-mode dominant aerosol cases.
+* Optimized global retrieval performance.
+* QA filtering and smoke detection scheme has been improved.
+
+Consult the VIIRS Deep Blue Aerosol product user guide for additional information regarding the global attributes, data field attributes, quality flags, software to handle and use these data products, etc.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/HBSL/BISB/LAADS;UWI-MAD/SSEC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/viirs-noaa20-deep-blue-aerosol-l2-6-min-swath-6-km-c8c89">https://data.nasa.gov/dataset/viirs-noaa20-deep-blue-aerosol-l2-6-min-swath-6-km-c8c89</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/VIIRS/AERDB_L2_VIIRS_NOAA20.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-02-17/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://deepblue.gsfc.nasa.gov/science">https://deepblue.gsfc.nasa.gov/science</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/AERDB_L2_VIIRS_NOAA20--5200">https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/AERDB_L2_VIIRS_NOAA20--5200</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/opendap/RemoteResources/laads/allData/5200/AERDB_L2_VIIRS_NOAA20/">https://ladsweb.modaps.eosdis.nasa.gov/opendap/RemoteResources/laads/allData/5200/AERDB_L2_VIIRS_NOAA20/</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/VIIRS/AERDB_L2_VIIRS_NOAA20.002">https://doi.org/10.5067/VIIRS/AERDB_L2_VIIRS_NOAA20.002</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Deep_Blue_Aerosol_User_Guide_v2.pdf">https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Deep_Blue_Aerosol_User_Guide_v2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/SNPP-VIIRS_DB_Aerosol_ATBD.pdf">https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/SNPP-VIIRS_DB_Aerosol_ATBD.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2600305692-LAADS">https://search.earthdata.nasa.gov/search/granules?p=C2600305692-LAADS</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2600305692-LAADS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-aerosols-atmosphere-aerosol-optical-depth-thickness</span></div>
+</article>
+</main>
+</body>
+</html>

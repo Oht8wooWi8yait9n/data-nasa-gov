@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Land Surface Model (LSM 1.0) for Ecological, Hydrological, Atmospheric Studies — NASA Open Data Portal</title>
+<meta name="description" content="The NCAR LSM 1.0 is a land surface model developed by Gordon Bonan to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/land-surface-model-lsm-1-0-for-ecological-hydrological-atmospheric-studies-fd531">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Land Surface Model (LSM 1.0) for Ecological, Hydrological, Atmospheric Studies</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/land-surface-model-lsm-1-0-for-ecological-hydrological-atmospheric-studies-fd531">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The NCAR LSM 1.0 is a land surface model developed by Gordon Bonan to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, in a stand-alone mode, if an atmospheric forcing is provided. The model runs on a spatial grid that can range from one point to global. The model was designed for coupling to atmospheric numerical models. Consequently, there is a compromise between computational efficiency and the complexity with which the necessary atmospheric, ecological, and hydrologic processes are parameterized. The model is not meant to be a detailed micrometeorological model, but rather a simplified treatment of surface fluxes that reproduces at minimal computational cost the essential characteristics of land-atmosphere interactions important for climate simulations. The model is a complete executable code with its own time-stepping driver, initialization (subroutine lsmini), and main calling routine (subroutine lsmdrv). When coupled to an atmospheric model, the atmospheric model is the time-stepping driver. There is one call to subroutine lsmini during initialization to initialize all land points in the domain; there is one call per time step to subroutine lsmdrv to calculate surface fluxes and update the ecological, hydrological, and thermal state for all land points in the domain. The model writes its own restart and history files. These can be turned off if appropriate.Available for downloading from the ORNL DAAC are the LMS Model Documentation and User&#x27;s Guide (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Users_Guide.pdf ), the model source code, input data set, and scripts for running the model.  Applications of the model are described in two additional companion files (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Bckgrnd_Application_Info.pdf and  ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Analyzed-Data.pdf.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>ORNL_DAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/land-surface-model-lsm-1-0-for-ecological-hydrological-atmospheric-studies-fd531">https://data.nasa.gov/dataset/land-surface-model-lsm-1-0-for-ecological-hydrological-atmospheric-studies-fd531</a></td></tr>
+<tr><th>Identifier</th><td>10.3334/ORNLDAAC/807</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>1996-01-15/1996-01-15</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (9)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2956539244-ORNL_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2956539244-ORNL_CLOUD</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.3334/ORNLDAAC/807">https://doi.org/10.3334/ORNLDAAC/807</a></td></tr><tr><td>ZIP</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LSM_807.zip">https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LSM_807.zip</a></td></tr><tr><td>PNG</td><td><a href="https://daac.ornl.gov/graphics/browse/project/square/model-archive_logo_square.png">https://daac.ornl.gov/graphics/browse/project/square/model-archive_logo_square.png</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Analyzed-Data.pdf">https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Analyzed-Data.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Bckgrnd_Application_Info.pdf">https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Bckgrnd_Application_Info.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Users_Guide.pdf">https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/NCAR_LSM_Users_Guide.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/LSM_guide.pdf">https://data.ornldaac.earthdata.nasa.gov/public/model_archive/LSM/comp/LSM_guide.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2956539244-ORNL_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-chemistry-atmosphere-carbon-and-hydrocarbon-compounds</span><span class="tag">earth-science-atmospheric-radiation-atmosphere-heat-flux</span><span class="tag">earth-science-ecological-dynamics-biosphere-community-dynamics</span><span class="tag">earth-science-soils-land-surface-soil-moisture-water-content</span><span class="tag">earth-science-surface-radiative-properties-land-surface-albedo</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span><span class="tag">earth-science-vegetation-biosphere-forest-composition-vegetation-structure</span></div>
+</article>
+</main>
+</body>
+</html>

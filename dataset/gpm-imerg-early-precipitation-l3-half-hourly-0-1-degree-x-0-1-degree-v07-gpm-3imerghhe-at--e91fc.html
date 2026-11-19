@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPM IMERG Early Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHE) — NASA Open Data Portal</title>
+<meta name="description" content="Version 07B is the current version of the IMERG data sets. Older versions will no longer be available and have been superseded by Version 07.  The Integrated Multi-satellitE Retrievals for GPM (IMERG) is the unified U.S. algorithm that provides the multi-satellite precipitation p">
+<link rel="canonical" href="https://data.nasa.gov/dataset/gpm-imerg-early-precipitation-l3-half-hourly-0-1-degree-x-0-1-degree-v07-gpm-3imerghhe-at--e91fc">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GPM IMERG Early Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHE)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/gpm-imerg-early-precipitation-l3-half-hourly-0-1-degree-x-0-1-degree-v07-gpm-3imerghhe-at--e91fc">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Version 07B is the current version of the IMERG data sets. Older versions will no longer be available and have been superseded by Version 07.
+
+The Integrated Multi-satellitE Retrievals for GPM (IMERG) is the unified U.S. algorithm that provides the multi-satellite precipitation product for the U.S. GPM team.
+
+The precipitation estimates from the various precipitation-relevant satellite passive microwave (PMW) sensors comprising the GPM constellation are computed using the 2021 version of the Goddard Profiling Algorithm (GPROF2021), then gridded, intercalibrated to the GPM Combined Ku Radar-Radiometer Algorithm (CORRA) product, and merged into half-hourly 0.1°x0.1° (roughly 10x10 km) fields. Note that CORRA is adjusted to the monthly Global Precipitation Climatology Project (GPCP) Satellite-Gauge (SG) product over high-latitude ocean to correct known biases.
+
+The half-hourly intercalibrated merged PMW estimates are then input to both a Morphing-Kalman Filter (KF) Lagrangian time interpolation scheme based on work by the Climate Prediction Center (CPC) and the Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks (PERSIANN) Dynamic Infrared–Rain Rate (PDIR) re-calibration scheme. In parallel, CPC assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to PPS for input to the PERSIANN-CCS algorithm (supported by an asynchronous re-calibration cycle) which are then input to the KF morphing (quasi-Lagrangian time interpolation) scheme.
+
+The KF morphing (supported by an asynchronous KF weights updating cycle) uses the PMW and IR estimates to create half-hourly estimates. Motion vectors for the morphing are computed by maximizing the pattern correlation of successive hours within each of the precipitation (PRECTOT), total precipitable liquid water (TQL), and vertically integrated vapor (TQV) data fields provided by the Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) and Goddard Earth Observing System model Version 5 (GEOS-5) Forward Processing (FP) for the post-real-time (Final) Run and the near-real-time (Early and Late) Runs, respectively. The vectors from PRECTOT are chosen if available, else from TQL, if available, else from TQV. The KF uses the morphed data as the “forecast” and the IR estimates as the “observations”, with weighting that depends on the time interval(s) away from the microwave overpass time. The IR becomes important after about ±90 minutes away from the overpass time. Variable averaging in the KF is accounted for in a routine (Scheme for Histogram Adjustment with Ranked Precipitation Estimates in the Neighborhood, or SHARPEN) that compares the local histogram of KF morphed precipitation to the local histogram of forward- and backward-morphed microwave data and the IR.
+
+The IMERG system is run twice in near-real time:
+
+&quot;Early&quot; multi-satellite product ~4 hr after observation time using only forward morphing and
+&quot;Late&quot; multi-satellite product ~14 hr after observation time, using both forward and backward morphing
+and once after the monthly gauge analysis is received:
+
+&quot;Final&quot;, satellite-gauge product ~4 months after the observation month, using both forward and backward morphing and including monthly gauge analyses.
+
+In V07, the near-real-time Early and Late half-hourly estimates have a monthly climatological concluding calibration based on averaging the concluding calibrations computed in the Final, while in the post-real-time Final Run the multi-satellite half-hourly estimates are adjusted so that they sum to the Final Run monthly satellite-gauge combination. In all cases the output contains multiple fields that provide information on the input data, selected intermediate fields, and estimation quality. In general, the complete calibrated precipitation, precipitation, is the data field of choice for most users.
+
+Precipitation phase is a diagnostic variable computed using analyses of surface temperature, humidity, and pressure.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/gpm-imerg-early-precipitation-l3-half-hourly-0-1-degree-x-0-1-degree-v07-gpm-3imerghhe-at--e91fc">https://data.nasa.gov/dataset/gpm-imerg-early-precipitation-l3-half-hourly-0-1-degree-x-0-1-degree-v07-gpm-3imerghhe-at--e91fc</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/GPM/IMERG/3B-HH-E/07</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_3IMERGHHE_07.png">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_3IMERGHHE_07.png</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/GPM_3IMERGHHE_07.html">https://disc.gsfc.nasa.gov/datacollection/GPM_3IMERGHHE_07.html</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2723758340-GES_DISC/temporal">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2723758340-GES_DISC/temporal</a></td></tr><tr><td>BIN</td><td><a href="https://giovanni.gsfc.nasa.gov/#dataKeyword=IMERGHHE">https://giovanni.gsfc.nasa.gov/#dataKeyword=IMERGHHE</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2723758340-GES_DISC">https://search.earthdata.nasa.gov/search/granules?p=C2723758340-GES_DISC</a></td></tr><tr><td>PDF</td><td><a href="https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_V07_ATBD_final.pdf">https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_V07_ATBD_final.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/MorphingInV06IMERG.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/MorphingInV06IMERG.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://gpm.nasa.gov/resources/documents/imerg-v07-release-notes">https://gpm.nasa.gov/resources/documents/imerg-v07-release-notes</a></td></tr><tr><td>PDF</td><td><a href="https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf">https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/IMERGV06_QI.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/IMERGV06_QI.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf">https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf</a></td></tr><tr><td>HTML</td><td><a href="https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html">https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html</a></td></tr><tr><td>BIN</td><td><a href="https://gpm.nasa.gov">https://gpm.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://worldview.earthdata.nasa.gov/?z=4&amp;ics=true&amp;ici=5&amp;icd=30&amp;l=Reference_Labels_15m%28hidden%29%2CReference_Features_15m%28hidden%29%2CCoastlines_15m%2CIMERG_Precipitation_Rate%2CIMERG_Precipitation_Rate_30min%2COCI_PACE_True_Color%28hidden%29%2CVIIRS_NOAA21_CorrectedReflectance_TrueColor%28hidden%29%2CVIIRS_NOAA20_CorrectedReflectance_TrueColor%28hidden%29%2CVIIRS_SNPP_CorrectedReflectance_TrueColor%28hidden%29%2CMODIS_Aqua_CorrectedReflectance_TrueColor%28hidden%29%2CMODIS_Terra_CorrectedReflectance_TrueColor&amp;lg=true&amp;t=2026-03-02-T14%253A13%253A59Z">https://worldview.earthdata.nasa.gov/?z=4&amp;ics=true&amp;ici=5&amp;icd=30&amp;l=Reference_Labels_15m%28hidden%29%2CReference_Features_15m%28hidden%29%2CCoastlines_15m%2CIMERG_Precipitation_Rate%2CIMERG_Precipitation_Rate_30min%2COCI_PACE_True_Color%28hidden%29%2CVIIRS_NOAA21_CorrectedReflectance_TrueColor%28hidden%29%2CVIIRS_NOAA20_CorrectedReflectance_TrueColor%28hidden%29%2CVIIRS_SNPP_CorrectedReflectance_TrueColor%28hidden%29%2CMODIS_Aqua_CorrectedReflectance_TrueColor%28hidden%29%2CMODIS_Terra_CorrectedReflectance_TrueColor&amp;lg=true&amp;t=2026-03-02-T14%253A13%253A59Z</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2723758340-GES_DISC.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-precipitation-atmosphere</span><span class="tag">earth-science-precipitation-atmosphere-liquid-precipitation</span><span class="tag">earth-science-precipitation-atmosphere-precipitation-amount</span><span class="tag">earth-science-precipitation-atmosphere-precipitation-rate</span><span class="tag">earth-science-precipitation-atmosphere-solid-precipitation</span></div>
+</article>
+</main>
+</body>
+</html>

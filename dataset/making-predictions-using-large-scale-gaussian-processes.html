@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Making Predictions using Large Scale Gaussian Processes — NASA Open Data Portal</title>
+<meta name="description" content="One of the key problems that arises in many areas is to estimate a potentially nonlinear function [tex] G(x, \theta)[/tex] given input and output samples [tex] ( X,y ) [/tex] so that [tex]y approx G(x, \theta)[/tex].  There are many approaches to addressing this regression proble">
+<link rel="canonical" href="https://data.nasa.gov/dataset/making-predictions-using-large-scale-gaussian-processes">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Making Predictions using Large Scale Gaussian Processes</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/making-predictions-using-large-scale-gaussian-processes">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">One of the key problems that arises in many areas is to estimate a potentially nonlinear function [tex] G(x, \theta)[/tex] given input and output samples [tex] ( X,y ) [/tex] so that [tex]y approx G(x, \theta)[/tex].
+
+There are many approaches to addressing this regression problem. Neural networks, regression trees, and many other methods have been developed to estimate [tex]$G$[/tex] given the input output pair [tex] ( X,y ) [/tex].
+
+One method that I have worked with is called Gaussian process regression. There many good texts and papers on the subject. For more technical information on the method and its applications see: http://www.gaussianprocess.org/
+
+A key problem that arises in developing these models on very large data sets is that it ends up requiring an [tex]O(N^3)[/tex] computation where N is the number of data points and the training sample. Obviously this becomes very problematic when N is large.
+
+I discussed this problem with Leslie Foster, a mathematics professor at San Jose State University.  He, along with some of his students, developed a method  to address this problem based on Cholesky decomposition and pivoting.   He also shows that this leads to a numerically stable result.  If ou&#x27;re interested in some light reading, I’d suggest you take a look at his [recent paper](    ) (which was accepted in the Journal of Machine Learning Research) posted on dashlink. We&#x27;ve also posted code for you to try it out. Let us know how it goes.
+
+If you are interested in applications of this method in the area of prognostics, check out our [new paper](/dashlink/resources/51/) on the subject which was published in IEEE Transactions on Systems, Man, and Cybernetics.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/making-predictions-using-large-scale-gaussian-processes">https://data.nasa.gov/dataset/making-predictions-using-large-scale-gaussian-processes</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_50</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/50/">https://c3.nasa.gov/dashlink/resources/50/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>Ashok Srivastava — ashok.n.srivastava@gmail.com</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

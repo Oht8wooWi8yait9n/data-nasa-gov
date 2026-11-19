@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOVS GLA MONTHLY GRIDS from NOAA-10 02 (TOVSAMNG) — NASA Open Data Portal</title>
+<meta name="description" content="This dataset (TOVSAMNG) contains the TIROS Operational Vertical Sounder (TOVS) level 3 geophysical parameters derived using data from NOAA-10 and the physical retrieval method of Susskind et al. (1984) and processed by the Satellite Data Utilization Office of the Goddard Laborato">
+<link rel="canonical" href="https://data.nasa.gov/dataset/tovs-gla-monthly-grids-from-noaa-10-02-tovsamng-at-ges-disc-5b1d8">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TOVS GLA MONTHLY GRIDS from NOAA-10 02 (TOVSAMNG)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/tovs-gla-monthly-grids-from-noaa-10-02-tovsamng-at-ges-disc-5b1d8">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset (TOVSAMNG) contains the TIROS Operational Vertical Sounder (TOVS) level 3 geophysical parameters derived using data from NOAA-10 and the physical retrieval method of Susskind et al. (1984) and processed by the Satellite Data Utilization Office of the Goddard Laboratory for Atmospheres at NASA/GSFC. This method, which is hydrodynamic model- and a priori data-dependent, is designated as the so-called Path A scheme by the TOVS Pathfinder Science Working Group. The 20 channel High resolution Infrared Radiation Sounder 2 (HIRS2) and the 4 channel Microwave Sounding Unit (MSU) aboard the NOAA-xx series of Polar Orbiting Satellites are used to produce global fields of the 3-dimensional temperature-moisture structure of the atmosphere. In addition to profiles of temperature and moisture, the HIRS2/MSU data are used to derive important quantities such as land and sea surface temperature, outgoing longwave radiation, cloud fraction, cloudtop height, total ozone overburden and precipitation estimates.
+
+The Path A system steps through an interactive forecast-retrieval-analysis cycle. In each 6 hour synoptic period, a 2nd order General Circulation Model (Takacs et al., 1994) is used to generate the 6 hour forecast fields of temperature and humidity. These global fields are used as the first guess for all soundings occurring within a 6 hour time window centered upon the forecast time. These retrievals are then assimilated with all available insitu measurements (such as radiosonde and ship reports) in the 6 hour interval using an Optimal Interpolation (OI) analysis scheme developed by the Data Assimilation Office of the Goddard Laboratory for Atmospheres. This analysis is then used to specify the initial conditions for the next 6 hour forecast, thus completing the cycle.
+
+The retrieval algorithm itself is a physical method based on the iterative relaxation technique originally proposed by Chahine (1968). The basic approach consists of modifying the temperature profile from the previous iteration by an amount proportional to the difference between the observed brightness temperatures and the brightness temperatures computed from the trial parameters using the full radiative transfer equation applied at the observed satellite zenith angle. For the case of the temperature profile, the updated layer mean temperatures are given as a linear combination of multichannel brightness temperature differences with the coefficients given by the channel weighting functions. Constraints are imposed upon the solution in order to ensure stability and convergence of the iterative process. For more details see Susskind et al (1984).
+
+These Level 3 monthly mean products are in the netCDF format. Each data set is representative of a different monthly average time period and for one of nine satellites. All files contain the same number of geophysical parameter arrays with the AM and PM portions of the orbits treated separately.  All data are mapped to a 1 degree longitude by 1 degree latitude global grid.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/tovs-gla-monthly-grids-from-noaa-10-02-tovsamng-at-ges-disc-5b1d8">https://data.nasa.gov/dataset/tovs-gla-monthly-grids-from-noaa-10-02-tovsamng-at-ges-disc-5b1d8</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/O44UZ58U4LBZ</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>1987-01-01/1991-08-31</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSAMNG.V2.Dec.1988.500mb.day.temp.png">https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSAMNG.V2.Dec.1988.500mb.day.temp.png</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/TOVSAMNG_02.html">https://disc.gsfc.nasa.gov/datacollection/TOVSAMNG_02.html</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/User.Guide.TOVS.Pathfinder.PathA.v2.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/User.Guide.TOVS.Pathfinder.PathA.v2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNG.02/doc/README.TOVS.Pathfinder.PathA.v2.pdf">https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNG.02/doc/README.TOVS.Pathfinder.PathA.v2.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNG.02/">https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNG.02/</a></td></tr><tr><td>BIN</td><td><a href="https://acdisc.gesdisc.eosdis.nasa.gov/opendap/TOVS/TOVSAMNG.02/">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/TOVS/TOVSAMNG.02/</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1548834225-GES_DISC">https://search.earthdata.nasa.gov/search/granules?p=C1548834225-GES_DISC</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1548834225-GES_DISC.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-pressure-atmosphere-surface-pressure</span><span class="tag">earth-science-atmospheric-radiation-atmosphere-longwave-radiation</span><span class="tag">earth-science-atmospheric-radiation-atmosphere-net-radiation</span><span class="tag">earth-science-atmospheric-radiation-atmosphere-outgoing-longwave-radiation</span><span class="tag">earth-science-atmospheric-temperature-atmosphere</span><span class="tag">earth-science-atmospheric-temperature-atmosphere-surface-temperature</span><span class="tag">earth-science-atmospheric-temperature-atmosphere-upper-air-temperature</span><span class="tag">earth-science-atmospheric-water-vapor-atmosphere</span><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-indicators</span><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-profiles</span><span class="tag">earth-science-clouds-atmosphere</span><span class="tag">earth-science-clouds-atmosphere-cloud-properties</span><span class="tag">earth-science-precipitation-atmosphere-precipitation-amount</span></div>
+</article>
+</main>
+</body>
+</html>

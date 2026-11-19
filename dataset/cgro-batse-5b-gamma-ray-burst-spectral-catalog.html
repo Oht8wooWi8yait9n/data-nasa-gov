@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CGRO/BATSE 5B Gamma-Ray Burst Spectral Catalog — NASA Open Data Portal</title>
+<meta name="description" content="The CGRO/BATSE 5B Gamma-Ray Burst Spectral Catalog contains the results of systematic spectral analyses of gamma-ray bursts (GRBs) detected with the Burst and Transient Source Experiment (BATSE) on board the Compton Gamma-Ray Observatory (CGRO) during its entire nine years of ope">
+<link rel="canonical" href="https://data.nasa.gov/dataset/cgro-batse-5b-gamma-ray-burst-spectral-catalog">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>CGRO/BATSE 5B Gamma-Ray Burst Spectral Catalog</h1>
+<div class="meta-badges"><span class="badge">Astrophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/cgro-batse-5b-gamma-ray-burst-spectral-catalog">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The CGRO/BATSE 5B Gamma-Ray Burst Spectral Catalog contains the results of systematic spectral analyses of gamma-ray bursts (GRBs) detected with the Burst and Transient Source Experiment (BATSE) on board the Compton Gamma-Ray Observatory (CGRO) during its entire nine years of operation. This catalog contains two types of spectra extracted from 2,145 GRBs, and fitted with five different spectral models resulting in a compendium of over 19,000 spectra. The models were selected based on their empirical importance to the spectral shape of many GRBs, and the analysis performed was devised to be as thorough and objective as possible. In their paper, the authors describe in detail their procedures and criteria for the analyses, and present the bulk results in the form of parameter distributions. This catalog should be considered an official product from the BATSE Science Team, and the data files containing the complete results are soon to be available from the HEASARC. This table lists all of the spectroscopy results of gamma-ray bursts observed by a subset of the 8 BATSE Large Area Detectors. BATSE consisted, in part, of an array of 8 sodium iodide Large Area Detectors (LADs) which covered the energy range from ~20 keV - 2 MeV. The LAD detectors were placed at each of the eight corners of the CGRO spacecraft with an outward orientation such that the entire sky not occulted by the Eartt was observed. The spectrum files (&amp;quot;scat&amp;quot; files) available as FITS-format data products associated with this catalog provide parameter values and goodness-of-fit measures for different types of spectral fits and models. These fits are performed using 14-channel data, usually 2-second resolution CONT data. There are currently two spectrum categories: &amp;lt;pre&amp;gt; * Peak flux (&amp;#39;pflx&amp;#39;) - a single spectrum over a 2.05-second time range at the peak flux of the burst * Fluence (&amp;#39;flnc&amp;#39;) - a single spectrum over the entire burst duration &amp;lt;/pre&amp;gt; The quoted fluxes and fluences are for the 20 keV - 2 MeV energy range, notice. The scat files have two extensions. The first extension gives detector-specific information, including photon fluxes and fluences for each detector, which are provided for each energy channel. The second extension provides derived quantities such as flux, fluence and model parameters for the joint fit of all included detectors. The scat files and their energy-resolved quantities contained in these two extensions will be available soon in the HEASARC data archive. Quantities derived from these spectral fits are available in the present table, as described below and in the Goldstein et al. (2013) reference paper. The spectra are fit with a number of models, with the signal-to-noise ratio of the spectrum often determining whether a more complex model is statistically favored. The current set is: &amp;lt;pre&amp;gt; * Power law (&amp;#39;plaw&amp;#39;), * Comptonized (exponentially attenuated power law; &amp;#39;comp&amp;#39;) * Band (&amp;#39;band&amp;#39;) * Smoothly broken power law (&amp;#39;sbpl&amp;#39;) * Log_10 Gaussian (&amp;#39;glog&amp;#39;) &amp;lt;/pre&amp;gt; The full details of these models are presented in Section 4 of the reference paper. The type of spectrum and spectral model are coded into the parameter names (and the associated file names) using the acronyms given above. Thus for example, the parameters with names beginning with &amp;#39;flnc_glog&amp;#39; contain the results from fits to the fluence spectra using Log&amp;lt;sub&amp;gt;10&amp;lt;/sub&amp;gt; Gaussian models. The corresponding spectrum file for the burst with trigger number 105 with the results from a fit to the fluence spectrum using a Log&amp;lt;sub&amp;gt;10&amp;lt;/sub&amp;gt; Gaussian model is named scat_0105_flnc_glog_v00.fit. Please note that this table lists the raw results of each spectral fit to each GRB. In cases where the spectral fit failed, the values reported are those that initialized the spectral fit. If the uncertainty on the spectral parameters is reported as zero (no uncertainty), then the fit failed. In a few cases throughout this table, the uncertainties for certain spectral parameters may be reported as &amp;#39;9999.99&amp;#39; which indicates that the uncertainty on that parameter is completely unconstrained. An example of this is when the spectral data from a burst is fitted with a BAND function but is unable to constrain the high-energy index. In this case, the best fit centroid value of the high-energy index parameter is reported, and the &amp;#39;9999.99&amp;#39; value is reported for the uncertainty. This table was created by the HEASARC in November 2013 based on electronic versions of Tables 6 through 10, inclusive, from the reference paper which were obtained from the ApJS web site. This is a service provided by NASA HEASARC .</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>High Energy Astrophysics Science Archive Research Center</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/cgro-batse-5b-gamma-ray-burst-spectral-catalog">https://data.nasa.gov/dataset/cgro-batse-5b-gamma-ray-burst-spectral-catalog</a></td></tr>
+<tr><th>Identifier</th><td>ivo://nasa.heasarc/bat5bgrbsp</td></tr>
+<tr><th>Themes</th><td>Astrophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>HEASARC Help Desk — andrew.ptak@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (2)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://heasarc.gsfc.nasa.gov/W3Browse/all/bat5bgrbsp.html">https://heasarc.gsfc.nasa.gov/W3Browse/all/bat5bgrbsp.html</a></td></tr><tr><td>BIN</td><td><a href="https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=bat5bgrbsp&amp;">https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=bat5bgrbsp&amp;</a></td></tr>
+</tbody></table>
+</article>
+</main>
+</body>
+</html>

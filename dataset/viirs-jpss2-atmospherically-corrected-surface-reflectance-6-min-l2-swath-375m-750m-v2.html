@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIIRS/JPSS2 Atmospherically Corrected Surface Reflectance 6-Min L2 Swath 375m, 750m - V2 — NASA Open Data Portal</title>
+<meta name="description" content="The Joint Polar Satellite System-2 (JPSS-2)* Visible Infra-red Imaging Radiometer Suite (VIIRS) surface reflectance products provide estimates of surface reflectance derived from each of the twelve VIIRS reflective bands. Surface reflectance is derived by adjusting top-of-atmosph">
+<link rel="canonical" href="https://data.nasa.gov/dataset/viirs-jpss2-atmospherically-corrected-surface-reflectance-6-min-l2-swath-375m-750m-v2">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>VIIRS/JPSS2 Atmospherically Corrected Surface Reflectance 6-Min L2 Swath 375m, 750m - V2</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/viirs-jpss2-atmospherically-corrected-surface-reflectance-6-min-l2-swath-375m-750m-v2">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Joint Polar Satellite System-2 (JPSS-2)* Visible Infra-red Imaging Radiometer Suite (VIIRS) surface reflectance products provide estimates of surface reflectance derived from each of the twelve VIIRS reflective bands. Surface reflectance is derived by adjusting top-of-atmosphere reflectance to compensate for atmospheric effects. The effects of molecular gases, including ozone and water vapor, and atmospheric aerosols are also corrected. The VIIRS Level 1B (L1B) top-of-atmosphere calibrated instrument data, following corrections to address atmospheric gases and aerosols, help produce the Level 2 (L2) product. These L2 inputs help generate additional higher-level gridded products.
+
+VJ209 is the short name for the L2 orbital swath-based atmospherically corrected surface reflectance product generated daily at 375-meter and 750-meter resolutions. VJ209 contains approximately 6 minutes of data yielding 240 granules in a 24-hour cycle.
+
+ **Note:** [JPSS-2](https://science.nasa.gov/mission/jpss/) was renamed [NOAA-21](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/noaa-21) after launch.
+
+##### Spectral Band Coverage
+
+VJ209 offers surface reflectance values for the following resolutions and bands:
+* 375-meter resolution: Bands I1, I2, and I3
+* 750-meter resolution: Moderate (M) Bands M1-M5, M7, M8, M10, and M11
+
+##### Algorithm Inputs
+
+The inputs to the surface reflectance algorithm include top-of-atmosphere reflectance derived from the VIIRS I-bands and M-bands, VIIRS Cloud Mask (VJ235_L2), VIIRS Aerosol Optical Thickness (VJ204_L2), Aerosol Model Information (VJ2AMI_L2), VIIRS Geolocation (VJ203IMG), and atmospheric data from NCEP (National Centers for Environmental Prediction) reanalysis (surface pressure, atmospheric precipitable water, and ozone concentration). All surface reflectance products are generated under all atmospheric conditions for daytime only; nighttime and ocean observations are excluded. Reflectance values when not produced, are replaced by fill-values in the L2 products and are excluded in the Level 3 (L3) products.
+
+##### Product Validation and Data Record
+
+The version 2.0 (v2.0) Surface Reflectance products are validated to Stage 3; this means that the uncertainties in this product are well-quantified through comparison with both in situ and other reference data. These uncertainties are characterized in a statistically rigorous manner over multiple global locations and time periods. The spatial and temporal consistency of this product has also been evaluated over a set of globally representative locations and time periods. The v2.0 VJ209 collection’s record starts from February 10, 2023 (2023–041).
+
+##### Science Data Sets
+
+The L2 VJ209 product, in Network Common Data Form (netCDF4) format, contains the following Science Data Sets (SDS):
+1. 375m_Surface_Reflectance_Band_I1
+2. 375m_Surface_Reflectance_Band_I2
+3. 375m_Surface_Reflectance_Band_I3
+4. 750m_Surface_Reflectance_Band_M1
+5. 750m_Surface_Reflectance_Band_M2
+6. 750m_Surface_Reflectance_Band_M3
+7. 750m_Surface_Reflectance_Band_M4
+8. 750m_Surface_Reflectance_Band_M5
+9. 750m_Surface_Reflectance_Band_M7
+10. 750m_Surface_Reflectance_Band_M8
+11. 750m_Surface_Reflectance_Band_M10
+12. 750m_Surface_Reflectance_Band_M11
+13. land_water_mask
+14. QF1_Surface_Reflectance
+15. QF2_Surface_Reflectance
+16. QF3_Surface_Reflectance
+17. QF4_Surface_Reflectance
+18. QF5_Surface_Reflectance
+19. QF6_Surface_Reflectance
+20. QF7_Surface_Reflectance</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/HBSL/BISB/LAADS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/viirs-jpss2-atmospherically-corrected-surface-reflectance-6-min-l2-swath-375m-750m-v2">https://data.nasa.gov/dataset/viirs-jpss2-atmospherically-corrected-surface-reflectance-6-min-l2-swath-375m-750m-v2</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/VIIRS/VJ209.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2023-01-10/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://doi.org/10.5067/VIIRS/VJ209.002">https://doi.org/10.5067/VIIRS/VJ209.002</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/archive/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Surf_Refl_UserGuide_v2.2.pdf">https://ladsweb.modaps.eosdis.nasa.gov/archive/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Surf_Refl_UserGuide_v2.2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://viirsland.gsfc.nasa.gov/PDF/ATBD_VIIRS_SR_v2.pdf">https://viirsland.gsfc.nasa.gov/PDF/ATBD_VIIRS_SR_v2.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VJ209/">https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VJ209/</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C4075706276-LAADS">https://search.earthdata.nasa.gov/search/granules?p=C4075706276-LAADS</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-reflectance</span></div>
+</article>
+</main>
+</body>
+</html>

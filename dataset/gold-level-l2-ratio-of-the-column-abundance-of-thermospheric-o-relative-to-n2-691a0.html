@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold Level L2 ratio of the column abundance of thermospheric O relative to N2 — NASA Open Data Portal</title>
+<meta name="description" content="GOLD daytime disk scan (DAY) measurements are used to derive the ratio of the column abundance of thermospheric O relative to N2, conventionally referred to as O/N2 or ΣO/N2, but abbreviated to ON2 for the GOLD data product. ON2 is derived from dayside Level 1C data after binning">
+<link rel="canonical" href="https://data.nasa.gov/dataset/gold-level-l2-ratio-of-the-column-abundance-of-thermospheric-o-relative-to-n2-691a0">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Gold Level L2 ratio of the column abundance of thermospheric O relative to N2</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/gold-level-l2-ratio-of-the-column-abundance-of-thermospheric-o-relative-to-n2-691a0">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">GOLD daytime disk scan (DAY) measurements are used to derive the ratio of the column abundance of thermospheric O relative to N2, conventionally referred to as O/N2 or ΣO/N2, but abbreviated to ON2 for the GOLD data product. ON2 is derived from dayside Level 1C data after binning pixels 2x2 for approximately 68 disk scan measurements performed per day by GOLD in nominal operation.
+
+Algorithm heritage
+
+The disk ON2 retrieval algorithm was originally developed by Computational Physics, Inc. (CPI) for use with GUVI and SSUSI radiance images (Strickland et al., 1995). The GOLD implementation of this algorithm takes advantage of GOLD&#x27;s ability to transmit the full spectrum to maximize the signal-to-noise ratio and eliminate atomic emission lines that contaminate the N2 LBH bands (e.g., N I 149.3 nm). This algorithm has been extensively documented and applied over the past several decades (e.g., Evans et al. [1995]; Christensen et al. [2003]; Strickland et al. [2004]) and Correira et al. [2021] describe the implementation used for the GOLD data.
+
+Algorithm theoretical basis
+
+The geophysical parameter retrieved, O/N2, is the ratio of the vertical column density of O relative to N2, defined at a standard reference N2 depth of 1017 cm-2, which is chosen to minimize uncertainty in the derived O/N2. It is retrieved directly from the ratio of the O I 135.6 nm and N2 LBH band intensities measured by GOLD on the dayside disk (DAY measurement mode). The AURIC atmospheric radiance model (Strickland et al. [1999]) is used to derive this relationship as a function of solar zenith angle and to create the look-up table (LUT) used by the algorithm.
+
+References
+
+Christensen, A. B., et al. (2003), Initial observations with the Global Ultraviolet Imager (GUVI) in the NASA TIMED satellite mission, J. Geophys. Res., vol. 108, NO. A12, 1451, doi:10.1029/2003JA009918.
+
+Correira, J., Evans, J. S., Lumpe, J. D., Krywonos, A., Daniell, R., Veibell, V., et al. (2021). Thermospheric composition and solar EUV flux from the Globalscale Observations of the Limb and Disk (GOLD) mission. Journal of Geophysical Research: Space Physics, 126, e2021JA029517. https://doi.org/10.1029/2021JA029517
+
+Evans, J. S., D. J. Strickland and R. E. Huffman (1995), Satellite remote sensing of thermospheric O/N2 and solar EUV: 2. Data analysis, J. Geophys. Res., vol. 100, NO. A7, pages 12,227-12,233.
+
+Strickland, D. J., R. R. Meier, R. L. Walterscheid, J. D. Craven, A. B. Christensen, L. J. Paxton, D. Morrison, and G. Crowley (2004), Quiet-time seasonal behavior of the thermosphere seen in the far ultraviolet dayglow, J. Geophys. Res., vol. 109, A01302, doi:10.1029/2003JA010220.
+
+Strickland, D.J., J. Bishop, J.S. Evans, T. Majeed, P.M. Shen, R.J. Cox, R. Link, and R.E. Huffman (1999), Atmospheric Ultraviolet Radiance Integrated Code (AURIC): theory, software architecture, inputs and selected results, JQSRT, 62, 689-742.
+
+Strickland, D. J., J. S. Evans, and L. J. Paxton (1995), Satellite remote sensing of thermospheric O/N2 and solar EUV: 1. Theory, J. Geophys. Res., 110, A7, pages 12,217-12,226.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>CDAWeb, SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/gold-level-l2-ratio-of-the-column-abundance-of-thermospheric-o-relative-to-n2-691a0">https://data.nasa.gov/dataset/gold-level-l2-ratio-of-the-column-abundance-of-thermospheric-o-relative-to-n2-691a0</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/wjrk-dk56">https://doi.org/10.48322/wjrk-dk56</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (9)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/on2/">ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/on2/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/gold/level2/on2/">https://spdf.gsfc.nasa.gov/pub/data/gold/level2/on2/</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=GOLD_L2_ON2&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=GOLD_L2_ON2&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/hapi">https://cdaweb.gsfc.nasa.gov/hapi</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=GOLD_L2_ON2">https://api.heliocloud.org/cloudcatalog?id=GOLD_L2_ON2</a></td></tr><tr><td>BIN</td><td><a href="https://gold.cs.ucf.edu/">https://gold.cs.ucf.edu/</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.1007/s11214-017-0392-2">https://doi.org/10.1007/s11214-017-0392-2</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/GOLD_L2_ON2_PT8S">https://helio.data.nasa.gov/dataset/GOLD_L2_ON2_PT8S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/GOLD/L2/ON2/PT8S">https://hpde.io/NASA/NumericalData/GOLD/L2/ON2/PT8S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">gold</span><span class="tag">imageintensity</span><span class="tag">o-relative-to-n2</span><span class="tag">ses-14</span></div>
+</article>
+</main>
+</body>
+</html>

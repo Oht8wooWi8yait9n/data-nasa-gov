@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 product (Version 1) — NASA Open Data Portal</title>
+<meta name="description" content="The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALE">
+<link rel="canonical" href="https://data.nasa.gov/dataset/opera-land-surface-disturbance-annual-from-harmonized-landsat-sentinel-2-product-version-1-0dd70">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 product (Version 1)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/opera-land-surface-disturbance-annual-from-harmonized-landsat-sentinel-2-product-version-1-0dd70">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product into an annual vegetation disturbance data product. Vegetation disturbance is mapped when there is an indicated decrease in vegetation cover within an HLS Version 2 pixel. The product also provides auxiliary generic disturbance information as determined from the variations of the reflectance through the DIST-ALERT scenes to provide information about more general disturbance trends. The DIST-ANN product tracks changes at the annual scale, aggregating changes identified in the DIST-ALERT product. Only confirmed disturbances from the associated year are reported together with the date of initial disturbance. As confirmed disturbances are determined using subsequent cloud-free observations to determine if the loss detections persist, the required number of HLS scenes depends on visibility of the target. Due to this dependency, summarizing the DIST-ALERT in the DIST-ANN product will have some latency contingent on the algorithmic calibration and is detailed in the Algorithm Theoretical Basis Document (ATBD).
+
+The OPERA_L3_DIST-ANN-HLS (or DIST-ANN) data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate COG. There are 21 layers contained within the DIST-ANN product: vegetation disturbance status, historical vegetation cover indicator, maximum vegetation cover indicator, maximum vegetation anomaly value, vegetation disturbance confidence layer, date of initial vegetation disturbance, number of detected vegetation loss anomalies, vegetation disturbance duration, date of last observation assessed for vegetation disturbance, and several generic disturbance layers. Each product layer is gridded to the same resolution and tiling system as HLS V2: 30 meter (m) and Military Grid Reference System ([MGRS](https://hls.gsfc.nasa.gov/products-description/tiling-system/)). See the Product Specification Document (PSD) for a more detailed description of the individual layers provided in the DIST-ANN product.
+
+The OPERA project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.
+
+The OPERA_L3_DIST-ANN-HLS product contains modified Copernicus Sentinel data (2020-2025).
+
+Known Issues
+* Additional usage constraints are provided under Section 5 of the Algorithm Theoretical Basis Document (ATBD).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;UMD/GLAD</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/opera-land-surface-disturbance-annual-from-harmonized-landsat-sentinel-2-product-version-1-0dd70">https://data.nasa.gov/dataset/opera-land-surface-disturbance-annual-from-harmonized-landsat-sentinel-2-product-version-1-0dd70</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2023-01-01/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2519119034-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2519119034-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001">https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1766/OPERA_DIST_HLS_Product_Specification_V1.pdf">https://lpdaac.usgs.gov/documents/1766/OPERA_DIST_HLS_Product_Specification_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1835/OPERA_DIST_ATBD__V1.pdf">https://lpdaac.usgs.gov/documents/1835/OPERA_DIST_ATBD__V1.pdf</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/OPERA_L3_DIST-ANN-HLS_V1/OPERA_L3_DIST-ANN-HLS_T10UGV_2023_20240216T191154Z_30_v1/OPERA_L3_DIST-ANN-HLS_T10UGV_2023_20240216T191154Z_30_v1_VEG-DIST-STATUS.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/OPERA_L3_DIST-ANN-HLS_V1/OPERA_L3_DIST-ANN-HLS_T10UGV_2023_20240216T191154Z_30_v1/OPERA_L3_DIST-ANN-HLS_T10UGV_2023_20240216T191154Z_30_v1_VEG-DIST-STATUS.png</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.1038/s41467-025-64014-9">https://doi.org/10.1038/s41467-025-64014-9</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2519119034-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-environmental-impacts-human-dimensions-mechanical-disturbance</span><span class="tag">earth-science-land-use-land-cover-land-surface</span><span class="tag">earth-science-land-use-land-cover-land-surface-disturbance</span></div>
+</article>
+</main>
+</body>
+</html>

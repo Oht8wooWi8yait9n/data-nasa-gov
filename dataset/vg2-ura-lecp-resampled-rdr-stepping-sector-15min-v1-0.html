@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VG2 URA LECP RESAMPLED RDR STEPPING SECTOR 15MIN V1.0 — NASA Open Data Portal</title>
+<meta name="description" content="This data set consists of resampled data from the Low Energy Charged Particle (LECP) experiment on Voyager 2 while the spacecraft was in the vicinity of Uranus. This instrument measures the intensities of in-situ charged particles (&gt;26 keV electrons and &gt;30 keV ions) with various">
+<link rel="canonical" href="https://data.nasa.gov/dataset/vg2-ura-lecp-resampled-rdr-stepping-sector-15min-v1-0">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>VG2 URA LECP RESAMPLED RDR STEPPING SECTOR 15MIN V1.0</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/vg2-ura-lecp-resampled-rdr-stepping-sector-15min-v1-0">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This data set consists of resampled data from the Low Energy Charged Particle (LECP) experiment on Voyager 2 while the spacecraft was in the vicinity of Uranus. This instrument measures the intensities of in-situ charged particles (&gt;26 keV electrons and &gt;30 keV ions) with various levels of discrimination based on energy, mass species, and angular arrival direction. A subset of almost 100 LECP channels are included with this data set. The LECP data are globally calibrated to the extent possible (see below) and they are time averaged to about 15 minute time intervals with the exact beginning and ending times for those intervals matching the LECP instrumental cycle periods (the angular scanning periods). The LECP instrument has a rotating head for obtaining angular anisotropy measurements of the medium energy charged particles that it measures. The cycle time for the rotation if variable, but during encounters it is always faster than 15 minutes. Thus, the full angular anisotropy information is preserved with this data. The data is in the form of &#x27;Rate&#x27; data which has not been converted to the usual physical units. The reason is that such a conversion would depend on uncertain determinations such as the mass species of the particles and the level of background. Both mass species and background are generally determined from context during the study of particular regions. To convert &#x27;Rate&#x27; to &#x27;Intensity&#x27; for a particular channel one performs the following tasks: 1) Decide on the level of background contamination and subtract that off the given rate level. Background is to be determined from context and from making use of sector 8 rates (sector 8 has a 2 mm Al shield covering it). 2) Divide the background corrected rate by the channel geometric factor and by the energy bandpass of the channel. The geometric factor is found in entry &#x27;CHANNEL_GEOMETRIC_FACTOR&#x27; as associated with each channel &#x27;CHANNEL_ID&#x27;. To determine the energy bandpass, one must judge the mass species of the of the detected particles (for ions but not for electrons). The energy band passes are given in entries &#x27;MINIMUM_INSTRUMENT_PARAMETER&#x27; and &#x27;MAXIMUM_INSTRUMENT_PARAMETER&#x27; in table &#x27;FPLECPENERGY&#x27;, and are given in the form &#x27;Energy/Nucleon&#x27;. For channels that begin their names with the designations &#x27;CH&#x27; these bandpasses can be used on mass species that are accepted into that channel (see entries &#x27;MINIMUM_INSTRUMENT_PARAMETER&#x27; and &#x27;MAXIMUM_INSTRUMENT_ PARAMETER&#x27; in table &#x27;FPLECPCHANZ&#x27;, which give the minimum and maximum &#x27;Z&#x27; value accepted -- these entries are blank for electron channels). For other channels the given bandpass refers only to the lowest &#x27;Z&#x27; value accepted. The bandpasses for other &#x27;Z&#x27; values are not all known, but some are given in the literature (e.g. Krimigis et al., 1979). The final product of these instructions will be the particle intensity with the units: counts/(cm**2.str.sec.keV). Some channels are subject to serious contaminations, and many of these contaminations cannot be removed except with a region-by-region analysis, which has not been done for this data. thus, to use this data it is absolutely vital that the contamination types (&#x27;CONTAMINATION_ID&#x27; , &#x27;CONTAMINATION_DESC&#x27;) and the levels of contamination (&#x27;DATA_QUALITY_ID&#x27; corresponding to the definitions &#x27;DATA_QUALITY_DESC&#x27;) be carefully examined for all regions of study. A dead time correction procedure has been applied in an attempt to correct the linear effects of detector overdrive (pulse-pileup). This procedure does not fix severely overdriven detectors. A procedure is available for correcting Voyager 2 LECP electron contamination of low energy ion channels, but its effectiveness has been evaluated only for the Uranus data set. Thus, corrections have been applied only to the Uranus data set. Also included with this data are one standard deviation statistical uncertainties for the directional data (sectors 1 through 8) expressed as a percent. Unknown values are generally coded as suc</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>National Aeronautics and Space Administration</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/vg2-ura-lecp-resampled-rdr-stepping-sector-15min-v1-0">https://data.nasa.gov/dataset/vg2-ura-lecp-resampled-rdr-stepping-sector-15min-v1-0</a></td></tr>
+<tr><th>Identifier</th><td>urn:nasa:pds:context_pds3:data_set:data_set.vg2-u-lecp-4-rdr-sector-15min-v1.0_ez3c-awaj</td></tr>
+<tr><th>Landing Page</th><td><a href="https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-LECP-4-RDR-SECTOR-15MIN-V1.0">https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VG2-U-LECP-4-RDR-SECTOR-15MIN-V1.0</a></td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2023-01-26</td></tr>
+<tr><th>Issued</th><td>2018-06-26</td></tr>
+<tr><th>Contact / Maintainer</th><td>Thomas Morgan — thomas.h.morgan@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:005</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>References</h2>
+<ul><li><a href="https://pds.nasa.gov">https://pds.nasa.gov</a></li></ul>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">comet-sl9-jupiter-collision</span><span class="tag">uranus</span><span class="tag">voyager</span></div>
+</article>
+</main>
+</body>
+</html>

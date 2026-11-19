@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voyager 1 LECP - Daily Average Interplanetary Data — NASA Open Data Portal</title>
+<meta name="description" content="This data file contains 1 day averages of count rates for eleven differential energy proton/ion channels (30 keV - 20 MeV) and one integral channel  (&gt;70 MeV protons) from the Low Energy Charged Particle (LECP) instrument on Voyager 1.   The interplanetary data listed are average">
+<link rel="canonical" href="https://data.nasa.gov/dataset/voyager-1-lecp-daily-average-interplanetary-data-e3cb4">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Voyager 1 LECP - Daily Average Interplanetary Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/voyager-1-lecp-daily-average-interplanetary-data-e3cb4">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This data file contains 1 day averages of count rates for eleven differential energy proton/ion channels (30 keV - 20 MeV) and one integral channel  (&gt;70 MeV protons) from the Low Energy Charged Particle (LECP) instrument on Voyager 1.   The interplanetary data listed are averaged over 24 hours, with the start time of the averging interval begining at the start of the day listed.  For example, 77/300 is an average over hours 0-23 on day 300 of 1977. Times are given in SCET-UT. The count rates R are in counts per second.  The statistical uncertainty for each channel is the inverse square root of the total number of counts during each 24 hour period times the average count rate R. Included in the data table are the passbands in KeV for protons, the logarithmic mean energy Em for the differential energy channels, the geometric factor &quot;g&quot; (cm**2-steradian), and the flux conversion factor &quot;f&quot;.  To get from count rate R to differential in energy flux &quot;dj(E)/dE&quot;, multiply R by f,
+ i.e.,
+				dj(E)/dE=f*R.
+
+    Note that f is simply the inverse of the energy passband multiplied by
+ the geometric factor. Generally one uses a more elaborate algorithm to
+ calculate fluxes by determining the local slope of the energy spectrum within
+ each energy passband, usually by an iterative algorithm, and then evaluating
+ the flux corresponding to each channel using this slope.  However, if the
+ slope of the energy spectrum is not to steep, the approximation dj(E)/dE=f*R
+ is very good if the flux is evaluated at the mean energy Em=Sqrt(EL*EH),
+ where EL and EH are the low and high energy ends of the passband.  Since the
+ slopes of low energy ion spectra in the interplanetary medium are in the
+ range of -1 to -3, the approximation is very good.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/voyager-1-lecp-daily-average-interplanetary-data-e3cb4">https://data.nasa.gov/dataset/voyager-1-lecp-daily-average-interplanetary-data-e3cb4</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/x68v-sd88">https://doi.org/10.48322/x68v-sd88</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/daily/">ftps://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/daily/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/daily/">https://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/daily/</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/Voyager1_LECP_Particle_PT24H">https://helio.data.nasa.gov/dataset/Voyager1_LECP_Particle_PT24H</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/Voyager1/LECP/Particle/PT24H">https://hpde.io/NASA/NumericalData/Voyager1/LECP/Particle/PT24H</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">energeticparticles</span></div>
+</article>
+</main>
+</body>
+</html>

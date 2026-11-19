@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ocean Color — NASA Open Data Portal</title>
+<meta name="description" content="Satellite-derived Ocean Color Data sets from historical and currently operational NASA and International Satellite missions including the NASA Coastal Zone Color Scanner (CZCS) (1978 - 1986), NASDA&#x27;s Ocean Color Temperature Scanner (OCTS) (1996 - 1997), NASA/GeoEYE Sea-viewing Wi">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ocean-color">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Ocean Color</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ocean-color">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Satellite-derived Ocean Color Data sets from historical and currently operational NASA and International Satellite missions including the NASA Coastal Zone Color Scanner (CZCS) (1978 - 1986), NASDA&#x27;s Ocean Color Temperature Scanner (OCTS) (1996 - 1997), NASA/GeoEYE Sea-viewing Wide Field-of-view Sensor (SeaWiFS) (1997 - 2010), NASA&#x27;s Moderate Resolution Imaging Spectroradiometer (MODIS) on both the Terra and Aqua spacecraft (2000 - present) and ESA&#x27;s medium-spectral resolution, imaging spectrometer (MERIS) (2002 - present).  &lt;strong&gt;Level-1A Data Products&lt;/strong&gt; Level-1A products contain the raw radiance counts from all bands as well as spacecraft and instrument telemetry. Calibration and navigation data, and instrument and selected spacecraft telemetry are also included. Level-1A data are used as input for geolocation, calibration, and processing.  &lt;strong&gt;Ocean Level-2 Data Products&lt;/strong&gt; Each Level-2 product is generated from a corresponding Level-1A product.The main data contents of the product are the geophysical values for each pixel,derived from the Level-1A raw radiance counts by applying the sensor calibration, atmospheric corrections, and bio-optical algorithms. Each Level-2 product corresponds exactly in geographical coverage (scan-line and pixel extent) to that of its parent Level-1A product and is stored in one physical HDFfile.  &lt;strong&gt;Ocean Level-3 Binned Data Products&lt;/strong&gt; Level-3 binned data products consist of the accumulated data for all Level-2 data corresponding to a period of one day, 8 days, a calendar month, or a calendar year.  Each Level-3 binned data product is stored in one or more HDF files. Each multi-file product includes a main file containing all product-level metadata and data for each bin that are common to all the binned geophysical parameters, and multiple subordinate files, each of which contains data of one binned geophysical parameter for all bins. Subordinate files must be read in conjunction with the associated main file.  &lt;strong&gt;Ocean Level-3 Standard Mapped Image Products&lt;/strong&gt; The Level-3 standard mapped image (SMI) products are image representations of binned data products generated from SeaWiFS, MODIS, OCTS or CZCS data. The data in each SMI product represents an image of the parameter specified by the global attribute Parameter. This object is a two-dimensional array of an Equidistant Cylindrical (also known as Platte Carre) projection of the globe. The values can be stored as bytes, 2-byte integers, or 4- byte floats. The first two are scaled real values and may be converted projected to geophysical values using the global attributes Scaling, Scaling Equation, Base, Slope, and Intercept.  The standard SMI products are generated from binned data products, one for each of the following geophysical parameters: chlorophyll a concentration, angstrom coefficient, normalized water-leaving radiance at each visible wavelength, aerosol optical thickness, epsilon, and diffuse attenuation coefficient at 490 nm. For MODIS, products are generated for sea surface temperature (SST), 4 micron SST (SST4) and nighttime SST (NSST). Thus, each SMI product represents data binned over the period covered by the parent product. The arithmetic mean is used in each case to obtain the values for the SMI grid points from the binned data products. Each SMI product contains one image of a geophysical parameter and is stored in one physical HDF file.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>National Aeronautics and Space Administration</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ocean-color">https://data.nasa.gov/dataset/ocean-color</a></td></tr>
+<tr><th>Identifier</th><td>NASA-0000097</td></tr>
+<tr><th>Landing Page</th><td><a href="https://data.nasa.gov/dataset/ocean-color">https://data.nasa.gov/dataset/ocean-color</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2018-06-25</td></tr>
+<tr><th>Contact / Maintainer</th><td>Gene Feldman — gene.c.feldman@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="http://oceandata.sci.gsfc.nasa.gov/">http://oceandata.sci.gsfc.nasa.gov/</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">biogeochemistry</span><span class="tag">climate</span><span class="tag">earth-science</span><span class="tag">kepler</span><span class="tag">msl</span></div>
+</article>
+</main>
+</body>
+</html>

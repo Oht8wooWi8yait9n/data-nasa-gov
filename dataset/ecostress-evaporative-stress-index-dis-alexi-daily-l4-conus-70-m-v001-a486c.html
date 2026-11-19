@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Evaporative Stress Index dis-ALEXI Daily L4 CONUS 70 m V001 — NASA Open Data Portal</title>
+<meta name="description" content="The ECO4ESIALEXI Version 1 data product was decommissioned on January 30, 2026. Users are encouraged to use the [ECO_L4G_ESI_ALEXI](https://doi.org/10.5067/ECOSTRESS/ECO_L4G_ESI_ALEXI.002) and [ECO_L4T_ESI_ALEXI](https://doi.org/10.5067/ECOSTRESS/ECO_L4T_ESI_ALEXI.002) Version 2 ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-evaporative-stress-index-dis-alexi-daily-l4-conus-70-m-v001-a486c">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Evaporative Stress Index dis-ALEXI Daily L4 CONUS 70 m V001</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-evaporative-stress-index-dis-alexi-daily-l4-conus-70-m-v001-a486c">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECO4ESIALEXI Version 1 data product was decommissioned on January 30, 2026. Users are encouraged to use the [ECO_L4G_ESI_ALEXI](https://doi.org/10.5067/ECOSTRESS/ECO_L4G_ESI_ALEXI.002) and [ECO_L4T_ESI_ALEXI](https://doi.org/10.5067/ECOSTRESS/ECO_L4T_ESI_ALEXI.002) Version 2 data product(s).
+
+The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52 degrees N and 52 degrees S latitudes.
+
+The NASA Jet Propulsion Laboratory (JPL) ECO4ESIALEXI Version 1 data product provides the Evaporative Stress Index (ESI), which is computed from clear-sky estimates of the relative daily evapotranspiration (ET) fraction: ESI = ET/ETo, where ET is ETdaily from the ECOSTRESS Level 3 product and ETo is the reference ET. A description of the major components of the ECOSTRESS algorithm implemented in Version 1 of the Atmosphere Land Exchange Inverse (ALEXI) Disaggregation algorithm (DisALEXI) ESI code is provided in the Algorithm Theoretical Basis Document (ATBD). ESI applications include indicating agricultural drought and observing vegetation stress. ECO4ESIALEXI is available for CONUS at 70-meter (m) pixel resolution.
+
+The ECO4ESIALEXI Version 1 data product contains variables of daily evaporative stress index, evaporative stress index uncertainty, and associated quality flags. A low-resolution browse is also available showing daily ESI as a stretched image with a color ramp in JPEG format.
+
+Known Issues
+
+* Data acquisition gaps: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach, only TIR bands 2, 4, and 5 are being downloaded. The data products are the same as before, but the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.
+* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.
+* Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-evaporative-stress-index-dis-alexi-daily-l4-conus-70-m-v001-a486c">https://data.nasa.gov/dataset/ecostress-evaporative-stress-index-dis-alexi-daily-l4-conus-70-m-v001-a486c</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO4ESIALEXI.001</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-15/2022-11-06</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: -65, &quot;NorthBoundingCoordinate&quot;: 52, &quot;SouthBoundingCoordinate&quot;: 23, &quot;WestBoundingCoordinate&quot;: -127}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO4ESIALEXI.001">https://doi.org/10.5067/ECOSTRESS/ECO4ESIALEXI.001</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1325/ECO4ESIALEXI_User_Guide_V1.pdf">https://lpdaac.usgs.gov/documents/1325/ECO4ESIALEXI_User_Guide_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1004/ECO4ESIALEXI_ATBD_V1.pdf">https://lpdaac.usgs.gov/documents/1004/ECO4ESIALEXI_ATBD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1573/Quick_Guide_for_Accessing_ECOSTRESS_Swath_Data_in_NASA_Earthdata_Search.pdf">https://lpdaac.usgs.gov/documents/1573/Quick_Guide_for_Accessing_ECOSTRESS_Swath_Data_in_NASA_Earthdata_Search.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/339/ECO4ESIALEXI_PSD_V1.pdf">https://lpdaac.usgs.gov/documents/339/ECO4ESIALEXI_PSD_V1.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2837150335-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-processes</span></div>
+</article>
+</main>
+</body>
+</html>

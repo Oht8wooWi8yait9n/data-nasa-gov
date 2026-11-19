@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Distributed Monitoring of the R2 Statistic for Linear Regression — NASA Open Data Portal</title>
+<meta name="description" content="The problem of monitoring a multivariate linear regression model is relevant in studying the evolving relationship between a set of input variables (features) and one or more dependent target variables. This problem becomes challenging for large scale data in a distributed comput">
+<link rel="canonical" href="https://data.nasa.gov/dataset/distributed-monitoring-of-the-r2-statistic-for-linear-regression">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Distributed Monitoring of the R2 Statistic for Linear Regression</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/distributed-monitoring-of-the-r2-statistic-for-linear-regression">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The problem of monitoring a multivariate linear regression model is relevant in studying the evolving relationship between a set of input variables (features) and one or more dependent target variables. This problem becomes challenging for large scale data in a distributed computing environment when only a subset of instances is available at individual nodes and the local data changes frequently. Data centralization and periodic model recomputation can add high overhead to tasks like anomaly detection in such dynamic settings. Therefore, the goal is to develop techniques for monitoring and updating the model over the union of all nodes&#x27; data in a communication-efficient fashion. Correctness guarantees on such techniques are also often highly desirable, especially in safety-critical application scenarios. In this paper we develop &lt;i&gt;DReMo&lt;/i&gt; --- a distributed algorithm  with very low resource overhead, for monitoring the quality of a regression model in terms of its coefficient of determination (&lt;i&gt;R2&lt;/i&gt; statistic). When the nodes collectively determine that &lt;i&gt;R2&lt;/i&gt; has dropped below a fixed threshold, the linear regression model is recomputed via a network-wide convergecast and the updated model is broadcast back to all nodes. We show empirically, using both synthetic and real data, that our proposed method is highly communication-efficient and scalable, and also provide theoretical guarantees on correctness.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/distributed-monitoring-of-the-r2-statistic-for-linear-regression">https://data.nasa.gov/dataset/distributed-monitoring-of-the-r2-statistic-for-linear-regression</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_283</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/283/">https://c3.nasa.gov/dashlink/resources/283/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-12-26</td></tr>
+<tr><th>Contact / Maintainer</th><td>Kanishka Bhaduri — kanishka.bhaduri-1@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/publication/LinearRegression.pdf">LinearRegression.pdf</a><br><small>LinearRegression.pdf</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

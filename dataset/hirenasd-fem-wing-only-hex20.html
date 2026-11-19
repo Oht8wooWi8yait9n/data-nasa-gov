@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HIRENASD FEM wing only HEX20 — NASA Open Data Portal</title>
+<meta name="description" content="The finite element model being used by the AePW is based on the model provided at [**HIRENASD website**](https://heinrich.lufmech.rwth-aachen.de/index.php?lang=en&amp;pg=home)  The NASTRAN FEM&#x27;s using HEXA solid elements and identified as &quot;structured&quot;(str) is the one that will be use">
+<link rel="canonical" href="https://data.nasa.gov/dataset/hirenasd-fem-wing-only-hex20">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>HIRENASD FEM wing only HEX20</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/hirenasd-fem-wing-only-hex20">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The finite element model being used by the AePW is based on the model provided at
+[**HIRENASD website**](https://heinrich.lufmech.rwth-aachen.de/index.php?lang=en&amp;pg=home)
+
+The NASTRAN FEM&#x27;s using HEXA solid elements and identified as &quot;structured&quot;(str) is the one that will be used.  Another exists which uses TETRA elements and is labeled &quot;unstructured&quot;(unstr).  The original FEM&#x27;s as provided on the website had different coordinate systems and are in different units.
+&lt;LI&gt; str = mm
+&lt;LI&gt; unstructured = meters
+
+The coordinate systems for each of the FEM are different also.  To facilitate use both FEM&#x27;s were modified so that the x direction is in the flow direction, y - is out the wing and z is goes from lower surface to upper surface of the wing and the models are in meters.
+
+Mode shapes and frequencies were calculated with both FEM&#x27;s and a frequency comparison is provided.  The only model NASA has used is the &quot;str&quot; model.
+
+Comparisons of the FEM as provided from HIRENASD website with as modified are &lt;a href=&quot;https://c3.ndc.nasa.gov/dashlink/static/media/dataset/HIRENASD_coordinate_system_2.pdf&quot;&gt;provided&lt;/a&gt;
+
+&lt;TABLE&gt;
+&lt;TR&gt;&lt;TD&gt;
+&lt;img src=&quot;https://c3.ndc.nasa.gov/dashlink/static/media/other/CoordinateSystem_StructuredFEM.jpg&quot;&gt;
+&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;
+&lt;img src=&quot;https://c3.ndc.nasa.gov/dashlink/static/media/other/CoordinateSystem_UnstructuredFEM.jpg&quot;&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/hirenasd-fem-wing-only-hex20">https://data.nasa.gov/dataset/hirenasd-fem-wing-only-hex20</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_274</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/274/">https://c3.nasa.gov/dashlink/resources/274/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-11-23</td></tr>
+<tr><th>Contact / Maintainer</th><td>CAROL WIESEMAN — carol.d.wieseman@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>application/x-zip</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/gridmod.bdf.zip">gridmod.bdf.zip</a><br><small>Grid Locations for Str model (HEXA)</small></td></tr><tr><td>application/x-zip</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/ms103_str_t293.bdf.zip">ms103_str_t293.bdf.zip</a><br><small>Finite element for Structured Model - Temperature 293deg R</small></td></tr><tr><td>application/nappdf</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/HIRENASD_coordinate_system_2.pdf">HIRENASD_coordinate_system.pdf</a><br><small>HIRENASD_coordinate_system.pdf</small></td></tr><tr><td>TAR</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/ms103_str_t293.pch.tar">ms103_str_t293.pch.tar</a><br><small>Mode shapes in punch file format</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

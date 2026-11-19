@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRMM (TMPA-RT) Near Real-Time IR precipitation estimate L3 1-hour 0.25 degree x 0.25 degree V7 (TRMM_3B41RT) — NASA Open Data Portal</title>
+<meta name="description" content="TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06).  These data were output from the TRMM Multi-satellite Precipitation Anal">
+<link rel="canonical" href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-ir-precipitation-estimate-l3-1-hour-0-25-degree-x-0-25-degree--54102">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TRMM (TMPA-RT) Near Real-Time IR precipitation estimate L3 1-hour 0.25 degree x 0.25 degree V7 (TRMM_3B41RT)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-ir-precipitation-estimate-l3-1-hour-0-25-degree-x-0-25-degree--54102">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06).
+
+These data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream.  The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product 3B42. This particular dataset is an intermediate variable (VAR) rainrate IR estimate.
+
+Data files start with a header consisting  of a 2880-byte record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the variable and version names, and giving the units of the variables.
+
+Immediately after the header follow 3 data fields, &quot;precip&quot;, &quot;error&quot;,&quot;# pixels&quot;,  with byte count correspondingly 1382400,1382400,691200. First two are 2-byte integers, and the third is 1-byte.  All fields are 1440x480 grid boxes (0-360E,60N-S). The first grid box center is at (0.125E,59.875N).  The grid increments most rapidly to the east.  Grid boxes without valid data are filled with the (2-byte integer) &quot;missing&quot; value -31999. Valid estimates are only provided in the band 50N-S. This binary data sets are in IEEE &quot;big-endian&quot; floating-point format.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-ir-precipitation-estimate-l3-1-hour-0-25-degree-x-0-25-degree--54102">https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-ir-precipitation-estimate-l3-1-hour-0-25-degree-x-0-25-degree--54102</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/TRMM/TMPA/3H-E-IR/7</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-02-29/2019-12-31</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 60, &quot;SouthBoundingCoordinate&quot;: -60, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (10)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_3B41RT_7.png">https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_3B41RT_7.png</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/TRMM_3B41RT_7.html">https://disc.gsfc.nasa.gov/datacollection/TRMM_3B41RT_7.html</a></td></tr><tr><td>BIN</td><td><a href="https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B41RT.7">https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B41RT.7</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/3B4XRT_doc_V7.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/3B4XRT_doc_V7.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://pmm.nasa.gov/TRMM">https://pmm.nasa.gov/TRMM</a></td></tr><tr><td>HTML</td><td><a href="https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/anomalous.html">https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/anomalous.html</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/TMPA-to-IMERG_transition.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/TMPA-to-IMERG_transition.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1282032567-GES_DISC">https://search.earthdata.nasa.gov/search/granules?p=C1282032567-GES_DISC</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/TRMM/TRMM_file_naming.pdf">https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/TRMM/TRMM_file_naming.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1282032567-GES_DISC.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-precipitation-atmosphere-total-surface-precipitation-rate</span></div>
+</article>
+</main>
+</body>
+</html>

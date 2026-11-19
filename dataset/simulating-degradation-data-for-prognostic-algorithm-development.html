@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulating Degradation Data for Prognostic Algorithm Development — NASA Open Data Portal</title>
+<meta name="description" content="**PHM08 Challenge Dataset is now publicly available at the NASA Prognostics Respository + [Download](http://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/)**  **INTRODUCTION - WHY SIMULATE DEGRADATION DATA?**  Of various challenges encountered in prognostics algorithm">
+<link rel="canonical" href="https://data.nasa.gov/dataset/simulating-degradation-data-for-prognostic-algorithm-development">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Simulating Degradation Data for Prognostic Algorithm Development</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/simulating-degradation-data-for-prognostic-algorithm-development">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">**PHM08 Challenge Dataset is now publicly available at the NASA Prognostics Respository + [Download](http://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/)**
+
+**INTRODUCTION - WHY SIMULATE DEGRADATION DATA?**
+
+Of various challenges encountered in prognostics algorithm development, the non-availability of suitable validation data is most often the bottleneck in the technology certification process. Prognostics imposes several requirements on the training data in addition to what is commonly available from various applications. It not only requires data containing fault signatures but also that contains fault evolution trends with corresponding time indexes (in number of hours or number of operational cycles).
+
+In general there are three sources from which data is usually available, namely: Fielded applications, experimental test-beds, and computer simulations (see [Figure 1](https://c3.ndc.nasa.gov/dashlink/static/media/other/3_modes.bmp)).  From prognostics point of view, data collection paradoxically suffers from the situation that the systems that do run to failure often did not have warning instrumentation installed, hence no or little record of what went wrong. In the other situation, those that are continuously monitored are prevented from running to failure or are subject to maintenance that eliminates the signatures of fault evolution. Conducting experiments that replicate real world situations is extremely expensive in terms of time required for a healthy system to run to failure and is often dangerous. Accelerated ageing may be useful to some extent but may not emulate normal wear patterns.  Furthermore, to manage uncertainty multiple datasets must be collected to quantify variations resulting from multiple sources, which makes it all the way more unattainable. Simulations can be fast, inexpensive, and provide a number of options to design experiments, but their usefulness is contingent on the availability of high fidelity models that represent the real systems fairly well. However, once such a model is available, simulations offer the flexibility to rerun various experiments with added knowledge from the system as it becomes available. Where, availability of real fault evolution data from the fielded systems would be more desirable, generating data using a high fidelity model and integrating it with the knowledge gathered from the partial data obtained from the real systems is by far the most practical approach for prognostics algorithm development, validation, and verification.
+
+In this  presentation we discuss some key elements that must be kept in mind while generating datasets suitable for prognostics. Furthermore, with the help of an example it has been shown how a dynamical system model can be supported with suitable degradation models available from respective domain knowledge to create suitable data.  The example is discussed next.
+
+**APPLICATION DOMAIN**
+
+Tracking and Predicting the progressionof damage in aircraft turbo machinery has been an active area of study within the Condition Based Maintenance (CBM) community. A general approach has been to correlate flow and effciency losses to degradation signtures in various components of the engine. Once such mapping is available, the next task is to estimate this loss of flow and eficiency inferring information from measurable sensor outputs, which ultimtely is used to assess the level of degradation in the system.
+
+**SYSTEM MODEL: C-MAPSS**
+
+The C-MAPSS (Commercial Modular Aero Propulsion System Simulation) is a tool, recently released, for simulating a realistic large commercial turbofan engine. C-MAPSS (Commercial Modular Aero-Propulsion System Simulation) that simulates a realistic large (~90,000lb) commercial turbofan engine. It allows the user to choose and design operational profiles, controllers, environmental conditions, thrust levels, etc. to simualte a scenario of interest. An extensive list of output va</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/simulating-degradation-data-for-prognostic-algorithm-development">https://data.nasa.gov/dataset/simulating-degradation-data-for-prognostic-algorithm-development</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_14</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/14/">https://c3.nasa.gov/dashlink/resources/14/</a></td></tr>
+<tr><th>Modified</th><td>2022-07-14</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>Abhinav Saxena — abhinav.saxena@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>image/bmp</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/3_modes.bmp">3_modes.bmp</a><br><small>Figure 1</small></td></tr><tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Flow__Efficiency_2-D_Maps.gif">Flow__Efficiency_2-D_Maps.gif</a><br><small>Figure 2</small></td></tr><tr><td>image/bmp</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Engine_Schematic.bmp">Engine_Schematic.bmp</a><br><small>Figure 3</small></td></tr><tr><td>image/bmp</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Operative_Margins_3.bmp">Operative_Margins_3.bmp</a><br><small>Figure 4</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

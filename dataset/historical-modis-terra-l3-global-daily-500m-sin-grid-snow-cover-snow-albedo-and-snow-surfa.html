@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Historical MODIS/Terra L3 Global Daily 500m SIN Grid Snow Cover, Snow Albedo, and Snow Surface Properties, Version 1 — NASA Open Data Portal</title>
+<meta name="description" content="This data set contains the following parameters: snow fraction (on the ground), viewable snow fraction, snow cover duration, snow grain size, dust concentration, snow albedo (on horizontal surface), snow albedo (on sloped surface), and radiative forcing. All variables are spatial">
+<link rel="canonical" href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-surfa">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Historical MODIS/Terra L3 Global Daily 500m SIN Grid Snow Cover, Snow Albedo, and Snow Surface Properties, Version 1</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-surfa">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This data set contains the following parameters: snow fraction (on the ground), viewable snow fraction, snow cover duration, snow grain size, dust concentration, snow albedo (on horizontal surface), snow albedo (on sloped surface), and radiative forcing. All variables are spatially and temporally complete after interpolation. Days without observation is also included so that users can determine how many days since a satellite observation occurred.&lt;br/&gt;
+The data set is derived from a version of the spectral mixture analysis (SMA) approach called the Snow Property Inversion from Remote Sensing (SPIReS, &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0034425725001464?via%3Dihub#bb0040&quot;&gt;Bair et al, 2021&lt;/a&gt;). This dataset uses surface reflectance inputs from &lt;a href=&quot;https://lpdaac.usgs.gov/products/mod09gav061/&quot;&gt;MOD09GA v6.1&lt;/a&gt; and includes additional outputs not included in the original version of SPIReS: snow albedo and snow radiative forcing. &lt;br/&gt;
+The SPIReS SMA model considers three spectral endmembers: snow, shade, and a snow-free background reflectance, which is identified for each MODIS pixel as the average MOD09GA reflectance measured typically between 1 August and 30 September for a given year in the northern hemisphere. dust concentration is solved for simultaneously with fractional snow cover and snow grain size during the spectral unmixing process. SPIReS snow albedo are derived using a lookup table that incorporates snow grain size, dust concentration, and surface illumination (&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0034425725001464?via%3Dihub#bb0025&quot;&gt;Bair et al., 2019&lt;/a&gt;). After the fSCA, grain size, and dust concentration are determined, these properties are filled, smoothed, and adjusted for canopy gap size, shade, and permanent ice. SPIReS radiative forcing are derived using a lookup table that incorporates LAP concentration and clear sky incoming solar irradiance. Data are available from 01 March 2000 to 30 September 2025. These data are provided in the netCDF-4 format with a Sinusoidal projection and are currently available for the western United States (MODIS tiles h08v04, h08v05, h09v04, h09v05, h10v04). Additional tiles will be added over time. For data after 30 September 2025, please see the near real-time dataset (&lt;a href=&quot;https://doi.org/10.7265/hs6b-zg21&quot;&gt;Rittger et al., 2025&lt;/a&gt;) created by &lt;a href=&quot;https://nsidc.org/snow-today&quot;&gt;Snow Today&lt;/a&gt; at NSIDC.&lt;br/&gt;&lt;br/&gt;
+
+Data can be accessed via ftp://dtn.rc.colorado.edu/shares/snow-today/gridded_data/SPIRES_HIST_V01.  &lt;br/&gt;&lt;br/&gt;
+For instructions on how to access this FTP location, see the Snow Today section of the &lt;a href=&quot;https://nsidc.org/data/user-resources/help-center/how-access-nsidc-data-using-ftp-client-command-line-wget-or-python&quot;&gt;FTP How To&lt;/a&gt; on NSIDC&#x27;s web site.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>CU/INSTAAR;NSIDC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-surfa">https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-surfa</a></td></tr>
+<tr><th>Identifier</th><td>10.7265/a3vr-c014</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-03-01/2025-09-30</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://nsidc.org/forms/SPIRES_HIST_or.html?major_version=1">https://nsidc.org/forms/SPIRES_HIST_or.html?major_version=1</a></td></tr><tr><td>BIN</td><td><a href="https://nsidc.org/snow-today/snow-viewer">https://nsidc.org/snow-today/snow-viewer</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.7265/a3vr-c014">https://doi.org/10.7265/a3vr-c014</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3537315719-NSIDCV0.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-glaciers-ice-sheets-cryosphere-firn</span><span class="tag">earth-science-snow-ice-cryosphere-dust-concentration</span><span class="tag">earth-science-snow-ice-cryosphere-snow-duration</span><span class="tag">earth-science-snow-ice-cryosphere-snow-fraction</span><span class="tag">earth-science-snow-ice-cryosphere-snow-radiative-forcing</span><span class="tag">earth-science-snow-ice-cryosphere-visible-snow-darkening</span><span class="tag">earth-science-snow-ice-terrestrial-hydrosphere-albedo</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISIS 2 CRC Electron Density Profiles — NASA Open Data Portal</title>
+<meta name="description" content="This data set, provided by the Communications Research Centre (CRC) in Ottawa, Canada, consists of electron density profiles for the ionosphere above the F2 maximum (topside ionosphere). The data are computed from digital values of frequency and virtual height, scaled from ionogr">
+<link rel="canonical" href="https://data.nasa.gov/dataset/isis-2-crc-electron-density-profiles-278fe">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ISIS 2 CRC Electron Density Profiles</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/isis-2-crc-electron-density-profiles-278fe">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This data set, provided by the Communications Research Centre (CRC) in Ottawa, Canada, consists of electron density profiles for the ionosphere above the F2 maximum (topside ionosphere). The data are computed from digital values of frequency and virtual height, scaled from ionograms that are measured by the ISIS 2 (International Satellites for Ionospheric Studies) Swept-Frequency Sounder. The data are ordered chronologically. Telemetry stations are not identified, but satellite location, Greenwich mean time of observation, solar zenith angle at the satellite, dip latitude at the satellite, total electron content down to the lowest height of topside signal reflection (normally near 300 km), and other relevant information is noted with each profile. The format gives sequences of numbers for each point scaled from the ionogram. These sequences include electron density at the successive points, and the coefficients a2, b3, b4, b5, etc. from which geometric heights can be calculated, using formulas 40 and 41 in J. E. Jackson, &quot;The reduction of topside ionograms to electron-density profiles,&quot; Proceedings of the IEEE., p. 960, June 1969. These formulas can also be used to calculate interpolated density-height values. A CRC interpolation program (available at NSSDC) can be used with this data set.
+
+     Format Description (ASCII):
+
++------------------------------------------------+
+| M |              I5 |     number of records |
++------------------------------------------------+
+
+each record consists of a header and then the electron density profile data
+
+HEADER:
+
++------------------------------------------------+
+|itype  |         I1 |     spacecraft identifier |
+|iquality |        I2 |     quality index* |
+|date |           I6 |     yddd            year and day of year |
+|time  |           I6 |     hhmmss  hour minutes and seconds |
+|long |           F6.1 |   longitude in degrees |
+|lat |             F6.2 |   latitude in degrees |
+|dip |            F6.2 |   magnetic inclination (IGRF) |
+|L  |             F5.2 |   L value |
+|xhi |            F6.1 |   solar zenith angle at 100 km |
+|Rz12 |           I3 |      12-month-running mean of sunspot number |
+|IG12 |           I3 |     12-month-running mean of IG index |
+|rtec |            F6.2 |    TEC found in data set (units?) |
+|ln(NmF2) |       F7.4 |   IRI value for F2 peak in cm-3 |
+|hmF2  |          F5.1 |    IRI value for F2 peak height in km |
+|TEC_IRI | 	    F6.2 |   IRI value for TEC in TECU |
+|n |              I3 |      number of data points |
++------------------------------------------------+
+
+ (*) Quality index ranges from 0 (best) to 10 (worst), actually 4 to 10 for these
+   data sets, with a most likely value of 6.
+
+PROFILE DATA:
+
++---------------------------------------+
+|n height values: |        14I5 |     h/km*10 |
+|n density values: |       10I7 |     ln(Ne/cm-3)*100000 |
++---------------------------------------+
+
+starting with the highest value (satellite height).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/isis-2-crc-electron-density-profiles-278fe">https://data.nasa.gov/dataset/isis-2-crc-electron-density-profiles-278fe</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/g9ry-hq05">https://doi.org/10.48322/g9ry-hq05</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (10)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/">ftps://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/crc_ne_profile_cdf/isis2/">https://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/crc_ne_profile_cdf/isis2/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/crc_ne_profile_ascii/isis2_ne.asc">https://spdf.gsfc.nasa.gov/pub/data/isis/topside_sounder/crc_ne_profile_ascii/isis2_ne.asc</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=I2_NEPROF_TOPS&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=I2_NEPROF_TOPS&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/hapi">https://cdaweb.gsfc.nasa.gov/hapi</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=I2_NEPROF_TOPS">https://api.heliocloud.org/cloudcatalog?id=I2_NEPROF_TOPS</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.1109/PROC.1969.7140">https://doi.org/10.1109/PROC.1969.7140</a></td></tr><tr><td>HTML</td><td><a href="https://nssdc.gsfc.nasa.gov/space/isis/isis-status.html">https://nssdc.gsfc.nasa.gov/space/isis/isis-status.html</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/ISIS2_SFS_TOPS">https://helio.data.nasa.gov/dataset/ISIS2_SFS_TOPS</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/ISIS2/SFS/TOPS">https://hpde.io/NASA/NumericalData/ISIS2/SFS/TOPS</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ionogram</span><span class="tag">ionosphere</span><span class="tag">profile</span><span class="tag">sounder</span><span class="tag">topside</span></div>
+</article>
+</main>
+</body>
+</html>

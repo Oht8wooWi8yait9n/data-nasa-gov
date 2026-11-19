@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODIS/Terra Land Surface Temperature/3-Band Emissivity Daily L3 Global 1km SIN Grid Day V061 — NASA Open Data Portal</title>
+<meta name="description" content="A suite of Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature and Emissivity (LST&amp;E) products are available in Collection 6.1. The MOD21 Land Surface Temperature (LST) algorithm differs from the algorithm of the [MOD11](https://doi.org/10.5067/modis/mo">
+<link rel="canonical" href="https://data.nasa.gov/dataset/modis-terra-land-surface-temperature-3-band-emissivity-daily-l3-global-1km-sin-grid-day-v0-5ea76">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MODIS/Terra Land Surface Temperature/3-Band Emissivity Daily L3 Global 1km SIN Grid Day V061</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/modis-terra-land-surface-temperature-3-band-emissivity-daily-l3-global-1km-sin-grid-day-v0-5ea76">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">A suite of Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature and Emissivity (LST&amp;E) products are available in Collection 6.1. The MOD21 Land Surface Temperature (LST) algorithm differs from the algorithm of the [MOD11](https://doi.org/10.5067/modis/mod11_l2.061) LST products, in that the MOD21 algorithm is based on the ASTER Temperature/Emissivity Separation (TES) technique, whereas the MOD11 uses the split-window technique. The MOD21 TES algorithm uses a physics-based algorithm to dynamically retrieve both the LST and spectral emissivity simultaneously from the MODIS thermal infrared bands 29, 31, and 32. The TES algorithm is combined with an improved Water Vapor Scaling (WVS) atmospheric correction scheme to stabilize the retrieval during very warm and humid conditions.
+
+The MOD21A1D dataset is produced daily from daytime Level 2 Gridded (L2G) intermediate LST products at a spatial resolution of 1,000 meters. The L2G process maps the daily [MOD21](http://doi.org/10.5067/MODIS/MOD21.061) swath granules onto a sinusoidal MODIS grid and stores all observations falling over a gridded cell for a given day. The MOD21A1 algorithm sorts through these observations for each cell and estimates the final LST value as an average from all observations that are cloud free and have good LST&amp;E accuracies. The daytime average is weighted by the observation coverage for that cell. Only observations having an observation coverage greater than a 15% threshold are considered. The MOD21A1D product contains seven Science Datasets (SDS), which include the calculated LST as well as quality control, the three emissivity bands, view zenith angle, and time of observation. Additional details regarding the methodology used to create this Level 3 (L3) product are available in the Algorithm Theoretical Basis Document (ATBD).
+
+Known Issues
+* Users of MODIS LST products may notice an increase in occurrences of [extreme high temperature outliers](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=117) in the unfiltered MxD21 Version 6 and 6.1 products compared to the heritage MxD11 LST products. This can occur especially over desert regions like the Sahara where undetected cloud and dust can negatively impact both the MxD21 and MxD11 retrieval algorithms.
+* In the MxD11 LST products, these contaminated pixels are flagged in the algorithm and set to fill values in the output products based on differences in the band 32 and band 31 radiances used in the generalized split window algorithm. In the MxD21 LST products, values for the contaminated pixels are retained in the output products (and may result in overestimated temperatures), and users need to apply Quality Control (QC) filtering and other error analyses for filtering out bad values. High temperature outlier thresholds are not employed in MxD21 since it would potentially remove naturally occurring hot surface targets such as fires and lava flows.
+* High atmospheric aerosol optical depth (AOD) caused by vast dust outbreaks in the Sahara and other deserts highlighted in the example documentation are the primary reason for high outlier surface temperature values (and corresponding low emissivity values) in the MxD21 LST products. Future versions of the MxD21 product will include a dust flag from the MODIS aerosol product and/or brightness temperature look up tables to filter out contaminated dust pixels. It should be noted that in the MxD11B day/night algorithm products, more advanced cloud filtering is employed in the multi-day products based on a temporal analysis of historical LST over cloudy areas. This may result in more stringent filtering of dust contaminated pixels in these products.
+* In order to mitigate the impact of dust in the MxD21 V6 and 6.1 products, the science team recommends using a combination of the existing QC bits, emissivity values, and estimated product errors, to confidently remove bad pixels from analysis. For more details, refer to this dust and cloud contamination [example documentation](https://landweb.modaps.eosdis.nasa.gov/data/userguide/MOD21_dust_QC_examples.pdf).
+* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&amp;sat=Terra&amp;as=61).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/GSFC/SED/ESD/TISL/MODAPS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/modis-terra-land-surface-temperature-3-band-emissivity-daily-l3-global-1km-sin-grid-day-v0-5ea76">https://data.nasa.gov/dataset/modis-terra-land-surface-temperature-3-band-emissivity-daily-l3-global-1km-sin-grid-day-v0-5ea76</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/MODIS/MOD21A1D.061</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-02-24/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (13)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2545303088-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2545303088-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/MODIS/MOD21A1D.061">https://doi.org/10.5067/MODIS/MOD21A1D.061</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf">https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf">https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD21A1D_c61">https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD21A1D_c61</a></td></tr><tr><td>HTML</td><td><a href="https://modis-land.gsfc.nasa.gov/MODLAND_val.html">https://modis-land.gsfc.nasa.gov/MODLAND_val.html</a></td></tr><tr><td>BIN</td><td><a href="https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD21">https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD21</a></td></tr><tr><td>JPEG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MOD21A1D.061/MOD21A1D.A2024196.h21v05.061.2024198053110/BROWSE.MOD21A1D.A2024196.h21v05.061.2024198013110.1.jpg">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MOD21A1D.061/MOD21A1D.A2024196.h21v05.061.2024198053110/BROWSE.MOD21A1D.A2024196.h21v05.061.2024198013110.1.jpg</a></td></tr><tr><td>JPEG</td><td><a href="https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Terra_L3_Land_Surface_Temp_Daily_Day_TES.jpg">https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Terra_L3_Land_Surface_Temp_Daily_Day_TES.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://landweb.modaps.eosdis.nasa.gov/">https://landweb.modaps.eosdis.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2545303088-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-emissivity</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

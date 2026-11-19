@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XMM-Newton Survey Catalog in the Herschel-ATLAS Field — NASA Open Data Portal</title>
+<meta name="description" content="Wide area X-ray and far-infrared surveys are a fundamental tool to investigate the link between AGN growth and star formation, especially in the low-redshift universe (z &amp;lt; 1). The Herschel-Astrophysical Terahertz Large Area Survey (H-ATLAS) has covered 550 deg&amp;lt;sup&amp;gt;2&amp;lt;/">
+<link rel="canonical" href="https://data.nasa.gov/dataset/xmm-newton-survey-catalog-in-the-herschel-atlas-field">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>XMM-Newton Survey Catalog in the Herschel-ATLAS Field</h1>
+<div class="meta-badges"><span class="badge">Astrophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/xmm-newton-survey-catalog-in-the-herschel-atlas-field">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Wide area X-ray and far-infrared surveys are a fundamental tool to investigate the link between AGN growth and star formation, especially in the low-redshift universe (z &amp;lt; 1). The Herschel-Astrophysical Terahertz Large Area Survey (H-ATLAS) has covered 550 deg&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt; in five far-infrared and sub-mm bands, 16 deg&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt; of which have been presented in the Science Demonstration Phase (SDP) catalogue. The reference paper cited below introduces the XMM-Newton observations in the H-ATLAS SDP area, covering 7.1 deg&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt; with flux limits of 2 x 10&amp;lt;sup&amp;gt;-15&amp;lt;/sup&amp;gt;, 6 x 10&amp;lt;sup&amp;gt;-15&amp;lt;/sup&amp;gt;, and 9 x 10&amp;lt;sup&amp;gt;-15&amp;lt;/sup&amp;gt; erg/s/cm&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt; in the 0.5-2, 0.5-8 and 2-8keV bands, respectively. The paper presents the source detection techniques and the &amp;quot;main&amp;quot; catalog, which includes 1700, 1582 and 814 sources detected by EMLDetect in the 0.5-8, 0.5-2 and 2-8keV bands, respectively; the number of unique sources is 1816. The authors extract spectra and derive fluxes from power-law fits for 398 sources with more than 40 counts in the 0.5-8 keV band. They compare the best-fit fluxes with those in the catalog, which were obtained assuming a common photon index Gamma of 1.7; the authors find no bulk difference between the fluxes, and a moderate dispersion s of 0.33 dex. Using wherever possible the fluxes from the spectral fits, the authors derive the 2-10 keV Log N-Log S distribution, which is consistent with a Euclidean distribution. Finally, they release the computer code for the tools which they developed for this project. Sources were detected with a two-stage process. With the first pass at low significance, the authors got a list of candidate detections; and on the second pass they raised the significance threshold and derived accurate source parameters. Between the two passes, and because the second pass needs an input catalog, they identified the sources detected in more than one band. In the first pass, the SAS wavelet detection program ewavelet was run separately on each of the 0.5-2, 2-8 and 0.5-8 keV images of the entire mosaic, with a significance threshold of 4 sigma and the default wavelet scales (minimum 2 pixels, maximum 8 pixels, with a pixel size of 4). All parameters in this catalog which were derived from ewavelet have been given a prefix of &amp;#39;wav&amp;#39; in this HEASARC representation so as to distinguish them from the parameters derived using EMLDetect. In the second pass, the authors used the SAS EMLDetect program to validate the detections, refine the coordinates and obtain maximum-likelihood estimates of the source counts, count rates and fluxes. The EMLDetect minimum likelihood was set at L = 4.6, as in Ranalli et al. (2013, A&amp;amp;A, 555, A42), which corresponds to a false-detection probability of 1.01 x 10&amp;lt;sup&amp;gt;-2&amp;lt;/sup&amp;gt;. Together with the 4-sigma threshold for ewavelet, for the final catalog this yields a joint significance between 4 sigma and 5 sigma, but which cannot be further constrained without simulations. This table contains the X-ray sources which were detected in the 7.1 deg&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt; XMM-Newton observations of the H-ATLAS field. The 1816 sources which were detected by both programs were presented in the main table in the reference paper (and are included in this HEASARC table where they are indicated by a value of the source_sample parameter of &amp;#39;main&amp;#39;), while the 234 sources which were only detected by ewavelet were presented in the supplementary table in the reference paper (and are included in this HEASARC table where they are indicated by a value of the source_sample parameter of &amp;#39;supp&amp;#39;). The same parameters were present in both the main and supplementary tables in the reference paper, but those parameters which came from EMLDetect are empty for the sources in the supplementary table. The parameters obtained using ewavelet (those parameters with the &amp;#39;wav&amp;#39; prefix in their names) containing the source properties (counts, count rates, fluxes, exposure times, background, wavelet detection scale and source extent), while reported in this table for all sources, are actually only interesting for supplementary sources, according to the authors. This table was created by the HEASARC in May 2015 based on the union of &amp;lt;a href=&quot;https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/577/A121&quot;&amp;gt;CDS Catalog J/A+A/577/A121&amp;lt;/a&amp;gt; files main.dat (which contain 1816 sources detected by both detection algorithms) and suppl.dat (which contains 234 &amp;#39;supplementary&amp;#39; sources detected only by the wavelet detection algorithm ewavelet). It thus contains a total of 2050 sources. This is a service provided by NASA HEASARC .</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>High Energy Astrophysics Science Archive Research Center</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/xmm-newton-survey-catalog-in-the-herschel-atlas-field">https://data.nasa.gov/dataset/xmm-newton-survey-catalog-in-the-herschel-atlas-field</a></td></tr>
+<tr><th>Identifier</th><td>ivo://nasa.heasarc/xmmatlas</td></tr>
+<tr><th>Themes</th><td>Astrophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>HEASARC Help Desk — andrew.ptak@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (2)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmatlas.html">https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmatlas.html</a></td></tr><tr><td>BIN</td><td><a href="https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=xmmatlas&amp;">https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=xmmatlas&amp;</a></td></tr>
+</tbody></table>
+</article>
+</main>
+</body>
+</html>

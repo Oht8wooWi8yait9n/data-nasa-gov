@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODIS/Aqua Land Surface Temperature/3-Band Emissivity 8-Day L3 Global 1km SIN Grid V061 — NASA Open Data Portal</title>
+<meta name="description" content="A suite of Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature and Emissivity (LST&amp;E) products are available in Collection 6.1. The MYD21 Land Surface Temperature (LST) algorithm differs from the algorithm of the [MYD11](https://doi.org/10.5067/modis/my">
+<link rel="canonical" href="https://data.nasa.gov/dataset/modis-aqua-land-surface-temperature-3-band-emissivity-8-day-l3-global-1km-sin-grid-v061-d9e04">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MODIS/Aqua Land Surface Temperature/3-Band Emissivity 8-Day L3 Global 1km SIN Grid V061</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/modis-aqua-land-surface-temperature-3-band-emissivity-8-day-l3-global-1km-sin-grid-v061-d9e04">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">A suite of Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature and Emissivity (LST&amp;E) products are available in Collection 6.1. The MYD21 Land Surface Temperature (LST) algorithm differs from the algorithm of the [MYD11](https://doi.org/10.5067/modis/myd11_l2.061) LST products, in that the MYD21 algorithm is based on the ASTER Temperature/Emissivity Separation (TES) technique, whereas the MYD11 uses the split-window technique. The MYD21 TES algorithm uses a physics-based algorithm to dynamically retrieve both the LST and spectral emissivity simultaneously from the MODIS thermal infrared bands 29, 31, and 32. The TES algorithm is combined with an improved Water Vapor Scaling (WVS) atmospheric correction scheme to stabilize the retrieval during very warm and humid conditions.
+
+The MYD21A2 dataset is an 8-day composite LST product that uses an algorithm based on a simple averaging method. The algorithm calculates the average from all the cloud free [MYD21A1D](http://doi.org/10.5067/MODIS/MYD21A1D.061) and [MYD21A1N](http://doi.org/10.5067/MODIS/MYD21A1N.061) daily acquisitions from the 8-day period. Unlike the MOD21A1 data sets where the daytime and nighttime acquisitions are separate products, the MYD21A2 contains both daytime and nighttime acquisitions as separate Science Dataset (SDS) layers within a single Hierarchical Data Format (HDF) file. The LST, Quality Control (QC), view zenith angle, and viewing time have separate day and night SDS layers, while the values for the MODIS emissivity bands 29, 31, and 32 are the average of both the nighttime and daytime acquisitions. Additional details regarding the method used to create this Level 3 (L3) product are available in the Algorithm Theoretical Basis Document (ATBD).
+
+Known Issues
+* Users of MODIS LST products may notice an increase in occurrences of [extreme high temperature outliers](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=117) in the unfiltered MxD21 Version 6 and 6.1 products compared to the heritage MxD11 LST products. This can occur especially over desert regions like the Sahara where undetected cloud and dust can negatively impact both the MxD21 and MxD11 retrieval algorithms.
+* In the MxD11 LST products, these contaminated pixels are flagged in the algorithm and set to fill values in the output products based on differences in the band 32 and band 31 radiances used in the generalized split window algorithm. In the MxD21 LST products, values for the contaminated pixels are retained in the output products (and may result in overestimated temperatures), and users need to apply Quality Control (QC) filtering and other error analyses for filtering out bad values. High temperature outlier thresholds are not employed in MxD21 since it would potentially remove naturally occurring hot surface targets such as fires and lava flows.
+* High atmospheric aerosol optical depth (AOD) caused by vast dust outbreaks in the Sahara and other deserts highlighted in the example documentation are the primary reason for high outlier surface temperature values (and corresponding low emissivity values) in the MxD21 LST products. Future versions of the MxD21 product will include a dust flag from the MODIS aerosol product and/or brightness temperature look up tables to filter out contaminated dust pixels. It should be noted that in the MxD11B day/night algorithm products, more advanced cloud filtering is employed in the multi-day products based on a temporal analysis of historical LST over cloudy areas. This may result in more stringent filtering of dust contaminated pixels in these products.
+* In order to mitigate the impact of dust in the MxD21 V6 and 6.1 products, the science team recommends using a combination of the existing QC bits, emissivity values, and estimated product errors, to confidently remove bad pixels from analysis. For more details, refer to this dust and cloud contamination [example documentation](https://landweb.modaps.eosdis.nasa.gov/data/userguide/MOD21_dust_QC_examples.pdf).
+* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&amp;sat=Aqua&amp;as=61).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/GSFC/SED/ESD/TISL/MODAPS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/modis-aqua-land-surface-temperature-3-band-emissivity-8-day-l3-global-1km-sin-grid-v061-d9e04">https://data.nasa.gov/dataset/modis-aqua-land-surface-temperature-3-band-emissivity-8-day-l3-global-1km-sin-grid-v061-d9e04</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/MODIS/MYD21A2.061</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2002-07-04/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2565805799-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2565805799-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/MODIS/MYD21A2.061">https://doi.org/10.5067/MODIS/MYD21A2.061</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf">https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf">https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD21A2">https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MOD21A2</a></td></tr><tr><td>HTML</td><td><a href="https://modis-land.gsfc.nasa.gov/MODLAND_val.html">https://modis-land.gsfc.nasa.gov/MODLAND_val.html</a></td></tr><tr><td>BIN</td><td><a href="https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD21">https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD21</a></td></tr><tr><td>JPEG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MYD21A2.061/MYD21A2.A2024185.h10v09.061.2024195055455/BROWSE.MYD21A2.A2024185.h10v09.061.2024195015455.1.jpg">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MYD21A2.061/MYD21A2.A2024185.h10v09.061.2024195055455/BROWSE.MYD21A2.A2024185.h10v09.061.2024195015455.1.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://landweb.modaps.eosdis.nasa.gov">https://landweb.modaps.eosdis.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://lpdaac.usgs.gov/tools/ldope/">https://lpdaac.usgs.gov/tools/ldope/</a></td></tr><tr><td>BIN</td><td><a href="https://lpdaac.usgs.gov/resources/e-learning/decoding-modis-version-6-quality-science-datasets-using-modis-python-toolbox-arcgis/">https://lpdaac.usgs.gov/resources/e-learning/decoding-modis-version-6-quality-science-datasets-using-modis-python-toolbox-arcgis/</a></td></tr><tr><td>JPEG</td><td><a href="https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Aqua_L3_Land_Surface_Temp_8Day_Day_TES.jpg">https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Aqua_L3_Land_Surface_Temp_8Day_Day_TES.jpg</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2565805799-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-emissivity</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

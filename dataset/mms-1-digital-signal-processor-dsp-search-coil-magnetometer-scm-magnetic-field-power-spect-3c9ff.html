@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MMS 1 Digital Signal Processor (DSP) Search Coil Magnetometer (SCM), Magnetic Field Power Spectral Density, Level 2 (L2), Slow Mode, 16 s Data — NASA Open Data Portal</title>
+<meta name="description" content="The MMS magnetic field power spectral density (BPSD) is computed onboard by the Digital Signal Processor (DSP). The fast Fourier transform (FFT) calculation is performed on a digitized version of analog signals from the Search Coil Magnetometer (SCM) in the SCM123 coordinate syst">
+<link rel="canonical" href="https://data.nasa.gov/dataset/mms-1-digital-signal-processor-dsp-search-coil-magnetometer-scm-magnetic-field-power-spect-3c9ff">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MMS 1 Digital Signal Processor (DSP) Search Coil Magnetometer (SCM), Magnetic Field Power Spectral Density, Level 2 (L2), Slow Mode, 16 s Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/mms-1-digital-signal-processor-dsp-search-coil-magnetometer-scm-magnetic-field-power-spect-3c9ff">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The MMS magnetic field power spectral density (BPSD) is computed onboard by the Digital Signal Processor (DSP). The fast Fourier transform (FFT) calculation is performed on a digitized version of analog signals from the Search Coil Magnetometer (SCM) in the SCM123 coordinate system (scm1 = - x sensor; scm2 = -z sensor; scm3 = -y sensor). This data product is computed in space from individual components that are not synchronized to the 1 second pulse. Therefore, the timing between channels can be inaccurate by a fraction of a second. The samples times are interval start times taken from the x component. The spectra are calculated via a 1024-point FFT algorithm on piecewise continuous sets of waveform data. Nine signals can be processed simultaneously. Six of the twelve DC-coupled E, DC-coupled V, or SCM signals (16384 samples/s) are selected for spectral processing at 100% duty cycle. In addition, the three AC-coupled signals (262,144 kS/s) each can be processed at 6.25% duty cycle. Each of the nine signals has 16, 1024-point FFT operations every second; the field-programmable gate array (FPGA) performs 144 FFTs per second. The FFT is performed by an arithmetic logic unit (ALU), which is controlled by a state machine. Both are hard-coded into the FPGA. The operation starts by applying a 1024-point Hanning window onto a waveform. Next, an FFT is implemented. The FFT is broken into a series of &quot;butterfly&quot; operations performed by the ALU. The result has real and imaginary data. Power spectra are calculated by taking the sum of squares of real and imaginary values (the ALU includes a multiplier), which produces a power spectrum with 512 frequency bins. The frequency bins are then combined to give pseudo-logarithmic frequency spacing (del f)/f. The spectra are reduced to 88 frequency bins with (del f)/f between 6% and 12% when possible. Narrow-band emissions can be fit to an accuracy of (del f)/f ~3%, allowing for an accurate determination of plasma density. The spectra can be averaged in time. The fastest reporting rate of any signal is 16 spectra per second. Reporting rates can be as slow a one spectra every 16 s (averaging 256 spectra). The averaging process has 48-bit accuracy to maximize the dynamic range. The amplitudes undergo a pseudo-logarithmic compression to an 8-bit number representing over 120 dB of dynamic range at ~5% precision.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>MMS_SDC, CDAWeb, SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/mms-1-digital-signal-processor-dsp-search-coil-magnetometer-scm-magnetic-field-power-spect-3c9ff">https://data.nasa.gov/dataset/mms-1-digital-signal-processor-dsp-search-coil-magnetometer-scm-magnetic-field-power-spect-3c9ff</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/1cbf-hb73">https://doi.org/10.48322/1cbf-hb73</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (10)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://lasp.colorado.edu/mms/sdc/public/data/mms1/dsp/slow/l2/bpsd/">ftps://lasp.colorado.edu/mms/sdc/public/data/mms1/dsp/slow/l2/bpsd/</a></td></tr><tr><td>BIN</td><td><a href="https://lasp.colorado.edu/mms/sdc/public/data/mms1/dsp/slow/l2/bpsd/">https://lasp.colorado.edu/mms/sdc/public/data/mms1/dsp/slow/l2/bpsd/</a></td></tr><tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/mms/mms1/dsp/slow/l2/bpsd/">ftps://spdf.gsfc.nasa.gov/pub/data/mms/mms1/dsp/slow/l2/bpsd/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/mms/mms1/dsp/slow/l2/bpsd/">https://spdf.gsfc.nasa.gov/pub/data/mms/mms1/dsp/slow/l2/bpsd/</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MMS1_DSP_SLOW_L2_BPSD&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=MMS1_DSP_SLOW_L2_BPSD&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/hapi">https://cdaweb.gsfc.nasa.gov/hapi</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=MMS1_DSP_SLOW_L2_BPSD">https://api.heliocloud.org/cloudcatalog?id=MMS1_DSP_SLOW_L2_BPSD</a></td></tr><tr><td>BIN</td><td><a href="https://mms.gsfc.nasa.gov/">https://mms.gsfc.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/MMS_1_FIELDS_DSP_Slow_Level2_MagneticFieldPowerSpectralDensity_PT16S">https://helio.data.nasa.gov/dataset/MMS_1_FIELDS_DSP_Slow_Level2_MagneticFieldPowerSpectralDensity_PT16S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/MMS/1/FIELDS/DSP/Slow/Level2/MagneticFieldPowerSpectralDensity/PT16S">https://hpde.io/NASA/NumericalData/MMS/1/FIELDS/DSP/Slow/Level2/MagneticFieldPowerSpectralDensity/PT16S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">magneticfield</span><span class="tag">waves-passive</span></div>
+</article>
+</main>
+</body>
+</html>

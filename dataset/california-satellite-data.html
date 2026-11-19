@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>California Satellite Data — NASA Open Data Portal</title>
+<meta name="description" content="**Citation**: ####################### If using this dataset please cite the following in your work:  @misc{VotDasNemSri2010 , author = &quot;Petr Votava and Kamalika Das and Rama Nemani and Ashok N. Srivastava&quot;, year = &quot;2010&quot;, title = &quot;MODIS surface reflectance data repository&quot;, url =">
+<link rel="canonical" href="https://data.nasa.gov/dataset/california-satellite-data">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>California Satellite Data</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/california-satellite-data">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">**Citation**:
+#######################
+If using this dataset please cite the following in your work:
+
+@misc{VotDasNemSri2010 ,
+author = &quot;Petr Votava and Kamalika Das and Rama Nemani and Ashok N. Srivastava&quot;,
+year = &quot;2010&quot;,
+title = &quot;MODIS surface reflectance data repository&quot;,
+url = &quot;https://c3.ndc.nasa.gov/dashlink/resources/331/&quot;,
+institution = &quot;NASA Ames Research Center&quot; }
+
+Petr Votava, Kamalika Das, Rama Nemani, Ashok N. Srivastava. (2010). MODIS surface reflectance data repository. NASA Ames Research Center.
+
+**Data Description:**
+####################
+
+The California satellite dataset using the MODerate-resolution Imaging Spectroradiometer (MODIS) product MCD43A4 provides reflectance data adjusted using a bidirectional reflectance distribution function (BRDF) to model the values as if they were taken from nadir view.
+
+Both Terra and Aqua data are used in the generation of this product, providing the highest probability for
+quality input data.
+
+More information at:
+https://lpdaac.usgs.gov/lpdaac/products/modis_products_table/nadir_brdf_adjusted_reflectance/16_day_l3_global_500m/v5/combined
+
+**Data Organization:**
+####################
+
+The nine data folders correspond to three years of data.Under this top level directory structure are separate files for each band (1 - 7) and each 8-day period of the particular year. Within the period the best observations were selected for each location.
+
+**File Naming Conventions:**
+###########################
+
+Each of the files represent a 2D dataset with the naming conventions as follows:
+
+MCD43A4.CA_1KM.005.&lt;YYYYDDD&gt;. &lt;BAND&gt;.flt32
+
+where
+   &lt;YYYYDDD&gt; is the beginning year-day of the period that where YYYY = year and DDD = day of year (001 - 366)
+
+   &lt;BAND&gt; represents the observations in particular (spectral) band (band 1 - band 7) - since the indexing is 0-based,
+    the range of indexes on the files is from 0 - 6 (where 0 = band 1, and 6 = band 7)
+
+The spectral band frequencies for the MODIS acquisitions are as follows:
+   BAND1	620 - 670 nm
+   BAND2	841 - 876 nm
+   BAND3 	459 - 479 nm
+   BAND4 	545 - 565 nm
+   BAND5	1230 - 1250 nm
+   BAND6 	1628 - 1652 nm
+   BAND7 	2105 - 2155 nm
+
+**File Specifications:**
+######################
+Each file is a single 2D dataset.
+
+DATA TYPE: 32-bit floating point (IEEE754) with little-Endian byte ordering
+NUMBER OF ROWS: 1203
+NUMBER OF COLUMNS: 738
+FILL VALUES (observations that are either not valid or not on land, such as ocean etc.): -999.0
+
+**Overview:**
+###########
+
+DATASET: MODIS 8-day Surface Reflectance BRDF-adjusted from Terra and Aqua
+
+COLLECTION: 5
+
+DATA TYPE: IEEE754 float (32-bit float)
+
+BYTE ORDER: LITTLE ENDIAN (Intel)
+
+DIMS: 1203 rows x 738 columns
+
+FILL VALUE: -999.0
+
+SPATIAL RESOLUTION: 1km
+
+PROJECTION: Lambert Azimuthal Equal Area</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/california-satellite-data">https://data.nasa.gov/dataset/california-satellite-data</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_331</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/331/">https://c3.nasa.gov/dashlink/resources/331/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2011-03-25</td></tr>
+<tr><th>Contact / Maintainer</th><td>Kamalika Das — kamalika.das@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (9)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>TAR</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2001.tar.gz">Y2001.tar.gz</a><br><small>Y2001.tar.gz</small></td></tr><tr><td>TAR</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2002.tar.gz">Y2002.tar.gz</a><br><small>Y2002.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2003.tar.gz">Y2003.tar.gz</a><br><small>Y2003.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2004.tar.gz">Y2004.tar.gz</a><br><small>Y2004.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2005.tar.gz">Y2005.tar.gz</a><br><small>Y2005.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2006.tar.gz">Y2006.tar.gz</a><br><small>Y2006.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2007.tar.gz">Y2007.tar.gz</a><br><small>Y2007.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2008.tar.gz">Y2008.tar.gz</a><br><small>Y2008.tar.gz</small></td></tr><tr><td>GZ</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Y2009.tar.gz">Y2009.tar.gz</a><br><small>Y2009.tar.gz</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

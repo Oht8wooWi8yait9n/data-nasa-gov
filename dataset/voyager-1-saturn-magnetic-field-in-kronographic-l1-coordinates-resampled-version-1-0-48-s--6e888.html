@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voyager 1 Saturn Magnetic Field in Kronographic L1 Coordinates, Resampled, Version 1.0, 48 s Data — NASA Open Data Portal</title>
+<meta name="description" content="* Data Set Overview * =================  This Data Set includes calibrated Magnetic Field Data acquired by the Voyager 1 Low Field Magnetometer (LFM) during the Saturn Encounter. Coverage begins in the Solar Wind inbound to Saturn and continues past the last outbound Bowshock Cro">
+<link rel="canonical" href="https://data.nasa.gov/dataset/voyager-1-saturn-magnetic-field-in-kronographic-l1-coordinates-resampled-version-1-0-48-s--6e888">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Voyager 1 Saturn Magnetic Field in Kronographic L1 Coordinates, Resampled, Version 1.0, 48 s Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/voyager-1-saturn-magnetic-field-in-kronographic-l1-coordinates-resampled-version-1-0-48-s--6e888">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">* Data Set Overview
+* =================
+
+This Data Set includes calibrated Magnetic Field Data acquired by the Voyager 1 Low Field Magnetometer (LFM) during the Saturn Encounter. Coverage begins in the Solar Wind inbound to Saturn and continues past the last outbound Bowshock Crossing. The Data are in Kronographic (L1) Coordinates and have been averaged from the 9.6 s Summary Rate to a 48 s Sample Rate. All Magnetic Field Measurements are given in nT. The Magnetic Field Data are calibrated (see the Calibration Description included in the Voyager 1 Magnetometer Instrument Catalog File for Details). This Data Set supersedes VG1-S-MAG-4-48.0SEC.
+
+* Parameters
+* ==========
+
+The full LFM Instrument Sample Rate is one Sample per 0.06 s. Full Telemetry Resolution &quot;Detail&quot; Data must be obtained from the Instrument Team. For this Data Set, the Data have been resampled to 48 s from 9.6 s Averages. The 9.6 s Data were resampled from 1.92 s Averages which were in turn resampled from the Detail Data.
+
++--------------------------------------------------------+
+| Parameter Characteristics      | Value                 |
+----------------------------------------------------------
+| Sampling Parameter Name        | TIME                  |
+| Data Set Parameter Name        | MAGNETIC FIELD VECTOR |
+| Sampling Parameter Resolution  | 48.000000             |
+| Minimum Sampling Parameter     | 19770820120000.000000 |
+| Maximum Sampling Parameter     | UNK                   |
+| Sampling Parameter Interval    | 48.000000             |
+| Minimum Available Sampling Int | 0.060000              |
+| Data Set Parameter Unit        | NANOTESLA             |
+| Noise Level                    | 0.006000              |
+| Sampling Parameter Unit        | SECOND                |
++--------------------------------------------------------+
+
+The LFM has eight Dynamic Ranges. The Instrument is designed to switch between Dynamic Ranges automatically depending on the observed Magnetic Field Magnitude and Fluctuations. Instrument Digitization Uncertainty depends on the Dynamic Range as indicated in the following Table from (Behannon et al., 1977).
+
+* LFM Dynamic Ranges and Quantization Uncertainty
+* ===============================================
+
++----------------------------------------------+
+| Range Num | Range (nT)   | Quantization (nT) |
+------------------------------------------------
+| 1         | ±8.8         | ±0.0022           |
+| 2         | ±26          | ±0.0063           |
+| 3         | ±79          | ±0.019            |
+| 4         | ±240         | ±0.059            |
+| 5         | ±710         | ±0.173            |
+| 6         | ±2,100       | ±0.513            |
+| 7         | ±6,400       | ±1.56             |
+| 8         | ±50,000      | ±12.2             |
++----------------------------------------------+
+
+* Processing
+* ==========
+
++------------------------------------------------------------+
+| Parameter Characteristics       | Value                    |
+--------------------------------------------------------------
+| Instrument Host ID              | VG1                      |
+| Data Set Parameter Name         | MAGNETIC FIELD VECTOR    |
+| Instrument Parameter Name       | MAGNETIC FIELD COMPONENT |
+| Important Instrument Parameters | 1                        |
++------------------------------------------------------------+
+
++-----------------------------------------------------------------+
+| Parameter Characteristics       | Value                         |
+-------------------------------------------------------------------
+| Instrument Host ID              | VG1                           |
+| Data Set Parameter Name         | MAGNETIC FIELD VECTOR         |
+| Instrument Parameter Name       | WAVE MAGNETIC FIELD INTENSITY |
+| Important Instrument Parameters | 1                             |
++-----------------------------------------------------------------+
+
+* Processing
+* ==========
+
+Voyager EDRs undergo the following Processing in order to produce these 48 s averaged Summary Data:
+
+* Read EDR
+* Unpack Header Block (Receiver ID, Spacecraft ID, Telemetry Mode, FDS Counts, Data Flags)
+* Convert selected Time Tags to Integer Time (YY/DDD/HH:MM:SS.FFF)
+* Unpack Sub-header Block (MAG Status Words, Plasma Data)
+* Unpack Science Block (MAG Counts)
+* Convert Counts to nT
+* Apply Sensor and Boom Alignment Matrices
+* Rotate (optional) 1.92 s Averages while averaging Detail Data in nT to create 1.92 s Averages
+* Average 1.92 s Data to 9.6 s, then 9.6 s Data to 48 s
+* Write Summary Record
+
+Counts are measured onboard using 12-bit Words that may represent Values ranging from 0 to 4096. Integer Counts are converted to Magnetic Field Units (nT) by subtracting a Zero Offset from the measured MAG Value and multiplying this Difference by the Sensitivity of the Instrument.
+
++-----------------------------------------+
+| Processing Characteristics | Value      |
+-------------------------------------------
+| Processing Level ID        | 4          |
+| Software Flag              | Y          |
+| Processing Start Time      | 1988-09-21 |
++-----------------------------------------+
+
++-------------------------------------------------+
+| Parameter Characteristics | Value               |
+---------------------------------------------------
+| Source Data Set ID        | N/A                 |
+| Software                  | UNK                 |
+| Product Data Set ID       | VG1-S-MAG-4-48.0SEC |
++-------------------------------------------------+</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>PPI</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/voyager-1-saturn-magnetic-field-in-kronographic-l1-coordinates-resampled-version-1-0-48-s--6e888">https://data.nasa.gov/dataset/voyager-1-saturn-magnetic-field-in-kronographic-l1-coordinates-resampled-version-1-0-48-s--6e888</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/pq1a-c008">https://doi.org/10.48322/pq1a-c008</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds%3A%2F%2FPPI%2FVG1-S-MAG-4-SUMM-L1COORDS-48SEC-V1.0">https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds%3A%2F%2FPPI%2FVG1-S-MAG-4-SUMM-L1COORDS-48SEC-V1.0</a></td></tr><tr><td>TXT</td><td><a href="https://pds-ppi.igpp.ucla.edu/data/VG1-S-MAG-4-SUMM-L1COORDS-48SEC-V1.0/AAREADME.TXT">https://pds-ppi.igpp.ucla.edu/data/VG1-S-MAG-4-SUMM-L1COORDS-48SEC-V1.0/AAREADME.TXT</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/Voyager1_MAG_Saturn_L1_PT48S">https://helio.data.nasa.gov/dataset/Voyager1_MAG_Saturn_L1_PT48S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/Voyager1/MAG/Saturn/L1/PT48S">https://hpde.io/NASA/NumericalData/Voyager1/MAG/Saturn/L1/PT48S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">magneticfield</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OMI/Aura Level 2 Sulphur Dioxide (SO2) Trace Gas Column Data 1-Orbit Subset and Collocated Swath along CloudSat V003 (OMSO2_CPR) at GES DISC — NASA Open Data Portal</title>
+<meta name="description" content="This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission.  The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km c">
+<link rel="canonical" href="https://data.nasa.gov/dataset/omi-aura-level-2-sulphur-dioxide-so2-trace-gas-column-data-1-orbit-subset-and-collocated-s">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>OMI/Aura Level 2 Sulphur Dioxide (SO2) Trace Gas Column Data 1-Orbit Subset and Collocated Swath along CloudSat V003 (OMSO2_CPR) at GES DISC</h1>
+<div class="meta-badges"><span class="badge">ATDD</span><span class="badge">geospatial</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/omi-aura-level-2-sulphur-dioxide-so2-trace-gas-column-data-1-orbit-subset-and-collocated-s">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission.  The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track of CloudSat. Even though collocated with CloudSat, this subset can serve many other A-Train applications.
+
+(The shortname for this CloudSat-collocated subset of the original product OMSO2 Product is OMSO2_CPR_V003)
+
+This document describes the original OMI SO2 product (OMSO2) produced from global mode UV measurements of the Ozone Monitoring Instrument (OMI). OMI was launched on July 15, 2004 on the EOS Aura satellite, which is in a sun-synchronous ascending polar orbit with 1:45pm local equator crossing time. The data collection started on August 17, 2004 (orbit 482) and continues to this day with only minor data gaps. The minimum SO2 mass detectable by OMI is about two orders of magnitude smaller than the detection threshold of the legacy Total Ozone Mapping Spectrometer (TOMS) SO2 data (1978-2005) [Krueger et al 1995]. This is due to smaller OMI footprint and the use of wavelengths better optimized for separating O3 from SO2.
+
+The product file, called a data granule, covers the sunlit portion of the orbit with an approximately 2600 km wide swath containing 60 pixels per viewing line. During normal operations, 14 or 15 granules are produced daily, providing fully contiguous coverage of the globe. Currently, OMSO2 products are not produced when OMI goes into the &quot;zoom mode&quot; for one day every 452 orbits (~32 days). For each OMI pixel we provide 4 different estimates of the column density of SO2 in Dobson Units (1DU=2.69x10^16 molecules/cm2) obtained by making different assumptions about the vertical distribution of the SO2. However, it is important to note that in most cases the precise vertical distribution of SO2 is unimportant. The users can use either the SO2 plume height, or the center of mass altitude (CMA) derived from SO2 vertical distribution, to interpolate between the 4 values:
+
+1)Planetary Boundary Layer (PBL) SO2 column (ColumnAmountSO2_PBL), corresponding to CMA of 0.9 km.
+2)Lower tropospheric SO2 column (ColumnAmountSO2_TRL), corresponding to CMA of 2.5 km.
+3)Middle tropospheric SO2 column, (ColumnAmountSO2_TRM), usually produced by volcanic degassing, corresponding to CMA of 7.5 km,
+4)Upper tropospheric and Stratospheric SO2 column (ColumnAmountSO2_STL), usually produced by explosive volcanic eruption, corresponding to CMA of 17 km.
+
+The accuracy and precision of the derived SO2 columns vary significantly with the SO2 CMA and column amount, observational geometry, and slant column ozone. OMI becomes more sensitive to SO2 above clouds and snow/ice, and less sensitive to SO2 below clouds. Preliminary error estimates are discussed below (see Data Quality Assessment).
+
+OMSO2 files are stored in EOS Hierarchical Data Format
+(HDF-EOS5). Each file contains data from the day lit portion of an
+orbit (53 minutes). There are approximately 14 orbits per day. The
+maximum file size for the OMSO2 data product is about 9 Mbytes.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/GCDC/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/omi-aura-level-2-sulphur-dioxide-so2-trace-gas-column-data-1-orbit-subset-and-collocated-s">https://data.nasa.gov/dataset/omi-aura-level-2-sulphur-dioxide-so2-trace-gas-column-data-1-orbit-subset-and-collocated-s</a></td></tr>
+<tr><th>Identifier</th><td>C1236350970-GES_DISC</td></tr>
+<tr><th>Landing Page</th><td><a href="https://cmr.earthdata.nasa.gov:443/search/concepts/C1236350970-GES_DISC.html">https://cmr.earthdata.nasa.gov:443/search/concepts/C1236350970-GES_DISC.html</a></td></tr>
+<tr><th>Themes</th><td>ATDD, geospatial</td></tr>
+<tr><th>Modified</th><td>2018-03-02</td></tr>
+<tr><th>Issued</th><td>2006-06-01</td></tr>
+<tr><th>Temporal Coverage</th><td>2006-06-01T00:00:00Z/2022-01-17T00:00:00Z</td></tr>
+<tr><th>Spatial Coverage</th><td><code>-180.0 -90.0 180.0 90.0</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>NICKOLAY KROTKOV, PH. D — Nickolay.A.Krotkov@nasa.gov</td></tr>
+<tr><th>Series</th><td>OMSO2_CPR</td></tr>
+<tr><th>Program Code</th><td>026:001</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (7)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/OMSO2_CPR_003.png">Get a related visualization</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/OMSO2_CPR_003.html">This dataset&#x27;s landing page</a><br><small>Access the dataset landing page from the GES DISC website.</small></td></tr><tr><td>HTML</td><td><a href="https://atrain.gesdisc.eosdis.nasa.gov/data/OMI/OMSO2_CPR.003/">Download this dataset through a directory map</a><br><small>Access the data via HTTPS</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/OMI/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithm/ATBD-OMI-04.pdf">View this dataset&#x27;s algorithm theoretical basis document</a><br><small>OMI Algorithm Theoretical Basis Document</small></td></tr><tr><td>HTML</td><td><a href="https://modis.gsfc.nasa.gov/">View information related to this dataset</a><br><small>MODIS Project Home Page</small></td></tr><tr><td>HTML</td><td><a href="http://www.cloudsat.cira.colostate.edu/">View information related to this dataset</a><br><small>CloudSat Data Processing Center</small></td></tr><tr><td>HTML</td><td><a href="https://so2.gsfc.nasa.gov/docs.html">View the primary investigator&#x27;s documentation for this dataset</a><br><small>Principal Investigator Documentation</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">atmosphere</span><span class="tag">atmospheric-chemistry</span><span class="tag">earth-science</span></div>
+</article>
+</main>
+</body>
+</html>

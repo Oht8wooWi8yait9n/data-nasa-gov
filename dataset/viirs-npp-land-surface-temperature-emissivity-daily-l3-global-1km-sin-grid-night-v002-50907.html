@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIIRS/NPP Land Surface Temperature/Emissivity Daily L3 Global 1km SIN Grid Night V002 — NASA Open Data Portal</title>
+<meta name="description" content="The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and Emissivity (LST&amp;E) Night Version 2 product (VNP21A1N) is compiled daily from nighttime Level 2 Gridded (L2G) intermediate products.  ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/viirs-npp-land-surface-temperature-emissivity-daily-l3-global-1km-sin-grid-night-v002-50907">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>VIIRS/NPP Land Surface Temperature/Emissivity Daily L3 Global 1km SIN Grid Night V002</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/viirs-npp-land-surface-temperature-emissivity-daily-l3-global-1km-sin-grid-night-v002-50907">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and Emissivity (LST&amp;E) Night Version 2 product (VNP21A1N) is compiled daily from nighttime Level 2 Gridded (L2G) intermediate products.
+
+The L2G process maps the daily [VNP21](https://doi.org/10.5067/VIIRS/VNP21.002) swath granules onto a sinusoidal MODIS grid and stores all observations overlapping a gridded cell for a given night. The VNP21A1 algorithm sorts through all these observations for each cell and estimates the final LST value as an average from all cloud-free observations that have good LST accuracies. The nighttime average is weighted by the observation coverage for that cell. Only observations having observation coverage more than a certain threshold (15%) are considered for this averaging. The 1 kilometer dataset is derived through resampling the native 750 meter VIIRS resolution in the input product.
+
+The VNP21A1N product is developed synergistically with the Moderate Resolution Imaging Spectroradiometer (MODIS) LST&amp;E Version 6.1 product ([MOD21A1N](https://doi.org/10.5067/MODIS/MOD21A1N.061)) using the same input atmospheric products and algorithmic approach. The overall objective for NASA VIIRS products is to ensure the algorithms and products are compatible with the MODIS Terra and Aqua algorithms to promote the continuity of the Earth Observation System (EOS) mission. Additional details regarding the method used to create this Level 3 (L3) product are available in the Algorithm Theoretical Basis Document (ATBD).
+
+The VNP21A1N product contains seven Science Datasets (SDS) variables: LST, quality control, emissivity for bands M14, M15, and M16, view zenith angle, and time of observation. A low-resolution browse image for LST is also available for each VNP21A1N granule.
+
+Known Issues
+* Users of VIIRS and MODIS LST products may notice an increase in occurrences of extreme high temperature outliers in the unfiltered VNP21 and MxD21 products compared to the heritage MxD11 LST products. This can occur especially over desert regions like the Sahara where undetected cloud and dust can negatively impact MxD11, MxD21, and VNP21 retrieval algorithms.
+* In the MxD11 LST products, these contaminated pixels are flagged in the algorithm and set to fill values in the output products based on differences in the band 32 and band 31 radiances used in the generalized split window algorithm. In the VNP21 and MxD21 LST products, values for the contaminated pixels are retained in the output products (and may result in overestimated temperatures), and users need to apply Quality Control (QC) filtering and other error analyses for filtering out bad values. High temperature outlier thresholds are not employed in VNP21 and MxD21 since it would potentially remove naturally occurring hot surface targets such as fires and lava flows.
+* High atmospheric aerosol optical depth (AOD) caused by vast dust outbreaks in the Sahara and other deserts highlighted in the example documentation are the primary reason for high outlier surface temperature values (and corresponding low emissivity values) in the VNP21 and MxD21 LST products. Future versions of the VNP21 and MxD21 products will include a dust flag from the MODIS aerosol product and/or brightness temperature look up tables to filter out contaminated dust pixels. It should be noted that in the MxD11B day/night algorithm products, more advanced cloud filtering is employed in the multi-day products based on a temporal analysis of historical LST over cloudy areas. This may result in more stringent filtering of dust contaminated pixels in these products.
+* To mitigate the impact of dust in the VNP21 and MxD21 products, the science team recommends using a combination of the existing QC bits, emissivity values, and estimated product errors, to confidently remove bad pixels from analysis.
+* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=VIIRS).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/GSFC/SED/ESD/TISL/LandSIPS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/viirs-npp-land-surface-temperature-emissivity-daily-l3-global-1km-sin-grid-night-v002-50907">https://data.nasa.gov/dataset/viirs-npp-land-surface-temperature-emissivity-daily-l3-global-1km-sin-grid-night-v002-50907</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/VIIRS/VNP21A1N.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2012-01-17/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (12)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2545314559-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2545314559-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://landweb.modaps.eosdis.nasa.gov">https://landweb.modaps.eosdis.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/VIIRS/VNP21A1N.002">https://doi.org/10.5067/VIIRS/VNP21A1N.002</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1662/VNP21_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1662/VNP21_User_Guide_V2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf">https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf</a></td></tr><tr><td>JPEG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP21A1N.002/VNP21A1N.A2026062.h28v11.002.2026063094128/BROWSE.VNP21A1N.A2026062.h28v11.002.2026063094128.1.jpg">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP21A1N.002/VNP21A1N.A2026062.h28v11.002.2026063094128/BROWSE.VNP21A1N.A2026062.h28v11.002.2026063094128.1.jpg</a></td></tr><tr><td>HTML</td><td><a href="https://viirsland.gsfc.nasa.gov/Val/LST_Val.html">https://viirsland.gsfc.nasa.gov/Val/LST_Val.html</a></td></tr><tr><td>HTML</td><td><a href="https://viirsland.gsfc.nasa.gov/Val_overview.html">https://viirsland.gsfc.nasa.gov/Val_overview.html</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/filespec/VIIRS/1/VNP21A1N">https://ladsweb.modaps.eosdis.nasa.gov/filespec/VIIRS/1/VNP21A1N</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2545314559-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-emissivity</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

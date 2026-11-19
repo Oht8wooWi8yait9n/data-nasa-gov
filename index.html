@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NASA Open Data Portal (data.nasa.gov) Static Mirror &amp; Sitemaps</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <strong>NASA Open Data Portal (<code>data.nasa.gov</code>) Static HTML Mirror &amp; Onyx Sitemap Pipeline</strong>
+</header>
+<main>
+  <section class="panel">
+    <h1>NASA Open Data Portal Catalog Mirror</h1>
+    <p>
+      Pre-rendered static HTML mirror and flat XML sitemaps for the
+      <a href="https://data.nasa.gov/">NASA Open Data Portal (data.nasa.gov)</a>,
+      built for high-speed enterprise RAG ingestion (e.g., Onyx Web Connector) with 1-to-1 URL rewrite support.
+    </p>
+    <div class="stats-grid">
+      <div class="stat-box"><div class="stat-val">36,514</div><div class="stat-lbl">Mirrored Datasets</div></div>
+      <div class="stat-box"><div class="stat-val">36,146</div><div class="stat-lbl">Public Access Level</div></div>
+      <div class="stat-box"><div class="stat-val">161,788</div><div class="stat-lbl">Indexed Data Distributions</div></div>
+      <div class="stat-box"><div class="stat-val">10</div><div class="stat-lbl">Theme Sitemaps</div></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Primary Flat XML Sitemaps (Onyx Ready)</h2>
+    <table class="res-table">
+      <thead><tr><th>Resource</th><th>URL</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Complete Mirror Sitemap (36,514 URLs)</strong></td><td><a href="sitemap.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemap.xml</code></a></td></tr>
+        <tr><td><strong>Alias Mirror Sitemap</strong></td><td><a href="data_nasa_gov_sitemap.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/data_nasa_gov_sitemap.xml</code></a></td></tr>
+        <tr><td><strong>Direct Live NASA Sitemap (<code>data.nasa.gov</code>)</strong></td><td><a href="data_nasa_gov_direct_sitemap.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/data_nasa_gov_direct_sitemap.xml</code></a></td></tr>
+        <tr><td><strong>Plain-Text Mirror URLs</strong></td><td><a href="data_nasa_gov_urls.txt"><code>data_nasa_gov_urls.txt</code></a></td></tr>
+        <tr><td><strong>Compressed JSONL Catalog</strong></td><td><a href="data_nasa_gov_records.jsonl.gz"><code>data_nasa_gov_records.jsonl.gz</code></a></td></tr>
+      </tbody>
+    </table>
+    <p>
+      <strong>Onyx URL Rewrite Rule:</strong>
+      Source Prefix <code>https://oht8woowi8yait9n.github.io/data-nasa-gov/</code> &rarr;
+      Target Prefix <code>https://data.nasa.gov/</code>
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Theme-Filtered Sitemaps</h2>
+    <table class="res-table">
+      <thead><tr><th>NASA Theme</th><th>Datasets</th><th>Flat Sitemap URL</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Earth Science</strong></td><td>20,772</td><td><a href="sitemaps/theme_earth-science.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_earth-science.xml</code></a></td></tr><tr><td><strong>Planetary Science</strong></td><td>6,214</td><td><a href="sitemaps/theme_planetary-science.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_planetary-science.xml</code></a></td></tr><tr><td><strong>Heliophysics</strong></td><td>3,305</td><td><a href="sitemaps/theme_heliophysics.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_heliophysics.xml</code></a></td></tr><tr><td><strong>Geospatial</strong></td><td>2,363</td><td><a href="sitemaps/theme_geospatial.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_geospatial.xml</code></a></td></tr><tr><td><strong>Astrophysics</strong></td><td>1,459</td><td><a href="sitemaps/theme_astrophysics.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_astrophysics.xml</code></a></td></tr><tr><td><strong>Other / Specialized Themes</strong></td><td>1,012</td><td><a href="sitemaps/theme_other.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_other.xml</code></a></td></tr><tr><td><strong>Space Science</strong></td><td>440</td><td><a href="sitemaps/theme_space-science.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_space-science.xml</code></a></td></tr><tr><td><strong>Management/Operations</strong></td><td>379</td><td><a href="sitemaps/theme_management-operations.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_management-operations.xml</code></a></td></tr><tr><td><strong>Biological and Physical Sciences</strong></td><td>346</td><td><a href="sitemaps/theme_biological-and-physical-sciences.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_biological-and-physical-sciences.xml</code></a></td></tr><tr><td><strong>Aerospace</strong></td><td>224</td><td><a href="sitemaps/theme_aerospace.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/theme_aerospace.xml</code></a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Staged 10,000-URL Chunks</h2>
+    <table class="res-table">
+      <thead><tr><th>Chunk</th><th>Datasets</th><th>Flat Sitemap URL</th></tr></thead>
+      <tbody>
+        <tr><td>Part 1</td><td>10,000</td><td><a href="sitemaps/data_nasa_gov_part1.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/data_nasa_gov_part1.xml</code></a></td></tr><tr><td>Part 2</td><td>10,000</td><td><a href="sitemaps/data_nasa_gov_part2.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/data_nasa_gov_part2.xml</code></a></td></tr><tr><td>Part 3</td><td>10,000</td><td><a href="sitemaps/data_nasa_gov_part3.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/data_nasa_gov_part3.xml</code></a></td></tr><tr><td>Part 4</td><td>6,514</td><td><a href="sitemaps/data_nasa_gov_part4.xml"><code>https://oht8woowi8yait9n.github.io/data-nasa-gov/sitemaps/data_nasa_gov_part4.xml</code></a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Harvest Sources &amp; Top Publishers</h2>
+    <table class="res-table">
+      <thead><tr><th>CKAN Harvest Source</th><th>Datasets</th></tr></thead>
+      <tbody><tr><td>Science Discovery Engine</td><td>21,975</td></tr><tr><td>DNG Legacy Data</td><td>14,537</td></tr><tr><td>Turbo Design</td><td>1</td></tr><tr><td>Langley Research Directorate</td><td>1</td></tr></tbody>
+    </table>
+    <table class="res-table">
+      <thead><tr><th>Top 15 Publishers</th><th>Datasets</th></tr></thead>
+      <tbody><tr><td>National Aeronautics and Space Administration</td><td>10,988</td></tr><tr><td>Small Bodies</td><td>3,952</td></tr><tr><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td><td>2,074</td></tr><tr><td>ORNL_DAAC</td><td>1,990</td></tr><tr><td>NASA/LARC/SD/ASDC</td><td>1,760</td></tr><tr><td>Geosciences</td><td>1,109</td></tr><tr><td>SPDF</td><td>1,060</td></tr><tr><td>High Energy Astrophysics Science Archive Research Center</td><td>976</td></tr><tr><td>NASA NSIDC DAAC</td><td>882</td></tr><tr><td>NASA/MSFC/GHRC</td><td>819</td></tr><tr><td>Dashlink</td><td>643</td></tr><tr><td>planetary plasma interactions</td><td>481</td></tr><tr><td>CDAWeb, SPDF</td><td>470</td></tr><tr><td>LP DAAC;NASA/GSFC/SED/ESD/TISL/LandSIPS;UMASS-B/SFE</td><td>420</td></tr><tr><td>NASA/IPAC Infrared Science Archive</td><td>419</td></tr></tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>

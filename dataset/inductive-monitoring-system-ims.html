@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inductive Monitoring System (IMS) — NASA Open Data Portal</title>
+<meta name="description" content="IMS: Inductive Monitoring System  The Inductive Monitoring System (IMS) is a tool that uses a data mining technique called clustering to extract models of normal system operation from archived data. IMS works with vectors of data values. IMS analyzes data collected during periods">
+<link rel="canonical" href="https://data.nasa.gov/dataset/inductive-monitoring-system-ims">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Inductive Monitoring System (IMS)</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/inductive-monitoring-system-ims">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">IMS: Inductive Monitoring System
+
+The Inductive Monitoring System (IMS) is a tool that uses a data mining technique called clustering to extract models of normal system operation from archived data. IMS works with vectors of data values. IMS analyzes data collected during periods of normal system operation to build a system model. It characterizes how the parameters relate to one another during normal operation by finding areas in the vector space where nominal data tends to fall. These areas are called nominal operating regions and correspond to clusters of similar points found by the IMS clustering algorithm. These nominal operating regions are stored in a knowledge base that IMS uses for real-time telemetry monitoring or archived data analysis.
+
+During the monitoring operation, IMS reads real-time or archived data values, formats them into the predefined vector structure, and searches the knowledge base of nominal operating regions to see how well the new data fits the nominal system characterization. For each input vector, IMS returns the distance that vector falls from the nearest nominal operating region. Data that matches the normal training data well will have a deviation distance of zero. If one or more of the data parameters is slightly outside of expected values, a small non-zero result is returned. As incoming data deviates further from the normal system data, indicating a possible malfunction, IMS will return a higher deviation value to alert users of the anomaly. IMS also calculates the contribution of each individual parameter to the overall deviation, which can help isolate the cause of the anomaly.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/inductive-monitoring-system-ims">https://data.nasa.gov/dataset/inductive-monitoring-system-ims</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_120</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/120/">https://c3.nasa.gov/dashlink/resources/120/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>DAVID IVERSON — david.l.iverson@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

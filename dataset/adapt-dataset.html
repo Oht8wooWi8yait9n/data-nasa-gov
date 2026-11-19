@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADAPT Dataset — NASA Open Data Portal</title>
+<meta name="description" content="**Advanced Diagnostics and Prognostics Testbed (ADAPT) Project Lead: Scott Poll**  **Subject**  Fault diagnosis in electrical power systems  **Description**  The Advanced Diagnostics and Prognostics Testbed (ADAPT) lab at the NASA Ames Research Center aims to provide a means to a">
+<link rel="canonical" href="https://data.nasa.gov/dataset/adapt-dataset">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ADAPT Dataset</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/adapt-dataset">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">**Advanced Diagnostics and Prognostics Testbed (ADAPT)
+Project Lead: Scott Poll**
+
+**Subject**
+
+Fault diagnosis in electrical power systems
+
+**Description**
+
+The Advanced Diagnostics and Prognostics Testbed (ADAPT) lab at the NASA Ames Research Center aims to provide a means to assess the effectiveness of diagnostic algorithms at detecting faults in power systems. The algorithms are evaluated using data from the Electrical Power System (EPS), which simulates the functions of a typical aerospace vehicle power system. The EPS allows for the controlled insertion of faults in repeatable failure scenarios to test if diagnostic algorithms can detect and isolate these faults.
+
+**How Data Was Acquired**
+
+This dataset was generated from the EPS in the ADAPT lab. Each data file corresponds to one experimental run of the testbed. During an experiment, a data acquisition system commands the testbed into different configurations and records data from sensors that measure system variables such as voltages, currents, temperatures and switch positions. Faults were injected in some of the experimental runs.
+
+**Sample Rates and Parameter Descriptions**
+
+Data was sampled at a rate of 2 Hz and saved into a tab delimited plain text file. There are a total of 128 sensors and typical experimental runs last for approximately five minutes. The text files have also been converted into a MATLAB environment file containing equivalent data that may be imported for viewing or computation.
+
+**Faults and Anomalies**
+
+Faults were injected into the EPS using physical or software means. Physical faults include disconnecting sources, sinks or circuit breakers. For software faults, user commands are passed through an Antagonist function before being received by the EPS, and sensor data is filtered through the same function before being seen by the user. The Antagonist function was able to block user commands, send spurious commands and alter sensor data.
+
+**External Links**
+
+Additional data from the ADAPT EPS testbed can be found at the DXC competition page - [https://dashlink.arc.nasa.gov/topic/diagnostic-challenge-competition/](https://dashlink.arc.nasa.gov/topic/diagnostic-challenge-competition/)
+
+**Other Notes**
+
+The HTML diagrams can be viewed in any brower, but its active content is best run on Internet Explorer.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/adapt-dataset">https://data.nasa.gov/dataset/adapt-dataset</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_143</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/143/">https://c3.nasa.gov/dashlink/resources/143/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-22</td></tr>
+<tr><th>Contact / Maintainer</th><td>DAWN MCINTOSH — dawn.m.mcintosh@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (5)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/BNandADAPTv18.pdf">BNandADAPTv18.pdf</a><br><small>BNandADAPTv18.pdf</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/AdaptHTMLdiagrams.zip">AdaptHTMLdiagrams.zip</a><br><small>Diagram of the ADAPT Electical Power System</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/dataset_text.zip">dataset_text.zip</a><br><small>dataset_text.zip</small></td></tr><tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/dataset_matlab.zip">dataset_matlab.zip</a><br><small>dataset_matlab.zip</small></td></tr><tr><td>XLS</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Experiment_Log.xls">Experiment_Log.xls</a><br><small>Experiment_Log.xls</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

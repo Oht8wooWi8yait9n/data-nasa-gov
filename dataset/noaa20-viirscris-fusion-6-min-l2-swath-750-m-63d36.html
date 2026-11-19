@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOAA20 VIIRS+CrIS Fusion 6-Min L2 Swath 750 m — NASA Open Data Portal</title>
+<meta name="description" content="The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with the High Resolution Infrared Radiation Sounder (HIRS) and the Moderate resolution Imaging Spectroradiometer (MODIS) and to continue other ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/noaa20-viirscris-fusion-6-min-l2-swath-750-m-63d36">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>NOAA20 VIIRS+CrIS Fusion 6-Min L2 Swath 750 m</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/noaa20-viirscris-fusion-6-min-l2-swath-750-m-63d36">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with the High Resolution Infrared Radiation Sounder (HIRS) and the Moderate resolution Imaging Spectroradiometer (MODIS) and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution). These spectral bands are similar to the MODIS spectral bands. The fusion radiances, and look-up tables required to compute the related brightness temperatures, are stored in compressed NetCDF4 files of 6-minutes duration.
+
+This L2 NOAA-20 VIIRS+CrIS product release relates to Version-2.0 (v2.0) collection, which has undergone some improvements over its previous version.  In the v2.0 Fusion product, scanlines are checked for quality instead of the entire input granule as was done in the previous version of this product.  Such a process has helped salvage and use granules with continuous blocks of good data with good calibration.  The v2.0 product also includes a couple of improvements to the VIIRS-CrIS collocation.  The first relates to how VIIRS scan sync loss events are addressed while the other correctly characterizes VIIRS pixels that should have been identified as falling within a CrIS Field-of-View.  A final improvement in the v2.0 product attempts to correct an artifact detected over warm, dry surfaces in the water vapor channels that are derived using the MODIS Band-27 and -28 response functions that apparently manifest signs of surface features that should not exist for these channels.  Check the User Guide for further details on these improvements.
+
+The L2 VIIRS+CrIS Fusion product has a horizontal pixel size of 750 m, which is the native VIIRS moderate-resolution (M) band pixel-size. Consult the VIIRS+CrIS Fusion product [User Guide](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRSCrISFusionUserGuidev1.11.pdf) for additional information regarding this product’s algorithm, file format, global and data-field attributes, quality control flags, etc.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/HBSL/BISB/LAADS;UWI-MAD/SSEC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/noaa20-viirscris-fusion-6-min-l2-swath-750-m-63d36">https://data.nasa.gov/dataset/noaa20-viirscris-fusion-6-min-l2-swath-750-m-63d36</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/VIIRS/FSNRAD_L2_VIIRS_CRIS_NOAA20.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2012-03-01/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://doi.org/10.5067/VIIRS/FSNRAD_L2_VIIRS_CRIS_NOAA20.002">https://doi.org/10.5067/VIIRS/FSNRAD_L2_VIIRS_CRIS_NOAA20.002</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/FSNRAD_L2_VIIRS_CRIS_NOAA20--5200">https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/FSNRAD_L2_VIIRS_CRIS_NOAA20--5200</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRS%2BCrIS_DataFusion_UG_v2.0_Dec_2021.pdf">https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRS%2BCrIS_DataFusion_UG_v2.0_Dec_2021.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRS%2BCrIS_DataFusion_ATBD_v2.0_Dec_2021.pdf">https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRS%2BCrIS_DataFusion_ATBD_v2.0_Dec_2021.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2230035528-LAADS">https://search.earthdata.nasa.gov/search/granules?p=C2230035528-LAADS</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2230035528-LAADS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-brightness-temperature</span><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-infrared-radiance</span></div>
+</article>
+</main>
+</body>
+</html>

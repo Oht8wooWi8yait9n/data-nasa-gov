@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODIS/Aqua Cloud Mask and Spectral Test Results 5-Min L2 Swath 250m and 1km - NRT — NASA Open Data Portal</title>
+<meta name="description" content="The MODIS level-2 cloud mask product is a global product generated for both daytime and nighttime conditions at 1-km spatial resolution (at nadir) and for daytime at 250-m resolution. The algorithm employs a series of visible and infrared threshold and consistency tests to specif">
+<link rel="canonical" href="https://data.nasa.gov/dataset/modis-aqua-cloud-mask-and-spectral-test-results-5-min-l2-swath-250m-and-1km-nrt-6234a">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MODIS/Aqua Cloud Mask and Spectral Test Results 5-Min L2 Swath 250m and 1km - NRT</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/modis-aqua-cloud-mask-and-spectral-test-results-5-min-l2-swath-250m-and-1km-nrt-6234a">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The MODIS level-2 cloud mask product is a global product generated for both daytime and nighttime conditions at 1-km spatial resolution (at nadir) and for daytime at 250-m resolution. The algorithm employs a series of visible and infrared threshold and consistency tests to specify confidence levels that an unobstructed view of the Earth&#x27;s surface is observed.
+
+The Terra MODIS Photovoltaic (PVLWIR) bands 27-30 are known to experience an electronic crosstalk contamination. The influence of the crosstalk has gradually increased over the mission lifetime, causing for example, earth surface features to become prominent in atmospheric band 27, increased detector striping, and long term drift in the radiometric bias of these bands. The drift has compromised the climate quality of C6 Terra MODIS L2 products that depend significantly on these bands, including cloud mask (MOD35), cloud fraction and cloud top properties (MOD06), and total precipitable water (MOD07). A linear crosstalk correction algorithm has been developed and tested by MCST.The electronic crosstalk correction was made to the calibration algorithm for bands 27-30 and implemented into C6.1 operational L1B processing. This implementation greatly improves the performance of the cloud mask.
+
+The shortname for this Level-2 MODIS cloud mask product is MYD35_L2 and the principal investigator for this product is MODIS scientist Dr. Paul Menzel ( paulm@ssec.wisc.edu).  MYD35_L2 product files are stored in Hierarchical Data Format (HDF-EOS). Each of the 9 gridded parameters is stored as a Scientific Data Set (SDS) within the HDF-EOS file. The Cloud Mask and Quality Assurance SDS&#x27;s are stored at 1 kilometer pixel resolution. All other SDS&#x27;s (those relating to time, geolocation, and viewing geometry) are stored at 5 kilometer pixel resolution.
+
+MYD35_L2 Data Group and Parameters:
+
+Spatial and Temporal Resolution:
+
+Latitude and Longitude
+Scan start time
+
+Solar and Sensor Viewing Geometry:
+
+Solar zenith and Solar azimuth angle
+Sensor zenith and Sensor azimuth angle
+
+Science Parameters:
+Cloud Mask (1km)
+Cloud Mask (250 m)
+
+Quality Assurance Parameters:
+Quality Assurance Flags (1km)
+
+Link to the MODIS homepage for more data set information:
+
+https://modis-atmos.gsfc.nasa.gov/products/cloud-mask
+
+Link to the MODIS homepage for C6.1 changes:
+
+https://modis-atmos.gsfc.nasa.gov/documentation/collection-61</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/EOS/ESDIS/LANCE MODIS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/modis-aqua-cloud-mask-and-spectral-test-results-5-min-l2-swath-250m-and-1km-nrt-6234a">https://data.nasa.gov/dataset/modis-aqua-cloud-mask-and-spectral-test-results-5-min-l2-swath-250m-and-1km-nrt-6234a</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/MODIS/MYD35_L2.NRT.061</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/data/instruments/modis/near-real-time-data">https://www.earthdata.nasa.gov/data/instruments/modis/near-real-time-data</a></td></tr><tr><td>BIN</td><td><a href="https://nrt3.modaps.eosdis.nasa.gov/archive/allData/61/MYD35_L2/">https://nrt3.modaps.eosdis.nasa.gov/archive/allData/61/MYD35_L2/</a></td></tr><tr><td>BIN</td><td><a href="http://modis.gsfc.nasa.gov/sci_team/">http://modis.gsfc.nasa.gov/sci_team/</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1427007141-LANCEMODIS">https://search.earthdata.nasa.gov/search/granules?p=C1427007141-LANCEMODIS</a></td></tr><tr><td>BIN</td><td><a href="https://earthdata.nasa.gov/s3fs-public/2026-04/LANCE_MODAPS_Operational_Data_Flow_Diagram_4.16.26.pdf?VersionId=auDDcXbLWd7lDM.IyBmsuVfguIP64vnr">https://earthdata.nasa.gov/s3fs-public/2026-04/LANCE_MODAPS_Operational_Data_Flow_Diagram_4.16.26.pdf?VersionId=auDDcXbLWd7lDM.IyBmsuVfguIP64vnr</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-clouds-atmosphere</span><span class="tag">earth-science-clouds-atmosphere-cloud-properties</span></div>
+</article>
+</main>
+</body>
+</html>

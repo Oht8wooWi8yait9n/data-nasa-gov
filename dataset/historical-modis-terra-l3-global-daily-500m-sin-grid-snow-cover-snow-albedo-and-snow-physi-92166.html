@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Historical MODIS/Terra L3 Global Daily 500m SIN Grid Snow Cover, Snow Albedo, and Snow Physical Properties, Version 1 — NASA Open Data Portal</title>
+<meta name="description" content="This data set represents a spatially and temporally complete (STC) version of the MODIS Snow Covered Area and Grain-size (MODSCAG) and MODIS Dust Radiative Forcing in Snow (MODDRFS) data sets produced by the NASA Jet Propulsion Laboratory (JPL) and now produced and distributed by">
+<link rel="canonical" href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-physi-92166">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Historical MODIS/Terra L3 Global Daily 500m SIN Grid Snow Cover, Snow Albedo, and Snow Physical Properties, Version 1</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-physi-92166">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This data set represents a spatially and temporally complete (STC) version of the MODIS Snow Covered Area and Grain-size (MODSCAG) and MODIS Dust Radiative Forcing in Snow (MODDRFS) data sets produced by the NASA Jet Propulsion Laboratory (JPL) and now produced and distributed by NSIDC DAAC as &lt;a href=&quot;https://nsidc.org/data/modscgdrf_nrt/versions/1&quot;&gt; MODSCGDRF_NRT&lt;/a&gt;. Data inputs for MODSCAG and MODDRFS used by the STC algorithm are derived from NASA historical MODIS/Terra surface reflectance data (&lt;a href=&quot;https://lpdaac.usgs.gov/products/mod09gav006/&quot;&gt;MOD09GA v006&lt;/a&gt; before December 28, 2021 and &lt;a href=https://lpdaac.usgs.gov/products/mod09gav061/&gt;MOD09GA v061&lt;/a&gt; onwards).
+
+The STC algorithm includes a suite of processes to improve the accuracy of MODSCAG/MODDRFS and adds additional information, notably snow albedo with and without the darkening from light absorbing particles. The STC algorithm accounts for off-nadir MODIS viewing geometry by weighting observations using the satellite view angle. STC uses the time series of data to better identify clouds whereas MODSCAG and MODDRFS use spectral tests which frequently include errors of omission and commission. STC uses forest height and the associated fractional vegetation simultaneously retrieved by MODSCAG for the same date and time to create an on-the-ground snow cover fraction. Finally, viewable snow cover fraction is used to remove biased retrievals of other variables. The resulting data is interpolated, resulting in a near-complete dataset. In addition, while the MODSCAG data sets do not include snow albedo, STC calculates clean snow albedo and snow albedo darkened by light absorbing impurities assuming both horizontal and sloped surfaces.
+
+This data set contains the following parameters: snow fraction (viewable and on the ground), snow albedo (clean and observed; on flat and on slope), snow darkening, snow radiative forcing, and snow grain size (from spectral mixture and the normalized difference grain size index). Data are available from 01 March 2000 to 30 September 2023 and are currently available for the western United States (MODIS tiles h08v04, h08v05, h09v04, h09v05, h10v04). MODIS tiles are provided in the Sinusoidal projection derived from input MOD09GA files. Additional tiles will be added over time. These data are provided in the netCDF-4 format with a Sinusoidal projection.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>CU/INSTAAR;NSIDC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-physi-92166">https://data.nasa.gov/dataset/historical-modis-terra-l3-global-daily-500m-sin-grid-snow-cover-snow-albedo-and-snow-physi-92166</a></td></tr>
+<tr><th>Identifier</th><td>10.7265/f6j3-f387</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-03-01/2023-09-30</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (3)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://nsidc.org/forms/STC_MODSCGDRF_HIST_or.html?major_version=1">https://nsidc.org/forms/STC_MODSCGDRF_HIST_or.html?major_version=1</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.7265/f6j3-f387">https://doi.org/10.7265/f6j3-f387</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3336442614-NSIDCV0.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-snow-ice-cryosphere-snow-duration</span><span class="tag">earth-science-snow-ice-cryosphere-snow-fraction</span><span class="tag">earth-science-snow-ice-cryosphere-snow-grain-size</span><span class="tag">earth-science-snow-ice-cryosphere-snow-radiative-forcing</span><span class="tag">earth-science-snow-ice-cryosphere-visible-snow-darkening</span><span class="tag">earth-science-snow-ice-terrestrial-hydrosphere-albedo</span></div>
+</article>
+</main>
+</body>
+</html>

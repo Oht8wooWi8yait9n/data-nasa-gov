@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EPIC Ocean Surface PAR Version 2 — NASA Open Data Portal</title>
+<meta name="description" content="EPIC Ocean Surface PAR  The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean photosynthetically available radiation (PAR) at the ice-free ocean surface. PAR is d">
+<link rel="canonical" href="https://data.nasa.gov/dataset/epic-ocean-surface-par-1-product-v02">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>EPIC Ocean Surface PAR Version 2</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/epic-ocean-surface-par-1-product-v02">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">EPIC Ocean Surface PAR
+
+The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean photosynthetically available radiation (PAR) at the ice-free ocean surface. PAR is defined as the quantum energy flux from the Sun in the 400-700 nm range. Daily mean PAR is the 24-hour averaged planar flux in that spectral range reaching the surface. It is expressed in E.m-2.d-1 (Einstein per meter squared per day). The factor required to convert E.m-2 d-1 units to mW.cm-2.μm-1 units is equal to 0.838 to an inaccuracy of a few percent regardless of meteorological conditions. The EPIC daily mean PAR product is generated on Plate Carrée (equal-angle) grid with 18.4 km resolution at the equator and on 18.4 km equal-area grid, i.e., the product is compatible with Ocean Biology Processing Group ocean color products.
+
+The EPIC PAR algorithm uses a budget approach, in which the solar irradiance reaching the surface is obtained by subtracting from the irradiance arriving at the top of the atmosphere (known) the irradiance reflected to space (estimated from the EPIC Level 1b radiance data), taking into account atmospheric transmission (modeled). Clear and cloudy regions within a pixel do not need to be distinguished, which dismisses the need for often-arbitrary assumptions about cloudiness distribution and is therefore adapted to the relatively large EPIC pixels. A daily mean PAR is estimated on the source grid for each EPIC instantaneous daytime observation, assuming no cloudiness change during the day, and the individual estimates are remapped and weight-averaged using the cosine of the Sun zenith angle. In the computations, wind speed, surface pressure, and water vapor amount are extracted from NECP Reanalysis 2 data, aerosol optical thickness and angstrom coefficient fromMERRA-2 data, and ozone amount from EPIC Level 2 data. Areas contaminated by sun glint are excluded using a threshold on sun glint reflectance calculated using wind data. Ice masking is based on NSIDC near real time ice fraction data. Details about the algorithm are given in Frouinet al., (2018). Figure A1 gives an example of EPIC daily mean PAR product. Date is March 20, 2018(equinox); land is in black and sea ice in white. Values range from a few E.m-2.d-1at high latitudes to about 58 E.m-2.d-1 at equatorial and tropical latitudes, with atmospheric perturbances modulating the surface PAR field especially at middle latitudes.
+
+The EPIC ocean surface PAR products are available at the Atmospheric Science Data Center (ASDC) at NASA Langley Research Center: https://asdc.larc.nasa.gov. 4. Reference Robert Frouin, Jing Tan, Didier Ramon, Bryan Franz, Hiroshi Murakami, 2018: Estimating photosynthetically available radiation at the ocean surface from EPIC/DSCOVR data, Proc. SPIE 10778, Remote Sensing of the Open and Coastal Ocean and Inland Waters, 1077806 (24 October 2018); doi: 10.1117/12.2501675. Changes from version 1 1) Algorithm (consistent with PACE) Updated the calculation of atmospheric reflectance, gaseous transmittance, and atmospheric transmittance using LUTs method so that calculations are accurate at high Sun and view zenith angles; Updated the calculation of surface albedo (based on Jin et al., 2011); Updated the calculation of cloud/surface layer albedo. 2)Ancillary data Changed the sources of the ancillary data including wind speed, surface pressure, and water vapor from NCEP to MERRA2; Added cloud fraction from MERRA2, which is needed for computing direct/diffuse ratio hence surface albedo.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/LARC/SD/ASDC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/epic-ocean-surface-par-1-product-v02">https://data.nasa.gov/dataset/epic-ocean-surface-par-1-product-v02</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/EPIC/DSCOVR/PAR_L3.02</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2015-06-13/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;Boundary&quot;: {&quot;Points&quot;: [{&quot;Latitude&quot;: -90, &quot;Longitude&quot;: -180}, {&quot;Latitude&quot;: -90, &quot;Longitude&quot;: 180}, {&quot;Latitude&quot;: 90, &quot;Longitude&quot;: 180}, {&quot;Latitude&quot;: 90, &quot;Longitude&quot;: -180}, {&quot;Latitude&quot;: -90, &quot;Longitude&quot;: -180}]}}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (7)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/citing-data">https://asdc.larc.nasa.gov/citing-data</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/EPIC/DSCOVR/PAR_L3.02">https://doi.org/10.5067/EPIC/DSCOVR/PAR_L3.02</a></td></tr><tr><td>PDF</td><td><a href="https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf">https://asdc.larc.nasa.gov/documents/dscovr/guides/DSCOVR_EPIC_Ocean_Product_user_guide.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/project/DSCOVR">https://asdc.larc.nasa.gov/project/DSCOVR</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3861596582-LARC_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3861596582-LARC_CLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3861596582-LARC_CLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3861596582-LARC_CLOUD</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3861596582-LARC_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-aerosols-atmosphere</span><span class="tag">earth-science-aerosols-atmosphere-aerosol-optical-depth-thickness</span><span class="tag">earth-science-aerosols-atmosphere-dust-ash-smoke</span><span class="tag">earth-science-atmospheric-chemistry-atmosphere</span><span class="tag">earth-science-clouds-atmosphere-cloud-properties</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASTER Level 1 Precision Terrain Corrected Registered At-Sensor Radiance V031 — NASA Open Data Portal</title>
+<meta name="description" content="The AST_L1T.031 Version 3 data product was decommissioned on December 15, 2025. Users are encouraged to use the [AST_L1T Version 4](https://doi.org/10.5067/ASTER/AST_L1T.004) data product.  The Terra Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 P">
+<link rel="canonical" href="https://data.nasa.gov/dataset/aster-level-1-precision-terrain-corrected-registered-at-sensor-radiance-v031-dd434">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ASTER Level 1 Precision Terrain Corrected Registered At-Sensor Radiance V031</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/aster-level-1-precision-terrain-corrected-registered-at-sensor-radiance-v031-dd434">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The AST_L1T.031 Version 3 data product was decommissioned on December 15, 2025. Users are encouraged to use the [AST_L1T Version 4](https://doi.org/10.5067/ASTER/AST_L1T.004) data product.
+
+The Terra Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 Precision Terrain Corrected Registered At-Sensor Radiance (AST_L1T) Version 3.1 data contains calibrated at-sensor radiance, which corresponds with the ASTER Level 1B  ([AST_L1B](https://doi.org/10.5067/ASTER/AST_L1B.003)), that has been geometrically corrected and rotated to a north-up UTM projection. The AST_L1T V3.1 is created from a single resampling of the corresponding ASTER Level 1A ([AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.003)) product. Radiometric calibration coefficients Version 5 (RCC V5) are applied to this product to improve the degradation curve derived from vicarious and lunar calibrations. The bands available in the AST_L1T V3.1 depend on the bands in the AST_L1A and can include up to three Visible and Near Infrared (VNIR) bands, six Shortwave Infrared (SWIR) bands, and five Thermal Infrared (TIR) bands. The AST_L1T V3.1 dataset does not include the aft-looking VNIR band 3. The AST_L1T product has a spatial resolution of 15 meters (m) for the VNIR bands, 30 m for the SWIR bands, and 90 m for the TIR bands.
+
+The 3.1 version uses a precision terrain correction process that incorporates GLS2000 digital elevation data with derived ground control points (GCPs) to achieve topographic accuracy for all daytime scenes where correlation statistics reach a minimum threshold. Alternate levels of correction are possible (systematic terrain, systematic, or precision) for scenes acquired at night or that otherwise represent a reduced quality ground image (e.g., cloud cover).
+
+For daytime images, if the VNIR or SWIR telescope collected data and precision correction was attempted, each precision terrain corrected image will have an accompanying independent quality assessment. It will include the geometric correction available for distribution in both a text file and a single band browse image with the valid GCPs overlaid.
+
+This multi-file product also includes georeferenced full resolution browse images. The number of browse images and the band combinations of the images depend on the bands available in the corresponding AST_L1A dataset.
+
+The AST_L1T V3.1 data product is only available through NASA&#x27;s Earthdata Search. The [ASTER L1T Earthdata Search Order Instructions](https://lpdaac.usgs.gov/documents/1045/ASTER_L1T_Earthdata_Search_Order_Instructions.pdf) provide step-by-step directions for ordering this product.
+
+Known Issues
+* A modification has been incorporated within the processing of the AST_L1T data product for correcting zero-filled scans that appear in the processing of low-latitude, ascending orbit (night) thermal infrared (TIR) data acquisitions. This correction has been implemented for the historical archive of the ASTER L1T data product and for newly processed scenes as of October 1, 2017. Additional information can be found in the ASTER L1T User Advisory document.
+* Users are advised that ASTER SWIR data acquired, from April 2008 to the present, exhibit anomalous saturation of values and anomalous striping. This effect is also present for some prior acquisition periods. Please refer to the ASTER SWIR User Advisory for more details.
+* Since April 1, 2008, when the anomalies in the SWIR data rendered it unusable, the SWIR band data has not been included in the AST_L1T product.
+* Data acquisition gaps: On November 28, 2024, one of Terra&#x27;s power-transmitting shunt units failed. As a result, there was insufficient power to maintain functionality of the ASTER instrument. ASTER resumed acquisitions for the VNIR bands on January 18, 2025, and for the TIR bands on April 15, 2025. Users should note the data gap in ASTER acquisitions from November 28, 2024, through January 16, 2025, for VNIR observations, and a gap from November 28, 2024, through April 15, 2025, for TIR acquisitions.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>JP/METI/AIST/JSS/GDS;LP DAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/aster-level-1-precision-terrain-corrected-registered-at-sensor-radiance-v031-dd434">https://data.nasa.gov/dataset/aster-level-1-precision-terrain-corrected-registered-at-sensor-radiance-v031-dd434</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ASTER/AST_L1T.031</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-03-04/2025-12-15</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (11)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://doi.org/10.5067/ASTER/AST_L1T.031">https://doi.org/10.5067/ASTER/AST_L1T.031</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>BIN</td><td><a href="http://asterweb.jpl.nasa.gov/">http://asterweb.jpl.nasa.gov/</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1400/AST_L1T_ATBD_V1.pdf">https://lpdaac.usgs.gov/documents/1400/AST_L1T_ATBD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1046/ASTER_L1T_ProductGuide_V4.pdf">https://lpdaac.usgs.gov/documents/1046/ASTER_L1T_ProductGuide_V4.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1401/ASTER_L1T_Product_Specification_v1.pdf">https://lpdaac.usgs.gov/documents/1401/ASTER_L1T_Product_Specification_v1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1335/AST_L1T_Quick_Reference_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1335/AST_L1T_Quick_Reference_Guide_V2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1045/ASTER_L1T_Earthdata_Search_Order_Instructions.pdf">https://lpdaac.usgs.gov/documents/1045/ASTER_L1T_Earthdata_Search_Order_Instructions.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1661/ASTER_SWIR_User_Advisory_Jan_12_2009.pdf">https://lpdaac.usgs.gov/documents/1661/ASTER_SWIR_User_Advisory_Jan_12_2009.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/191/ASTER_L1T_User_Advisory_May_11_17.pdf">https://lpdaac.usgs.gov/documents/191/ASTER_L1T_User_Advisory_May_11_17.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3553658561-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-reflected-infrared</span><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-thermal-infrared</span><span class="tag">earth-science-visible-wavelengths-spectral-engineering-visible-imagery</span><span class="tag">earth-science-visible-wavelengths-spectral-engineering-visible-radiance</span></div>
+</article>
+</main>
+</body>
+</html>

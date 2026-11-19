@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THEMIS-C: Probe Electric Field Instrument and Search Coil Magnetometer Instrument, Digital Fields Board - digitally computed Filter Bank spectra and E12 peak and average in HF band (FBK). — NASA Open Data Portal</title>
+<meta name="description" content="The Filter Bank is part of the Digital fields board and provides band-pass filtering for EFI and SCM spectra as well as E12HF peak and average value calculations. The Filter Bank provides band-pass filtering for less computationally and power intensive spectra than the FFT would ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/themis-c-probe-electric-field-instrument-and-search-coil-magnetometer-instrument-digital-f">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>THEMIS-C: Probe Electric Field Instrument and Search Coil Magnetometer Instrument, Digital Fields Board - digitally computed Filter Bank spectra and E12 peak and average in HF band (FBK).</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/themis-c-probe-electric-field-instrument-and-search-coil-magnetometer-instrument-digital-f">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Filter Bank is part of the Digital fields board and provides band-pass filtering for EFI and SCM spectra as well as E12HF peak and average value calculations. The Filter Bank provides band-pass filtering for less computationally and power intensive spectra than the FFT would provide. The process is as follows: Signals are fed to the Filter Bank via a low-pass FIR filter with a cut-off frequency half that of the original signal maximum. The output is passed to the band-pass filters, is differenced from the original signal, then absolute value of the data is taken and averaged. The output from the low-pass filter is also sent to a second FIR filter with 2:1 decimation. This output is then fed back through the system. The process runs through 12 cascades for input at 8,192 samples/s and 13 for input at 16,384 samples/sec (EAC input only), reducing the signal and computing power by a factor 2 at each cascade. At each cascade a set of data is produced at a sampling frequency of 2^n from 2 Hz to the initial sampling frequency (frequency characteristics for each step are shown below in Table 1). The average from the Filter Bank is compressed to 8 bits with a pseudo-logarithmic encoder. The data is stored in sets of six frequency bins at 2.689 kHz, 572 Hz, 144.2 Hz, 36.2 Hz, 9.05 Hz, and 2.26 Hz. The average of the coupled E12HF signal and it&#x27;s peak value are recorded over 62.5 ms windows (i.e. a 16 Hz sampling rate). Accumulation of values from signal 31.25 ms windows is performed externally. The analog signals fed into the FBK are E12DC and SCM1. Sensor and electronics design provided by UCB (J. W. Bonnell, F. S. Mozer), Digital Fields Board provided by LASP (R. Ergun), Search coil data provided by CETP (A. Roux). Table 1: Frequency Properties. Cascade   Frequency content of Input Signal   Low-pass Filter Cutoff Frequency   Freuency Content of Low-pass Output Signal   Filter Bank Frequency Band 0* 0 - 8 kHz 4 kHz 0 - 4 kHz 4 - 8 kHz 1 0 - 4 kHz 2 kHz 0 - 2 kHz 2 - 4 kHz 2 0 - 2 kHz 1 kHz 0 - 1 kHz 1 - 2 kHz 3 0 - 1 kHz 512 Hz 0 - 512 Hz 512 Hz - 1 kHz 4 0 - 512 Hz 256 Hz 0 - 256 Hz 256 - 512 Hz 5 0 - 256 Hz 128 Hz 0 - 128 Hz 128 - 256 Hz 6 0 - 128 Hz 64 Hz 0 - 64 Hz 64 - 128 Hz 7 0 - 64 Hz 32 Hz 0 - 32 Hz 32 - 64 Hz 8 0 - 32 Hz 16 Hz 0 - 16 Hz 16 - 32 Hz 9 0 - 16 Hz 8 Hz 0 - 8 Hz 8 - 16 Hz 10 0 - 8 Hz 4 Hz 0 - 4 Hz 4 - 8 Hz 11 0 - 4 Hz 2 Hz 0 - 2 Hz 2 - 4 Hz 12 0 - 2 Hz 1 Hz 0 - 1 Hz 1 - 2 Hz *Only available for 16,384 Hz sampling.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>CDAWeb, SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/themis-c-probe-electric-field-instrument-and-search-coil-magnetometer-instrument-digital-f">https://data.nasa.gov/dataset/themis-c-probe-electric-field-instrument-and-search-coil-magnetometer-instrument-digital-f</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/ken1-sn21">https://doi.org/10.48322/ken1-sn21</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/themis/thc/l2/fbk/">ftps://spdf.gsfc.nasa.gov/pub/data/themis/thc/l2/fbk/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/themis/thc/l2/fbk/">https://spdf.gsfc.nasa.gov/pub/data/themis/thc/l2/fbk/</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=THC_L2_FBK&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=THC_L2_FBK&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/hapi">https://cdaweb.gsfc.nasa.gov/hapi</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=THC_L2_FBK">https://api.heliocloud.org/cloudcatalog?id=THC_L2_FBK</a></td></tr><tr><td>BIN</td><td><a href="http://themis.ssl.berkeley.edu">http://themis.ssl.berkeley.edu</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/THEMIS_C_FBK_PT4S">https://helio.data.nasa.gov/dataset/THEMIS_C_FBK_PT4S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/THEMIS/C/FBK/PT4S">https://hpde.io/NASA/NumericalData/THEMIS/C/FBK/PT4S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">electricfield</span><span class="tag">magneticfield</span><span class="tag">spectrum</span></div>
+</article>
+</main>
+</body>
+</html>

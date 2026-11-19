@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prognostics in Battery Health Management — NASA Open Data Portal</title>
+<meta name="description" content="Batteries represent complex systems whose internal state vari- ables are either inaccessible to sensors or hard to measure un- der operational conditions. This work exemplifies how more detailed model information and more sophisticated prediction techniques can improve both the a">
+<link rel="canonical" href="https://data.nasa.gov/dataset/prognostics-in-battery-health-management">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Prognostics in Battery Health Management</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/prognostics-in-battery-health-management">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Batteries represent complex systems whose internal state vari- ables are either inaccessible to sensors or hard to measure un- der operational conditions. This work exemplifies how more detailed model information and more sophisticated prediction techniques can improve both the accuracy as well as the re- sidual uncertainty of the prediction in Prognostics and Health Management. The more dramatic performance improvement between various prediction techniques is in their ability to learn complex non-linear degradation behavior from the train- ing data and discard any external noise disturbances.
+An algorithm that manages these sources of uncertainty well can yield higher confidence in predictions, expressed by narrower uncertainty bounds. We observed that the particle filter approach results in RUL distributions which have better precision (narrower pdfs) by several σs (if approximated as Gaussian) as compared to the other regression methods. How- ever, PF requires a more complex implementation and compu- tational overhead than the other methods. This illustrates the basic tradeoff between modeling and algorithm development versus prediction accuracy and precision. For situations like battery health management where the rate of capacity degrada- tion is rather slow, one can rely on simple regression methods that tend to perform well as more data are accumulated and still predict far enough in advance to avoid any catastrophic failures. Techniques like GPR or even the baseline approach can offer a suitable platform in these situations by managing the uncertainty fairly well with much simpler implementations. Other data sets may allow much smaller prediction horizons and hence require precise techniques like particle filters.
+In this study, we conclude that there are several methods one could employ for battery health management applica- tions. Based on end user requirements and available resources, a choice can be made between simple or more elegant tech- niques. The particle filter based approach emerges as the winner when accuracy and precision are considered more important than other requirements.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/prognostics-in-battery-health-management">https://data.nasa.gov/dataset/prognostics-in-battery-health-management</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_681</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/681/">https://c3.nasa.gov/dashlink/resources/681/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2013-03-29</td></tr>
+<tr><th>Contact / Maintainer</th><td>Miryam Strautkalns — miryam.strautkalns@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/publication/2008_IMmag_BHM.pdf">2008_IMmag_BHM.pdf</a><br><small>2008_IMmag_BHM.pdf</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

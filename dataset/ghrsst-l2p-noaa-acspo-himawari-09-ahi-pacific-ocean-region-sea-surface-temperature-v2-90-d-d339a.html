@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GHRSST L2P NOAA/ACSPO Himawari-09 AHI Pacific Ocean Region Sea Surface Temperature v2.90 dataset — NASA Open Data Portal</title>
+<meta name="description" content="The H09-AHI-L2P-ACSPO-v2.90 dataset contains the Subskin Sea Surface Temperature (SST) produced by the NOAA ACSPO system from the Advanced Himawari Imager (AHI; largely identical to GOES-R/ABI) onboard the Himawari-9 (H09) satellite. The H09 is a Japanese weather satellite, the 9">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ghrsst-l2p-noaa-acspo-himawari-09-ahi-pacific-ocean-region-sea-surface-temperature-v2-90-d-d339a">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GHRSST L2P NOAA/ACSPO Himawari-09 AHI Pacific Ocean Region Sea Surface Temperature v2.90 dataset</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ghrsst-l2p-noaa-acspo-himawari-09-ahi-pacific-ocean-region-sea-surface-temperature-v2-90-d-d339a">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The H09-AHI-L2P-ACSPO-v2.90 dataset contains the Subskin Sea Surface Temperature (SST) produced by the NOAA ACSPO system from the Advanced Himawari Imager (AHI; largely identical to GOES-R/ABI) onboard the Himawari-9 (H09) satellite. The H09 is a Japanese weather satellite, the 9th of the Himawari geostationary weather satellite operated by the Japan Meteorological Agency. It was launched on November 2, 2016 into its nominal position at 140.7-deg E, and declared operational on December 13, 2022, replacing the Himawari-8. The AHI is the primary instrument on the Himawari Series for imaging Earth’s weather, oceans, and environment with high temporal and spatial resolutions.
+
+The H08/AHI maps SST in a Full Disk (FD) area from 80E-160W and 60S-60N, with spatial resolution 2km at nadir to 15km/VZA (view zenith angle) 67-deg, and 10-min temporal sampling. The 10-min FD data are subsequently collated in time, to produce the 1-hr product, with improved coverage and reduced cloud leakages and image noise. The L2P data is produced in GHRSST compliant netCDF4 GDS2 format, with 24 granules per day, and a total data volume 1.2 GB/day. The near-real time (NRT) data are updated hourly, with several hours latency. The NRT files are replaced with Delayed Mode (DM) files, with a latency of approximately 2-months. File names remain unchanged, and DM vs NRT can be identified by different time stamps and global attributes inside the files (MERRA instead of GFS for atmospheric profiles, and same day CMC L4 analyses in DM instead of one-day delayed in NRT processing).
+
+Pixel earth locations are not reported in the granules, as they remain unchanged from granule to granule. Pixel locations  can be obtained using a flat lat/lon file or a Python script available via Documents tab from the dataset landing page. Climate and Forecast (CF) metadata aware software (e.g., Panoply, xarray) can detect and map the data as is via the granule CF projection attributes and variables. The ACSPO H09 HAI SSTs are validated against quality controlled in situ data from the NOAA iQuam system (Xu and Ignatov, 2014) and continuously monitored in the NOAA SQUAM system (Dash et al, 2010). A 0.02-deg equal-angle gridded L3C product 0.7GB/day) is available at https://podaac.jpl.nasa.gov/dataset/H09-AHI-L3C-ACSPO-v2.90</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>DOC/NOAA/NESDIS/STAR;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ghrsst-l2p-noaa-acspo-himawari-09-ahi-pacific-ocean-region-sea-surface-temperature-v2-90-d-d339a">https://data.nasa.gov/dataset/ghrsst-l2p-noaa-acspo-himawari-09-ahi-pacific-ocean-region-sea-surface-temperature-v2-90-d-d339a</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/GHH09-2P290</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: -160.0, &quot;NorthBoundingCoordinate&quot;: 60.0, &quot;SouthBoundingCoordinate&quot;: -60.0, &quot;WestBoundingCoordinate&quot;: 80.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (14)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/iquam/">https://www.star.nesdis.noaa.gov/sod/sst/iquam/</a></td></tr><tr><td>BIN</td><td><a href="http://www.ghrsst.org">http://www.ghrsst.org</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/squam/">https://www.star.nesdis.noaa.gov/sod/sst/squam/</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://ghrsst.jpl.nasa.gov">https://ghrsst.jpl.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/H09/STAR/docs/geo_nav.py">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/H09/STAR/docs/geo_nav.py</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2744808497-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2744808497-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2744808497-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2744808497-POCLOUD</a></td></tr><tr><td>NetCDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/H09/STAR/docs/H09_140_7_E.nc">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/H09/STAR/docs/H09_140_7_E.nc</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2744808497-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-temperature-oceans-sea-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

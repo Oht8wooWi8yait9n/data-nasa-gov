@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DSCOVR EPIC Level 3 PAR — NASA Open Data Portal</title>
+<meta name="description" content="DSCOVR_EPIC_L3_PAR_01 is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/dscovr-epic-level-3-par-aa017">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>DSCOVR EPIC Level 3 PAR</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/dscovr-epic-level-3-par-aa017">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">DSCOVR_EPIC_L3_PAR_01 is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean PAR at the ice-free ocean surface. PAR is defined as the quantum energy flux from the Sun in the 400-700 nm range. Daily mean PAR is the 24-hour averaged planar flux in that spectral range reaching the surface. It is expressed in E.m-2.d-1 (Einstein per meter squared per day). The factor required to convert E.m-2 d-1 units to mW.cm-2.µm-1 units are equal to 0.838 to an inaccuracy of a few percent regardless of meteorological conditions. The EPIC daily mean PAR product is generated on Plate Carrée (equal-angle) grid with an 18.4 km resolution at the equator and on an 18.4 km equal-area grid, i.e., the product is compatible with Ocean Biology Processing Group ocean color products.
+The EPIC PAR algorithm uses a budget approach, in which the solar irradiance reaching the surface is obtained by subtracting from the irradiance arriving at the top of the atmosphere (known), the irradiance reflected space (estimated from the EPIC Level 1b radiance data), taking into account atmospheric transmission (modeled). Clear and cloudy regions within a pixel do not need to be distinguished. This dismisses the need for often-arbitrary assumptions about cloudiness distribution and is therefore adapted to the relatively large EPIC pixels. A daily mean PAR is estimated on the source grid for each EPIC instantaneous daytime observation, assuming no cloudiness changes during the day, and the individual estimates are remapped and weight-averaged using the cosine of the Sun zenith angle. In the computations, wind speed, surface pressure, and water vapor amount are extracted from NCEP (National Centers for Environmental Prediction) Reanalysis 2 data, aerosol optical thickness, and angstrom coefficient from MERRA-2 (Modern-Era Retrospective analysis for Research and Applications, Version 2) data, and ozone amount from EPIC Level 2 data. Areas contaminated by sun glint are excluded using a threshold on sun glint reflectance calculated using wind data. Ice masking is based on NSIDC (National Snow and Ice Data Center) near real-time ice fraction data.
+Additional information about the EPIC ocean surface PAR products can be found at the NASA DSCOVR: EPIC website: https://epic.gsfc.nasa.gov/, under “Science -&gt; Products -&gt; Ocean Surface” (https://epic.gsfc.nasa.gov/science/products/ocean).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/LARC/SD/ASDC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/dscovr-epic-level-3-par-aa017">https://data.nasa.gov/dataset/dscovr-epic-level-3-par-aa017</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/EPIC/DSCOVR/DSCOVR_EPIC_L3_PAR_L3.01</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2015-06-13/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;Boundary&quot;: {&quot;Points&quot;: [{&quot;Latitude&quot;: -90, &quot;Longitude&quot;: -180}, {&quot;Latitude&quot;: -90, &quot;Longitude&quot;: 180}, {&quot;Latitude&quot;: 90, &quot;Longitude&quot;: 180}, {&quot;Latitude&quot;: 90, &quot;Longitude&quot;: -180}, {&quot;Latitude&quot;: -90, &quot;Longitude&quot;: -180}]}}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (9)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://epic.gsfc.nasa.gov/">https://epic.gsfc.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/project/DSCOVR">https://asdc.larc.nasa.gov/project/DSCOVR</a></td></tr><tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/citing-data">https://asdc.larc.nasa.gov/citing-data</a></td></tr><tr><td>PDF</td><td><a href="https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_PAR-Data-access.pdf">https://asdc.larc.nasa.gov/documents/dscovr/DSCOVR_EPIC_PAR-Data-access.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/EPIC/DSCOVR/DSCOVR_EPIC_L3_PAR_L3.01">https://doi.org/10.5067/EPIC/DSCOVR/DSCOVR_EPIC_L3_PAR_L3.01</a></td></tr><tr><td>PNG</td><td><a href="https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png">https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3861596562-LARC_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3861596562-LARC_CLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3861596562-LARC_CLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3861596562-LARC_CLOUD</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3861596562-LARC_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-optics-oceans</span><span class="tag">earth-science-ocean-optics-oceans-ocean-color</span><span class="tag">earth-science-ocean-optics-oceans-photosynthetically-active-radiation</span></div>
+</article>
+</main>
+</body>
+</html>

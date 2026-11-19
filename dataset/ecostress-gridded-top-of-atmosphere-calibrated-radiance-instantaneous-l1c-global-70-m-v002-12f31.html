@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Gridded Top of Atmosphere Calibrated Radiance Instantaneous L1C Global 70 m V002 — NASA Open Data Portal</title>
+<meta name="description" content="The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collec">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-gridded-top-of-atmosphere-calibrated-radiance-instantaneous-l1c-global-70-m-v002-12f31">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Gridded Top of Atmosphere Calibrated Radiance Instantaneous L1C Global 70 m V002</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-gridded-top-of-atmosphere-calibrated-radiance-instantaneous-l1c-global-70-m-v002-12f31">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes.
+
+The ECOSTRESS Gridded Top of Atmosphere Calibrated Radiance Instantaneous Level 1C Global 70 m (ECO_L1CG_RAD) Version 2 data product provides at-sensor calibrated radiance values retrieved for five thermal infrared (TIR) bands operating between 8 and 12.5 µm. This product is a gridded version of the [ECO_L1B_RAD](https://doi.org/10.5067/ECOSTRESS/ECO_L1B_RAD.002) Version 2 data product that has been resampled by nearest neighbor, projected to a globally snapped 0.0006° grid, and repackaged as the ECO_L1CG_RAD data product.
+
+The ECO_L1CG_RAD Version 2 data product contains 12 layers distributed in an HDF5 format file containing radiance values for the five TIR bands, associated data quality indicators, and cloud and water masks.
+
+Known Issues
+* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.
+* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.
+* Missing scan data/striping features: During testing, an instrument artifact was encountered in ECOSTRESS bands 1 and 5, resulting in missing values. A machine learning algorithm has been applied to interpolate missing values. For more information on the missing scan filling techniques and outcomes, see Section 3.3.2 of the ECO_L1B_RAD User Guide.
+* Scan overlap: An overlap between ECOSTRESS scans results in a clear line overlap and repeating data. Additional information is available in Section 3.2 of the ECO_L1B_RAD User Guide.
+* Scan flipping: Improvements to the visualization of the data to compensate for instrument orientation are discussed in Section 3.4 of the ECO_L1B_RAD User Guide.
+* Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.
+* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the International Space Station (ISS), potentially impacting data quality of obstructed pixels. The &#x27;FieldOfViewObstruction&#x27; metadata field is included in all Version 2 products to indicate possible obstructions:
+     * Before October 24, 2024 (orbits prior to 35724): The field is present but was not populated and does not reliably identify affected scenes.
+     * On or after October 24, 2024 (starting with orbit 35724): The field is populated and generally accurate, except for late December 2024, when a temporary processing error may have caused false positives.
+     * A [list of scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) confirmed to be affected by obstructions is available and is recommended for verifying historical data (before October 24, 2024) and scenes from late December 2024.
+* The ISS native pointing information is coarse relative to ECOSTRESS pixels, so ECOSTRESS geolocation is improved through image matching with a basemap. Metadata in the L1B_GEO file shows the success of this geolocation improvement, using categorizations &quot;best&quot;, &quot;good&quot;, &quot;suspect&quot;, and &quot;poor&quot;. We recommend that users use only &quot;best&quot; and &quot;good&quot; scenes for evaluations where geolocation is important (e.g., comparison to field sites). For some scenes, this metadata is not reflected in the higher-level products (e.g., land surface temperature, evapotranspiration, etc.). While this metadata is always available in the geolocation product, to save users additional download, we have produced a [summary text file](https://lpdaac.usgs.gov/documents/2253/qa_20250423-20250518.txt) that includes the geolocation quality flags for all scenes from launch to present. At a later date, all higher-level products will reflect the geolocation quality flag correctly (the field name is GeolocationAccuracyQA).</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-gridded-top-of-atmosphere-calibrated-radiance-instantaneous-l1c-global-70-m-v002-12f31">https://data.nasa.gov/dataset/ecostress-gridded-top-of-atmosphere-calibrated-radiance-instantaneous-l1c-global-70-m-v002-12f31</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO_L1CG_RAD.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-09/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 54, &quot;SouthBoundingCoordinate&quot;: -54, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2595678497-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2595678497-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO_L1CG_RAD.002">https://doi.org/10.5067/ECOSTRESS/ECO_L1CG_RAD.002</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/222/ECO1B_Calibration_ATBD_V1.pdf">https://lpdaac.usgs.gov/documents/222/ECO1B_Calibration_ATBD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/223/ECO1B_Geolocation_ATBD_V1.pdf">https://lpdaac.usgs.gov/documents/223/ECO1B_Geolocation_ATBD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1321/ECO1B_PSD_V1.pdf">https://lpdaac.usgs.gov/documents/1321/ECO1B_PSD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/225/ECO1B_Rad_ASD_V1.pdf">https://lpdaac.usgs.gov/documents/225/ECO1B_Rad_ASD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/226/ECO1B_Geo_ASD_V1.pdf">https://lpdaac.usgs.gov/documents/226/ECO1B_Geo_ASD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1491/ECO1B_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1491/ECO1B_User_Guide_V2.pdf</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L1CG_RAD.002/ECOv002_L1CG_RAD_26839_004_20230331T120128_0710_01/ECOv002_L1CG_RAD_26839_004_20230331T120128_0710_01.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L1CG_RAD.002/ECOv002_L1CG_RAD_26839_004_20230331T120128_0710_01/ECOv002_L1CG_RAD_26839_004_20230331T120128_0710_01.png</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt">https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt">https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2595678497-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

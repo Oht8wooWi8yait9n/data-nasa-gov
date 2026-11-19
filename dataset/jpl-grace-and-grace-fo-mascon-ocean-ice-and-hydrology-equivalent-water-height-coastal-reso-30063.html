@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water Height Coastal Resolution Improvement (CRI) Filtered Release 06.3 Version 04 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains gridded monthly global water storage/height anomalies relative to a time-mean, derived from GRACE and GRACE-FO and processed at JPL using the Mascon approach (RL06.3Mv04). A Coastal Resolution Improvement (CRI) filter has been applied to this data set to red">
+<link rel="canonical" href="https://data.nasa.gov/dataset/jpl-grace-and-grace-fo-mascon-ocean-ice-and-hydrology-equivalent-water-height-coastal-reso-30063">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water Height Coastal Resolution Improvement (CRI) Filtered Release 06.3 Version 04</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/jpl-grace-and-grace-fo-mascon-ocean-ice-and-hydrology-equivalent-water-height-coastal-reso-30063">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains gridded monthly global water storage/height anomalies relative to a time-mean, derived from GRACE and GRACE-FO and processed at JPL using the Mascon approach (RL06.3Mv04). A Coastal Resolution Improvement (CRI) filter has been applied to this data set to reduce signal leakage errors across coastlines. For most land hydrology, oceanographic as well as land-ice applications this is the recommend data set for the analysis of surface mass changes. The data are provided in a single data file in netCDF format, with water storage/height anomalies in equivalent water thickness units (cm). The data are derived from solving for monthly gravity field variations on geolocated spherical cap mass concentration functions, rather than global spherical harmonic coefficients. Additionally, realistic geophysical information is introduced during the computation to intrinsically remove correlated errors. Thus, these Mascon grids do not need to be de-correlated or smoothed, like traditional spherical harmonic gravity solutions.
+
+The complete Mascon solution consists of 4,551 independent estimates of surface mass change that have been derived using an equal-area 3-degree grid of individual mascons. A subset of these individual mascons span coastlines, and contain mixed land and ocean mass change signals. In a post-processing step, the CRI filter is applied to those mixed land/ocean Mascons to separate land and ocean mass. The land mask used to perform this separation is provided in the same directory as this dataset, as are uncertainty values, and the gridded mascon-ID number to enable further analysis. Since the individual mascons act as an inherent smoother on the gravity field, a set of optional gain factors (or scale factors) is provided within the netCDF and can be applied to the solution to study mass change signals at sub-mascon resolution (e.g. for continental hydrology applications). For use-case examples and further background on the gain factors, please see Wiese, Landerer &amp; Watkins, 2016, https://doi.org/10.1002/2016WR019344.
+
+This RL06.3Mv04 is an updated version of the previous Tellus JPL Mascon RL06.1Mv03 (DOI, 10.5067/TEMSC-3JC63). For a detailed description on the Mascon solution, including the mathematical derivation, implementation of geophysical constraints, and solution validation, please see Watkins et al., 2015, doi: 10.1002/2014JB011547. For a detailed description of the CRI filter implementation, please see Wiese et al., 2016, doi:10.1002/2016WR019344.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/JPL/GRACE-TELLUS-0001;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/jpl-grace-and-grace-fo-mascon-ocean-ice-and-hydrology-equivalent-water-height-coastal-reso-30063">https://data.nasa.gov/dataset/jpl-grace-and-grace-fo-mascon-ocean-ice-and-hydrology-equivalent-water-height-coastal-reso-30063</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/TEMSC-3JC634</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/">https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/</a></td></tr><tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/GRACE-FO">https://podaac.jpl.nasa.gov/GRACE-FO</a></td></tr><tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/GRACE">https://podaac.jpl.nasa.gov/GRACE</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/GRACE">https://github.com/podaac/GRACE</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3195527175-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3195527175-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3195527175-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3195527175-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/gravity/grace-documentation">https://podaac.jpl.nasa.gov/gravity/grace-documentation</a></td></tr><tr><td>TXT</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/gracefo/open/docs/GRACE_GRACE-FO_ReleaseNotes_JPL_MASCON.txt">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/gracefo/open/docs/GRACE_GRACE-FO_ReleaseNotes_JPL_MASCON.txt</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://soto.podaac.earthdatacloud.nasa.gov/?l=GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI%2CBlueMarble_ShadedRelief_Bathymetry%2CCoastlines_15m">https://soto.podaac.earthdatacloud.nasa.gov/?l=GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI%2CBlueMarble_ShadedRelief_Bathymetry%2CCoastlines_15m</a></td></tr><tr><td>JSON</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/virtual_collections/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4_virtual_https.json">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/virtual_collections/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4_virtual_https.json</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3195527175-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-glaciers-ice-sheets-cryosphere-glacier-mass-balance-ice-sheet-mass-balance</span><span class="tag">earth-science-ground-water-terrestrial-hydrosphere</span><span class="tag">earth-science-water-budget-terrestrial-hydrosphere-terrestrial-water-storage</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOVS GLA 5 DAY GRIDS from NOAA-11 V01 (TOVSA5NH) at GES DISC — NASA Open Data Portal</title>
+<meta name="description" content="This dataset (TOVSA5NH) contains the TIROS Operational Vertical Sounder (TOVS) level 3 geophysical parameters derived using data from NOAA-11 and the physical retrieval method of Susskind et al. (1984) and processed by the Satellite Data Utilization Office of the Goddard Laborato">
+<link rel="canonical" href="https://data.nasa.gov/dataset/tovs-gla-5-day-grids-from-noaa-11-v01-tovsa5nh-at-ges-disc">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TOVS GLA 5 DAY GRIDS from NOAA-11 V01 (TOVSA5NH) at GES DISC</h1>
+<div class="meta-badges"><span class="badge">TOVS Pathfinder</span><span class="badge">CWIC</span><span class="badge">geospatial</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/tovs-gla-5-day-grids-from-noaa-11-v01-tovsa5nh-at-ges-disc">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset (TOVSA5NH) contains the TIROS Operational Vertical Sounder (TOVS) level 3 geophysical parameters derived using data from NOAA-11 and the physical retrieval method of Susskind et al. (1984) and processed by the Satellite Data Utilization Office of the Goddard Laboratory for Atmospheres at NASA/GSFC. This method, which is hydrodynamic model- and a priori data-dependent, is designated as the so-called Path A scheme by the TOVS Pathfinder Science Working Group. The 20 channel High resolution Infrared Radiation Sounder 2 (HIRS2) and the 4 channel Microwave Sounding Unit (MSU) aboard the NOAA-xx series of Polar Orbiting Satellites are used to produce global fields of the 3-dimensional temperature-moisture structure of the atmosphere. In addition to profiles of temperature and moisture, the HIRS2/MSU data are used to derive important quantities such as land and sea surface temperature, outgoing longwave radiation, cloud fraction, cloudtop height, total ozone overburden and precipitation estimates.
+
+The Path A system steps through an interactive forecast-retrieval-analysis cycle. In each 6 hour synoptic period, a 2nd order General Circulation Model (Takacs et al., 1994) is used to generate the 6 hour forecast fields of temperature and humidity. These global fields are used as the first guess for all soundings occuring within a 6 hour time window centered upon the forecast time. These retrievals are then assimilated with all available insitu measurements (such as radiosonde and ship reports) in the 6 hour interval using an Optimal Interpolation (OI) analysis scheme developed by the Data Assimilation Office of the Goddard Laboratory for Atmospheres. This analysis is then used to specify the initial conditions for the next 6 hour forecast, thus completing the cycle.
+
+The retrieval algorithm itself is a physical method based on the iterative relaxation technique originally proposed by Chahine (1968). The basic approach consists of modifying the temperature profile from the previous iteration by an amount proportional to the difference between the observed brightness temperatures and the brightness temperatures computed from the trial parameters using the full radiative transfer equation applied at the observed satellite zenith angle. For the case of the temperature profile, the updated layer mean temperatures are given as a linear combination of multichannel brightness temperature differences with the coefficients given by the channel weighting functions. Constraints are imposed upon the solution in order to ensure stability and convergence of the iterative process. For more details see Susskind et al (1984).
+
+There are level 3 data product files for five TOVS satellites, each of which is in the HDF format and each representative of a different averaging time period.  All files contain the same number of geophysical parameter arrays stored as HDF Scientific Data Sets (SDSs). The time periods include daily, 5 day (pentad) and monthly, with the AM and PM portions of the orbits treated separately.  All data are mapped to a 1 degree longitude by 1 degree latitude global grid. This collection contain 5-day averages.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/GCDC/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/tovs-gla-5-day-grids-from-noaa-11-v01-tovsa5nh-at-ges-disc">https://data.nasa.gov/dataset/tovs-gla-5-day-grids-from-noaa-11-v01-tovsa5nh-at-ges-disc</a></td></tr>
+<tr><th>Identifier</th><td>C1274625638-GES_DISC</td></tr>
+<tr><th>Landing Page</th><td><a href="https://cmr.earthdata.nasa.gov:443/search/concepts/C1274625638-GES_DISC.html">https://cmr.earthdata.nasa.gov:443/search/concepts/C1274625638-GES_DISC.html</a></td></tr>
+<tr><th>Themes</th><td>TOVS Pathfinder, CWIC, geospatial</td></tr>
+<tr><th>Modified</th><td>1994-06-30</td></tr>
+<tr><th>Issued</th><td>1988-10-12</td></tr>
+<tr><th>Temporal Coverage</th><td>1988-10-12T00:00:00Z/2022-01-17T00:00:00Z</td></tr>
+<tr><th>Spatial Coverage</th><td><code>-180.0 -90.0 180.0 90.0</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>JOEL SUSSKIND — joel.susskind-1@nasa.gov</td></tr>
+<tr><th>Series</th><td>TOVSA5NH</td></tr>
+<tr><th>Program Code</th><td>026:001</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (7)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSA5NH_01.png">Get a related visualization</a><br><small>TOVSA5NH image</small></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/TOVSA5NH_01.html">This dataset&#x27;s landing page</a><br><small>Access the dataset landing page from the GES DISC website.</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_Starter_Kit.pdf">View documentation related to this dataset</a><br><small>This document is TOVS legacy documentation.  Some information may be obsolete.</small></td></tr><tr><td>HTML</td><td><a href="https://disc1.gesdisc.eosdis.nasa.gov/data/tovs/TOVSA5NH">Download this dataset through a directory map</a><br><small>Access the data via HTTPS.</small></td></tr><tr><td>HTML</td><td><a href="https://search.earthdata.nasa.gov/search?q=TOVSA5NH+001">Download this dataset through Earthdata Search</a><br><small>Use the Earthdata Search to find and retrieve data sets across multiple data centers.</small></td></tr><tr><td>HTML</td><td><a href="https://disc1.gesdisc.eosdis.nasa.gov/data/tovs/TOVSA5ND/doc/README.TOVSPentad.txt">View this dataset&#x27;s read me document</a><br><small>README Document</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_PATHFINDER_PATH_A_DATASET_GUIDE.pdf">View documentation related to this dataset</a><br><small>This document is a TOVS legacy data guide.  Some
+information may be obsolete.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">atmosphere</span><span class="tag">atmospheric-chemistry</span><span class="tag">atmospheric-pressure</span><span class="tag">atmospheric-radiation</span><span class="tag">atmospheric-temperature</span><span class="tag">atmospheric-water-vapor</span><span class="tag">clouds</span><span class="tag">earth-science</span><span class="tag">land-surface</span><span class="tag">ocean-pressure</span><span class="tag">ocean-temperature</span><span class="tag">oceans</span><span class="tag">precipitation</span><span class="tag">sea-surface-topography</span><span class="tag">surface-thermal-properties</span></div>
+</article>
+</main>
+</body>
+</html>

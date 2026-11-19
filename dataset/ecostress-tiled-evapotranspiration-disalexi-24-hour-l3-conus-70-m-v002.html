@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Tiled Evapotranspiration disALEXI 24-Hour L3 CONUS 70 m V002 — NASA Open Data Portal</title>
+<meta name="description" content="The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collec">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-disalexi-24-hour-l3-conus-70-m-v002">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Tiled Evapotranspiration disALEXI 24-Hour L3 CONUS 70 m V002</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-disalexi-24-hour-l3-conus-70-m-v002">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes.
+
+The ECOSTRESS Tiled Evapotranspiration disALEXI 24-hour L3 CONUS 70 m Version 2 data product provides estimates of daily evapotranspiration (ET). It utilizes the ECOSTRESS Level 2 (L2) land surface temperature and emissivity (LST&amp;E) product ([ECO_L2T_LSTE.002](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002)), regional-scale fluxes from the Atmospheric Land Exchange Interface (ALEXI) model, and Normalized Difference Vegetation Index (NDVI) and albedo from the Spatial Timeseries for Automated high-Resolution multi-Sensor (STARS) data-fusion product ([ECO_L2T_STARS.002](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_STARS.002)), with meteorology sourced from the Climate Forecast System Reanalysis (CFSR).
+
+The ECO_L3T_ET_ALEXI data product is derived using a physics-based Two-Source Energy Balance (TSEB) model, implemented in the Atmosphere Land Exchange Inverse (ALEXI) disaggregation algorithm (DisALEXI). Described in the Algorithm Theoretical Basis Document (ATBD), DisALEXI spatially disaggregates the regional ET produced by the ALEXI TSEB model. While there are many approaches for spatially mapping ET, models based on the surface energy balance are favored for remote sensing retrievals based on land-surface temperature. Applications include estimating crop water use, phenology monitoring, and drought early warning or detecting vegetation water stress.
+
+The ECO_L3T_ET_ALEXI Version 2 data product is available in Cloud Optimized GeoTIFF (COG) format for Conterminous United States (CONUS) using a modified version of the Military Grid Reference System (MGRS), which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 m spatial resolution. Each granule contains a separate COG file for each variable: Evapotranspiration Daily and Evapotranspiration Daily Uncertainty. A low-resolution browse is also available showing daily ET as a stretched image with a color ramp in JPEG format.
+
+Known Issues
+* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.
+* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.
+* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the International Space Station (ISS), potentially impacting data quality of obstructed pixels. The &#x27;FieldOfViewObstruction&#x27; metadata field is included in all Version 2 products to indicate possible obstructions:
+     * Before October 24, 2024 (orbits prior to 35724): The field is present but was not populated and does not reliably identify affected scenes.
+     * On or after October 24, 2024 (starting with orbit 35724): The field is populated and generally accurate, except for late December 2024, when a temporary processing error may have caused false positives.
+     * A [list of scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) confirmed to be affected by obstructions is available and is recommended for verifying historical data (before October 24, 2024) and scenes from late December 2024.
+* The ISS native pointing information is coarse relative to ECOSTRESS pixels, so ECOSTRESS geolocation is improved through image matching with a basemap. Metadata in the L1B_GEO file shows the success of this geolocation improvement, using categorizations &quot;best&quot;, &quot;good&quot;, &quot;suspect&quot;, and &quot;poor&quot;. We recommend that users use only &quot;best&quot; and &quot;good&quot; scenes for evaluations where geolocation is important (e.g., comparison to field sites). For some scenes, this metadata is not reflected in the higher-level products (e.g., land surface temperature, evapotranspiration, etc.). While this metadata is always available in the geolocation product, to save users additional download, we have produced a [summary text file](https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt) that includes the geolocation quality flags for all scenes from launch to present. At a later date, all higher-level products will reflect the geolocation quality flag correctly (the field name is GeolocationAccuracyQA).
+* During the time period of May 15th, 2025, through July 1st, 2025, ECOSTRESS data was noisier than expected. Cycling the payload resolved the issue, but researchers should use all levels of ECOSTRESS data acquired during this time period with caution.
+* During the time period of January 1st, 2023, through September 30th, 2023, ECOSTRESS STARS and the resulting ET products are considered lower quality due to the priors used in the STARS model. The bug was corrected, and the lower quality data will be reprocessed.
+* Coarse Resolution Artifacts: Users may sometimes observe coarse resolution (~500m - 1km) artifacts in the L3 and L4 gridded and tiled products. These artifacts are caused by corresponding artifacts within the ECOSTRESS Tiled Ancillary NDVI and Albedo L2 Global 70 m ([ECO_L2T_STARS](http://doi.org/10.5067/ECOSTRESS/ECO_L2T_STARS.002)) Version 2 data product. The ECO_L2T_STARS product is produced through a data fusion of Suomi NPP VIIRS (~500 m - 1 km resolution) and Harmonized Landsat Sentinel-2 (HLS, 30 m) products. When there is significant temporal lag between HLS acquisitions, the VIIRS data dominates, which can produce coarse resolution artifacts in the ECO_L2T_STARS product. This typically corresponds to relatively large uncertainty values.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-disalexi-24-hour-l3-conus-70-m-v002">https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-disalexi-24-hour-l3-conus-70-m-v002</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-15/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: -65, &quot;NorthBoundingCoordinate&quot;: 52, &quot;SouthBoundingCoordinate&quot;: 23, &quot;WestBoundingCoordinate&quot;: -127}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (12)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2076105456-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2076105456-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002">https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1654/ECO_L3_ET_ALEXI_ATBD_V2.pdf">https://lpdaac.usgs.gov/documents/1654/ECO_L3_ET_ALEXI_ATBD_V2.pdf</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_ET_ALEXI.002/ECOv002_L3T_ET_ALEXI_38719_016_13SBT_20250505T125141_0713_01/ECOv002_L3T_ET_ALEXI_38719_016_13SBT_20250505T125141_0713_01.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_ET_ALEXI.002/ECOv002_L3T_ET_ALEXI_38719_016_13SBT_20250505T125141_0713_01/ECOv002_L3T_ET_ALEXI_38719_016_13SBT_20250505T125141_0713_01.png</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>BIN</td><td><a href="https://ecostress.jpl.nasa.gov/">https://ecostress.jpl.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt">https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt">https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2076105456-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-processes</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

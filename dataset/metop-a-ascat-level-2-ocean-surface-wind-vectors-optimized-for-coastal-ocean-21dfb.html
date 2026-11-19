@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MetOp-A ASCAT Level 2 Ocean Surface Wind Vectors Optimized for Coastal Ocean — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains operational near-real-time Level 2 coastal ocean surface wind vector retrievals from the Advanced Scatterometer (ASCAT) on MetOp-A at 12.5 km sampling resolution (note: the effective resolution is 25 km). It is a product of the European Organization for the ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/metop-a-ascat-level-2-ocean-surface-wind-vectors-optimized-for-coastal-ocean-21dfb">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MetOp-A ASCAT Level 2 Ocean Surface Wind Vectors Optimized for Coastal Ocean</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/metop-a-ascat-level-2-ocean-surface-wind-vectors-optimized-for-coastal-ocean-21dfb">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains operational near-real-time Level 2 coastal ocean surface wind vector retrievals from the Advanced Scatterometer (ASCAT) on MetOp-A at 12.5 km sampling resolution (note: the effective resolution is 25 km). It is a product of the European Organization for the Exploitation of Meteorological Satellites (EUMETSAT) Ocean and Sea Ice Satellite Application Facility (OSI SAF) provided through the Royal Netherlands Meteorological Institute (KNMI). This coastal dataset differs from the standard 25 km datasets in that it utilizes a spatial box filter (rather than the Hamming filter) to generate a spatial average of the Sigma-0 retrievals from the Level 1B dataset; all full resolution Sigma-0 retrievals within a 15 km radius of the wind vector cell centroid are used in the averaging. Since the full resolution L1B Sigma-0 retrievals are used, all non-sea retrievals are discarded prior to the Sigma-0 averaging. Each box average Sigma-0 is then used to compute the wind vector cell using the same CMOD7.n geophysical model function as in the standard OSI SAF ASCAT wind vector datasets. With this enhanced coastal retrieval, winds can be computed as close to ~15 km from the coast, as compared to the static ~35 km land mask in the standard 12.5 km dataset. Each file is provided in netCDF version 3 format, and contains one full orbit derived from 3-minute orbit granules. Latency is approximately 2 hours from the latest measurement. The beginning of the orbit is defined by the first wind vector cell measurement within the first 3-minute orbit granule that starts north of the Equator in the ascending node. ASCAT is a C-band dual fan beam radar scatterometer providing two independent swaths of backscatter retrievals in sun-synchronous polar orbit aboard the MetOp-A platform. For more information on the MetOp mission, please visit: https://www.eumetsat.int/our-satellites/metop-series . For more timely announcements, users are encouraged to register with the KNMI scatterometer email list: scat@knmi.nl. Users are also highly advised to check the dataset user guide periodically for updates and new information on known problems and issues. All intellectual property rights of the OSI SAF products belong to EUMETSAT. The use of these products is granted to every interested user, free of charge. If you wish to use these products, EUMETSAT&#x27;s copyright credit must be shown by displaying the words &quot;copyright (year) EUMETSAT&quot; on each of the products used.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>EUMETSAT/OSISAF;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/metop-a-ascat-level-2-ocean-surface-wind-vectors-optimized-for-coastal-ocean-21dfb">https://data.nasa.gov/dataset/metop-a-ascat-level-2-ocean-surface-wind-vectors-optimized-for-coastal-ocean-21dfb</a></td></tr>
+<tr><th>Identifier</th><td>/SDE/CMR_API/|C1996881752-POCLOUD</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2010-08-18/2021-11-15</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 89.6, &quot;SouthBoundingCoordinate&quot;: -89.6, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (16)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://scatterometer.knmi.nl/publications/">https://scatterometer.knmi.nl/publications/</a></td></tr><tr><td>BIN</td><td><a href="https://www.eumetsat.int/our-satellites/metop-series">https://www.eumetsat.int/our-satellites/metop-series</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://scatterometer.knmi.nl/training_material/">https://scatterometer.knmi.nl/training_material/</a></td></tr><tr><td>BIN</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ascat/preview/L2/metop_a/coastal_opt/README.datagap">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ascat/preview/L2/metop_a/coastal_opt/README.datagap</a></td></tr><tr><td>BIN</td><td><a href="https://scatterometer.knmi.nl/ascat_osi_co_prod/">https://scatterometer.knmi.nl/ascat_osi_co_prod/</a></td></tr><tr><td>PDF</td><td><a href="https://scatterometer.knmi.nl/publications/pdf/ASCAT_Product_Manual.pdf">https://scatterometer.knmi.nl/publications/pdf/ASCAT_Product_Manual.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ascat/preview/L2/docs/ASCAT_calval_250.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ascat/preview/L2/docs/ASCAT_calval_250.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C1996881752-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C1996881752-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1996881752-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C1996881752-POCLOUD</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATA-L2-Coastal.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATA-L2-Coastal.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://harmony.earthdata.nasa.gov/">https://harmony.earthdata.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-winds-oceans-surface-winds</span></div>
+</article>
+</main>
+</body>
+</html>

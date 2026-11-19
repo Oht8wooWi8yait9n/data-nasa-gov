@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Integrated Building Health Management — NASA Open Data Portal</title>
+<meta name="description" content="**Abstract:**  Building health management is an important part in running an efficient and cost-effective building. Many problems in a building’s system can go undetected for long periods of time, leading to expensive repairs or wasted resources. This project aims to help detect ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/integrated-building-health-management">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Integrated Building Health Management</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/integrated-building-health-management">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">**Abstract:**
+
+Building health management is an important part in running an efficient and cost-effective building. Many problems in a building’s system can go undetected for long periods of time, leading to expensive repairs or wasted resources. This project aims to help detect and diagnose the building‘s health with data driven methods throughout the day. Orca and IMS are two state of the art algorithms that observe an array of building health sensors and provide feedback on the overall system’s health as well as localize the problem to one, or possibly two, components. With this level of feedback the hope is to quickly identify problems and provide appropriate maintenance while reducing the number of complaints and service calls.
+
+**Introduction:**
+
+To prepare these technologies for the new installation, the proposed methods are being tested on a current system that behaves similarly to the future green building. Building 241 was determined to best resemble the proposed building 232 and therefore was chosen for this study.
+Building 241 is currently outfitted with 34 sensors that monitor the heating &amp; cooling temperatures for the air and water systems as well as other various subsystem states. The daily sensor recordings were logged and sent to the IDU group for analysis. The period of analysis was focused from July 1st through August 10th 2009.
+
+**Methodology:**
+
+The two algorithms used for analysis were Orca and IMS. Both methods look for anomalies using a distanced based scoring approach.
+Orca has the ability to use a single data set and find outliers within that data set. This tactic was applied to each day.  After scoring  each time sample throughout a given day the Orca score profiles were compared by computing the correlation against all other days. Days with high overall correlations were considered normal however days with lower overall correlations were more anomalous.  IMS, on the other hand, needs a normal  set of data to build a model, which can be applied to a set of test data to asses how anomaly the particular data set is.
+The typical days  identified by Orca were used as the reference/training set for IMS, while all the other days were passed through IMS resulting in an anomaly score profile for each day. The mean of the IMS score profile was then calculated for each day to produce a summary IMS score. These summary scores were ranked and the top outliers were  identified (see Figure 1).  Once the anomalies were identified the contributing parameters were then ranked by the algorithm.
+
+**Analysis:**
+
+The contributing parameters identified by IMS were localized to the return air temperature duct system.
+
+-7/03/09 (Figure 2 &amp; 3) AHU-1 Return Air Temperature (RAT) Calculated Average Return Air Temperature
+-7/19/09 (Figure 3 &amp; 4) AHU-2 Return Air Temperature (RAT) Calculated Average Return Air Temperature
+
+IMS identified significantly higher temperatures compared to other days during the month of July and August.
+
+**Conclusion:**
+
+The proposed algorithms Orca and IMS have shown that they were able to pick up significant anomalies in the building system as well as diagnose the anomaly by identifying the sensor values that were anomalous.  In the future these methods can be used on live streaming data and produce a real time anomaly score to help building maintenance with detection and diagnosis of problems.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/integrated-building-health-management">https://data.nasa.gov/dataset/integrated-building-health-management</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_217</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/217/">https://c3.nasa.gov/dashlink/resources/217/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-22</td></tr>
+<tr><th>Contact / Maintainer</th><td>Elizabeth Foughty — elizabeth.a.foughty@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Figure_1.jpg">Figure_1.jpg</a><br><small>Figure_1.jpg</small></td></tr><tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Figure_2.jpg">Figure_2.jpg</a><br><small>Figure_2.jpg</small></td></tr><tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Figure_3.jpg">Figure_3.jpg</a><br><small>Figure_3.jpg</small></td></tr><tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Figure_4.jpg">Figure_4.jpg</a><br><small>Figure_4.jpg</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

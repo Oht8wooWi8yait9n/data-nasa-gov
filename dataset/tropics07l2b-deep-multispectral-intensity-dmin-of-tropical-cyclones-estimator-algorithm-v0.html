@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TROPICS07 L2B Deep Multispectral INtensity (DMIN) of Tropical Cyclones Estimator Algorithm V0.2 — NASA Open Data Portal</title>
+<meta name="description" content="The &quot;Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats&quot; (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizo">
+<link rel="canonical" href="https://data.nasa.gov/dataset/tropics07l2b-deep-multispectral-intensity-dmin-of-tropical-cyclones-estimator-algorithm-v0">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TROPICS07 L2B Deep Multispectral INtensity (DMIN) of Tropical Cyclones Estimator Algorithm V0.2</h1>
+<div class="meta-badges"><span class="badge">TROPICS (EVI-3)</span><span class="badge">geospatial</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/tropics07l2b-deep-multispectral-intensity-dmin-of-tropical-cyclones-estimator-algorithm-v0">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The &quot;Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats&quot; (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of five identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload.
+
+Each SV hosts an identical high-performance spectrometer named the TROPICS Millimeter-wave Sounder (TMS) that will provide temperature profiles using seven channels near the 118.75-GHz oxygen absorption line, water vapor profiles using three channels near the 183-GHz water vapor absorption line, imagery in a single channel near 90 GHz for precipitation measurements (when combined with higher resolution water vapor channels), and a single channel near 205 GHz that is more sensitive to cloud-sized ice particles.
+
+The Deep Multispectral INtensity of TCs estimator with 183 GHz brightness temperatures (D-MINT183), developed at the University of Wisconsin/CIMSS, estimates two primary TC variables: Minimum Sea Level Pressure (MSLP) and Maximum Sustained Winds (MSW). D-MINT183 is a convolutional neural network (CNN) with no inherent physical understanding of TC intensity relationships, which is an approach that differs from the other two TROPICS TC Intensity algorithm (i.e., TCIE and HISA). D-MINT183 is trained using combinations of 183±1 and 183±3 GHz imagery from SSMIS, ATMS, MHS, and AMSU-B, as well as 15 hours of infrared imagery (in 3-h increments) and scalar predictors. TROPICS has 184.41 GHz and 186.51 GHz imagery, which is used as a proxy for the 183±1 GHz and 183±3 GHz imagery. D-MINT183 produces a probabilistic distribution of intensities for a given TC for 15 different quantiles. The D-MINT183 single-value intensity is the average of the 30th to 70th quantiles, as that was found to be more accurate than the 50th quantile.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/GCDC/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/tropics07l2b-deep-multispectral-intensity-dmin-of-tropical-cyclones-estimator-algorithm-v0">https://data.nasa.gov/dataset/tropics07l2b-deep-multispectral-intensity-dmin-of-tropical-cyclones-estimator-algorithm-v0</a></td></tr>
+<tr><th>Identifier</th><td>C3435496152-GES_DISC</td></tr>
+<tr><th>Landing Page</th><td><a href="https://doi.org/10.5067/D9NA3WCWQ98V">https://doi.org/10.5067/D9NA3WCWQ98V</a></td></tr>
+<tr><th>Themes</th><td>TROPICS (EVI-3), geospatial</td></tr>
+<tr><th>Modified</th><td>2021-07-19</td></tr>
+<tr><th>Issued</th><td>2021-07-19</td></tr>
+<tr><th>Temporal Coverage</th><td>2021-07-19T00:00:00Z/2025-03-17T00:00:00Z</td></tr>
+<tr><th>Spatial Coverage</th><td><code>-180.0 -90.0 180.0 90.0</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Kristan Morgan — kristan.l.morgan@nasa.gov</td></tr>
+<tr><th>Series</th><td>TROPICS07DMINL2B</td></tr>
+<tr><th>Program Code</th><td>026:001</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (7)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://scholar.google.com/scholar?q=10.5067%2FD7DX7J7J5JN9">Google Scholar search results</a><br><small>Search results for publications that cite this dataset by its DOI.</small></td></tr><tr><td>HTML</td><td><a href="http://nsidc.org/icebridge/portal/">Download this dataset</a><br><small>Tool to visualize, search, and download IceBridge data.</small></td></tr><tr><td>HTML</td><td><a href="https://n5eil01u.ecs.nsidc.org/ICEBRIDGE/IRKUB1B.002/">Download this dataset</a><br><small>Direct download via HTTPS protocol.</small></td></tr><tr><td>HTML</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1000000940-NSIDC_ECS&amp;m=-33.609375%2119.40625%211%211%210%210%2C2&amp;tl=1514139055%214%21%21&amp;q=IRKUB1B">Download this dataset through Earthdata Search</a><br><small>NASA&#x27;s newest search and order tool for subsetting, reprojecting, and reformatting data.</small></td></tr><tr><td>HTML</td><td><a href="https://nsidc.org/data/data-access-tool/IRKUB1B/versions/2/">Download this dataset</a><br><small>Data Access link for ITSD project</small></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.5067/D7DX7J7J5JN9">This dataset&#x27;s landing page</a><br><small>Provides access to data, documentation, tools, citation information, support, and other resources.</small></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.5067/D7DX7J7J5JN9">View documentation related to this dataset</a><br><small>Includes a user&#x27;s guide, supplemental documents like ATBDs and academic papers, How Tos, FAQs, etc.</small></td></tr>
+</tbody></table>
+<h2>References</h2>
+<ul><li><a href="https://doi.org/10.1002/qj.3290">https://doi.org/10.1002/qj.3290</a></li></ul>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">atmosphere</span><span class="tag">earth-science</span><span class="tag">weather-events</span></div>
+</article>
+</main>
+</body>
+</html>

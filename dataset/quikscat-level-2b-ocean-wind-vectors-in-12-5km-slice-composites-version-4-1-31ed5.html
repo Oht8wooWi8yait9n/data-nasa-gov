@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuikSCAT Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 4.1 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains the latest reprocessed version 4.1 of the Level 2B science-quality ocean surface wind vector retrievals from the QuikSCAT scatterometer. The retrievals are provided on a non-uniform grid within the swath at 12.5 km pixel resolution. Higher resolution is achi">
+<link rel="canonical" href="https://data.nasa.gov/dataset/quikscat-level-2b-ocean-wind-vectors-in-12-5km-slice-composites-version-4-1-31ed5">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>QuikSCAT Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 4.1</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/quikscat-level-2b-ocean-wind-vectors-in-12-5km-slice-composites-version-4-1-31ed5">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains the latest reprocessed version 4.1 of the Level 2B science-quality ocean surface wind vector retrievals from the QuikSCAT scatterometer. The retrievals are provided on a non-uniform grid within the swath at 12.5 km pixel resolution. Higher resolution is achieved through a slice composite technique in which high resolution slice measurements from L1B data are composited into a 12.5 km wind vector cell. Each L2B file corresponds to a specific orbital revolution (rev) number, which begins at the southernmost point of the ascending orbit. This is an official dataset produced by the NASA QuikSCAT Project through the SeaWinds Processing and Analysis Center (SeaPAC). Version 4.1 processing begins with the same L1B (time-ordered backscatter) data as used in the previous Version 4.0 processing. This new version has a number of key improvements and changes over the previous version 4.0, including: 1) winds are now retrieved to within 5-km and 10-km of the coast within oceans/seas and lakes respectively; 2) coastal winds are now flagged as poor coastal quality and likely corrupted in orbits with estimated spacecraft pitch error greater than 0.04 degrees, which affects 150 orbits of data where coastal winds are severely contaminated by land due to poor attitude knowledge (note: attitude error tracking can identify pitch error but not yaw error, so when estimated pitch error is far from zero, it implies yaw error is large and uncorrected); 3) coastal winds are flagged based upon the long term mean wind speed and standard deviation of wind speed for each place on the ground; 4) four quantities, means and standard deviations computed with and without the land contamination correction algorithm applied (note: higher mean and smaller standard deviation are evidence of land contamination), are used to estimate the expected wind speed bias with respect to neighboring wind vector cells over open water; 5) wind vector cells with estimated speed bias greater than 0.4 m/s are flagged as poor coastal quality and likely corrupted; 6) winds within 5-km of the coast of an ocean/sea and 10-km of the coast of a lake are flagged as poor coastal quality and likely corrupted; the larger distance threshold for lakes is due to higher variability in lake water levels.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/JPL/PODAAC;NASA/JPL/SeaPAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/quikscat-level-2b-ocean-wind-vectors-in-12-5km-slice-composites-version-4-1-31ed5">https://data.nasa.gov/dataset/quikscat-level-2b-ocean-wind-vectors-in-12-5km-slice-composites-version-4-1-31ed5</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/QSX12-L2B41</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>1999-10-27/2009-11-22</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (12)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="http://podaac.jpl.nasa.gov/QuikSCAT">http://podaac.jpl.nasa.gov/QuikSCAT</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L2B12/docs/qscat_l2b_v4_user_guide_v1.1.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L2B12/docs/qscat_l2b_v4_user_guide_v1.1.pdf</a></td></tr><tr><td>BIN</td><td><a href="http://podaac.jpl.nasa.gov/OceanWind/QuikSCAT/SeaWinds-QuikSCAT_KnownProblems">http://podaac.jpl.nasa.gov/OceanWind/QuikSCAT/SeaWinds-QuikSCAT_KnownProblems</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036882397-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036882397-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2036882397-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2036882397-POCLOUD</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_LEVEL_2B_OWV_COMP_12_KUSST_LCRES_4.1.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_LEVEL_2B_OWV_COMP_12_KUSST_LCRES_4.1.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://harmony.earthdata.nasa.gov/">https://harmony.earthdata.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2036882397-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-winds-oceans-surface-winds</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data from Sustainability Base Characterizing Hot Water Pump Differential Pressure Spikes for ACCEPT — NASA Open Data Portal</title>
+<meta name="description" content="During the heating season in Sustainability Base, a critical alarm associated with a hot water pump circulating heating water for the radiative system which exchanges heat via a geothermal heat pump was found. After further investigation it was ascertained that many such alarms w">
+<link rel="canonical" href="https://data.nasa.gov/dataset/data-from-sustainability-base-characterizing-hot-water-pump-differential-pressure-spikes-f">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Data from Sustainability Base Characterizing Hot Water Pump Differential Pressure Spikes for ACCEPT</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/data-from-sustainability-base-characterizing-hot-water-pump-differential-pressure-spikes-f">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">During the heating season in Sustainability Base, a critical alarm associated with a hot water pump circulating heating water for the radiative system which exchanges heat via a geothermal heat pump was found. After further investigation it was ascertained that many such alarms were experienced throughout the entire heating season. These alarms are triggered as a result of the excursion of the hot water differential pressure outside of a nominal operating envelope for a fixed duration. There is a control system associated with regulating the hot water pump differential pressure to a fixed operating setpoint, and there are natural variations in the system that allow the pressure to be regulated and maintained within these nominal operating bounds. However, when system changes occur such as valves opening or closing to support the distribution of hot water through PVC piping to areas of the building where heating demand is called for in response to zone temperature requirements, the pump&#x27;s operating speed must change accordingly to maintain this setpoint. If the pump speed does not change quickly enough to accommodate heating demand, these alarms can result and consequentially water hammer can occur, which may lead to accelerated aging of the PVC piping infrastructure as well as fittings, elbows, etc. In the worst case scenario it could cause leaking or bursting pipes.
+
+The zip file linked contains three subdirectories and a parameter list to be used for processing using ACCEPT. Datafiles are partitioned into training, validation, and testing sub-directory structures. A text file contains all parameter identifiers associated with the cold complaint prediction scenario. Please note that the parameter list is a text file containing the following lines:
+
+DCHWSSF - South Wing water flow rate
+DCHWSNF - North Wing water flow rate
+DCHWDP - Hot Water Pump Differential Pressure
+DCHWP1SP - Hot Water Pump Differential Speed
+DCHWP1S - Hot Water Pump Status Indicator
+
+The last parameter in this list is intended only to provide indication of ground truth (pump exceedances), and is not meant to construct models in ACCEPT. Data was collected from November 03, 2014 to February 03, 2015, and the alarm threshold limits of operation are flagged above 6.0 psid and below 4.5 psid. It should be noted the normal operation for the pump includes periods when it is off, when it retains a residual static pressure (~ 1.0 psid). The static binary indicator provides this information.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/data-from-sustainability-base-characterizing-hot-water-pump-differential-pressure-spikes-f">https://data.nasa.gov/dataset/data-from-sustainability-base-characterizing-hot-water-pump-differential-pressure-spikes-f</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_946</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/946/">https://c3.nasa.gov/dashlink/resources/946/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2016-01-15</td></tr>
+<tr><th>Contact / Maintainer</th><td>RODNEY MARTIN — rodney.martin@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/HWP_DP_Spike_Scenario.zip">HWP DP Spike Scenario.zip</a><br><small>Sustainability Base FMCS Data</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

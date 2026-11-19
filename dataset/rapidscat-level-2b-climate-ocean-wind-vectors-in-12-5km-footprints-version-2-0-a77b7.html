@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RapidScat Level 2B Climate Ocean Wind Vectors in 12.5km Footprints Version 2.0 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains the RapidScat Level 2B 12.5km Version 2.0 Climate quality ocean surface wind vectors. The Level 2B wind vectors are binned on a 12.5 km Wind Vector Cell (WVC) grid and processed using the using the &quot;full aperture&quot; normalized radar cross-section (NRCS, a.k.a.">
+<link rel="canonical" href="https://data.nasa.gov/dataset/rapidscat-level-2b-climate-ocean-wind-vectors-in-12-5km-footprints-version-2-0-a77b7">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>RapidScat Level 2B Climate Ocean Wind Vectors in 12.5km Footprints Version 2.0</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/rapidscat-level-2b-climate-ocean-wind-vectors-in-12-5km-footprints-version-2-0-a77b7">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains the RapidScat Level 2B 12.5km Version 2.0 Climate quality ocean surface wind vectors. The Level 2B wind vectors are binned on a 12.5 km Wind Vector Cell (WVC) grid and processed using the using the &quot;full aperture&quot; normalized radar cross-section (NRCS, a.k.a. Sigma-0) from the L1B dataset. RapidScat is a Ku-band dual beam circular rotating scatterometer retaining much of the same hardware and functionality of QuikSCAT, with exception of the antenna sub-system and digital interface to the International Space Station (ISS) Columbus module, which is where RapidScat is mounted. The NASA mission is officially referred to as ISS-RapidScat. Unlike QuikSCAT, ISS-RapidScat is not in sun-synchronous orbit, and flies at roughly half the altitude with a low inclination angle that restricts data coverage to the tropics and mid-latitude regions; the extent of latitudinal coverage stretches from approximately 61 degrees North to 61 degrees South. Furthermore, there is no consistent local time of day retrieval. The new version has two important improvements over the previous version 1.0. First, an SST-dependent GMF developed by Lucrezia Ricciardulli of Remote Sensing Systems is used in wind retrieval in order to fix persistent speed biases in Ku-band data over cold ocean.  Second, flagging is simplified and extra flags are provided. All the previously existing flags are still there and still reflect the same meaning and purpose. A new single bit wind_retrieval_likely_corrupted_flag specifies the approximately 3% of the data which is known to have suboptimal performance due to rain, ice, or a few other rare anomalous cases. Another bit wind_retrieval_possibly_corrupted_flag specifies the approximately 15% of the data near rain, near ice, or near the coast, that is thought to be high quality but may not match up well with numerical wind models due to either remaining rain/ice/land contamination or variability in the winds near ice, rain, and coasts that are not reflected in the NWPs.  In addition to these two new bits, copious quality information is provided in the data to allow users to tailor flags to meet their own needs. There is also an added a global attribute called rev_status that specifies whether the RapidScat Instrument was in the original (highest data quality) high SNR mode, or one of the four low SNR time periods, the latter of which indicates the accuracy of winds below 5 m/s is degraded. This attribute also serves to identify MARGINAL orbits in which there are large gaps in the data record due to suboptimal spacecraft attitude. Other than gaps in the data, the accuracy of the winds in the MARGINAL orbits are similar to other orbits. This dataset is provided in netCDF-4 format and made available via FTP and OPeNDAP. For data access, please click on the &quot;Data Access&quot; tab above.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/rapidscat-level-2b-climate-ocean-wind-vectors-in-12-5km-footprints-version-2-0-a77b7">https://data.nasa.gov/dataset/rapidscat-level-2b-climate-ocean-wind-vectors-in-12-5km-footprints-version-2-0-a77b7</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/RSX12-L2C20</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2014-10-08/2016-08-19</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 61.0, &quot;SouthBoundingCoordinate&quot;: -61.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (13)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/rapidscat/open/L2B12/docs/rscat_l2b_user_guide_v2.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/rapidscat/open/L2B12/docs/rscat_l2b_user_guide_v2.pdf</a></td></tr><tr><td>TXT</td><td><a href="http://manati.star.nesdis.noaa.gov/rscat_images/monitor/RapidScat_Scheduled_Outages.txt">http://manati.star.nesdis.noaa.gov/rscat_images/monitor/RapidScat_Scheduled_Outages.txt</a></td></tr><tr><td>CSV</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/rapidscat/open/L1B/docs/revtime.csv">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/rapidscat/open/L1B/docs/revtime.csv</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://directory.eoportal.org/web/eoportal/satellite-missions/i/iss-rapidscat">https://directory.eoportal.org/web/eoportal/satellite-missions/i/iss-rapidscat</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036882499-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036882499-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2036882499-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2036882499-POCLOUD</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/RSCAT_LEVEL_2B_OWV_CLIM_12_V2.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/RSCAT_LEVEL_2B_OWV_CLIM_12_V2.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://harmony.earthdata.nasa.gov/">https://harmony.earthdata.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2036882499-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-winds-oceans-surface-winds</span></div>
+</article>
+</main>
+</body>
+</html>

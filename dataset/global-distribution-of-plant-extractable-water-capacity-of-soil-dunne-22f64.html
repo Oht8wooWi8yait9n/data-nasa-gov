@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Distribution of Plant-Extractable Water Capacity of Soil (Dunne) — NASA Open Data Portal</title>
+<meta name="description" content="Plant-extractable water capacity of soil is the amount of water that can be extracted from the soil to fulfill evapotranspiration demands. It is often assumed to be spatially invariant in large-scale computations of the soil-water balance. Empirical evidence, however, suggests th">
+<link rel="canonical" href="https://data.nasa.gov/dataset/global-distribution-of-plant-extractable-water-capacity-of-soil-dunne-22f64">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Global Distribution of Plant-Extractable Water Capacity of Soil (Dunne)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/global-distribution-of-plant-extractable-water-capacity-of-soil-dunne-22f64">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Plant-extractable water capacity of soil is the amount of water that can be extracted from the soil to fulfill evapotranspiration demands. It is often assumed to be spatially invariant in large-scale computations of the soil-water balance. Empirical evidence, however, suggests that this assumption is incorrect. This data set provides an estimate of the global distribution of plant-extractable water capacity of soil. A representative soil profile, characterized by horizon (layer) particle size data and thickness, was created for each soil unit mapped by FAO (Food and Agriculture Organization of the United Nations)/Unesco. Soil organic matter was estimated empirically from climate data. Plant rooting depths and ground coverages were obtained from a vegetation characteristic data set. At each 0.5 x 0.5 degree grid cell where vegetation is present, unit available water capacity (cm water per cm soil) was estimated from the sand, clay, and organic content of each profile horizon, and integrated over horizon thickness. Summation of the integrated values over the lesser of profile depth and root depth produced an estimate of the plant-extractable water capacity of soil. The global average of the estimated plant-extractable water capacities of soil is 8.6 cm (Greenland, Antarctica and bare soil areas excluded). Estimates are less than 5, 10 and 15 cm - over approximately 30, 60, and 89 per cent of the area, respectively. Estimates reflect the combined effects of soil texture, soil organic content, and plant root depth or profile depth. The most influential and uncertain parameter is the depth over which the plant-extractable water capacity of soil is computed, which is usually limited by root depth. Soil texture exerts a lesser, but still substantial, influence. Organic content, except where concentrations are very high, has relatively little effect. The file is available in an ascii array format. The format is such that j=1 corresponds to the grid cell bounded by 90.0 and 89.5 degrees south latitude (centered on 89.75) and i=1 corresponds to the grid cell bounded by 0.0 and 0.5 degrees east longitude (centered on 0.25). No data are given for land ice grid cells, most of which occur in Antarctica and Greenland, or for other unvegetated areas. A value of -99.0 indicates either a water grid cell or a land ice grid cell. A value of -1.0 indicates that vegetation is absent (and the plant-extractable water capacity of soil is undefined). Units are cm. The data file may be read as follows: dimension whcdat(720,360) do j=1,360  read(iunit,&#x27;(36f5.1)&#x27;) (whcdat(i,j),i=1,720) enddo Data Citation The data set should be cited as follows:  Dunne, K. A., and Cort J. Willmott. 2000. Global Distribution of Plant-extractable Water Capacity of Soil (Dunne). Available on-line  from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>ORNL_DAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/global-distribution-of-plant-extractable-water-capacity-of-soil-dunne-22f64">https://data.nasa.gov/dataset/global-distribution-of-plant-extractable-water-capacity-of-soil-dunne-22f64</a></td></tr>
+<tr><th>Identifier</th><td>10.3334/ORNLDAAC/545</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>1996-01-01/1996-12-31</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (7)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2216862849-ORNL_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2216862849-ORNL_CLOUD</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.3334/ORNLDAAC/545">https://doi.org/10.3334/ORNLDAAC/545</a></td></tr><tr><td>ZIP</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Dunne_545.zip">https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Dunne_545.zip</a></td></tr><tr><td>PNG</td><td><a href="https://daac.ornl.gov/graphics/browse/sdat-tds/545_1_fit.png">https://daac.ornl.gov/graphics/browse/sdat-tds/545_1_fit.png</a></td></tr><tr><td>TXT</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/global_soil/Dunne/comp/readme.txt">https://data.ornldaac.earthdata.nasa.gov/public/global_soil/Dunne/comp/readme.txt</a></td></tr><tr><td>PDF</td><td><a href="https://data.ornldaac.earthdata.nasa.gov/public/global_soil/Dunne/comp/Dunne.pdf">https://data.ornldaac.earthdata.nasa.gov/public/global_soil/Dunne/comp/Dunne.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2216862849-ORNL_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-soils-land-surface-soil-moisture-water-content</span><span class="tag">earth-science-soils-land-surface-soil-water-holding-capacity</span></div>
+</article>
+</main>
+</body>
+</html>

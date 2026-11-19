@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recurring Anomaly Detection System (ReADS) — NASA Open Data Portal</title>
+<meta name="description" content="Overview:  ReADS can analyze text reports, such as aviation reports and problem or maintenance records.  ReADS uses text clustering algorithms to group loosely related reports and documents, this reduces human error and fatigue.  Plus, ReADS identifies interconnected reports; aut">
+<link rel="canonical" href="https://data.nasa.gov/dataset/recurring-anomaly-detection-system-reads">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Recurring Anomaly Detection System (ReADS)</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/recurring-anomaly-detection-system-reads">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Overview:
+
+ReADS can analyze text reports, such as aviation reports and problem or maintenance records.  ReADS uses text clustering algorithms to group loosely related reports and documents, this reduces human error and fatigue.  Plus, ReADS identifies interconnected reports; automating the discovery of possible recurring anomalies.  ReADS provides a visualization of the clusters and recurring anomalies. ReADS has been integrated into a secure web-based search tool to allow uses to perform their own text mining.
+
+Recurring Anomaly Identification
+
+ReADS identifies reports which mention other reports as a recurring anomaly using regular expressions to search documents and identify references of other reports by name. ReADS also detects recurring anomalies by determining the similarity between documents using a cosine distance similarity measure.  Then according to the similarity measure, ReADS will run a hierarchical clustering algorithm to detect the recurring anomalies.  The hierarchical tree is partitioned into clusters by setting a threshold. A low threshold implies that the reports must be very similar to be sorted into the same cluster.
+
+Here&#x27;s more [info](http://ti.arc.nasa.gov/projects/pria/).
+
+The figure below is a screenshot of the clustering results.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/recurring-anomaly-detection-system-reads">https://data.nasa.gov/dataset/recurring-anomaly-detection-system-reads</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_116</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/116/">https://c3.nasa.gov/dashlink/resources/116/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>DAWN MCINTOSH — dawn.m.mcintosh@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/algorithm/ReADS_clusteringVisualization.gif">ReADS_clusteringVisualization.gif</a><br><small>ReADS_clusteringVisualization.gif</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

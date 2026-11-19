@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuikSCAT Level 1C Averaged Sigma-0 and Winds from Non-spinning Antenna Version 2.0 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset is Version 2 of the geo-located and averaged Level 1B Sigma-0 measurements and wind retrievals from the SeaWinds on QuikSCAT platform, initiated in the months following the failure of the rotating antenna motor on 22 November 2009, using the various incidence angles ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/quikscat-level-1c-averaged-sigma-0-and-winds-from-non-spinning-antenna-version-2-0-811fc">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>QuikSCAT Level 1C Averaged Sigma-0 and Winds from Non-spinning Antenna Version 2.0</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/quikscat-level-1c-averaged-sigma-0-and-winds-from-non-spinning-antenna-version-2-0-811fc">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset is Version 2 of the geo-located and averaged Level 1B Sigma-0 measurements and wind retrievals from the SeaWinds on QuikSCAT platform, initiated in the months following the failure of the rotating antenna motor on 22 November 2009, using the various incidence angles at which QuikSCAT was pointed during the time period from November 2009 until present. Incidence angles were varied in order to cross-calibrate the Oceansat-2 and RapidScat scatterometers and to extend the known Ku-band geophysical model function. The averaging of the L1B input data combined with the wind vector processing results are both contained in this product referred to hereafter as Level 1C (L1C). The fixed and repointed beam processing is relative to either the one corresponding to the vertically polarized &quot;outer&quot; beam or the other corresponding to the horizontally polarized &quot;inner&quot; beam. The Sigma-0 values from the fixed operating beam for each frame are averaged to a single value representing approximately 50 samples. The data points are land flagged, collocated with ECMWF surface winds, and have climatological nadir attenuations provided for the location and time of the data (not applied to the sigma0). The following enhancements have been applied in the Version 2 re-processing: 1) the GMF has been updated (QNS2016a) to make use of ECMWF nowcast 1x1 degree resolution wind direction information for the entire historical data record; 2) the new QNS2016a GMF leverages a calibration adjustment from Remote Sensing Systems (RSS) resulting in a consistently lower Normalized Radar Cross Section (NRCS or Sigma-0) measurements that establishes a Sigma-0 bias of -0.25 dB (-5.9% linear scale) compared to the L1C Version 1 data; 3) the new QNS2016a GMF also applies an azimuthal modulation that is decreased by several tenths of a dB (for Sigma-0) in variation with wind speed; this results in a more consistent wind speed retrieval comparison between &quot;non-spinning&quot; and &quot;spinning&quot; modes of the QuikSCAT instrument; 4) spacecraft attitude was re-estimated using slice data over multiple orbits as a replacement for lost echo-tracking capability during the &quot;non-spinning&quot; mode of the instrument; this new attitude estimation follows an unpublished manual technique that leverages the echo power of individual slice observations; since only a small subset of slice observations are analyzed, rapid variations in attitude are not captured; 5) continues data production beyond October 2016 through the end of mission on 30 August 2018. Retrieved wind directions are only slightly different from ECMWF values and should not be considered an independent measurement of wind direction. Retrieved wind speeds do not depend significantly on ECMWF speeds as evidenced by the fact that they agree closely with WindSAT polarimetric radiometer speeds whenever WindSAT and ECMWF disagree. The Sigma0 values have also been corrected for scan loss (due to the fact that the antenna does not scan) and for X-factor changes due to repointing.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/JPL/PODAAC;NASA/JPL/SeaPAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/quikscat-level-1c-averaged-sigma-0-and-winds-from-non-spinning-antenna-version-2-0-811fc">https://data.nasa.gov/dataset/quikscat-level-1c-averaged-sigma-0-and-winds-from-non-spinning-antenna-version-2-0-811fc</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/QSNON-L1CA2</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2010-07-16/2018-08-30</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 89.875, &quot;SouthBoundingCoordinate&quot;: -89.875, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (10)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/forum/viewtopic.php?f=16&amp;t=391">https://podaac.jpl.nasa.gov/forum/viewtopic.php?f=16&amp;t=391</a></td></tr><tr><td>BIN</td><td><a href="http://podaac.jpl.nasa.gov/OceanWind/QuikSCAT/SeaWinds-QuikSCAT_KnownProblems">http://podaac.jpl.nasa.gov/OceanWind/QuikSCAT/SeaWinds-QuikSCAT_KnownProblems</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L1B/v2/docs/L1B_SIS_200609.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L1B/v2/docs/L1B_SIS_200609.pdf</a></td></tr><tr><td>TXT</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L1C/v2/README.txt">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L1C/v2/README.txt</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2617177020-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2617177020-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2617177020-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2617177020-POCLOUD</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-winds-oceans-surface-winds</span><span class="tag">earth-science-radar-spectral-engineering-sigma-naught</span></div>
+</article>
+</main>
+</body>
+</html>

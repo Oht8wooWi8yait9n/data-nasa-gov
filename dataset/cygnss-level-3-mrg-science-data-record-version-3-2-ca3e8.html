@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CYGNSS Level 3 MRG Science Data Record Version 3.2 — NASA Open Data Portal</title>
+<meta name="description" content="This dataset contains the version 3.2 CYGNSS level 3 science data record merged storm (MRG) wind speed which combines CYGNSS storm-centric gridded (SCG) wind speeds, which are derived from the L2 YSLF winds for a region surrounding a given tropical cyclone (TC), with L3 FDS winds">
+<link rel="canonical" href="https://data.nasa.gov/dataset/cygnss-level-3-mrg-science-data-record-version-3-2-ca3e8">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>CYGNSS Level 3 MRG Science Data Record Version 3.2</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/cygnss-level-3-mrg-science-data-record-version-3-2-ca3e8">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This dataset contains the version 3.2 CYGNSS level 3 science data record merged storm (MRG) wind speed which combines CYGNSS storm-centric gridded (SCG) wind speeds, which are derived from the L2 YSLF winds for a region surrounding a given tropical cyclone (TC), with L3 FDS winds away from the TC center on a 0.2x0.2 degree latitude by longitude equirectangular grid obtained from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation.
+
+L3 MRG is a new product which combines the L2 FDS and Young Seas Limited Fetch (YSLF) winds and eliminates the need to choose between them depending on sea state development and the proximity to storms. The data are provided in netCDF-4 format and extend from 1 August 2018 to the present with an approximate 6 day latency. A tapered weighted averaging scheme is used centered on the 34-knot wind radius (R34) of the storm. The R34 value in each storm quadrant is also reported. The algorithm produces global (+/- 40 deg latitude) wind speeds reported on a 0.1x0.1 deg grid every 6 hours for each tropical cyclone, although some 6-hourly increments may be missing if there are an insufficient number of satellite overpasses of the storm during that time interval. The netcdf files are output on a storm-by-storm basis.
+
+The CYGNSS is a NASA Earth System Science Pathfinder Mission that is intended to collect the first frequent space‐based measurements of surface wind speeds in the inner core of tropical cyclones. Made up of a constellation of eight micro-satellites, the observatories provide nearly gap-free Earth coverage using an orbital inclination of approximately 35° from the equator, with a mean (i.e., average) revisit time of seven hours and a median revisit time of three hours. This inclination allows CYGNSS to measure ocean surface winds between approximately 38° N and 38° S latitude. This range includes the critical latitude band for tropical cyclone formation and movement.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/ESSP/UMICH/CYGNSS;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/cygnss-level-3-mrg-science-data-record-version-3-2-ca3e8">https://data.nasa.gov/dataset/cygnss-level-3-mrg-science-data-record-version-3-2-ca3e8</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/CYGNS-L3M32</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 40, &quot;SouthBoundingCoordinate&quot;: -40, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://cygnss.engin.umich.edu/">https://cygnss.engin.umich.edu/</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2832242310-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2832242310-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2832242310-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2832242310-POCLOUD</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0412_L3_MRG_ATBD_R5.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0412_L3_MRG_ATBD_R5.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0408-2_Level_3_Merged_Storm_netCDF_Data_Dictionary.xlsx">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0408-2_Level_3_Merged_Storm_netCDF_Data_Dictionary.xlsx</a></td></tr><tr><td>PDF</td><td><a href="https://cygnss.engin.umich.edu/wp-content/uploads/sites/534/2021/06/CYGNSS_Handbook_April2016.pdf">https://cygnss.engin.umich.edu/wp-content/uploads/sites/534/2021/06/CYGNSS_Handbook_April2016.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.1109/TGRS.2021.3070238">https://doi.org/10.1109/TGRS.2021.3070238</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.3998/mpub.12741920">https://doi.org/10.3998/mpub.12741920</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0409-1_Level_3_Merged_Storm_Storage_Scheme.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/cygnss/open/L3/docs/148-0409-1_Level_3_Merged_Storm_Storage_Scheme.pdf</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_MRG_V3.2.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_MRG_V3.2.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2832242310-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-winds-oceans-surface-winds</span></div>
+</article>
+</main>
+</body>
+</html>

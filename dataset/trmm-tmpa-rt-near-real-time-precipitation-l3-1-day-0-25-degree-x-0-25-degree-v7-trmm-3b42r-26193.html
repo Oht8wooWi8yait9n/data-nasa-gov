@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRMM (TMPA-RT) Near Real-Time Precipitation L3 1 day 0.25 degree x 0.25 degree V7 (TRMM_3B42RT_Daily) — NASA Open Data Portal</title>
+<meta name="description" content="TMPA (3B42RT_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDE/DAY/06; 10.5067/GPM/IMERGDL/DAY/06).  This daily accumulated precipitation product is generated from the Nea">
+<link rel="canonical" href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-precipitation-l3-1-day-0-25-degree-x-0-25-degree-v7-trmm-3b42r-26193">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TRMM (TMPA-RT) Near Real-Time Precipitation L3 1 day 0.25 degree x 0.25 degree V7 (TRMM_3B42RT_Daily)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-precipitation-l3-1-day-0-25-degree-x-0-25-degree-v7-trmm-3b42r-26193">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">TMPA (3B42RT_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDE/DAY/06; 10.5067/GPM/IMERGDL/DAY/06).
+
+This daily accumulated precipitation product is generated from the Near Real-Time  3-hourly TRMM Multi-Satellite Precipitation Analysis TMPA (3B42RT). It is produced at the NASA GES DISC, as a value added product.  Simple summation of valid retrievals in a grid cell is applied for the data day. The result is given in (mm). Although the grid is from 60S to 60N, the high latitudes (beyond 50S/N) near real-time retrievals are considered very unreliable and thus are screened out from the daily accumulations. The beginning and ending time for every daily granule are listed in the file global attributes, and are taken correspondingly from the first and the last 3-hourly granules participating in the aggregation. Thus the time period covered by one daily granule amounts to 24 hours, which can be inspected in the file global attributes.
+
+Counts of valid retrievals for the day are provided for every variable, making it possible to compute conditional and unconditional mean precipitation for grid cells where less than 8 retrievals for the day are available.
+
+Efforts have been made to make the format of this  derived product as similar as possible to the new Global Precipitation Measurement CF-compliant file format.
+
+The latency of this derived daily product is about 7 hours after the UTC day is closed. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product.
+
+The information provided here on the TRMM mission, and on the original 3-hr 3B42 product, remain relevant for this derived product. Note, however, this product is in netCDF-4 format.
+
+The following describes the derivation in more details.
+
+The daily accumulation is derived by summing *valid* retrievals in a grid cell for the data day. Since the 3-hourly source data are in mm/hr, a factor of 3 is applied to the sum. Thus, for every grid cell we have
+
+Pdaily     = 3 * SUM{Pi * 1[Pi valid]}, i=[1,Nf]
+Pdaily_cnt = SUM{1[Pi valid]}
+
+where:
+Pdaily          - Daily accumulation (mm)
+Pi              - 3-hourly input, in (mm/hr)
+Nf              - Number of 3-hourly files per day, Nf=8
+1[.]            - Indicator function; 1 when Pi is valid, 0 otherwise
+Pdaily_cnt      - Number of valid retrievals in a grid cell per day.
+
+Grid cells for which Pdaily_cnt=0, are set to fill value in the Daily files.
+Note that Pi=0 is a valid value.
+
+On occasion, the 3-hourly source data have fill values for Pi in a very few grid cells. The total accumulation for such grid cells is still issued, inspite of the likelihood that thus resulting accumulation has a larger uncertainty in representing the &quot;true&quot; daily total. These events are easily detectable using &quot;counts&quot; variables that contain Pdaily_cnt, whereby users can screen out any grid cells for which
+ Pdaily_cnt less than Nf.
+
+There are various ways the accumulated daily error could be estimated from the source 3-hourly error. In this release, the daily error provided in the data files is calculated as follows. First, squared 3-hourly errors are summed, and then square root of the sum is taken. Similarly to the precipitation, a factor of 3 is finally applied:
+
+Perr_daily = 3 * { SUM[ (Perr_i * 1[Perr_i valid])^2 ] }^0.5 , i=[1,Nf]
+Ncnt_err   = SUM( 1[Perr_i valid] )
+
+where:
+Perr_daily	- Magnitude of the daily accumulated error power, (mm)
+Ncnt_err	- The counts for the error variable
+
+Thus computed Perr_daily represents the worst case scenario that assumes the error in the 3-hourly source data, which is given in mm/hr, is accumulating within the 3-hourly period of the source data and then during the day. These values, however, can easily be conveted to root mean square error estimate of the rainfall rate:
+
+rms_err =   { (Perr_daily/3) ^2 / Ncnt_err }^0.5	(mm/hr)
+
+This estimate assumes that the error given in the 3-hourly files is representative of the error of the rainfall rate (mm/hr) within the 3-hour window of the files, and it is random throughout the day. Note, this should be interpreted as the error of the rainfall rate (mm/hr) for the day, not the daily accumulation.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-precipitation-l3-1-day-0-25-degree-x-0-25-degree-v7-trmm-3b42r-26193">https://data.nasa.gov/dataset/trmm-tmpa-rt-near-real-time-precipitation-l3-1-day-0-25-degree-x-0-25-degree-v7-trmm-3b42r-26193</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/TRMM/TMPA/DAY-E/7</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2000-03-01/2020-01-01</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 60, &quot;SouthBoundingCoordinate&quot;: -60, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSADNF_01.png">https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSADNF_01.png</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/TOVSADNF_01.html">https://disc.gsfc.nasa.gov/datacollection/TOVSADNF_01.html</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_Starter_Kit.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_Starter_Kit.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://disc1.gesdisc.eosdis.nasa.gov/data/tovs/TOVSADNF/">https://disc1.gesdisc.eosdis.nasa.gov/data/tovs/TOVSADNF/</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1274625639-GES_DISC">https://search.earthdata.nasa.gov/search/granules?p=C1274625639-GES_DISC</a></td></tr><tr><td>PDF</td><td><a href="http://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVSPathA.pdf">http://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/README.TOVSPathA.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_PATHFINDER_PATH_A_DATASET_GUIDE.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/TOVS/TOVS_PATHFINDER_PATH_A_DATASET_GUIDE.pdf</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1274625639-GES_DISC.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-precipitation-atmosphere-total-surface-precipitation-rate</span></div>
+</article>
+</main>
+</body>
+</html>

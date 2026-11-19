@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIRS/Aqua L1B Near Real Time (NRT) Infrared (IR) geolocated and calibrated radiances in BUFR format V005 (AIRIBRAD_NRT_BUFR) at GES DISC — NASA Open Data Portal</title>
+<meta name="description" content="WARNING: On 2021/09/23 the EOS Aqua executed a Deep Space Maneuver (DSM). In the DSM, the spacecraft is turned such that the normal Earth field of regard is deep space.  The thermal impact of the DSM caused a shift of the centroids of spectral response functions (SRF) of about 1%">
+<link rel="canonical" href="https://data.nasa.gov/dataset/airs-aqua-l1b-near-real-time-nrt-infrared-ir-geolocated-and-calibrated-radiances-in-bufr-f">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>AIRS/Aqua L1B Near Real Time (NRT) Infrared (IR) geolocated and calibrated radiances in BUFR format V005 (AIRIBRAD_NRT_BUFR) at GES DISC</h1>
+<div class="meta-badges"><span class="badge">Aqua</span><span class="badge">LANCE</span><span class="badge">geospatial</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/airs-aqua-l1b-near-real-time-nrt-infrared-ir-geolocated-and-calibrated-radiances-in-bufr-f">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">WARNING: On 2021/09/23 the EOS Aqua executed a Deep Space Maneuver (DSM). In the DSM, the spacecraft is turned such that the normal Earth field of regard is deep space.
+
+The thermal impact of the DSM caused a shift of the centroids of spectral response functions (SRF) of about 1% of the width of the SRF, equivalent to a frequency shift of 9 parts per million. This shift is reflected in the “spectral_freq” parameter (observed frequencies) in the L1b v5 files for each 6 minute granule. The magnitude of the effect on brightness temperatures (BT) depends on the spectral gradient of each channel. Maximum BT shifts are approximately +- 0.5 K, although many channels experience far smaller BT shifts. Approximately 1803 channels have BT shifts of less than 0.1 K and 575 channels are now shifted in BT by more than 0.1 K, while 231 of these channels have BT shifts greater than 0.2 K.
+
+Users of the L1b v5 product who are concerned that these shifts may impact their science investigations and applications are encouraged to switch to the AIRS L1c v6.7.4 product, which, among many other improvements, converts the spectra to a fixed frequency grid. END OF WARNING.
+
+This product is a 324-channel subset of the AIRIBRAD_NRT_005 product in which the AMSU footprints from AIRABRAD_NRT_005 product are also included and converted to binary Universal Form for the Representation of meteorological data (BUFR). The AIRS and AMSU Level 1B products differ from routine processing in 2 ways to meet the three hour latency requirements of the Land Atmosphere NRT Capability Earth Observing System (LANCE): (1) The NRT granules are produced without previous or subsequent granules if those granules are not available within 5 minutes, (2) the predictive ephemeris/attitude data are used rather than the definitive ephemeris/attitude. The consequences of these differences are described in the AIRS Near Real Time (NRT) data products document. The Atmospheric Infrared Sounder (AIRS) is a grating spectrometer (R = 1200) aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/GCDC/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/airs-aqua-l1b-near-real-time-nrt-infrared-ir-geolocated-and-calibrated-radiances-in-bufr-f">https://data.nasa.gov/dataset/airs-aqua-l1b-near-real-time-nrt-infrared-ir-geolocated-and-calibrated-radiances-in-bufr-f</a></td></tr>
+<tr><th>Identifier</th><td>C1233769001-GES_DISC</td></tr>
+<tr><th>Landing Page</th><td><a href="https://cmr.earthdata.nasa.gov:443/search/concepts/C1233769001-GES_DISC.html">https://cmr.earthdata.nasa.gov:443/search/concepts/C1233769001-GES_DISC.html</a></td></tr>
+<tr><th>Themes</th><td>Aqua, LANCE, geospatial</td></tr>
+<tr><th>Modified</th><td>2024-11-20</td></tr>
+<tr><th>Issued</th><td>2024-08-07</td></tr>
+<tr><th>Temporal Coverage</th><td>2015-12-15T00:00:00Z/2024-11-25T00:00:00Z</td></tr>
+<tr><th>Spatial Coverage</th><td><code>-180.0 -90.0 180.0 90.0</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>ED ESFANDIARI — asghar.e.esfandiari@nasa.gov</td></tr>
+<tr><th>Series</th><td>AIRIBRAD_NRT_BUFR</td></tr>
+<tr><th>Program Code</th><td>026:001</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (11)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>JPEG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBRAD_NRT_BUFR_005.jpeg">Get a related visualization</a><br><small>Sample image of AIRIBRAD</small></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/AIRIBRAD_NRT_BUFR_005.html">This dataset&#x27;s landing page</a><br><small>Access the dataset landing page from the GES DISC website.</small></td></tr><tr><td>HTML</td><td><a href="https://discnrt1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_NRT/AIRIBRAD_NRT_BUFR.005/">Download this dataset through a directory map</a><br><small>Access the data via HTTPS. User registration is required. Register for a username and password at https://urs.eosdis.nasa.gov/users/new</small></td></tr><tr><td>HTML</td><td><a href="https://airs.jpl.nasa.gov/index.html">The dataset&#x27;s project home page</a><br><small>AIRS home page at NASA/JPL. General information on the AIRS instrument suite, algorithms, and other AIRS-related activities can be found.</small></td></tr><tr><td>HTML</td><td><a href="https://discnrt1.gesdisc.eosdis.nasa.gov/opendap/Aqua_AIRS_NRT/AIRIBRAD_NRT_BUFR.005/">Use OPeNDAP to access the dataset&#x27;s data</a><br><small>Access the data through OPENDAP</small></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/information/documents?title=AIRS+Documentation">View information related to this dataset</a><br><small>AIRS Documentation Page</small></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/AIRIBRAD_NRT_BUFR_005.html">View information related to this dataset</a><br><small>AIRIBRAD_NRT_BUFR information page</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.4_ProductGenerationAlgorithms/README.AIRIBRAD.pdf">View this dataset&#x27;s read me document</a><br><small>README Document</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.3_ScienceDataProductDocumentation/3.3.5_ProductQuality/nrt_memo_v6.pdf">View documentation related to this dataset</a><br><small>Memo on NRT vs Standard Product</small></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/repository/Mission/AIRS/3.7_ScienceDataProductValidation/V5_CalVal_Status_Summary.pdf">View documentation related to this dataset</a><br><small>Summary of validation status of products</small></td></tr><tr><td>PDF</td><td><a href="https://eospso.gsfc.nasa.gov/sites/default/files/atbd/AIRS_L1B_ATBD_Part_1.pdf">View this dataset&#x27;s algorithm theoretical basis document</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">aerosols</span><span class="tag">atmosphere</span><span class="tag">atmospheric-chemistry</span><span class="tag">earth-science</span><span class="tag">infrared-wavelengths</span><span class="tag">spectral-engineering</span></div>
+</article>
+</main>
+</body>
+</html>

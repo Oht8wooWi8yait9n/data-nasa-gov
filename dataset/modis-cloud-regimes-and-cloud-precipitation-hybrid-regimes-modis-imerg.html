@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MODIS Cloud Regimes and Cloud-Precipitation Hybrid Regimes (MODIS-IMERG) — NASA Open Data Portal</title>
+<meta name="description" content="Cloud regimes and Cloud-Precipitation Hybrid Regimes are derived via k-means clustering, with MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 50S-50N and 15S-15N domain.  By the relative weight between cloud an">
+<link rel="canonical" href="https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>MODIS Cloud Regimes and Cloud-Precipitation Hybrid Regimes (MODIS-IMERG)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Cloud regimes and Cloud-Precipitation Hybrid Regimes are derived via k-means clustering, with MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 50S-50N and 15S-15N domain.
+
+By the relative weight between cloud and precipitation, there are 4 kinds of regime sets for each tropical and extended domain:
+1) Cloud only (42 bins),
+2) Cloud+Precipitation with weight 1 (Cld42+Pr6x1; 48 bins),
+3) Cloud+Precipitation with weight 3 (Cld42+Pr6x3; 60 bins),
+4) Cloud+Precipitation with weight 7 (Cld42+Pr6x7; 84 bins; equal weight).
+
+Reference
+Jin et al. (2020; JAMC, submitted)</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Daeho Jin</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg">https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://data.nasa.gov/api/views/68sc-yhe3">https://data.nasa.gov/api/views/68sc-yhe3</a></td></tr>
+<tr><th>Landing Page</th><td><a href="https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg">https://data.nasa.gov/dataset/modis-cloud-regimes-and-cloud-precipitation-hybrid-regimes-modis-imerg</a></td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2023-01-31</td></tr>
+<tr><th>Issued</th><td>2020-11-18</td></tr>
+<tr><th>Temporal Coverage</th><td>2014-01-01/2020-09-03</td></tr>
+<tr><th>Contact / Maintainer</th><td>Daeho Jin — daeho.jin@nasa.gov</td></tr>
+<tr><th>Program Code</th><td>026:001</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (11)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld_hist_50S-50N_CR_set.Cld42.nc">50S-50N_CR_set.Cld42</a><br><small>Cloud Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) in the domain of 50S-50N
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld+pr6x1_hist_50S-50N_CPR_set.Cld42+Pr6x1.nc">50S-50N_CPR_set.Cld42+Pr6x1</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 50S-50N domain. This version sets the weight of precipitation as 1, so the total size of each vector is 48 (=42+6x1).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld+pr6x3_hist_50S-50N_CPR_projected2IMERGdomain.Cld42+Pr6x3.nc">50S-50N_CPR_projected2IMERGdomain.Cld42+Pr6x3</a><br><small>Among regimes of the 50S-50N_CPR_set.Cld42+Prx3, some regimes having distinct precipitation characteristics can be predicted by precipitation information only (Jin et al. 2020, JAMC, submitted). This data is the projected regimes on the IMERG domain (30-minutely in 1degx1deg resolution).</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld+pr6x3_hist_50S-50N_CPR_set.Cld42+Pr6x3.nc">50S-50N_CPR_set.Cld42+Pr6x3</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 50S-50N domain. This version sets the weight of precipitation as 3, so the total size of each vector is 60 (=42+6x3).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld+pr6x7_hist_50S-50N_CPR_projected2IMERGdomain.Cld42+Pr6x7.nc">50S-50N_CPR_projected2IMERGdomain.Cld42+Pr6x7</a><br><small>Among regimes of the 50S-50N_CPR_set.Cld42+Prx7, some regimes having distinct precipitation characteristics can be predicted by precipitation information only (Jin et al. 2020, JAMC, submitted). This data is the projected regimes on the IMERG domain (30-minutely in 1degx1deg resolution).</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/MODIS_t+a_cld+pr6x7_hist_50S-50N_CPR_set.Cld42+Pr6x7.nc">50S-50N_CPR_set.Cld42+Pr6x7</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 50S-50N domain. This version sets the weight of precipitation as 7, so the total size of each vector is 84 (=42+6x7).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/modis/MODIS_t+a_cld_hist_15S-15N_CR_set.Cld42.nc">15S-15N_CR_set.Cld42</a><br><small>Cloud Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) in the domain of 15S-15N
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/modis/MODIS_t+a_cld+pr6x1_hist_15S-15N_CPR_set.Cld42+Pr6x1.nc">15S-15N_CPR_set.Cld42+Pr6x1</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 15S-15N domain. This version sets the weight of precipitation as 1, so the total size of each vector is 48 (=42+6x1).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/modis/MODIS_t+a_cld+pr6x3_hist_15S-15N_CPR_set.Cld42+Pr6x3.nc">15S-15N_CPR_set.Cld42+Pr6x3</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 15S-15N domain. This version sets the weight of precipitation as 3, so the total size of each vector is 60 (=42+6x3).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/modis/MODIS_t+a_cld+pr6x7_hist_15S-15N_CPR_projected2IMERGdomain.Cld42+Pr6x7.nc">15S-15N_CPR_projected2IMERGdomain.Cld42+Pr6x7.nc</a><br><small>Among regimes of the 15S-15N_CPR_set.Cld42+Prx7, some regimes having distinct precipitation characteristics can be predicted by precipitation information only (Jin et al. 2020, JAMC, submitted). This data is the projected regimes on the IMERG domain (30-minutely in 1degx1deg resolution).</small></td></tr><tr><td>HTML</td><td><a href="https://data.nasa.gov/docs/datasets/public/modis/MODIS_t+a_cld+pr6x7_hist_15S-15N_CPR_set.Cld42+Pr6x7.nc">15S-15N_CPR_set.Cld42+Pr6x7</a><br><small>Cloud-Precipitation Hybrid Regimes derived from MODIS C6.1 2D joint histogram of CTP and COT (total 42 bins) and IMERG v06B precipitation histogram (total 6 bins) in 15S-15N domain. This version sets the weight of precipitation as 7, so the total size of each vector is 84 (=42+6x7).
+It Includes centroid file and the map of assigned regime on each grid cell.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">cloud</span><span class="tag">cloud-precipitation-hybrid-regime</span><span class="tag">cloud-regime</span><span class="tag">imerg</span><span class="tag">modis</span><span class="tag">precipitation</span></div>
+</article>
+</main>
+</body>
+</html>

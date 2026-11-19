@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Tiled Evapotranspiration Auxiliary L3 Global 70 m V003 — NASA Open Data Portal</title>
+<meta name="description" content="The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collec">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-auxiliary-l3-global-70-m-v003">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Tiled Evapotranspiration Auxiliary L3 Global 70 m V003</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-auxiliary-l3-global-70-m-v003">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes.
+
+The ECOSTRESS Tiled Evapotranspiration Auxiliary Level 3 Global 70 m (ECO_L3T_ETAUX) Version 3 data product provides downscaled meteorology, soil moisture, and surface energy balance data variables aligned with each daytime ECOSTRESS overpass and includes the following components:
+* The meteorology component (MET) provides instantaneous near-surface air temperature (Ta) and relative humidity (RH). These variables are downscaled to 70 m using linear regression with ECOSTRESS surface temperature (ST), Normalized Difference Vegetation Index (NDVI), and albedo as predictors and Goddard Earth Observing System Version 5 (GEOS-5) Forward Processing (FP) fields as the target, followed by bias correction.
+* The soil moisture component (SM) provides instantaneous soil moisture estimates that are downscaled to 70 m using the identical linear regression method with ST, NDVI, and albedo as predictors and GEOS-5 FP soil moisture as the target, followed by bias correction.
+* The surface energy balance component (SEB) provides incoming global radiation (Rg) and net radiation (Rn). Incoming global radiation (Rg) is generated using an artificial neural network implementation of the Forest Light Environmental Simulator (FLiES) radiative transfer model driven by GEOS-5 cloud and aerosol optical thickness along with ECOSTRESS albedo and bias-corrected to GEOS-FP. Net radiation (Rn) is computed from the Breathing Earth System Simulator (BESS) algorithm.
+
+This data product is tiled using a modified version of the Military Grid Reference System ([MGRS](https://hls.gsfc.nasa.gov/products-description/tiling-system/)), which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 meter (m) spatial resolution.
+
+The ECO_L3T_ETAUX Version 3 data product is provided in Cloud Optimized GeoTIFF (COG) format, and each variable is distributed as a separate COG. This product contains seven variables including Near-surface air temperature (Ta), Relative Humidity (RH), Global Radiation (Rg), Net Radiation (Rn), Soil Moisture (SM), cloud mask, and water mask.
+
+Known Issues
+
+* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the ISS, potentially impacting data quality in obstructed pixels. The &#x27;FieldOfViewObstruction&#x27; metadata field is reliably populated and accurate for all products generated on or after October 2024, following fixes to the Product Generation Executive (PGE) docker configuration and updates to the L1A_RAW_PIX software. Prior to October 2024, the field was not reliably populated; a separate [list of confirmed affected scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) was maintained and is recommended for verifying historical data.
+* Historical acquisition gaps and anomalies (2018–2023): Irrecoverable data loss occurred due to Mass Storage Unit (MSU) failures, resulting in permanent gaps in the observational record where no ECOSTRESS data was acquired during the following periods:
+    - September 29, 2018 – December 4, 2018 (primary MSU failure)
+    - March 14, 2019 – May 14, 2019 (secondary MSU failure)
+    - February 17, 2020 (instrument in SAFEHOLD mode)
+    - Other early issues, including band 4 striping (February 8–16, 2020), 3-band mode limitations (May 15, 2019–April 28, 2023), and noisy data periods (e.g., May–July 2025), have been mitigated through reprocessing, firmware updates, and instrument recovery. Version 3 products incorporate these improvements where data exists and are unaffected by ongoing issues, but the permanent historical gaps remain, and caution is advised for time-series analyses spanning affected periods.
+* Geolocation considerations: While geolocation is improved in Version 3 tiled products (fixed MGRS grid), gridded products may reference legacy &quot;GeolocationAccuracyQA&quot; flags. Use &quot;best&quot; and &quot;good&quot; scenes for applications sensitive to precise positioning.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-auxiliary-l3-global-70-m-v003">https://data.nasa.gov/dataset/ecostress-tiled-evapotranspiration-auxiliary-l3-global-70-m-v003</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO_L3T_ETAUX.003</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-09/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 54, &quot;SouthBoundingCoordinate&quot;: -54, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (11)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C4057520953-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C4057520953-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ETAUX.003">https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ETAUX.003</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/ECOSTRESS-Collection-3/ECOv003-L3T-L4T-JET/blob/main/documentation/ECOv003_L3_L4_JET_User_Guide.md">https://github.com/ECOSTRESS-Collection-3/ECOv003-L3T-L4T-JET/blob/main/documentation/ECOv003_L3_L4_JET_User_Guide.md</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/ECOSTRESS-Collection-3/ECOv003-L3T-L4T-JET/blob/main/documentation/ECOv003_L3_L4_JET_ATBD.md">https://github.com/ECOSTRESS-Collection-3/ECOv003-L3T-L4T-JET/blob/main/documentation/ECOv003_L3_L4_JET_ATBD.md</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_ETAUX.003/ECOv003_L3T_ETAUX_43166_016_44QKJ_20260215T080746_02/ECOv003_L3T_ETAUX_43166_016_44QKJ_20260215T080746_02.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_ETAUX.003/ECOv003_L3T_ETAUX_43166_016_44QKJ_20260215T080746_02/ECOv003_L3T_ETAUX_43166_016_44QKJ_20260215T080746_02.png</a></td></tr><tr><td>BIN</td><td><a href="https://ecostress.jpl.nasa.gov/science">https://ecostress.jpl.nasa.gov/science</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt">https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt">https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C4057520953-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-indicators</span><span class="tag">earth-science-soils-agriculture-soil-moisture-water-content</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

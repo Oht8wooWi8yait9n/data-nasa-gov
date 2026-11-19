@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planetary Protection Low Biomass Nanopore Pilot Study — NASA Open Data Portal</title>
+<meta name="description" content="Sequencing optimization experiments using different Oxford Nanopore Technology library preparation methods and input DNA values to determine best method for low-biomass sequencing. This pilot study serves as a technical assessment of wet and dry lab methods for processing and ana">
+<link rel="canonical" href="https://data.nasa.gov/dataset/planetary-protection-low-biomass-nanopore-pilot-study">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Planetary Protection Low Biomass Nanopore Pilot Study</h1>
+<div class="meta-badges"><span class="badge">Biological and Physical Sciences</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/planetary-protection-low-biomass-nanopore-pilot-study">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Sequencing optimization experiments using different Oxford Nanopore Technology library preparation methods and input DNA values to determine best method for low-biomass sequencing. This pilot study serves as a technical assessment of wet and dry lab methods for processing and analysis of future NASA cleanroom samples. Microbial standards of known composition were used as input DNA. Data from 4 experiments are provided. The NBD (Native Barcode Kit) experiment utilized the Nanopore Rapid PCR Barcoding Kit 24 V14 and tested nanogram-level input amounts (5ng and 11ng). The three Rapid experiments utilized the Nanopore Rapid PCR Barcoding Kit 24 V14 and tested different input amounts and spike-ins. Rapid1 tested low input amounts (100pg and 500pg), Rapid2 tested ultra-low input amounts (1pg and 10pg), and Rapid3 tested ultra-low input amounts (5pg and 10pg) with and without lambda spike-in. Different data processing pipelines were tested with each set of experimental data as described below. Data from each of the 3 Rapid experiments were processed using 4 different tool combinations for read- and assembly-based processing protocols. The following shows the 4 different combinations tested for the read-based processing approach: Tool combination number, tool used to removed contaminants (blank reads), tool used to remove human reads, tool used for taxonomy assignments, output file suffixes used Test1, Minimap2, Kraken2, Kaiju, “_kraken2-kaiju”, Test2, Minimap2, Kraken2, Kraken2, “_kraken2-kraken2”, Test3, Chopper, Chopper, Kaiju, “_chopper-kaiju”, Test4, Chopper, Chopper, Kraken2, “_chopper-kraken2”. The following shows the 4 different combinations tested for the assembly-based processing approach: Tool combination number, tool used to removed contaminants (blank reads), tool used to remove human reads, tool used for assembly polishing, output file suffixes used: Test1, Minimap2, Kraken2, Medaka, “_kraken2-medaka”, Test2, Minimap2, Kraken2, Minimap2+racon, “_kraken2-racon”, Test3, Chopper, Chopper, Medaka, “_chopper- medaka”, Test4, Chopper, Chopper, Minimap2+racon, “_chopper- racon”. Data from the NBD experiment was processed using 16 different approaches to test different tool combinations, different order of contaminant and human read removal steps, and to test differences in assembling blank reads or not before removing them. Each of the 4 different tool combinations for read- and assembly-based processing protocols described for the Rapid experiments were tested with the NBD data using either unassembled or assembled blank reads, making up 8 different approaches. Those 8 approaches were tested with removing blank reads first followed by human read removal or removing human reads first followed by blank read removal, totaling 16 approaches. The 16 different approaches and respective output file prefixes are detailed in the README.txt file associated with the NBD assay table.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Open Science Data Repository</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/planetary-protection-low-biomass-nanopore-pilot-study">https://data.nasa.gov/dataset/planetary-protection-low-biomass-nanopore-pilot-study</a></td></tr>
+<tr><th>Identifier</th><td>10.26030/2q5v-by72</td></tr>
+<tr><th>Themes</th><td>Biological and Physical Sciences</td></tr>
+<tr><th>Modified</th><td>2026-01-29</td></tr>
+<tr><th>Contact / Maintainer</th><td>Open Science Data Repository Help Desk — arc-dl-osdr-help@mail.nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (3)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="http://purl.bioontology.org/ontology/MESH/D064307">http://purl.bioontology.org/ontology/MESH/D064307</a></td></tr><tr><td>BIN</td><td><a href="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48660">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48660</a></td></tr><tr><td>BIN</td><td><a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-890">https://osdr.nasa.gov/bio/repo/data/studies/OSD-890</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">biological-and-physical-sciences</span><span class="tag">genelab</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEO-LEO Merged Deep Blue Aerosol Daily 1 x 1 degree Gridded L3 — NASA Open Data Portal</title>
+<meta name="description" content="The Level-3 (L3) Geostationary Earth Orbit (GEO)-Low-Earth Orbit (LEO) Merged Deep Blue Aerosol Daily 1 x 1-degree Gridded dataset is part of a 12-product suite produced by an Earth Science Research from Operational Geostationary Satellite Systems (ESROGSS)-funded project. The 12">
+<link rel="canonical" href="https://data.nasa.gov/dataset/geo-leo-merged-deep-blue-aerosol-daily-1-x-1-degree-gridded-l3-35b06">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GEO-LEO Merged Deep Blue Aerosol Daily 1 x 1 degree Gridded L3</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/geo-leo-merged-deep-blue-aerosol-daily-1-x-1-degree-gridded-l3-35b06">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Level-3 (L3) Geostationary Earth Orbit (GEO)-Low-Earth Orbit (LEO) Merged Deep Blue Aerosol Daily 1 x 1-degree Gridded dataset is part of a 12-product suite produced by an Earth Science Research from Operational Geostationary Satellite Systems (ESROGSS)-funded project. The 12 products in this project include nine derived from three Geostationary Earth Observation (GEO) instruments and three from merged data from GEO and Low-Earth Orbit (LEO) instruments as summarized in the following table:
+
+| Platform | Instrument | Temporal Cadence | Spatial Res. | Product |
+| :-------: | :----------: | :------------------: | :-----------: | :-------: |
+| GOES-16 | Advanced Baseline Imager | 30 Min. | 10 km | AERDB_L2_ABI_G16 |
+| GOES-17 | Advanced Baseline Imager | 30 Min. | 10 km | AERDB_L2_ABI_G17 |
+| Himawari-8 | Advanced Himawari Imager | 30 Min. | 10 km | AERDB_L2_AHI_H08 |
+| GOES-16 | Advanced Baseline Imager | Daily | 1˚ x 1˚ | AERDB_D3_ABI_G16 |
+| GOES-17 | Advanced Baseline Imager | Daily | 1˚ x 1˚ | AERDB_D3_ABI_G17 |
+| Himawari-8 | Advanced Himawari Imager | Daily | 1˚ x 1˚ | AERDB_D3_AHI_H08 |
+| GOES-16 | Advanced Baseline Imager | Monthly | 1˚ x 1˚ | AERDB_M3_ABI_G16 |
+| GOES-17 | Advanced Baseline Imager | Monthly | 1˚ x 1˚ | AERDB_M3_ABI_G17 |
+| Himawari-8 | Advanced Himawari Imager | Monthly | 1˚ x 1˚ | AERDB_M3_AHI_H08 |
+| Multiple* | ABI, AHI, VIIRS, MODIS* | 30 Min. | 0.25˚ x 0.25˚ | AERDB_L2G_GEOLEO_Merged |
+| **Multiple*** | **ABI, AHI, VIIRS, MODIS*** | **Daily** | **1˚ x 1˚** | **AERDB_D3_GEOLEO_Merged** |
+| Multiple* | ABI, AHI, VIIRS, MODIS* | Monthly | 1˚ x 1˚ | AERDB_M3_GEOLEO_Merged |
+
+\*  includes G16-ABI, G17-ABI, H08-AHI, SNPP-VIIRS, NOAA20-VIIRS, Terra MODIS &amp; Aqua MODIS
+
+The L3 GEO-LEO Merged Deep Blue Aerosol daily product contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength that are composited from the L2G product (AERDB_L2G_GEOLEO_Merged) using best-estimate AOT values. Please note that while the individual standalone gridded data layer for each instrument is calculated as the arithmetic mean, the merged AOT layer is derived via an error-weighted average approach. The final retrievals used in the aggregation process are QA-filtered best-estimate values for cells that are measured on the day of interest. Further, at least three such retrievals are required to render the validity of a grid cell on any given day. Each L3 daily aggregated datafile is spatially comprised of a 1˚ x 1˚ horizontal grid that exists for every 30 minutes. This first release of these products spans from May 2019 through April 2020 with a potential to generate additional temporal coverage in the future.
+
+Each L3 GEO-LEO Merged Deep Blue Aerosol daily datafile contains the following Science Data Sets (SDS):
+
+**GEO-LEO Merged Group SDS**
+1. Aerosol_Optical_Thickness_550_Count_Land
+2. Aerosol_Optical_Thickness_550_Count_Land_Ocean
+3. Aerosol_Optical_Thickness_550_Count_Ocean
+4. Aerosol_Optical_Thickness_550_Land
+5. Aerosol_Optical_Thickness_550_Land_Ocean
+6. Aerosol_Optical_Thickness_550_Maximum_Land
+7. Aerosol_Optical_Thickness_550_Maximum_Land_Ocean
+8. Aerosol_Optical_Thickness_550_Maximum_Ocean
+9. Aerosol_Optical_Thickness_550_Minimum_Land
+10. Aerosol_Optical_Thickness_550_Minimum_Land_Ocean
+11. Aerosol_Optical_Thickness_550_Minimum_Ocean
+12. Aerosol_Optical_Thickness_550_Ocean
+13. Aerosol_Optical_Thickness_550_Standard_Deviation_Land
+14. Aerosol_Optical_Thickness_550_Standard_Deviation_Land_Ocean
+15. Aerosol_Optical_Thickness_550_Standard_Deviation_Ocean
+16. Solar_Zenith_Angletion
+
+ **GEO SDSs (G16/ABI, G17/ABI, H08/AHI) &amp; LEO SDSs (T/A: MODIS, SNPP/NOAA-20: VIIRS)**
+1. Aerosol_Optical_Thickness_550_Count_Land
+2. Aerosol_Optical_Thickness_550_Count_Land_Ocean
+3. Aerosol_Optical_Thickness_550_Count_Ocean
+4. Aerosol_Optical_Thickness_550_Expected_Uncertainty_Land
+5. Aerosol_Optical_Thickness_550_Expected_Uncertainty_Land_Ocean
+6. Aerosol_Optical_Thickness_550_Expected_Uncertainty_Ocean
+7. Aerosol_Optical_Thickness_550_Land
+8. Aerosol_Optical_Thickness_550_Land_Ocean
+9. Aerosol_Optical_Thickness_550_Ocean
+10. Aerosol_Optical_Thickness_550_Standard_Deviation_Land
+11. Aerosol_Optical_Thickness_550_Standard_Deviation_Land_Ocean
+12. Aerosol_Optical_Thickness_550_Standard_Deviation_Ocean
+13. Relative_Azimuth_Angle
+14. Solar_Zenith_Angle
+15. Viewing_Zenith_Angle</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/HBSL/BISB/LAADS;UWI-MAD/SSEC/ASIPS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/geo-leo-merged-deep-blue-aerosol-daily-1-x-1-degree-gridded-l3-35b06">https://data.nasa.gov/dataset/geo-leo-merged-deep-blue-aerosol-daily-1-x-1-degree-gridded-l3-35b06</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ESROGSS/AERDB_D3_GEOLEO_Merged.001</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2019-05-01/2020-05-01</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (5)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://earth-dev.gsfc.nasa.gov/climate/data/deep-blue/documentation">https://earth-dev.gsfc.nasa.gov/climate/data/deep-blue/documentation</a></td></tr><tr><td>BIN</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/AERDB_D3_GEOLEO_Merged--5019">https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/AERDB_D3_GEOLEO_Merged--5019</a></td></tr><tr><td>PDF</td><td><a href="https://ladsweb.modaps.eosdis.nasa.gov/archive/Document%20Archive/Science%20Data%20Product%20Documentation/GEO_Deep-Blue_Aerosol_UG_v1.0.pdf">https://ladsweb.modaps.eosdis.nasa.gov/archive/Document%20Archive/Science%20Data%20Product%20Documentation/GEO_Deep-Blue_Aerosol_UG_v1.0.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3348072630-LAADS">https://search.earthdata.nasa.gov/search/granules?p=C3348072630-LAADS</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3348072630-LAADS.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-aerosols-atmosphere</span><span class="tag">earth-science-aerosols-atmosphere-aerosol-optical-depth-thickness</span><span class="tag">earth-science-aerosols-atmosphere-aerosol-particle-properties</span></div>
+</article>
+</main>
+</body>
+</html>

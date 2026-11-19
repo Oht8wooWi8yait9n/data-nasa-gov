@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Efficient Matlab Programs — NASA Open Data Portal</title>
+<meta name="description" content="Matlab has a reputation for running slowly.  Here are some pointers on how to speed computations, to an often unexpected degree.  Subjects currently covered:  Matrix Coding  Implicit Multithreading on a Multicore Machine  Sparse Matrices  Sub-Block Computation to Avoid Memory Ove">
+<link rel="canonical" href="https://data.nasa.gov/dataset/efficient-matlab-programs">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Efficient Matlab Programs</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/efficient-matlab-programs">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Matlab has a reputation for running slowly.  Here are some pointers on how to speed computations, to an often unexpected degree.  Subjects currently covered:
+
+Matrix Coding
+
+Implicit Multithreading on a Multicore Machine
+
+Sparse Matrices
+
+Sub-Block Computation to Avoid Memory Overflow
+
+ --------------------------------------------------------------------------------------------------------
+
+Matrix Coding - 1
+
+ Matlab documentation notes that efficient computation depends on using the matrix facilities, and that mathematically identical algorithms can have very different runtimes, but they are a bit coy about just what these differences are.  A simple but telling example:
+
+ The following is the core of the GD-CLS algorithm of Berry et.al., copied from fig. 1 of Shahnaz et.al, 2006, &quot;Document clustering using nonnegative matrix factorization&#x27;:
+
+         for jj = 1:maxiter
+             A = W&#x27;*W + lambda*eye(k);
+             for ii = 1:n
+                 b = W&#x27;*V(:,ii);
+                 H(:,ii) = A \ b;
+             end
+             H = H .* (H&gt;0);
+             W = W .* (V*H&#x27;) ./ (W*(H*H&#x27;) + 1e-9);
+         end
+
+Replacing the columwise update of H with a matrix update gives:
+
+          for jj = 1:maxiter
+              A = W&#x27;*W + lambda*eye(k);
+              B = W&#x27;*V;
+              H = A \ B;
+              H = H .* (H&gt;0);
+              W = W .* (V*H&#x27;) ./ (W*(H*H&#x27;) + 1e-9);
+          end
+
+These were tested on an 8049 x 8660 sparse matrix bag of words V (.0083 non-zeros), with W of size 8049 x 50, H 50 x 8660, maxiter = 50, lambda = 0.1, and identical initial W.   They were run consecutivly, multithreaded on an 8-processor Sun server, starting at ~7:30PM.  Tic-toc timing was recorded.
+
+Runtimes were respectivly  6586.2 and 70.5 seconds, a 93:1 difference.  The maximum absolute pairwise difference between W matrix values was 6.6e-14.
+
+Similar speedups have been consistantly observed in other cases.  In one algorithm, combining matrix operations with efficient use of the sparse matrix facilities gave a 3600:1 speedup.
+
+For speed alone, C-style iterative programming should be avoided wherever possible.  In addition,  when a couple lines of matrix code can substitute for an entire C-style function, program clarity is much improved.
+
+----------------------------------------------------------------------------------------------------------------------
+
+ Matrix Coding - 2
+
+Applied to integration, the speed gains are not so great,  largely due to the time taken to set up the and deal with the boundaries.  The anyomous function setup time is neglegable.  I demonstrate on a simple uniform step linearly interpolated 1-D integration of cos() from 0 to pi, which should yield zero:
+          tic;
+          step = .00001;
+          fun = @cos;
+          start = 0;
+          endit = pi;
+          enda = floor((endit - start)/step)*step + start;
+          delta = (endit - enda)/step;
+          intF = fun(start)/2;
+          intF = intF + fun(endit)*delta/2;
+          intF = intF + fun(enda)*(delta+1)/2;
+          for ii = start+step:step:enda-step
+             intF = intF + fun(ii);
+          end
+          intF = intF*step
+          toc;
+
+intF =   -2.910164109692914e-14
+Elapsed time is 4.091038 seconds.
+
+Replacing the inner summation loop with the matrix equivalent speeds things up a bit:
+
+          tic;
+          step = .00001;
+          fun = @cos;
+          start = 0;
+          endit = pi;
+          enda = floor((endit - start)/step)*step + start;
+          delta = (endit - enda)/step;
+          intF = fun(start)/2;
+          intF = intF + fun(endit)*delta/2;
+          intF = intF + fun(enda)*(delta+1)/2;
+          intF = intF + sum(fun(start+step:step:enda-step));
+          intF = intF*step
+          toc;
+intF =   -2.868419946011613e-14
+Elapsed time is 0.141564 seconds.
+
+The core computation take</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/efficient-matlab-programs">https://data.nasa.gov/dataset/efficient-matlab-programs</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_9</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/9/">https://c3.nasa.gov/dashlink/resources/9/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>John Stutz — john.c.stutz@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

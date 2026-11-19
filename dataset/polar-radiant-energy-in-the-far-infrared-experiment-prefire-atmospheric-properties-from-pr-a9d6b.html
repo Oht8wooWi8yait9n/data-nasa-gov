@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Atmospheric Properties from PREFIRE Satellite 1 COG R01 — NASA Open Data Portal</title>
+<meta name="description" content="Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Atmospheric Properties from PREFIRE Satellite 1 COG (PREFIRE_SAT1_2B-ATM_COG) is retrieved from data collected by the PREFIRE Thermal Infrared Spectrometer (TIRS-PREFIRE) aboard PREFIRE-SAT1. Dual CubeSats each carry a">
+<link rel="canonical" href="https://data.nasa.gov/dataset/polar-radiant-energy-in-the-far-infrared-experiment-prefire-atmospheric-properties-from-pr-a9d6b">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Atmospheric Properties from PREFIRE Satellite 1 COG R01</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/polar-radiant-energy-in-the-far-infrared-experiment-prefire-atmospheric-properties-from-pr-a9d6b">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Atmospheric Properties from PREFIRE Satellite 1 COG (PREFIRE_SAT1_2B-ATM_COG) is retrieved from data collected by the PREFIRE Thermal Infrared Spectrometer (TIRS-PREFIRE) aboard PREFIRE-SAT1. Dual CubeSats each carry a PREFIRE Thermal Infrared Spectrometer (TIRS-PREFIRE), a push broom spectrometer with 63 channels measuring mid- and far-infrared (FIR) radiation from approximately 5 to 53 µm. Most polar emissions are in the FIR but have not been measured on a large scale. PREFIRE aims to fill knowledge gaps in the global energy budget by more accurately characterizing polar emissions. This information will then be assimilated into global circulation and other models to predict future conditions more accurately.
+PREFIRE_SAT1_2B-ATM_COG contains Cloud-Optimized GeoTIFF (COG) files that each contain a georeferenced rendering of retrieved column water vapor (CWV) values. Those CWV data values are computed from a single granule of PREFIRE Spectral Radiance (PREFIRE_SAT1_1B-RAD) data using an Optimal Estimation retrieval via a radiative transfer model with inputs from PREFIRE_SAT1_2B-MSK (cloud mask), PREFIRE_SAT1_AUX-MET, and PREFIRE_SAT1_2B-SFC. The retrieved CWV values are only available for clear-sky conditions. As part of the rendering process, mean retrieved CWV values are computed for a global grid of raster elements (each approximately 2.23 km in width), based on which raster elements each PREFIRE ground footprint overlaps. This procedure is done in order to better visualize the PREFIRE data despite substantial overlap of adjacent along-track ground footprints – but it is important to remember that the individual PREFIRE ground footprints are much bigger (by about 80x, in terms of area) than each of the GeoTIFF raster elements. These cloud-optimized GeoTIFF images may be viewed using many geographic information systems (GIS), such as the freely available QGIS.
+
+Science data retrieval started July 24, 2024 and is ongoing. Currently, the geographic coverage is for latitudes between approximately 60° to 84° in both polar regions, although future releases may include data for all latitudes equatorward of about 84°. Within the orbital swath there are eight distinct tracks of data associated with the eight separate spatial scenes for each TIRS-PREFIRE. At the beginning of the mission, the approximate scene footprint sizes were 11.8 km x 34.8 km (cross-track x along-track), with gaps between each scene of approximately 24.2 km. The entire swath was about 264 km across. Note that the scene footprint and swath sizes quoted here are for the orbit altitude soon after launch. However, the footprint and swath sizes will slowly become smaller as the orbit altitude decreases with time.
+
+Similar CWV GeoTIFF renderings for the sister instrument aboard PREFIRE-SAT2 can be found in the PREFIRE_SAT2_2B-ATM_COG collection.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/LARC/SD/ASDC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/polar-radiant-energy-in-the-far-infrared-experiment-prefire-atmospheric-properties-from-pr-a9d6b">https://data.nasa.gov/dataset/polar-radiant-energy-in-the-far-infrared-experiment-prefire-atmospheric-properties-from-pr-a9d6b</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/PREFIRE-SAT1/PREFIRE/ATM_COG_L2B.R01</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2024-07-24/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;GEODETIC&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://asdc.larc.nasa.gov/static/images/project_logos/prefire.png">https://asdc.larc.nasa.gov/static/images/project_logos/prefire.png</a></td></tr><tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/project/PREFIRE">https://asdc.larc.nasa.gov/project/PREFIRE</a></td></tr><tr><td>BIN</td><td><a href="https://science.jpl.nasa.gov/projects/prefire/">https://science.jpl.nasa.gov/projects/prefire/</a></td></tr><tr><td>BIN</td><td><a href="https://prefire.ssec.wisc.edu/">https://prefire.ssec.wisc.edu/</a></td></tr><tr><td>PDF</td><td><a href="https://asdc.larc.nasa.gov/documents/prefire/guide/PREFIRE_Data_User_Guide_2B-ATM_R01.pdf">https://asdc.larc.nasa.gov/documents/prefire/guide/PREFIRE_Data_User_Guide_2B-ATM_R01.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://science.nasa.gov/mission/prefire/">https://science.nasa.gov/mission/prefire/</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/PREFIRE-SAT1/PREFIRE/ATM_COG_L2B.R01">https://doi.org/10.5067/PREFIRE-SAT1/PREFIRE/ATM_COG_L2B.R01</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3550250556-LARC_CLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3550250556-LARC_CLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://asdc.larc.nasa.gov/citing-data">https://asdc.larc.nasa.gov/citing-data</a></td></tr><tr><td>PDF</td><td><a href="https://asdc.larc.nasa.gov/documents/prefire/ATBD/PREFIRE_2B-ATM_ATBD-20250430.pdf">https://asdc.larc.nasa.gov/documents/prefire/ATBD/PREFIRE_2B-ATM_ATBD-20250430.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://zenodo.org/records/16694725">https://zenodo.org/records/16694725</a></td></tr><tr><td>BIN</td><td><a href="https://zenodo.org/records/16638853">https://zenodo.org/records/16638853</a></td></tr><tr><td>BIN</td><td><a href="https://prefire.ssec.wisc.edu/prefire-sat1-operations-log/">https://prefire.ssec.wisc.edu/prefire-sat1-operations-log/</a></td></tr><tr><td>BIN</td><td><a href="https://git.earthdata.nasa.gov/projects/PREFIRE">https://git.earthdata.nasa.gov/projects/PREFIRE</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3550250556-LARC_CLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-atmospheric-pressure-atmosphere-atmospheric-pressure-measurements</span><span class="tag">earth-science-atmospheric-temperature-atmosphere-surface-temperature</span><span class="tag">earth-science-atmospheric-temperature-atmosphere-upper-air-temperature</span><span class="tag">earth-science-atmospheric-water-vapor-atmosphere-water-vapor-indicators</span></div>
+</article>
+</main>
+</body>
+</html>

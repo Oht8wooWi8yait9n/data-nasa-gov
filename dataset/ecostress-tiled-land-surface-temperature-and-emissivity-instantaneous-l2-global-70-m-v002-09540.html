@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Tiled Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m V002 — NASA Open Data Portal</title>
+<meta name="description" content="The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collec">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-tiled-land-surface-temperature-and-emissivity-instantaneous-l2-global-70-m-v002-09540">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Tiled Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m V002</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-tiled-land-surface-temperature-and-emissivity-instantaneous-l2-global-70-m-v002-09540">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes.
+
+The ECOSTRESS Tiled Land Surface Temperature and Emissivity Instantaneous Level 2 Global 70 m (ECO_L2T_LSTE) Version 2 data product provides atmospherically corrected land surface temperature and emissivity (LST&amp;E) values derived from five thermal infrared (TIR) bands. The ECO_L2T_LSTE data product was derived using a physics-based Temperature and Emissivity Separation (TES) algorithm. This tiled data product is subset from the [ECO_L2G_LSTE](https://doi.org/10.5067/ECOSTRESS/ECO_L2G_LSTE.002) data product using a modified version of the Military Grid Reference System ([MGRS](https://hls.gsfc.nasa.gov/products-description/tiling-system/)) which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 meter (m) spatial resolution.
+
+The ECO_L2T_LSTE Version 2 data product is provided in Cloud Optimized GeoTIFF (COG) format, and each band is distributed as a separate COG. This product contains seven layers including LST, LST error, wideband emissivity, quality flags, height, and cloud and water masks.
+
+Known Issues
+* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.
+* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.
+* Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.
+* Data alert: All users of ECOSTRESS L2 v002 products (ECO_L2T_LSTE, ECO_L2_LSTE, ECO_L2G_LSTE) should be aware that the cloud mask information previously available in the Quality Control (QC) layer in v001, is not available in the v002 QC layer. Instead, users should be using the &#x27;cloud_mask&#x27; layer in the L2 LSTE product, or the cloud information in the standard cloud mask products (ECO_L2_CLOUD, ECO_L2T_CLOUD, ECO_L2G_CLOUD) to assess if a pixel is clear or cloudy (see section 3 of the User Guide). In v002 the mandatory QA flags in the QC bit mask provide the following information in bits 1 and 0:
+     * 00 - Pixel produced by TES
+     * 01 - Pixel produced by TES but certain conditions are met that may degrade the LSTE accuracy (see User Guide for details)
+     * 10 - Not set (previously set to cloud mask in v001)
+     * 11 - Pixel not produced (see bits 3 &amp; 2 for additional information)
+* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the International Space Station (ISS), potentially impacting data quality of obstructed pixels. The &#x27;FieldOfViewObstruction&#x27; metadata field is included in all Version 2 products to indicate possible obstructions:
+     * Before October 24, 2024 (orbits prior to 35724): The field is present but was not populated and does not reliably identify affected scenes.
+     * On or after October 24, 2024 (starting with orbit 35724): The field is populated and generally accurate, except for late December 2024, when a temporary processing error may have caused false positives.
+     * A [list of scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) confirmed to be affected by obstructions is available and is recommended for verifying historical data (before October 24, 2024) and scenes from late December 2024.
+* Geolocation flags: The ISS native pointing information is coarse relative to ECOSTRESS pixels, so ECOSTRESS geolocation is improved through image matching with a basemap. Metadata in the L1B_GEO file shows the success of this geolocation improvement, using categorizations &quot;best&quot;, &quot;good&quot;, &quot;suspect&quot;, and &quot;poor&quot;. We recommend that users use only &quot;best&quot; and &quot;good&quot; scenes for evaluations where geolocation is important (e.g., comparison to field sites). For some scenes, this metadata is not reflected in the higher-level products (e.g., land surface temperature, evapotranspiration, etc.). While this metadata is always available in the geolocation product, to save users additional download, we have produced a [summary text file](https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt) that includes the geolocation quality flags for all scenes from launch to present. At a later date, all higher-level products will reflect the geolocation quality flag correctly (the field name is GeolocationAccuracyQA).
+* Instrument noise: During the time period of May 15, 2025, through July 1, 2025 ECOSTRESS data was noisier than expected. Cycling the payload resolved the issue, but researchers should use all levels of ECOSTRESS data acquired during this time period with caution.
+* Missing variable: ECO_L2T_LSTE was generated without the lst_err layer/variable during the time period from December 16, 2025, to June 10, 2026. The impacted data will be reprocessed in the near future.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-tiled-land-surface-temperature-and-emissivity-instantaneous-l2-global-70-m-v002-09540">https://data.nasa.gov/dataset/ecostress-tiled-land-surface-temperature-and-emissivity-instantaneous-l2-global-70-m-v002-09540</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO_L2T_LSTE.002</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-09/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 54, &quot;SouthBoundingCoordinate&quot;: -54, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (15)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2076090826-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2076090826-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002">https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/2235/ECO2_LSTE_ATBD_V1.1.pdf">https://lpdaac.usgs.gov/documents/2235/ECO2_LSTE_ATBD_V1.1.pdf</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40079_032_07LHJ_20250731T174602_0713_01/ECOv002_L2T_LSTE_40079_032_07LHJ_20250731T174602_0713_01.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40079_032_07LHJ_20250731T174602_0713_01/ECOv002_L2T_LSTE_40079_032_07LHJ_20250731T174602_0713_01.png</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/380/ECO2_PSD_V1.pdf">https://lpdaac.usgs.gov/documents/380/ECO2_PSD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/299/ECO2_ASD_V1.pdf">https://lpdaac.usgs.gov/documents/299/ECO2_ASD_V1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1655/ECO_L1C-4_Grid_Tile_User_Guide_V2.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1574/ECOL2_User_Guide_V2.pdf">https://lpdaac.usgs.gov/documents/1574/ECOL2_User_Guide_V2.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>BIN</td><td><a href="https://ecostress.jpl.nasa.gov/science">https://ecostress.jpl.nasa.gov/science</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt">https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt">https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2076090826-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-surface-radiative-properties-land-surface-emissivity</span><span class="tag">earth-science-surface-thermal-properties-land-surface-land-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

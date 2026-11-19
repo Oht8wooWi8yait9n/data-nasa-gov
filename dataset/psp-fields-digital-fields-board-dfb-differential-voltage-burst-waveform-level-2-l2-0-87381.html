@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PSP FIELDS Digital Fields Board (DFB) Differential Voltage Burst Waveform, Level 2 (L2), 0.873813 s Data — NASA Open Data Portal</title>
+<meta name="description" content="PSP FIELDS Digital Fields Board (DFB), Differential Voltage data:  The DFB is the low frequency, less than 75 kHz, component of the FIELDS experiment on the Parker Solar Probe spacecraft, see reference [1] below. For a full description of the FIELDS experiment, see reference [2].">
+<link rel="canonical" href="https://data.nasa.gov/dataset/psp-fields-digital-fields-board-dfb-differential-voltage-burst-waveform-level-2-l2-0-87381">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>PSP FIELDS Digital Fields Board (DFB) Differential Voltage Burst Waveform, Level 2 (L2), 0.873813 s Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/psp-fields-digital-fields-board-dfb-differential-voltage-burst-waveform-level-2-l2-0-87381">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">PSP FIELDS Digital Fields Board (DFB), Differential Voltage data:
+
+The DFB is the low frequency, less than 75 kHz, component of the FIELDS experiment on the Parker Solar Probe spacecraft, see reference [1] below. For a full description of the FIELDS experiment, see reference [2]. For a description of the DFB, see reference [3].
+
+DFB burst waveform data consist of short bursts of time-series data from various FIELDS sensors. These data have been filtered by both analog and digital filters [3]. These data are pre-sorted by onboard competitive selection algorithms described in [3] before storage by FIELDS. A subset of this stored burst data is telemetered to Earth for scientist-selected regions of interest.
+
+The Level 2 data products contained in this data file have been calibrated for:
+
+* 1) DFB in-band gain
+* 2) DFB analog filter gain/phase response
+* 3) DFB digital filter phase response
+* 4) The search coil preamplifier gain/phase response, when applicable
+
+Calibrations for the FIELDS voltage sensor preamplifiers have not been implemented as the preamplifier response is flat and equal to one through the DFB frequency range. Corrections for plasma sheath impedance gain and antenna effective length have not been applied to voltage sensor signals. These corrections will be applied in the Level 3 DFB data products. Therefore, all voltage sensor quantities when present in these Level 2 data products are expressed by using units of Volts. Likewise, all magnetic field quantities when present in these Level 2 data products are expressed by using units of nT.
+
+The Level 2 voltage data products when present in these data files are expressed in sensor coordinates: [dV12,dV34] for voltage measurements. Likewise, the Level 2 search coil magnetomete data products when present in these data files are expressed in sensor coordinates: [u,v,w] for magnetic field measurements.
+
+The time resolution of the DFB burst waveform data can vary by multiples of 2^N. During encounter when PSP is within 0.25 AU of the Sun, the DFB burst waveform data cadence is typically 150,000 samples/s. This rate is the sample rate of the analog to digital converters, ADC, and data taken at this rate do not pass through a digital filter.
+
+References:
+
+* 1) Fox, N.J., Velli, M.C., Bale, S.D. et al., Space Sci Rev (2016) 204:7. https://doi.org/10.1007/s1121401502116
+* 2) Bale, S.D., Goetz, K., Harvey, P.R. et al., Space Sci Rev (2016) 204:49. https://doi.org/10.1007/s1121401602445
+* 3) Malaspina, D.M., Ergun, R.E., Bolton, M. et al., JGR Space Phys. (2016), 121, 5088-5096. https://doi.org/10.1002/2016JA022344</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/psp-fields-digital-fields-board-dfb-differential-voltage-burst-waveform-level-2-l2-0-87381">https://data.nasa.gov/dataset/psp-fields-digital-fields-board-dfb-differential-voltage-burst-waveform-level-2-l2-0-87381</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/6rwq-2e67">https://doi.org/10.48322/6rwq-2e67</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://umbra.nascom.nasa.gov/punch/0/PM3/">https://umbra.nascom.nasa.gov/punch/0/PM3/</a></td></tr><tr><td>BIN</td><td><a href="https://punch.space.swri.edu/">https://punch.space.swri.edu/</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/PUNCH_WFI_3_Level0_PM3_PT4M">https://helio.data.nasa.gov/dataset/PUNCH_WFI_3_Level0_PM3_PT4M</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/PUNCH/WFI/3/Level0/PM3/PT4M">https://hpde.io/NASA/NumericalData/PUNCH/WFI/3/Level0/PM3/PT4M</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">electricfield</span><span class="tag">instrumentstatus</span></div>
+</article>
+</main>
+</body>
+</html>

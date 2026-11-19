@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GOLD Level L2 Molecular Oxygen Density Profile — NASA Open Data Portal</title>
+<meta name="description" content="O2 is derived from measurements of stellar occultation in the Shumann Runge continuum. 	  As the star rises or sets relative to the satellite position the stellar spectrum is measured across 	  the GOLD spectral bandpass, from 132 to 162 nm. Geolocation of the OCC L1B data provid">
+<link rel="canonical" href="https://data.nasa.gov/dataset/gold-level-l2-molecular-oxygen-density-profile-9b0ef">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GOLD Level L2 Molecular Oxygen Density Profile</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/gold-level-l2-molecular-oxygen-density-profile-9b0ef">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">O2 is derived from measurements of stellar occultation in the Shumann Runge continuum.
+	  As the star rises or sets relative to the satellite position the stellar spectrum is measured across
+	  the GOLD spectral bandpass, from 132 to 162 nm. Geolocation of the OCC L1B data provides the
+	  line-of-sight tangent altitude vs. time during the occultation. This results in a 2-dimensional
+	  map of the stellar signal, in counts or calibrated geophysical units (irradiance), vs. wavelength
+	  and tangent altitude. A sample of this image is represented in the top left panel of the OCC L1D
+	  image in Figure 3-22.
+
+      The measured counts profile is then normalized by the unattenuated, exo-atmospheric spectrum, yielding
+	  the slant path transmission profile vs. wavelength at the native L1C spectral sampling of 0.12 nm.
+	  The defining characteristic of the atmospheric transmission is that it is completely independent of
+	  instrument calibration or absolute accuracy. The full transmission spectrum is binned into a small
+	  number of 2-nm spectral channels for use in the retrievals. These retrieval channels are chosen to
+	  span the spectral dependence of the O2 absorption cross-section in order to maximize the O2 retrieval
+	  altitude range (approximately 120-240 km). In the Version 1 O2DEN data set two spectral channels
+	  are used, centered at 142- and 159-nm.
+
+	  Since stars rise or set at approximately 3 km/sec, as observed from orbit, the 100-msec occultation
+	  cadence results in a measurement of extremely high (sub-km) vertical resolution. The data are binned
+	  to enhance signal-to-noise, producing an effective vertical resolution of 10 km or less, which is
+	  sufficient to easily resolve the scale height of the O2 thermospheric profile.
+
+	  The algorithm uses an optimal estimation routine, which provide a complete error analysis and
+	  retrieval diagnostics such as averaging kernels and information content. A data vector constructed
+	  from the multiple spectral channels of slant path transmission is used to derive the atmospheric
+	  state vector – O2 density vs. geometric altitude – via a nonlinear, iterative inversion. The retrieved
+	  O2 density profile is reported on a fixed altitude grid with 5-km spacing. The valid altitude range
+	  varies for each event, but generally ranges from ~120 – 240.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/gold-level-l2-molecular-oxygen-density-profile-9b0ef">https://data.nasa.gov/dataset/gold-level-l2-molecular-oxygen-density-profile-9b0ef</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/gj9t-v633">https://doi.org/10.48322/gj9t-v633</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/o2den">ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/o2den</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/gold/level2/o2den">https://spdf.gsfc.nasa.gov/pub/data/gold/level2/o2den</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=GOLD_L2_O2DEN&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=GOLD_L2_O2DEN&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=GOLD_L2_O2DEN">https://api.heliocloud.org/cloudcatalog?id=GOLD_L2_O2DEN</a></td></tr><tr><td>BIN</td><td><a href="https://gold.cs.ucf.edu/">https://gold.cs.ucf.edu/</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.1007/s11214-017-0392-2">https://doi.org/10.1007/s11214-017-0392-2</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/GOLD_L2_O2DEN_PT20M">https://helio.data.nasa.gov/dataset/GOLD_L2_O2DEN_PT20M</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/GOLD/L2/O2DEN/PT20M">https://hpde.io/NASA/NumericalData/GOLD/L2/O2DEN/PT20M</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">day-disk-data</span><span class="tag">gold</span><span class="tag">imageintensity</span><span class="tag">ses-14</span></div>
+</article>
+</main>
+</body>
+</html>

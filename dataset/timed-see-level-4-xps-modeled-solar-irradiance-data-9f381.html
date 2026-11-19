@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TIMED SEE Level 4 XPS Modeled Solar Irradiance Data — NASA Open Data Portal</title>
+<meta name="description" content="The SEE XPS Level 4 data are derived from the XPS Level 1 data products. The XPS Level 4 processing algorithm uses reference CHIANTI spectral models to generate a higher spectral resolution (0.1 nm) estimate of the solar XUV irradiance by scaling the model reference spectra to ma">
+<link rel="canonical" href="https://data.nasa.gov/dataset/timed-see-level-4-xps-modeled-solar-irradiance-data-9f381">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>TIMED SEE Level 4 XPS Modeled Solar Irradiance Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/timed-see-level-4-xps-modeled-solar-irradiance-data-9f381">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The SEE XPS Level 4 data are derived from the XPS Level 1 data products. The XPS Level 4 processing algorithm uses reference CHIANTI spectral models to generate a higher spectral resolution (0.1 nm) estimate of the solar XUV irradiance by scaling the model reference spectra to match the XPS photometer currents (signal). The CHIANTI Quiet Sun (QS) spectrum and Active Region (AR) spectrum are used with a scaling of the AR spectrum to match the minimum signal on each day, and then a CHIANTI isothermal flare spectrum is scaled to match the signal above the daily minimum signal. The flare temperature is determined from the ratio of the GOES XRS 0.1-0.8 nm irradiance to the GOES XRS 0.05-0.4 nm irradiance. These scaling factors, flare temperature, and resulting model spectrum in the 0-40 nm range in 0.1 nm intervals are in the XPS Level 4 data product for every measurement made by XPS photometer #1 or #2 (0.1-7 nm band).
+
+A SEE XPS Level 4 data product is produced for each UT day, and these daily products are also merged into three different full mission data files:
+
+    daily averages (24-hour)
+    orbit averages (3-min about every 97 min)
+    1-minute averages (but with only about 3% duty cycle)
+
+The XPS Level 4 result in 0.1 nm intervals is also compressed into 1-nm intervals for use in the SEE Level 3 and Level 3A data products.
+
+On-orbit instrument characterization is an ongoing effort, and the SEE team checks photometer degradation using redundant channels and underflight calibration rockets whose payload includes TIMED SEE prototype instruments.
+
+The accuracy of the XPS Level 1 irradiance is 12%-26%, photometer dependent. There is additional uncertainty for applying the spectral model for the XPS Level 4 irradiances, and this estimated accuracy is 30% for the integrated XUV irradiance. The spectral distribution in the XPS Level 4 is from the CHIANTI model and not from direct measurements from XPS, a set of broadband photometers. The spectral distribution above 27 nm has been validated with the TIMED SEE EGS (27-190 nm, 0.4 nm resolution) measurements, so there is good confidence in the spectral distribution shortward of 27 nm.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SEE_POC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/timed-see-level-4-xps-modeled-solar-irradiance-data-9f381">https://data.nasa.gov/dataset/timed-see-level-4-xps-modeled-solar-irradiance-data-9f381</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/v1q7-1836">https://doi.org/10.48322/v1q7-1836</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="http://lasp.colorado.edu/home/see/data/">http://lasp.colorado.edu/home/see/data/</a></td></tr><tr><td>BIN</td><td><a href="http://lasp.colorado.edu/home/see/data/observational-averages/level-4-model/">http://lasp.colorado.edu/home/see/data/observational-averages/level-4-model/</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/TIMED_SEE_L4_XSP">https://helio.data.nasa.gov/dataset/TIMED_SEE_L4_XSP</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/TIMED/SEE/L4_XSP">https://hpde.io/NASA/NumericalData/TIMED/SEE/L4_XSP</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">irradiance</span><span class="tag">see</span><span class="tag">sun</span><span class="tag">timed</span></div>
+</article>
+</main>
+</body>
+</html>

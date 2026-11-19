@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XMM-Newton OM Object Catalog — NASA Open Data Portal</title>
+<meta name="description" content="The Optical Monitor Catalog of serendipitous sources (OMCat) contains entries for every source detected in the publicly available XMM-Newton Optical Monitor (OM) images taken in the imaging mode. Since the OM records data simultaneously with the X-ray telescopes on XMM-Newton, it">
+<link rel="canonical" href="https://data.nasa.gov/dataset/xmm-newton-om-object-catalog">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>XMM-Newton OM Object Catalog</h1>
+<div class="meta-badges"><span class="badge">Astrophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/xmm-newton-om-object-catalog">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Optical Monitor Catalog of serendipitous sources (OMCat) contains entries for every source detected in the publicly available XMM-Newton Optical Monitor (OM) images taken in the imaging mode. Since the OM records data simultaneously with the X-ray telescopes on XMM-Newton, it typically produces images in one or more near-UV/optical bands for every pointing of the observatory. As of the beginning of 2014, the data in the public archive covered roughly 0.5% of the sky in 3425 fields. The OMCat is not dominated by sources previously undetected at other wavelengths; the bulk of objects have optical counterparts. However, the OMCat can be used to extend optical or X-ray spectral energy distributions for known objects into the ultraviolet, to study at higher angular resolution objects detected with GALEX, or to find high-Galactic-latitude objects of interest for UV spectroscopy. Differences between the current OMCat and the previous version of the OMCat (which was designated as XMMOMOBJ) are improved coordinates, improved quality flags, and a reduced number of spurious sources. The OM reduction was done with the standard ESAS software, with post-processing to apply the coordinate corrections in a more consistent manner. There is a major change in the way the data are represented in the table. In the previous XMMOMOBJ table a separate row was generated for each filter. In the current XMMOMCAT table each observation of each object generates only a single row regardless of how many filters were used. Unused filters have nulls while filters where the object is not detected have nulls for the detection parameters but a non-zero value for exposure. The table includes information for each filter and averaged information for the object as a whole. Only filters in which the object was detected are used in the averages. The parameters in this table comprise two sets: parameters describing the detection overall including id&amp;#39;s and mean values, and values specific to the individual bands. There are three possible situations for the band data: (1) If there was no exposure in that band, then all fields for that band will be null. (2) If there was some exposure in the band but the object was not detected in that band, then the exposure field will give the actual exposure, but all of the other fields for that band will be null. (3) If the object was detected, then all of the fields for the band should be filled in. The filters included are V, B, U, UVW1, UVM2, UVW2 and white (i.e., unfiltered). The original table (formerly known as XMMOMOBJ) was created by the HEASARC in March 2008, based on a table supplied by the authors. The XMMOMCAT version was generated and ingested in February 2014 using a program which concatenated the objects detected in processing each observation. This is a service provided by NASA HEASARC .</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>High Energy Astrophysics Science Archive Research Center</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/xmm-newton-om-object-catalog">https://data.nasa.gov/dataset/xmm-newton-om-object-catalog</a></td></tr>
+<tr><th>Identifier</th><td>ivo://nasa.heasarc/xmmomcat</td></tr>
+<tr><th>Themes</th><td>Astrophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>HEASARC Help Desk — andrew.ptak@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (2)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmomcat.html">https://heasarc.gsfc.nasa.gov/W3Browse/all/xmmomcat.html</a></td></tr><tr><td>BIN</td><td><a href="https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=xmmomcat&amp;">https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=xmmomcat&amp;</a></td></tr>
+</tbody></table>
+</article>
+</main>
+</body>
+</html>

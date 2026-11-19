@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Using Decision Trees to Detect and Isolate Leaks in the J-2X — NASA Open Data Portal</title>
+<meta name="description" content="**Full title: Using Decision Trees to Detect and Isolate Simulated Leaks in the J-2X Rocket Engine**  Mark Schwabacher, NASA Ames Research Center  Robert Aguilar, Pratt &amp; Whitney Rocketdyne  Fernando Figueroa, NASA Stennis Space Center  **Abstract**  The goal of this work was to ">
+<link rel="canonical" href="https://data.nasa.gov/dataset/using-decision-trees-to-detect-and-isolate-leaks-in-the-j-2x">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Using Decision Trees to Detect and Isolate Leaks in the J-2X</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/using-decision-trees-to-detect-and-isolate-leaks-in-the-j-2x">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">**Full title: Using Decision Trees to Detect and Isolate Simulated Leaks in the J-2X Rocket Engine**
+
+Mark Schwabacher, NASA Ames Research Center
+
+Robert Aguilar, Pratt &amp; Whitney Rocketdyne
+
+Fernando Figueroa, NASA Stennis Space Center
+
+**Abstract**
+
+The goal of this work was to use data-driven methods to automatically detect and isolate faults in the J-2X rocket engine. It was decided to use decision trees, since they tend to be easier to interpret than other data-driven methods. The decision tree algorithm automatically “learns” a decision tree by performing a search through the space of possible decision trees to find one that fits the training data. The particular decision tree algorithm used is known as C4.5. Simulated J-2X data from a high-fidelity simulator developed at Pratt &amp; Whitney Rocketdyne and known as the Detailed Real-Time Model (DRTM) was used to “train” and test the decision tree. Fifty-six DRTM simulations were performed for this purpose, with different leak sizes, different leak locations, and different times of leak onset. To make the simulations as realistic as possible, they included simulated sensor noise, and included a gradual degradation in both fuel and oxidizer turbine efficiency. A decision tree was trained using 11 of these simulations, and tested using the remaining 45 simulations. In the training phase, the C4.5 algorithm was provided with labeled examples of data from nominal operation and data including leaks in each leak location. From the data, it “learned” a decision tree that can classify unseen data as having no leak or having a leak in one of the five leak locations. In the test phase, the decision tree produced very low false alarm rates and low missed detection rates on the unseen data. It had very good fault isolation rates for three of the five simulated leak locations, but it tended to confuse the remaining two locations, perhaps because a large leak at one of these two locations can look very similar to a small leak at the other location.
+
+**Introduction**
+
+The J-2X rocket engine will be tested on Test Stand A-1 at NASA Stennis Space Center (SSC) in Mississippi. A team including people from SSC, NASA Ames Research Center (ARC), and Pratt &amp; Whitney Rocketdyne (PWR) is developing a prototype end-to-end integrated systems health management (ISHM) system that will be used to monitor the test stand and the engine while the engine is on the test stand[1]. The prototype will use several different methods for detecting and diagnosing faults in the test stand and the engine, including rule-based, model-based, and data-driven approaches. SSC is currently using the G2 tool [http://www.gensym.com](http://www.gensym.com) to develop rule-based and model-based fault detection and diagnosis capabilities for the A-1 test stand. This paper describes preliminary results in applying the data-driven approach to detecting and diagnosing faults in the J-2X engine.
+The conventional approach to detecting and diagnosing faults in complex engineered systems such as rocket engines and test stands is to use large numbers of human experts. Test controllers watch the data in near-real time during each engine test. Engineers study the data after each test. These experts are aided by limit checks that signal when a particular variable goes outside of a predetermined range. The conventional approach is very labor intensive. Also, humans may not be able to recognize faults that involve the relationships among large numbers of variables. Further, some potential faults could happen too quickly for humans to detect them and react before they become catastrophic. Automated fault detection and diagnosis is therefore needed.
+One approach to automation is to encode human knowledge into rules or models. Another approach is use data-driven methods to automatically learn models from historical data or simulated data. Our prototype will combine the data-driven approach with the model-based and rule-based appro</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/using-decision-trees-to-detect-and-isolate-leaks-in-the-j-2x">https://data.nasa.gov/dataset/using-decision-trees-to-detect-and-isolate-leaks-in-the-j-2x</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_218</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/218/">https://c3.nasa.gov/dashlink/resources/218/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-22</td></tr>
+<tr><th>Contact / Maintainer</th><td>MARK SCHWABACHER — mark.a.schwabacher@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/J-2X_2.jpg">J-2X_2.jpg</a><br><small>Figure 1: The J-2X Rocket Engine</small></td></tr><tr><td>JPEG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Test_Stand_A-1.jpg">Test_Stand_A-1.jpg</a><br><small>Figure 2: Test Stand A-1</small></td></tr><tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Table_1_2.gif">Table_1_2.gif</a><br><small>Table 1: False Alarm Rates</small></td></tr><tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Table_2_2.gif">Table_2_2.gif</a><br><small>Table 2: Missed Detection Rates</small></td></tr><tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Table_3.gif">Table_3.gif</a><br><small>Table 3: Misisolation Rates</small></td></tr><tr><td>GIF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/Table_4.gif">Table_4.gif</a><br><small>Table 4: Confusion Matrix</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EMIT L2A Estimated Surface Reflectance and Uncertainty and Masks 60 m V001 — NASA Open Data Portal</title>
+<meta name="description" content="The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth’s arid dust source regions. EMIT is installed on the International Space Station (ISS) and uses imaging spectroscopy to take mineralogical measurements of sunlit">
+<link rel="canonical" href="https://data.nasa.gov/dataset/emit-l2a-estimated-surface-reflectance-and-uncertainty-and-masks-60-m-v001-aa99a">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>EMIT L2A Estimated Surface Reflectance and Uncertainty and Masks 60 m V001</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/emit-l2a-estimated-surface-reflectance-and-uncertainty-and-masks-60-m-v001-aa99a">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth’s arid dust source regions. EMIT is installed on the International Space Station (ISS) and uses imaging spectroscopy to take mineralogical measurements of sunlit regions of interest between 52° N latitude and 52° S latitude. An interactive map showing the regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).
+
+The EMIT Level 2A Estimated Surface Reflectance and Uncertainty and Masks (EMITL2ARFL) Version 1 data product provides surface reflectance data in a spatially raw, non-orthocorrected format. Each EMITL2ARFL granule consists of three Network Common Data Format 4 (NetCDF4) files at a spatial resolution of 60 meters (m): Reflectance (EMIT_L2A_RFL), Reflectance Uncertainty (EMIT_L2A_RFLUNCERT), and Reflectance Mask (EMIT_L2A_MASK). The Reflectance file contains surface reflectance maps of 285 bands with a spectral range of 381-2493 nanometers (nm) at a spectral resolution of ~7.5 nm, which are held within a single science dataset layer (SDS). The Reflectance Uncertainty file contains uncertainty estimates about the reflectance captured as per-pixel, per-band, posterior standard deviations. The Reflectance Mask file contains six binary flag bands and two data bands. The binary flag bands identify the presence of features including clouds, water, and spacecraft which indicate if a pixel should be excluded from analysis. The data bands contain estimates of aerosol optical depth (AOD) and water vapor.
+
+Each NetCDF4 file holds a location group containing a geometric lookup table (GLT) which is an orthorectified image that provides relative x and y reference locations from the raw scene to allow for projection of the data. Along with the GLT layers, the files will also contain latitude, longitude, and elevation layers. The latitude and longitude coordinates are presented using the World Geodetic System (WGS84) ellipsoid. The elevation data was obtained from Shuttle Radar Topography Mission v3 (SRTM v3) data and resampled to EMIT’s spatial resolution.
+
+Each granule is approximately 75 kilometers (km) by 75 km, nominal at the equator, with some granules at the end of an orbit segment reaching 150 km in length.
+
+Known Issues:
+
+* Data acquisition gap: From September 13, 2022, through January 6, 2023, a power issue outside of EMIT caused a pause in operations. Due to this shutdown, no data were acquired during that timeframe.
+* Possible Reflectance Discrepancies: Due to changes in computational architecture, EMITL2ARFL reflectance data produced after December 4, 2024, with Software Build 010621 and onward may show discrepancies in reflectance of up to 0.8% in extreme cases in some wavelengths as compared to values in previously processed data. These discrepancies are generally lower than 0.8% and well within estimated uncertainties. Between earlier builds and Build 010621, neither resulting output should be interpreted as more ‘correct’ than the other, as their results are simply convergence differences from an optimization search. Most users are unlikely to observe the impact.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/EMIT</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/emit-l2a-estimated-surface-reflectance-and-uncertainty-and-masks-60-m-v001-aa99a">https://data.nasa.gov/dataset/emit-l2a-estimated-surface-reflectance-and-uncertainty-and-masks-60-m-v001-aa99a</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/EMIT/EMITL2ARFL.001</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2022-08-09/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 54, &quot;SouthBoundingCoordinate&quot;: -54, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (14)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://earth.jpl.nasa.gov/emit/">https://earth.jpl.nasa.gov/emit/</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/EMIT/EMITL2ARFL.001">https://doi.org/10.5067/EMIT/EMITL2ARFL.001</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1571/EMITL2A_ATBD_v1.pdf">https://lpdaac.usgs.gov/documents/1571/EMITL2A_ATBD_v1.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf">https://lpdaac.usgs.gov/documents/1569/EMITL2ARFL_User_Guide_v1.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/emit-sds/emit-sds-l2a">https://github.com/emit-sds/emit-sds-l2a</a></td></tr><tr><td>PNG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240705T004833_2418616_021/EMIT_L2A_RFL_001_20240705T004833_2418616_021.png">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.001/EMIT_L2A_RFL_001_20240705T004833_2418616_021/EMIT_L2A_RFL_001_20240705T004833_2418616_021.png</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2408750690-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2408750690-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/EMIT-Data-Resources/blob/main/python/tutorials/Exploring_EMIT_L2A_Reflectance.ipynb">https://github.com/nasa/EMIT-Data-Resources/blob/main/python/tutorials/Exploring_EMIT_L2A_Reflectance.ipynb</a></td></tr><tr><td>BIN</td><td><a href="https://www.youtube.com/playlist?list=PLO2yB4LGNlWrC5NdxeHMxyAxdwQhSypXe">https://www.youtube.com/playlist?list=PLO2yB4LGNlWrC5NdxeHMxyAxdwQhSypXe</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/EMIT-Data-Resources">https://github.com/nasa/EMIT-Data-Resources</a></td></tr><tr><td>BIN</td><td><a href="https://lpdaac.usgs.gov/search/?query=EMIT&amp;content_types=E-Learning&amp;view=cards&amp;sort=relevance">https://lpdaac.usgs.gov/search/?query=EMIT&amp;content_types=E-Learning&amp;view=cards&amp;sort=relevance</a></td></tr><tr><td>BIN</td><td><a href="https://appeears.earthdatacloud.nasa.gov/">https://appeears.earthdatacloud.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2408750690-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-infrared-radiance</span><span class="tag">earth-science-platform-characteristics-spectral-engineering-viewing-geometry</span><span class="tag">earth-science-sensor-characteristics-spectral-engineering-geolocation</span><span class="tag">earth-science-visible-wavelengths-spectral-engineering-visible-radiance</span></div>
+</article>
+</main>
+</body>
+</html>

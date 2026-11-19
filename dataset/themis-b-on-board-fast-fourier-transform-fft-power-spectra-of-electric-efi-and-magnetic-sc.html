@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THEMIS-B: On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements, for particle and wave burst survey modes. — NASA Open Data Portal</title>
+<meta name="description" content="On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements for particle and wave burst survey modes. Spectra are produced only in Particle Burst and Wave Burst modes; only a preselected four of the signals listed in Table 1 are inp">
+<link rel="canonical" href="https://data.nasa.gov/dataset/themis-b-on-board-fast-fourier-transform-fft-power-spectra-of-electric-efi-and-magnetic-sc">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>THEMIS-B: On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements, for particle and wave burst survey modes.</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/themis-b-on-board-fast-fourier-transform-fft-power-spectra-of-electric-efi-and-magnetic-sc">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements for particle and wave burst survey modes. Spectra are produced only in Particle Burst and Wave Burst modes; only a preselected four of the signals listed in Table 1 are input at any time. Data fed through the FFT while not in Particle or Wave Burst modes is automatically disgarded. The FFTs (Cooley-Tukey algorithm) are conducted as an integral part of the power spectrum calculation by the Field Programable Gate Arrays (FPGAs). A CORDIC algorithm is used for sine/cosine calculations. The data has raw resolution of 1024 pts for 8,192 sample/sec signals and 2048 pts for 16,384 sample/sec signals (EAC measurements only). Signals at 8,192 samples/sec are handled by 1024-point FFTs, while those at 16,384 samples/sec go through 2048-point FFTs. Past and current signal configurations for specific spacecraft are listed bellow in Table 2. The spectra are arranged into log spaced frequency bins in steps of 16, 32, or 64. Cadence is adjusted to keep packet size constant (i.e. increasing the fequency resolution by a factor of 2 decreases the sampling rate by 1/2). The frequency bins cover a range of 0 Hz to 4 kHz. Table 1: FFT Input Signals. Signal Description SCMX, SCMY, SCMZ: Three axis magnetic fiend from SCM V1 through V6: Probe-spacecraft voltage for all six EFI sensors E12DC, E34DC, E56DC: DC-coupled electric field measured from opposing EFI sensors E12AC, E34AV, E56AC: AC-coupled electric field measured from opposing EFI sensors E12HF: High frequency electric field from EFI Table 2: Spacecraft specific configurations. All probes were initially set to use EDC34, EDC56, SCM2, and SCM3 signals for both particle and wave burst modes. Output was set to 16 frequency bins at 4 Hz. Configuration Changes: 30 June - 3 July 2008: Particle burst spectra on all probes reconfigured to 64 bins at 1 Hz. Table 3: Instrument-Spacecraft Physical Configuration Instrument Alignment in Spacecraft Geometric coordinates (SPG). See THEMIS website for coordinate system details and mechanical drawings. EFI boom 1: Along positive X-axis EFI boom 2: Along negative X-axis EFI boom 3: Along positive Y-axis EFI boom 4: Along negative Y-axis EFI boom 5: Along positive Z-axis EFI boom 6: Along negative Z-axis SCM: *The SCM uses an instrument specific set of axes; an orthogonal system centered instrument with the X-axis 12.1 degrees from the SPG X-axis.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>CDAWeb, SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/themis-b-on-board-fast-fourier-transform-fft-power-spectra-of-electric-efi-and-magnetic-sc">https://data.nasa.gov/dataset/themis-b-on-board-fast-fourier-transform-fft-power-spectra-of-electric-efi-and-magnetic-sc</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/6mg1-y797">https://doi.org/10.48322/6mg1-y797</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/fft/">ftps://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/fft/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/fft/">https://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/fft/</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=THB_L2_FFT&amp;index=sp_phys">https://cdaweb.gsfc.nasa.gov/cgi-bin/eval2.cgi?dataset=THB_L2_FFT&amp;index=sp_phys</a></td></tr><tr><td>BIN</td><td><a href="https://cdaweb.gsfc.nasa.gov/hapi">https://cdaweb.gsfc.nasa.gov/hapi</a></td></tr><tr><td>BIN</td><td><a href="https://api.heliocloud.org/cloudcatalog?id=THB_L2_FFT">https://api.heliocloud.org/cloudcatalog?id=THB_L2_FFT</a></td></tr><tr><td>BIN</td><td><a href="http://themis.ssl.berkeley.edu">http://themis.ssl.berkeley.edu</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/THEMIS_B_FFT_PT0.0556S">https://helio.data.nasa.gov/dataset/THEMIS_B_FFT_PT0.0556S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/THEMIS/B/FFT/PT0.0556S">https://hpde.io/NASA/NumericalData/THEMIS/B/FFT/PT0.0556S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">spectrum</span></div>
+</article>
+</main>
+</body>
+</html>

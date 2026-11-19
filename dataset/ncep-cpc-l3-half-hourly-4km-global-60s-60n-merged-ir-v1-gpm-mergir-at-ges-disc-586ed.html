@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR) — NASA Open Data Portal</title>
+<meta name="description" content="These data originate from NOAA/NCEP.  The NOAA Climate Prediction Center/NCEP/NWS is making the data available originally in binary format, in a weekly rotating archive. The NASA GES DISC is acquiring the binary files as they become available, converts them into CF (Climate and F">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ncep-cpc-l3-half-hourly-4km-global-60s-60n-merged-ir-v1-gpm-mergir-at-ges-disc-586ed">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR)</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ncep-cpc-l3-half-hourly-4km-global-60s-60n-merged-ir-v1-gpm-mergir-at-ges-disc-586ed">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">These data originate from NOAA/NCEP.
+
+The NOAA Climate Prediction Center/NCEP/NWS is making the data available originally in binary format, in a weekly rotating archive. The NASA GES DISC is acquiring the binary files as they become available, converts them into CF (Climate and Forecast) -convention compliant netCDF-4 format, and stores the product in a permanent archive. The original record used to start from February, 2000, but in June, 2025 it was extended back to January, 1998.
+
+The leading edge of data availability is delayed by about 24 hours from real-time to abide by international data exchange agreements between NOAA and EUMETSAT (the METEOSAT data providers).
+
+The data contain globally-merged (60°S-60°N) 4-km pixel-resolution IR brightness temperature data (equivalent blackbody temps), merged from the European, Japanese, and U.S. geostationary satellites over the period of record (GOES-8/9/10/11/12/13/14/15/16/17/18/19, METEOSAT-5/7/8/9/10/11, and GMS-5/MTSat-1R/2/Himawari-8/9).
+
+The global geo-IR are dynamically calibrated to GOES East, using a 35 day trailing inter-calibration using time/space-matched IR Tb’s at the mid-point between sub-satellite positions.  In the event of duplicate data in a grid box, the value with the smaller zenith angle is taken. The data have been corrected for &quot;zenith angle dependence&quot;, in which IR temperatures for locations far from satellite nadir are erroneously cold due to a combination of geometric effects and radiometric path extinction effects (Joyce et al. 2001). Finally, the data are re-navigated for parallax, which shifts the geo-location of the GEO-IR footprints to approximately account for the cloud tops that the IR “sees” being displaced away from their actual geographic location when viewed along a slanted path. These corrections allow for the merging of the IR data from the various GEO-satellites with greatly reduced discontinuities at GEO-satellite data boundaries. In the event of duplicate data in a grid box, the value with the smaller zenith angle is taken.
+
+The NASA GES DISC is curating these data in a self-documenting, CF-compliant, netCDF-4 format, which allows a broad range of applications to access the data directly, without the need to cope with the original binary data format. In addition to the direct download of netCDF-4 data, the GES DISC provides data download in binary, ASCII, and netCDF-3 formats using the OPeNDAP interface which also provides remote data access.
+
+Similarities with the original
+-----------------------------
+As in the original binaries, every netCDF-4 file covers one hour, and contains two half-hourly grids, at 4-km grid cell resolution.
+
+Differences from the original
+-----------------------------
+1. The data in the netCDF-4 files are already converted to physical values of Brightness Temperatures in Kelvin. Because the original data values are round with no decimal precision, the data type in the netCDF-4 files has been changed to 2-byte signed integer, a transition that took place in mid-August, 2025.  This reduces the file size and speeds up data download and remote access. There is no need to further scale these data. The netCDF-4 format is machine-independent and users need not worry about the endian-ness of their machines.
+
+2. To meet the requirements of collection spatial metadata, the grid is re-ordered from the original and now goes from -180 (West) to 180 (East). It is also starting from -60 (South).
+
+The data and time units are reflected in the corresponding &quot;units&quot; attributes, and grid dimensions are described by longitude (&quot;lon&quot;), latitude (&quot;lat&quot;) and &quot;time&quot; vectors. Thus, any CF-compliant tool should automatically understand the setup in the data files and the starting time for each half-hourly grid. Even without such tools, simple &quot;ncdump&quot; or &quot;h5dump&quot; command line tools will easily disclose the netCDF-4 files configuration.
+
+Acknowledgements
+------------------
+The creation of the original data at NOAA/NCEP is supported by funding from the NOAA Office of Global Programs for the Global Precipitation Climatology Project (GPCP) and by NASA via the Tropical Rainfall Measuring Mission (TRMM).
+
+The permanent archive is supported by NASA&#x27;s HQ Earth Science Data Systems (ESDS) Program.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>NASA/GSFC/SED/ESD/TISL/GESDISC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ncep-cpc-l3-half-hourly-4km-global-60s-60n-merged-ir-v1-gpm-mergir-at-ges-disc-586ed">https://data.nasa.gov/dataset/ncep-cpc-l3-half-hourly-4km-global-60s-60n-merged-ir-v1-gpm-mergir-at-ges-disc-586ed</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/P4HZB9N27EKU</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>1998-01-01/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 60, &quot;SouthBoundingCoordinate&quot;: -60, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PNG</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_MERGIR.png">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_MERGIR.png</a></td></tr><tr><td>HTML</td><td><a href="https://disc.gsfc.nasa.gov/datacollection/GPM_MERGIR_1.html">https://disc.gsfc.nasa.gov/datacollection/GPM_MERGIR_1.html</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C1432254058-GES_DISC/temporal">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C1432254058-GES_DISC/temporal</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C1432254058-GES_DISC">https://search.earthdata.nasa.gov/search/granules?p=C1432254058-GES_DISC</a></td></tr><tr><td>PDF</td><td><a href="https://disc2.gesdisc.eosdis.nasa.gov/data/MERGED_IR/GPM_MERGIR.1/doc/README.MERGIR.pdf">https://disc2.gesdisc.eosdis.nasa.gov/data/MERGED_IR/GPM_MERGIR.1/doc/README.MERGIR.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/CPC-4kmIR-Sats.pdf">https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/CPC-4kmIR-Sats.pdf</a></td></tr><tr><td>HTML</td><td><a href="https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.full_res.html">https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.full_res.html</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C1432254058-GES_DISC.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-infrared-wavelengths-spectral-engineering-brightness-temperature</span><span class="tag">earth-science-precipitation-atmosphere</span></div>
+</article>
+</main>
+</body>
+</html>

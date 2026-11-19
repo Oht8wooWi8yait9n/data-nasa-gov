@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GHRSST NOAA/STAR GOES-16 ABI L2P America Region SST v2.70 dataset in GDS2 — NASA Open Data Portal</title>
+<meta name="description" content="GOES-16 (G16) is the first satellite in the US NOAA third generation of Geostationary Operational Environmental Satellites (GOES), a.k.a. GOES-R series (which will also include -S, -T, and -U). G16 was launched on 19 Nov 2016 and initially placed in an interim position at 89.5-de">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ghrsst-noaa-star-goes-16-abi-l2p-america-region-sst-v2-70-dataset-in-gds2-8754a">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GHRSST NOAA/STAR GOES-16 ABI L2P America Region SST v2.70 dataset in GDS2</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ghrsst-noaa-star-goes-16-abi-l2p-america-region-sst-v2-70-dataset-in-gds2-8754a">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">GOES-16 (G16) is the first satellite in the US NOAA third generation of Geostationary Operational Environmental Satellites (GOES), a.k.a. GOES-R series (which will also include -S, -T, and -U). G16 was launched on 19 Nov 2016 and initially placed in an interim position at 89.5-deg W, between GOES-East and -West. Upon completion of Cal/Val in Dec 2018, it was moved to its permanent position at 75.2-deg W, and declared NOAA operational GOES-East on 18 Dec 2018.
+NOAA is responsible for all GOES-R products, including Sea Surface Temperature (SST) from the Advanced Baseline Imager (ABI). The ABI offers vastly enhanced capabilities for SST retrievals, over the heritage GOES-I/P Imager, including five narrow bands (centered at 3.9, 8.4, 10.3, 11.2, and 12.3 um) out of 16 that can be used for SST, as well as accurate sensor calibration, image navigation and co-registration, spectral fidelity, and sophisticated pre-processing (geo-rectification, radiance equalization, and mapping). From altitude 35,800 km, G16/ABI can accurately map SST in a Full Disk (FD) area from 15-135-deg W and 60S-60N, with spatial resolution 2km at nadir (degrading to 15km at view zenith angle, 67-deg) and temporal sampling of 10min (15min prior to 2 Apr 2019).
+The Level 2 Preprocessed (L2P) SST product is derived at the native sensor resolution using NOAA Advanced Clear-Sky Processor for Ocean (ACSPO) system. ACSPO first processes every 10min FD data SSTs are derived from BTs using the ACSPO clear-sky mask (ACSM; Petrenko et al., 2010) and Non-Linear SST (NLSST) algorithm (Petrenko et al., 2014). Currently, only 4 longwave bands centered at 8.4, 10.3, 11.2, and 12.3 um are used (the 3.9 microns was initially excluded, to minimize possible discontinuities in the diurnal cycle). The regression is tuned against quality controlled in situ SSTs from drifting and tropical mooring buoys in the NOAA iQuam system (Xu and Ignatov, 2014). The 10-min FD data are subsequently collated in time, to produce 1-hr L2P product, with improved coverage, and reduced cloud leakages and image noise, compared to each individual 10min image.
+In the collated L2P, SSTs and BTs are only reported in clear-sky water pixels (defined as ocean, sea, lake or river, and up to 5 km inland) and fill values elsewhere. The L2P is reported in netCDF4 GHRSST Data Specification version 2 (GDS2) format, 24 granules per day, with a total data volume of 0.6GB/day. In addition to SST, ACSPO files also include sun-sensor geometry, four BTs in ABI bands 11 (8.4um), 13 (10.3um), 14 (11.2um), and 15 (12.3um) and two reflectances in bands 2 and 3 (0.64um and 0.86um; used for cloud identification). The l2p_flags layer includes day/night, land, ice, twilight, and glint flags. Other variables include NCEP wind speed and ACSPO SST minus reference SST (Canadian Met Centre 0.1deg L4 SST; available at https://podaac.jpl.nasa.gov/dataset/CMC0.1deg-CMC-L4-GLOB-v3.0).
+Pixel-level earth locations are not reported in the granules, as they remain unchanged from granule to granule. To obtain those, user has a choice of using a flat lat-lon file, or a Python script, both available at ftp://ftp.star.nesdis.noaa.gov/pub/socd4/coastwatch/sst/nrt/abi/nav/. Per GDS2 specifications, two additional Sensor-Specific Error Statistics layers (SSES bias and standard deviation) are reported in each pixel.
+The ACSPO VIIRS L2P product is monitored and validated against in situ data (Xu and Ignatov, 2014) using the Satellite Quality Monitor SQUAM (Dash et al, 2010), and BTs are validated against RTM simulation in MICROS (Liang and Ignatov, 2011). A reduced size (0.2GB/day), equal-angle gridded (0.02-deg resolution), ACSPO L3C product is also available at https://podaac.jpl.nasa.gov/dataset/ABI_G16-STAR-L3C-v2.70, where gridded L2P SSTs are reported, and BT layers omitted.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>DOC/NOAA/NESDIS/STAR;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ghrsst-noaa-star-goes-16-abi-l2p-america-region-sst-v2-70-dataset-in-gds2-8754a">https://data.nasa.gov/dataset/ghrsst-noaa-star-goes-16-abi-l2p-america-region-sst-v2-70-dataset-in-gds2-8754a</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/GHG16-2PO27</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: -15, &quot;NorthBoundingCoordinate&quot;: 59, &quot;SouthBoundingCoordinate&quot;: -59, &quot;WestBoundingCoordinate&quot;: -135}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (14)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>NetCDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/GOES16/STAR/docs/G16_075_0_W.nc">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/data/GDS2/L2P/GOES16/STAR/docs/G16_075_0_W.nc</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/squam/">https://www.star.nesdis.noaa.gov/sod/sst/squam/</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/iquam/">https://www.star.nesdis.noaa.gov/sod/sst/iquam/</a></td></tr><tr><td>BIN</td><td><a href="https://ghrsst.jpl.nasa.gov">https://ghrsst.jpl.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://www.ghrsst.org/">https://www.ghrsst.org/</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036877465-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2036877465-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2036877465-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2036877465-POCLOUD</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/ABI_G16-STAR-L2P-v2.70.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/ABI_G16-STAR-L2P-v2.70.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2036877465-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-temperature-oceans-sea-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HIRENASD Beam FEM — NASA Open Data Portal</title>
+<meta name="description" content="This contains attempts to create BEAM FEM model.  I have started a &lt;a href=&quot;https://c3.nasa.gov/dashlink/projects/47/blog/&quot;&gt;Blog&lt;/a&gt; to discuss this... please put your comments there and I will attempt to keep everything updated.  &lt;a href=&quot;https://c3.nasa.gov/dashlink/static/medi">
+<link rel="canonical" href="https://data.nasa.gov/dataset/hirenasd-beam-fem">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>HIRENASD Beam FEM</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/hirenasd-beam-fem">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">This contains attempts to create BEAM FEM model.
+
+I have started a &lt;a href=&quot;https://c3.nasa.gov/dashlink/projects/47/blog/&quot;&gt;Blog&lt;/a&gt; to discuss this... please put your comments there and I will attempt to keep everything updated.  &lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/Emails_AB_CDW.pdf&quot;&gt;Correspondence between A.B. and CDW is provided to assist in developing NASTRAN Beam FEM  &lt;br&gt;
+(through July 1)(PDF)&lt;/a&gt;
+
+The original data provided by Alexander is shown in
+&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/model_input-extract.txt&quot;&gt;model_input-extract.txt
+&lt;/a&gt;
+
+Additional files loaded July 21, 2011:&lt;br&gt;
+&lt;LI&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/WingMassLength_Comparisons.xls&quot;&gt;Comparison of Wing Masses, and Lengths, and Mass calculated from provided densities, and lengths&lt;/a&gt;
+&lt;LI&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/Compare_W_eig_20110720.xlsx.pdf&quot;&gt;Comparison of Model Masses and frequencies&lt;/a&gt;
+&lt;LI&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/LP_CDW_emails.pdf&quot;&gt;Emails dealing with offsets for bending and center of mass (between Proctor and Wieseman)&lt;/a&gt;
+&lt;LI&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/BeamProperties_modrho.xlsx&quot;&gt;Spreadsheet that contains element beam properties&lt;/a&gt; used for debugging
+&lt;LI&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/OneElement_TipLoad.bdf&quot;&gt;One element beam model to check beam stiffnesses&lt;/a&gt;
+&lt;LI&gt;&lt;a  href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/Emails_20110728.pdf&quot;&gt; Email correspondence as of July 28, 2011&lt;/a&gt; - includes a cursory check of the bending and center of mass locations.
+&lt;P&gt;
+&lt;TABLE BORDER = 1&gt;
+&lt;TR&gt;
+&lt;TD&gt;X1,X2,X3&lt;/TD&gt;
+&lt;TD&gt;Inertias/Kappa&lt;/TD&gt;
+&lt;TD&gt;Mode 1 Freq, Hz&lt;/TD&gt;
+&lt;TD&gt;Mode 2 Freq, Hz&lt;/TD&gt;
+&lt;TD&gt;File name (ms103_beam_)&lt;/TD&gt;
+&lt;/TR&gt;&lt;TR&gt;
+&lt;TD&gt;1,0,0&lt;/TD&gt;
+&lt;TD&gt;modified*&lt;/TD&gt;
+&lt;TD&gt;26.37854&lt;/TD&gt;&lt;TD&gt;83.69360&lt;/TD&gt;
+&lt;TD&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/ms103_beam_100_modi_ccs_o1_k_nsm1_nm1.bdf&quot;&gt; 100_modi_ccs_o1_k_nsm1_nm1&lt;/a&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;
+&lt;TD&gt;1,0,0&lt;/TD&gt;
+&lt;TD&gt;modified*/Beam properties modified&lt;/TD&gt;
+&lt;TD&gt;26.37855&lt;/TD&gt;&lt;TD&gt;83.69344&lt;/TD&gt;
+&lt;TD&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/ms103_beam_100_modi_ccs_o1_k2_nsm1_nm1.bdf&quot;&gt; 100_modi_ccs_o1_k2_nsm1_nm1&lt;/a&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;
+&lt;TD&gt;cosa,0,-sina&lt;/TD&gt;
+&lt;TD&gt;as provided&lt;/TD&gt;
+&lt;TD&gt;26.37949&lt;/TD&gt;&lt;TD&gt;83.69533&lt;/TD&gt;
+&lt;TD&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/ms103_beam_ca_0_nsa_ccs_o1_k_nsm1_nm1.bdf&quot;&gt; ca_0_nsa_ccs_o1_k_nsm1_nm1&lt;/a&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;
+&lt;TD&gt;cosa,0,-sina&lt;/TD&gt;
+&lt;TD&gt;as provided&lt;/TD&gt;
+&lt;TD&gt;26.37949&lt;/TD&gt;&lt;TD&gt;83.69533&lt;/TD&gt;
+&lt;TD&gt;&lt;a href=&quot;https://c3.nasa.gov/dashlink/static/media/dataset/ms103_beam_ca_0_nsa_ccs_o1_k_nsm1_nm1.bdf&quot;&gt; ca_0_nsa_ccs_o1_k_nsm1_nm1&lt;/a&gt;
+&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;BR&gt;
+&lt;P&gt;
+&lt;P&gt;
+Below are frequencies with different permutations of
+&lt;LI&gt; X1,X2,X3 definitions on CBEAM card &lt;br&gt;A) - 1,0,0 or &lt;br&gt;B) ca_0_nsa = cos(alpha),0,-sin(alpha) or &lt;br&gt; C)nca_0_sa = -cos(alpha),0,sin(alpha) on the beam card &lt;br&gt;
+&lt;LI&gt; coordinate system (CCS) is converted from original
+&lt;LI&gt; O1 indicates that offsets W1-W3 were included between the node and the shear center
+&lt;LI&gt; nsm1 = beam density is unchanged and includes the non-structural mass
+&lt;LI&gt; nsm2 = non-structural mass is separated from the beam mass density
+&lt;LI&gt; nm = calculation of offset N1,N2 for beginning and end of each beam segment is performed - different ways depending on the index
+&lt;LI&gt; modi = inertias provided by Boucke were modified by the alpha.
+&lt;LI&gt; _k_ = kappa(K1,K2) were included in the model - values provided by Boucke (A.B.)
+&lt;LI&gt; _k2_ = kappa(K1/K2) modified along with beam properties per equations provided by A.B.
+&lt;P&gt;
+
+&lt;TABLE BORDER = 1&gt;
+&lt;TR&gt;Description&lt;TD&gt;&lt;/TD&gt;
+&lt;TD&gt;1st mode&lt;/TD&gt;&lt;TD&gt;2nd mode&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;Boucke provided frequencies&lt;/TD&gt;&lt;TD&gt;25.33879547&lt;/TD&gt;&lt;TD&gt;78.63642299&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;100_modi_ccs_o1_k2_nsm1_nm1&lt;/TD&gt;&lt;TD&gt;26.37855&lt;/TD&gt;&lt;TD&gt;83.69344&lt;/TD&gt;&lt;/TR&gt;</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/hirenasd-beam-fem">https://data.nasa.gov/dataset/hirenasd-beam-fem</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_425</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/425/">https://c3.nasa.gov/dashlink/resources/425/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2011-07-05</td></tr>
+<tr><th>Contact / Maintainer</th><td>CAROL WIESEMAN — carol.d.wieseman@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (17)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>TXT</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/model_input-extract.txt">model_input-extract.txt</a><br><small>Beam Data provided by A. Boucke</small></td></tr><tr><td>BIN</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/spccards.bdf">spccards.bdf</a><br><small>include file required for nastran</small></td></tr><tr><td>PNG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/image001.png">image001.png</a><br><small>image001.png</small></td></tr><tr><td>PNG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/image002.png">image002.png</a><br><small>image002.png</small></td></tr><tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/CBEAM.pdf">CBEAM.pdf</a><br><small>MSC documentation on CBEAM cards</small></td></tr><tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/PBEAM.pdf">PBEAM.pdf</a><br><small>Documentation on PBEAM</small></td></tr><tr><td>PNG</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/CBEAM.png">CBEAM.png</a><br><small>CBEAM.png</small></td></tr><tr><td>XLS</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/WingMassLength_Comparisons.xls">WingMassLength_Comparisons.xls</a><br><small>Comparison of Masses provided in comments with calculated using provided densities, provided and calculated lengths</small></td></tr><tr><td>application/nappdf</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Compare_W_eig_20110720.xlsx.pdf">Compare_W_eig_20110720.xlsx.pdf</a><br><small>Comparison of Masses and Frequencies</small></td></tr><tr><td>application/nappdf</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/LP_CDW_emails.pdf">LP_CDW_emails.pdf</a><br><small>Emails dealing with offset calculations of Beam model predominantly</small></td></tr><tr><td>BIN</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/ms103_modi_o1_nsm1.bdf">ms103_modi_o1_nsm1.bdf</a><br><small>Latest FEM - double precision</small></td></tr><tr><td>BIN</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/ms103_modi_o1_nsm1_modrho.bdf">ms103_modi_o1_nsm1_modrho.bdf</a><br><small>Latest FEM - double precision (modified density)</small></td></tr><tr><td>application/vnd.openxmlformats-officedocument.spreadsheetml.shee</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/BeamProperties_modrho.xlsx">BeamProperties_modrho.xlsx</a><br><small>Beam Properties - debugging of Beam model</small></td></tr><tr><td>BIN</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/OneElement_TipLoad.bdf">OneElement_TipLoad.bdf</a><br><small>Nastran input file with tip load applied at Grid #23</small></td></tr><tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/StructuralAnalysisStatus.pdf">StructuralAnalysisStatus.pdf</a><br><small>Slides presented on telecon</small></td></tr><tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Emails_20110728.pdf">Emails_20110728.pdf</a><br><small>Emails_20110728.pdf</small></td></tr><tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/dataset/Emails_AB_CDW.pdf">Emails_AB_CDW.pdf</a><br><small>Emails_AB_CDW.pdf</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

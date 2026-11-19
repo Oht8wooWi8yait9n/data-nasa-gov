@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GHRSST Level 2P NOAA STAR SST  v2.80 from VIIRS on NOAA-20 Satellite — NASA Open Data Portal</title>
+<meta name="description" content="NOAA-20 (N20/JPSS-1/J1) is the second satellite in the US NOAA latest generation Joint Polar Satellite System (JPSS), launched on November 18, 2017. NOAA is responsible for all JPSS products, including SST from the Visible Infrared Imaging Radiometer Suite (VIIRS). The L2P SST pr">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ghrsst-level-2p-noaa-star-sst-v2-80-from-viirs-on-noaa-20-satellite-8a589">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>GHRSST Level 2P NOAA STAR SST  v2.80 from VIIRS on NOAA-20 Satellite</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ghrsst-level-2p-noaa-star-sst-v2-80-from-viirs-on-noaa-20-satellite-8a589">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">NOAA-20 (N20/JPSS-1/J1) is the second satellite in the US NOAA latest generation Joint Polar Satellite System (JPSS), launched on November 18, 2017. NOAA is responsible for all JPSS products, including SST from the Visible Infrared Imaging Radiometer Suite (VIIRS). The L2P SST product is derived at the native sensor resolution (~0.75 km at nadir, ~1.5 km at swath edge) using NOAA&#x27;s Advanced Clear-Sky Processor for Ocean (ACSPO) system, and reported in 10-minute granules in netCDF4 format, compliant with the Group for High Resolution Sea Surface Temperature (GHRSST) Data Specification version 2 (GDS2). SSTs are derived from Brightness Temperatures (BTs) using the Non-Linear SST (NLSST) algorithms (Petrenko et al., 2014). An ACSPO clear-sky mask (ACSM) is provided in each pixel as part of variable l2p_flags, which also includes day/night, land, ice, twilight, and glint flags (Petrenko et al., 2010). Only ACSM confidently clear pixels are recommended (equivalent to GDS2 quality level=5). Per GDS2 specifications, two additional Sensor-Specific Error Statistics layers (SSES bias and standard deviation) are reported in each pixel with QL=5. The ACSPO VIIRS L2P product is monitored and validated against quality controlled in situ data provided by NOAA in situ SST Quality Monitor system (iQuam) using another NOAA system, SST Quality Monitor (SQUAM). A reduced size (0.5GB/day), equal-angle gridded (0.02-deg resolution), ACSPO L3U product is also available at https://podaac.jpl.nasa.gov/dataset/VIIRS_N20-STAR-L3U-v2.80, where gridded L2P SSTs with QL=5 only are reported. The v2.80 is an updated version from the v2.61 with several algorithm improvements including two added thermal front layers, reduced L2P SST data size, mitigated warm biases in the high latitudes, and improved clear-sky mask.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>DOC/NOAA/NESDIS/STAR;NASA/JPL/PODAAC</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ghrsst-level-2p-noaa-star-sst-v2-80-from-viirs-on-noaa-20-satellite-8a589">https://data.nasa.gov/dataset/ghrsst-level-2p-noaa-star-sst-v2-80-from-viirs-on-noaa-20-satellite-8a589</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/GHV20-2PO28</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180.0, &quot;NorthBoundingCoordinate&quot;: 90.0, &quot;SouthBoundingCoordinate&quot;: -90.0, &quot;WestBoundingCoordinate&quot;: -180.0}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (16)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/CitingPODAAC">https://podaac.jpl.nasa.gov/CitingPODAAC</a></td></tr><tr><td>PDF</td><td><a href="https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf">https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/ghrsst/open/docs/GDS20r5.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/iquam/">https://www.star.nesdis.noaa.gov/sod/sst/iquam/</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/micros/">https://www.star.nesdis.noaa.gov/sod/sst/micros/</a></td></tr><tr><td>BIN</td><td><a href="https://ghrsst.jpl.nasa.gov">https://ghrsst.jpl.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-readers">https://github.com/podaac/data-readers</a></td></tr><tr><td>BIN</td><td><a href="https://www.star.nesdis.noaa.gov/sod/sst/squam/">https://www.star.nesdis.noaa.gov/sod/sst/squam/</a></td></tr><tr><td>BIN</td><td><a href="https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2147478146-POCLOUD">https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2147478146-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2147478146-POCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2147478146-POCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://www.ghrsst.org/">https://www.ghrsst.org/</a></td></tr><tr><td>BIN</td><td><a href="https://podaac.jpl.nasa.gov/forum/viewtopic.php?f=7&amp;t=298">https://podaac.jpl.nasa.gov/forum/viewtopic.php?f=7&amp;t=298</a></td></tr><tr><td>JPEG</td><td><a href="https://podaac.jpl.nasa.gov/Podaac/thumbnails/VIIRS_N20-STAR-L2P-v2.80.jpg">https://podaac.jpl.nasa.gov/Podaac/thumbnails/VIIRS_N20-STAR-L2P-v2.80.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/podaac/data-subscriber">https://github.com/podaac/data-subscriber</a></td></tr><tr><td>BIN</td><td><a href="https://opendap.earthdata.nasa.gov">https://opendap.earthdata.nasa.gov</a></td></tr><tr><td>BIN</td><td><a href="https://harmony.earthdata.nasa.gov/">https://harmony.earthdata.nasa.gov/</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2147478146-POCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-ocean-temperature-oceans-sea-surface-temperature</span></div>
+</article>
+</main>
+</body>
+</html>

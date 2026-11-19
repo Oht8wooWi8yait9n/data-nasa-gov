@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CMAPSS Jet Engine Simulated Data — NASA Open Data Portal</title>
+<meta name="description" content="Data sets consists of multiple multivariate time series. Each data set is further divided into training and test subsets. Each time series is from a different engine i.e., the data can be considered to be from a fleet of engines of the same type. Each engine starts with different">
+<link rel="canonical" href="https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>CMAPSS Jet Engine Simulated Data</h1>
+<div class="meta-badges"><span class="badge">Aerospace</span><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Data sets consists of multiple multivariate time series. Each data set is further divided into training and test subsets. Each time series is from a different engine i.e., the data can be considered to be from a fleet of engines of the same type. Each engine starts with different degrees of initial wear and manufacturing variation which is unknown to the user. This wear and variation is considered normal, i.e., it is not considered a fault condition. There are three operational settings that have a substantial effect on engine performance. These settings are also included in the data. The data is contaminated with sensor noise.
+
+The engine is operating normally at the start of each time series, and develops a fault at some point during the series. In the training set, the fault grows in magnitude until system failure. In the test set, the time series ends some time prior to system failure. The objective of the competition is to predict the number of remaining operational cycles before failure in the test set, i.e., the number of operational cycles after the last cycle that the engine will continue to operate. Also provided a vector of true Remaining Useful Life (RUL) values for the test data.
+
+The data are provided as a zip-compressed text file with 26 columns of numbers, separated by spaces. Each row is a snapshot of data taken during a single operational cycle, each column is a different variable. The columns correspond to:
+1)            unit number
+2)            time, in cycles
+3)            operational setting 1
+4)            operational setting 2
+5)            operational setting 3
+6)            sensor measurement  1
+7)            sensor measurement  2
+...
+26)          sensor measurement  26
+
+Data Set: FD001
+Train trjectories: 100
+Test trajectories: 100
+Conditions: ONE (Sea Level)
+Fault Modes: ONE (HPC Degradation)
+
+Data Set: FD002
+Train trjectories: 260
+Test trajectories: 259
+Conditions: SIX
+Fault Modes: ONE (HPC Degradation)
+
+Data Set: FD003
+Train trjectories: 100
+Test trajectories: 100
+Conditions: ONE (Sea Level)
+Fault Modes: TWO (HPC Degradation, Fan Degradation)
+
+Data Set: FD004
+Train trjectories: 248
+Test trajectories: 249
+Conditions: SIX
+Fault Modes: TWO (HPC Degradation, Fan Degradation)
+
+Reference: A. Saxena, K. Goebel, D. Simon, and N. Eklund, ‘Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation’, in the Proceedings of the 1st International Conference on Prognostics and Health Management (PHM08), Denver CO, Oct 2008.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>PCoE</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data">https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://data.nasa.gov/api/views/ff5v-kuh6">https://data.nasa.gov/api/views/ff5v-kuh6</a></td></tr>
+<tr><th>Landing Page</th><td><a href="https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data">https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data</a></td></tr>
+<tr><th>Themes</th><td>Aerospace</td></tr>
+<tr><th>Modified</th><td>2024-05-15</td></tr>
+<tr><th>Issued</th><td>2022-07-14</td></tr>
+<tr><th>Contact / Maintainer</th><td>Chris Teubert — Christopher.a.teubert@nasa.gov</td></tr>
+<tr><th>Program Code</th><td>026:021</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td><a href="https://data.nasa.gov/docs/legacy/CMAPSSData.zip">CMAPSSData.zip</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">degradation</span><span class="tag">fan-degradation</span><span class="tag">ivhm</span><span class="tag">phm</span><span class="tag">prognostics</span></div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECOSTRESS Gridded Cloud Mask Instantaneous L2 Global 70 m V003 — NASA Open Data Portal</title>
+<meta name="description" content="The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collec">
+<link rel="canonical" href="https://data.nasa.gov/dataset/ecostress-gridded-cloud-mask-instantaneous-l2-global-70-m-v003">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>ECOSTRESS Gridded Cloud Mask Instantaneous L2 Global 70 m V003</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/ecostress-gridded-cloud-mask-instantaneous-l2-global-70-m-v003">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes.
+
+The ECOSTRESS Gridded Cloud Mask Instantaneous Level 2 Global 70 m (ECO_L2G_CLOUD) Version 3 data product is derived using an improved single-channel Bayesian cloud thresholding look-up-table (LUT) approach with higher resolution atmospheric inputs. The ECO_L2G_CLOUD product provides cloud confidence and final cloud mask variables that can be used to determine cloud cover for accurate land surface temperature and evapotranspiration estimation. This data product is  projected to a globally snapped 0.0006° grid with a spatial resolution of 70 meters (m).
+
+The ECO_L2G_CLOUD Version 3 data product contains two cloud mask variables: Cloud_confidence and Cloud_final. Information on how to interpret the cloud confidence and cloud mask variables is provided in the ECOSTRESS L2 Cloud Product User Guide.
+
+Known Issues
+* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the ISS, potentially impacting data quality in obstructed pixels. The &#x27;FieldOfViewObstruction&#x27; metadata field is reliably populated and accurate for all products generated on or after October 2024, following fixes to the PGE docker configuration and updates to the L1A_RAW_PIX software. Prior to October 2024, the field was not reliably populated; a [list of confirmed affected scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) was maintained and is recommended for verifying historical data.
+* Historical acquisition gaps and anomalies (2018–2023): Irrecoverable data loss occurred due to Mass Storage Unit (MSU) failures, resulting in permanent gaps in the observational record where no ECOSTRESS data was acquired. Other early issues, including band 4 striping (Feb 2020), 3-band TES mode limitations (May 2019–April 2023), and noisy data periods (e.g., May–July 2025), have been mitigated through reprocessing, firmware updates, and instrument recovery. Version 3 products incorporate these improvements where data exists and are unaffected by ongoing issues, but the permanent historical gaps remain, and caution is advised for time-series analyses spanning affected periods.
+* Product formats: Version 3 discontinues swath-based (non-gridded) HDF5 products for Level 2 land surface temprature and emissivity (LST&amp;E) and Cloud outputs. Only gridded (ECO_L2G_LSTE and ECO_L2G_CLOUD in HDF5) and tiled (ECO_L2T_LSTE in Cloud-Optimized GeoTIFF) formats are available for Level 2 products. Swath-based products remain available for Level 1 products (e.g., ECO_L1B_RAD, ECO_L1B_GEO). Version 3 discontinues HDF5 products for Level 2 STARS, Level 3 Evapotranspiration, and Level 4 Evaporative Stress Index, and Water Use Efficiency outputs. Only tiled (Cloud-Optimized GeoTIFF) formats remain available for these products. Users transitioning from Version 2 should verify compatibility with the new structures.
+* Geolocation considerations: While geolocation is improved in Collection 3 tiled products (fixed Military Grid Reference System (MGRS) grid), gridded products may reference legacy &quot;GeolocationAccuracyQA&quot; flags. Use &quot;best&quot; and &quot;good&quot; scenes for applications sensitive to precise positioning.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;NASA/JPL/ECOSTRESS</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/ecostress-gridded-cloud-mask-instantaneous-l2-global-70-m-v003">https://data.nasa.gov/dataset/ecostress-gridded-cloud-mask-instantaneous-l2-global-70-m-v003</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/ECOSTRESS/ECO_L2G_CLOUD.003</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2018-07-09/2026-11-09</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 54, &quot;SouthBoundingCoordinate&quot;: -54, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (11)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C3998139427-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C3998139427-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/ECOSTRESS/ECO_L2G_CLOUD.003">https://doi.org/10.5067/ECOSTRESS/ECO_L2G_CLOUD.003</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/2301/ECOL2_User_Guide_V3.pdf">https://lpdaac.usgs.gov/documents/2301/ECOL2_User_Guide_V3.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/1575/ECOL2_ATBD_V2.pdf">https://lpdaac.usgs.gov/documents/1575/ECOL2_ATBD_V2.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://ecostress.jpl.nasa.gov/science">https://ecostress.jpl.nasa.gov/science</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/380/ECO2_PSD_V1.pdf">https://lpdaac.usgs.gov/documents/380/ECO2_PSD_V1.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://github.com/nasa/ECOSTRESS-Data-Resources">https://github.com/nasa/ECOSTRESS-Data-Resources</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt">https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt</a></td></tr><tr><td>TXT</td><td><a href="https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt">https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C3998139427-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-clouds-atmosphere</span></div>
+</article>
+</main>
+</body>
+</html>

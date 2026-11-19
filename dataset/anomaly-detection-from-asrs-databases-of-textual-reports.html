@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anomaly Detection from ASRS Databases of Textual Reports — NASA Open Data Portal</title>
+<meta name="description" content="Our primary goal is to automatically analyze textual reports from the Aviation Safety Reporting System (ASRS) database to detect/discover the anomaly categories reported by the pilots, and to assign each report to the appropriate category/categories. We have used two state-of-the">
+<link rel="canonical" href="https://data.nasa.gov/dataset/anomaly-detection-from-asrs-databases-of-textual-reports">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Anomaly Detection from ASRS Databases of Textual Reports</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/anomaly-detection-from-asrs-databases-of-textual-reports">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Our primary goal is to automatically analyze textual reports from the Aviation Safety Reporting System (ASRS) database to detect/discover the anomaly categories reported by the pilots, and to assign each report to the appropriate category/categories. We have used two state-of-the-art models for text analysis: (i) mixture of von Mises Fisher (movMF) distributions, and (ii) latent Dirichlet allocation (LDA) on a subset of all ASRS reports. The models achieve a reasonably high performance in discovering anomaly categories and clustering reports. Each category is represented by the most representative words with the highest probability in this category. In addition, since the inference algorithm for LDA was somewhat slow, we have developed a new fast LDA algorithm which is 5-10 times more efficient than the original one, therefore more applicable for the practical use. Further, we have developed a simple visualization tool based on non-linear manifold embedding (ISOMAP) to generate a 2-d visual representation of each report based on its content/topics, which gives a direct view of the structure of the whole dataset as well as the outliers.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/anomaly-detection-from-asrs-databases-of-textual-reports">https://data.nasa.gov/dataset/anomaly-detection-from-asrs-databases-of-textual-reports</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_24</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/24/">https://c3.nasa.gov/dashlink/resources/24/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2010-09-10</td></tr>
+<tr><th>Contact / Maintainer</th><td>Kanishka Bhaduri — kanishka.bhaduri-1@nasa.gov</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PPT</td><td><a href="https://c3.nasa.gov/dashlink/static/media/other/CIDU_poster_2.ppt">CIDU_poster_2.ppt</a><br><small>CIDU_poster_2.ppt</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

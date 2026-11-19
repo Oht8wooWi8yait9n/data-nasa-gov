@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold Level L2 exospheric temperature — NASA Open Data Portal</title>
+<meta name="description" content="GOLD retrieves the exospheric temperature from the integrated N2 LBH radiance profile 	  obtained from atmospheric limb scans (LIM observation mode). This data product, referred to as TLIMB, 	  is derived from limb scan data by fitting the shape of the LBH radiance profile betwee">
+<link rel="canonical" href="https://data.nasa.gov/dataset/gold-level-l2-exospheric-temperature-d354f">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Gold Level L2 exospheric temperature</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/gold-level-l2-exospheric-temperature-d354f">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">GOLD retrieves the exospheric temperature from the integrated N2 LBH radiance profile
+	  obtained from atmospheric limb scans (LIM observation mode). This data product, referred to as TLIMB,
+	  is derived from limb scan data by fitting the shape of the LBH radiance profile between 100 and 300 km.
+
+	  Algorithm heritage
+      An approach similar to the GOLD TLIMB retrieval has been used to analyze data from TIMED/GUVI,
+	  Cassini/UVIS and MAVEN/IUVS. The GOLD TLIMB algorithm is most similar to the operational algorithm
+	  used to retrieve exospheric temperature on Mars from MAVEN/IUVS CO2 density retrievals. The GOLD
+	  algorithm follows the procedure outlined in Lo et al. [2015] as originally applied to the atmosphere of
+	  Mars. The operational code is implemented in IDL and has been generalized to be used with any species in
+	  any planetary atmosphere.
+
+	  Algorithm theoretical basis
+      Limb profiles of thermospheric airglow emissions depend fundamentally on temperature, particularly
+	  the decay rate with altitude above the peak of the emission. This has been exploited in retrieval
+	  algorithms for analyzing far-ultraviolet limb emissions from low-Earth orbit (e.g., Picone and
+	  Meier [2000]). For GOLD, the low spatial resolution on the limb mandates that, rather than attempting
+	  to fit an entire temperature profile, we only infer a single parameter, the exospheric temperature
+	  (TLIMB), defined as the temperature of the atmosphere when in diffusion equilibrium.
+
+	  We use daytime, non-auroral N2 LBH emission limb brightness profiles where the only excitation
+	  mechanism is photoelectron impact on N2. LBH emission bands in the 137-160 nm range are integrated
+	  spectrally, excluding the N I 149.3 nm line. The GOLD limb scan measurements are done in one hemisphere
+	  at a time, and the L1C LIMB data covers a latitude range from the equator to ~20 degree.
+
+	  The specific steps involved in the TLIMB retrieval are as follows:
+	  • Filter data using topside tangent height range (~100-300 km).
+	  • Fit a Chapman function to the emission brightness profile.
+      • Obtain the N2 scale height H (Zo) from the Chapman fit.
+	  • Obtain T∞ from H (Zo) = kT/Mg, where k is Boltzmann’s constant, M is the molecular mass of
+	  N2, and g is the gravitational acceleration.
+
+	  Note that this fit is independent of the absolute brightness calibration of the airglow intensity,
+	  it depends only on the shape of the radiance profile. For this reason, it is necessary to detect stars
+	  in the field-of-view, since the emission from stars can produce a profile shape that can be very
+	  different from a profile produced solely by thermospheric airglow.
+
+      References
+      Picone and Meier (2000), Similarity transformations for fitting of geophysical properties: Application
+	  to altitude profiles of upper atmospheric species, J. Geophys. Res., 105, 18599, doi:10.1029/1999JA000385].
+
+	  Lo, D. Y., et al. (2015), Nonmigrating tides in the Martian atmosphere as observed by MAVEN IUVS, Geophys.
+	  Res. Lett., 42, 9057–9063, doi:10.1002/2015GL066268.
+
+      Snowden, D., R. V. Yelle, J. Cui, J.-E. Wahlund, N. J. T. Edberg, and K. Ågren (2013), The thermal
+	  structure of Titan’s upper atmosphere, I: Temperature profiles from Cassini INMS observations,
+	  Icarus, 226, 52–582.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>SPDF</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/gold-level-l2-exospheric-temperature-d354f">https://data.nasa.gov/dataset/gold-level-l2-exospheric-temperature-d354f</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/9m3m-tg87">https://doi.org/10.48322/9m3m-tg87</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (6)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/">ftps://spdf.gsfc.nasa.gov/pub/data/gold/level2/</a></td></tr><tr><td>BIN</td><td><a href="https://spdf.gsfc.nasa.gov/pub/data/gold/level2/">https://spdf.gsfc.nasa.gov/pub/data/gold/level2/</a></td></tr><tr><td>BIN</td><td><a href="https://gold.cs.ucf.edu/">https://gold.cs.ucf.edu/</a></td></tr><tr><td>HTML</td><td><a href="https://doi.org/10.1007/s11214-017-0392-2">https://doi.org/10.1007/s11214-017-0392-2</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/GOLD_L2_TLIMB_PT8S">https://helio.data.nasa.gov/dataset/GOLD_L2_TLIMB_PT8S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/GOLD/L2/TLIMB/PT8S">https://hpde.io/NASA/NumericalData/GOLD/L2/TLIMB/PT8S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">gold</span><span class="tag">imageintensity</span><span class="tag">o-relative-to-n2</span><span class="tag">ses-14</span></div>
+</article>
+</main>
+</body>
+</html>

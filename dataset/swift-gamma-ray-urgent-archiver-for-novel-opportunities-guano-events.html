@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swift Gamma-ray Urgent Archiver for Novel Opportunities (GUANO) Events — NASA Open Data Portal</title>
+<meta name="description" content="The Swift Observatory provides event-level data from the Burst Alert Telescope (BAT) on demand in response to transients detected by other observatories/instruments. This capability, named &amp;quot;Gamma-ray Urgent Archiver for Novel Opportunities&amp;quot; (GUANO), was introduced in 20">
+<link rel="canonical" href="https://data.nasa.gov/dataset/swift-gamma-ray-urgent-archiver-for-novel-opportunities-guano-events">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Swift Gamma-ray Urgent Archiver for Novel Opportunities (GUANO) Events</h1>
+<div class="meta-badges"><span class="badge">Astrophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/swift-gamma-ray-urgent-archiver-for-novel-opportunities-guano-events">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The Swift Observatory provides event-level data from the Burst Alert Telescope (BAT) on demand in response to transients detected by other observatories/instruments. This capability, named &amp;quot;Gamma-ray Urgent Archiver for Novel Opportunities&amp;quot; (GUANO), was introduced in 2020. In normal operations, BAT records the arrival time (to 100-microsecond accuracy), location (in detector coordinates), and energy (in one of 80 bins from 15 to 350 keV) for each individual count that strikes the detector. These data, referred as event-by-event (or event), because of the large effective area of the BAT, produces a large data volume that cannot all be stored onboard or telemetered to the ground. For this reason, the BAT has relied on the performance of its onboard real-time detection algorithms, and only preserves event data and telemeters them to the ground around the time of events that trigger these onboard algorithms. The GUANO implementation allows to download BAT event data that did not trigger on board. Upon receiving an alert from different observatories, an autonomous spacecraft-commanding pipeline requests to download from the Swift satellite the BAT event data around the time of the GUANO event with a time window, typically around 200 seconds. The satellite does not slew; therefore, only BAT event data are available for the GUANO event and these data are tagged with a sequence number associated with the ongoing observation containing the GUANO time window. This table records the times of the GUANO events from different observatories from which Swift was able to download the BAT event data together with the directory and file names where the event are located in the archive. There is one record for each trigger by an external observatory that requested BAT event data; therefore, it is possible that multiple records are associated with the same event. This contents of this database table are generated at the Swift processing site. During operation, it is updated for any new GUANO trigger. These updates are then delivered to the HEASARC and ingested into the HEASARC database in a timely fashion. Note that some parameters (specifically, the galactic coordinates) have been added and are populated by the HEASARC. This is a service provided by NASA HEASARC .</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>High Energy Astrophysics Science Archive Research Center</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/swift-gamma-ray-urgent-archiver-for-novel-opportunities-guano-events">https://data.nasa.gov/dataset/swift-gamma-ray-urgent-archiver-for-novel-opportunities-guano-events</a></td></tr>
+<tr><th>Identifier</th><td>ivo://nasa.heasarc/swiftguano</td></tr>
+<tr><th>Themes</th><td>Astrophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>HEASARC Help Desk — andrew.ptak@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (2)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>HTML</td><td><a href="https://heasarc.gsfc.nasa.gov/W3Browse/all/swiftguano.html">https://heasarc.gsfc.nasa.gov/W3Browse/all/swiftguano.html</a></td></tr><tr><td>BIN</td><td><a href="https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=swiftguano&amp;">https://heasarc.gsfc.nasa.gov/xamin/vo/cone?showoffsets&amp;table=swiftguano&amp;</a></td></tr>
+</tbody></table>
+</article>
+</main>
+</body>
+</html>

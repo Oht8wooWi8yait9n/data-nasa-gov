@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NASA Global Web-Enabled Landsat Data Annual Global 30 m V032 — NASA Open Data Portal</title>
+<meta name="description" content="The NASA Making Earth System Data Records for Use in Research Environments ([MEaSUREs](https://earthdata.nasa.gov/about/competitive-programs/measures)) Global Web-Enabled Landsat Data Annual (GWELDYR) Version 3.2 data product provides Landsat data at 30 meter (m) resolution for t">
+<link rel="canonical" href="https://data.nasa.gov/dataset/nasa-global-web-enabled-landsat-data-annual-global-30-m-v032-c3fe3">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>NASA Global Web-Enabled Landsat Data Annual Global 30 m V032</h1>
+<div class="meta-badges"><span class="badge">Earth Science</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/nasa-global-web-enabled-landsat-data-annual-global-30-m-v032-c3fe3">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">The NASA Making Earth System Data Records for Use in Research Environments ([MEaSUREs](https://earthdata.nasa.gov/about/competitive-programs/measures)) Global Web-Enabled Landsat Data Annual (GWELDYR) Version 3.2 data product provides Landsat data at 30 meter (m) resolution for terrestrial non-Antarctica locations over annual reporting periods for the 2005 epoch. GWELD products are generated from all available Landsat 5 Thematic Mapper (TM) and Landsat 7 Enhanced Thematic Mapper Plus (ETM+) data in the U.S. Geological Survey (USGS) Landsat archive. The GWELD suite of products provides a consistent data source to derive land cover as well as geophysical and biophysical information for regional assessment of land surface dynamics.
+
+The GWELD products include Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) for the reflective wavelength bands and top of atmosphere (TOA) brightness temperature for the thermal bands. The products are defined in the Sinusoidal coordinate system to promote continuity of NASA&#x27;s Moderate Resolution Imaging Spectroradiometer (MODIS) land tile grid.
+
+Provided in the GWELDYR product are layers for surface reflectance bands 1-5 and 7, TOA brightness temperature for thermal bands, Normalized Difference Vegetation Index (NDVI), day of year, ancillary angle, and data quality information. A low-resolution red, green, blue (RGB) browse image of bands 5, 4, 3 is also available for each granule.
+
+Known Issues
+* GWELDYR Version 3.2 known issues can be found in Section 4 of the Algorithm Theoretical Basis Document (ATBD).
+* Within the CFMask_State layer, the valid range is listed in the granule metadata as 0 to 65534 which includes the fill value. To avoid inclusion of the fill value, the valid range should be considered 1 to 65534 as reflected in the Data Layers Characteristics table above.
+* Within the CFMask_State layer, the bit flag descriptions include a description for bit 0 that contradicts the listed fill value. In the description, bit 0 is stated as 1 when fill value is present, which prevents the use of 0 as the fill value. To avoid errors when using the CFMask_State layer, bit 0 should be ignored as an indicator of fill value.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>LP DAAC;SD-STATE/GISCCE</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/nasa-global-web-enabled-landsat-data-annual-global-30-m-v032-c3fe3">https://data.nasa.gov/dataset/nasa-global-web-enabled-landsat-data-annual-global-30-m-v032-c3fe3</a></td></tr>
+<tr><th>Identifier</th><td>10.5067/MEaSUREs/GWELD/GWELDYR.032</td></tr>
+<tr><th>Themes</th><td>Earth Science</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Temporal Coverage</th><td>2004-01-01/2006-12-31</td></tr>
+<tr><th>Spatial Coverage</th><td><code>[&quot;CARTESIAN&quot;, [{&quot;EastBoundingCoordinate&quot;: 180, &quot;NorthBoundingCoordinate&quot;: 90, &quot;SouthBoundingCoordinate&quot;: -90, &quot;WestBoundingCoordinate&quot;: -180}]]</code></td></tr>
+<tr><th>Contact / Maintainer</th><td>Earthdata Forum — earthdata-support@nasa.gov</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (8)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://search.earthdata.nasa.gov/search/granules?p=C2763268463-LPCLOUD">https://search.earthdata.nasa.gov/search/granules?p=C2763268463-LPCLOUD</a></td></tr><tr><td>BIN</td><td><a href="https://doi.org/10.5067/MEaSUREs/GWELD/GWELDYR.032">https://doi.org/10.5067/MEaSUREs/GWELD/GWELDYR.032</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/2086/GWELD_User_Guide_V32.pdf">https://lpdaac.usgs.gov/documents/2086/GWELD_User_Guide_V32.pdf</a></td></tr><tr><td>PDF</td><td><a href="https://lpdaac.usgs.gov/documents/2085/GWELD_ATBD_V32.pdf">https://lpdaac.usgs.gov/documents/2085/GWELD_ATBD_V32.pdf</a></td></tr><tr><td>BIN</td><td><a href="https://earthdata.nasa.gov/esds/competitive-programs/measures/global-long-term-multi-sensor-weld">https://earthdata.nasa.gov/esds/competitive-programs/measures/global-long-term-multi-sensor-weld</a></td></tr><tr><td>JPEG</td><td><a href="https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GWELDYR.032/L57.Globe.annual.2006.hh29vv05.h2v3.doy007to365.NBAR.v3.2/L57.Globe.annual.2006.hh29vv05.h2v3.doy007to365.NBAR.v3.2.1.jpg">https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GWELDYR.032/L57.Globe.annual.2006.hh29vv05.h2v3.doy007to365.NBAR.v3.2/L57.Globe.annual.2006.hh29vv05.h2v3.doy007to365.NBAR.v3.2.1.jpg</a></td></tr><tr><td>BIN</td><td><a href="https://www.earthdata.nasa.gov/centers/lp-daac">https://www.earthdata.nasa.gov/centers/lp-daac</a></td></tr><tr><td>ISO</td><td><a href="https://cmr.earthdata.nasa.gov/search/concepts/C2763268463-LPCLOUD.iso19115">Original Metadata</a><br><small>The metadata&#x27;s original source.</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">earth-science-land-use-land-cover-land-surface</span><span class="tag">earth-science-surface-radiative-properties-land-surface-reflectance</span><span class="tag">earth-science-vegetation-biosphere-vegetation-index</span></div>
+</article>
+</main>
+</body>
+</html>

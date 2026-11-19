@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Efficient Keyword-Based Search for Top-K Cells in Text Cube — NASA Open Data Portal</title>
+<meta name="description" content="Previous studies on supporting free-form keyword queries over RDBMSs provide users with linked-structures (e.g.,a set of joined tuples) that are relevant to a given keyword query. Most of them focus on ranking individual tuples from one table or joins of multiple tables containin">
+<link rel="canonical" href="https://data.nasa.gov/dataset/efficient-keyword-based-search-for-top-k-cells-in-text-cube">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Efficient Keyword-Based Search for Top-K Cells in Text Cube</h1>
+<div class="meta-badges"><span class="badge source">DNG Legacy Data</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/efficient-keyword-based-search-for-top-k-cells-in-text-cube">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">Previous studies on supporting free-form keyword queries over RDBMSs provide users with linked-structures (e.g.,a
+set of joined tuples) that are relevant to a given keyword query. Most of them focus on ranking individual tuples from one table or joins of multiple tables containing a set of keywords. In this paper, we study the problem of keyword search in a data cube with text-rich dimension(s) (so-called text
+cube). The text cube is built on a multidimensional text database, where each row is associated with some text data (a document) and other structural dimensions (attributes). A cell in the text cube aggregates a set of documents with matching attribute values in a subset of dimensions. We define a keyword-based query language and an IR-style relevance model for coring/ranking cells in the text cube. Given a keyword query, our goal is to find the top-k
+most relevant cells. We propose four approaches, inverted-index one-scan, document sorted-scan, bottom-up
+dynamic programming, and search-space
+ordering. The search-space ordering
+algorithm explores only a small portion of the text cube for finding the top-k
+answers, and enables early termination. Extensive experimental studies are conducted to verify the effectiveness and efficiency of the proposed approaches.
+
+Citation:  B. Ding, B. Zhao, C. X. Lin, J. Han, C. Zhai, A. N. Srivastava, and N. C. Oza, “Efficient Keyword-Based Search for Top-K Cells in Text Cube,” IEEE Transactions on Knowledge and Data Engineering, 2011.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>Dashlink</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/efficient-keyword-based-search-for-top-k-cells-in-text-cube">https://data.nasa.gov/dataset/efficient-keyword-based-search-for-top-k-cells-in-text-cube</a></td></tr>
+<tr><th>Identifier</th><td>DASHLINK_515</td></tr>
+<tr><th>Landing Page</th><td><a href="https://c3.nasa.gov/dashlink/resources/515/">https://c3.nasa.gov/dashlink/resources/515/</a></td></tr>
+<tr><th>Modified</th><td>2020-01-29</td></tr>
+<tr><th>Issued</th><td>2012-01-27</td></tr>
+<tr><th>Contact / Maintainer</th><td>Ashok Srivastava — ashok.n.srivastava@gmail.com</td></tr>
+<tr><th>Update Frequency</th><td>irregular</td></tr>
+<tr><th>Program Code</th><td>026:029</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (1)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>PDF</td><td><a href="https://c3.nasa.gov/dashlink/static/media/publication/tkde11topcells.pdf">tkde11topcells.pdf</a><br><small>tkde11topcells.pdf</small></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">ames</span><span class="tag">dashlink</span><span class="tag">nasa</span></div>
+</article>
+</main>
+</body>
+</html>

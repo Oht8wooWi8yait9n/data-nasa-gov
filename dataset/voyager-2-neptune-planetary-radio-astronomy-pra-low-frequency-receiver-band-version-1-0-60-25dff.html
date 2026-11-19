@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voyager 2 Neptune Planetary Radio Astronomy (PRA) Low-Frequency Receiver Band, Version 1.0, 60 ms High Rate Data — NASA Open Data Portal</title>
+<meta name="description" content="* Data Set Overview * =================  This Data Set (VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0) contains Data acquired by the Voyager 2 Planetary Radio Astronomy (PRA) Instrument during the Neptune Encounter. Since the PRA Instrument is able to observe Planetary Phenomenon at much la">
+<link rel="canonical" href="https://data.nasa.gov/dataset/voyager-2-neptune-planetary-radio-astronomy-pra-low-frequency-receiver-band-version-1-0-60-25dff">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><a href="../">NASA Open Data Portal Mirror (data.nasa.gov)</a></header>
+<main>
+<article class="dataset-card">
+<h1>Voyager 2 Neptune Planetary Radio Astronomy (PRA) Low-Frequency Receiver Band, Version 1.0, 60 ms High Rate Data</h1>
+<div class="meta-badges"><span class="badge">Heliophysics</span><span class="badge source">Science Discovery Engine</span><span class="badge access">Access: public</span></div>
+<a class="official-link" href="https://data.nasa.gov/dataset/voyager-2-neptune-planetary-radio-astronomy-pra-low-frequency-receiver-band-version-1-0-60-25dff">View Official Record on data.nasa.gov</a>
+<h2>Description</h2>
+<div class="description">* Data Set Overview
+* =================
+
+This Data Set (VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0) contains Data acquired by the Voyager 2 Planetary Radio Astronomy (PRA) Instrument during the Neptune Encounter. Since the PRA Instrument is able to observe Planetary Phenomenon at much larger Ranges than other Fields and Particles Experiments, thus the PRA Data cover a variable and longer Encounter Period. PRA Low Band Data provided here cover the entire Neptune Encounter Phase (1989-05-25 to 1989-09-27).
+
+Each File within the Data Set represents a single PRA High Rate Frame, of Duration 48 s. Each File contains a 28 Octet Header, followed by 1280000 Octets of Data.
+
+The Header Format is described as below:
+
++----------------------------------------------------------------+
+| Length (bytes) | Name           | Contents                     |
+------------------------------------------------------------------
+| 2              | Year           | Year A.D.                    |
+| 2              | Day            | Day of Year, 1 denotes 1 Jan |
+| 1              | Hour           | Hour of Day                  |
+| 1              | Minute         | Minute of Hour               |
+| 1              | Second         | Second of Minute             |
+| 1              | Spacecraft     | 1 denotes V1, 2 denotes V2   |
+| 2              | Integral FDS   | Integer Part of FDS Count    |
+| 1              | Fractional FDS | Fractional Part of FDS Count |
+| 4              | Frequency 1    | Frequency of 1st Channel, Hz |
+| 4              | Frequency 2    | Frequency of 2nd Channel, Hz |
+| 4              | Frequency 3    | Frequency of 3rd Channel, Hz |
+| 4              | Frequency 4    | Frequency of 4th Channel, Hz |
+| 1              | Bandwidth      | Bandwidth, kHz               |
++----------------------------------------------------------------+
+
+where all Values are unsigned, and multi-octet Values are presented with the most significant Byte first.
+
+The Data are 16 bit Numbers, most significant byte first, with 0 indicating unavailable Data. The Data are presented as a single Stream of 16 bit Numbers. The Frame is logically divided into Lines (although there is no Indication of the Lines within the File). This Terminology comes from the Fact that in this High Rate Mode, the PRA Data are treated exactly as if they were Imaging Data, and a 48 s Image comprises 800 horizontal Scan Lines. Similarly, there are 800 Logical Lines within a PRA Frame. Each Line comprises 800 Values, representing 400 Data Pairs. In the High Rate Mode, the PRA measures the Flux at two Frequencies simultaneously and returns these two Data sequentially. A sample Pair is acquired every (actually every 138.88 µs), through an RC Filter with a 100 µs Time Constant. A single Line comprises 60 µs of Data. Lines are not contiguous in Time. There is a 4444.44 µs Gap between the ending of one Line and the Start of the succeeding Line.
+
+The PRA samples a Frequency Pair in this Manner for 24 s. It then has the Option of switching to a second Pair for the final 24 s. These Frequencies are designated Frequency 1 through Frequency 4 in the Header. The Data are presented such that the higher of the relevant Frequency Pair is presented first.</div>
+<h2>Dataset Metadata</h2>
+<table class="meta-table"><tbody>
+<tr><th>Publisher</th><td>PPI</td></tr>
+<tr><th>Official NASA Portal URL</th><td><a href="https://data.nasa.gov/dataset/voyager-2-neptune-planetary-radio-astronomy-pra-low-frequency-receiver-band-version-1-0-60-25dff">https://data.nasa.gov/dataset/voyager-2-neptune-planetary-radio-astronomy-pra-low-frequency-receiver-band-version-1-0-60-25dff</a></td></tr>
+<tr><th>Identifier / DOI</th><td><a href="https://doi.org/10.48322/yqkw-2w55">https://doi.org/10.48322/yqkw-2w55</a></td></tr>
+<tr><th>Themes</th><td>Heliophysics</td></tr>
+<tr><th>Modified</th><td>2026-11-09</td></tr>
+<tr><th>Contact / Maintainer</th><td>NASA Space Physics Data Facility — NASA-SPDF-Support@nasa.onmicrosoft.com</td></tr>
+<tr><th>License</th><td><a href="https://www.usa.gov/government-works">https://www.usa.gov/government-works</a></td></tr>
+<tr><th>Program Code</th><td>026:000</td></tr>
+<tr><th>Bureau Code</th><td>026:00</td></tr>
+</tbody></table>
+<h2>Data Distributions &amp; Resources (4)</h2>
+<table class="res-table"><thead><tr><th>Format</th><th>Resource</th></tr></thead>
+<tbody>
+<tr><td>BIN</td><td><a href="https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds%3A%2F%2FPPI%2FVG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0">https://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds%3A%2F%2FPPI%2FVG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0</a></td></tr><tr><td>TXT</td><td><a href="https://pds-ppi.igpp.ucla.edu/data/VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0/AAREADME.TXT">https://pds-ppi.igpp.ucla.edu/data/VG2-N-PRA-2-RDR-HIGHRATE-60MS-V1.0/AAREADME.TXT</a></td></tr><tr><td>BIN</td><td><a href="https://helio.data.nasa.gov/dataset/Voyager2_PRA_Neptune_PT0.6S">https://helio.data.nasa.gov/dataset/Voyager2_PRA_Neptune_PT0.6S</a></td></tr><tr><td>BIN</td><td><a href="https://hpde.io/NASA/NumericalData/Voyager2/PRA/Neptune/PT0.6S">https://hpde.io/NASA/NumericalData/Voyager2/PRA/Neptune/PT0.6S</a></td></tr>
+</tbody></table>
+<h2>Keywords &amp; Tags</h2>
+<div class="tags"><span class="tag">waves-passive</span></div>
+</article>
+</main>
+</body>
+</html>

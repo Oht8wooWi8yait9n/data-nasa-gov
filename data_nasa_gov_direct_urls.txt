@@ -2161,7 +2161,6 @@ https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v13-0-e7aaa
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v14-0
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v14-0-1f7de
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v15-0
-https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v15-0-27661
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v16-0
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v16-0-40e0a
 https://data.nasa.gov/dataset/asteroid-lightcurve-derived-data-v2-0
@@ -7097,7 +7096,6 @@ https://data.nasa.gov/dataset/extremely-red-objects-xmm-newton-survey-catalog
 https://data.nasa.gov/dataset/eyak-version-1
 https://data.nasa.gov/dataset/eyes-on-the-solar-system
 https://data.nasa.gov/dataset/fabrication-and-modeling-of-carbon-and-boron-nitride-nanotube-growth-on-lightweight-substr
-https://data.nasa.gov/dataset/fabrication-of-hybird-gas-turbine-disk-material-system-by-additive-manufacturing-project
 https://data.nasa.gov/dataset/faint-images-of-the-radio-sky-at-twenty-cm-first
 https://data.nasa.gov/dataset/faint-object-camera
 https://data.nasa.gov/dataset/faint-object-spectrograph
@@ -10844,7 +10842,6 @@ https://data.nasa.gov/dataset/ice-solar-wind-plasma-electron-analyser-data-v1-0
 https://data.nasa.gov/dataset/ice-solar-wind-plasma-electron-analyser-data-v1-0-1f828
 https://data.nasa.gov/dataset/ice-solar-wind-plasma-electron-analyser-data-v1-0-cc0b7
 https://data.nasa.gov/dataset/icebridge-accumulation-radar-l1b-geolocated-radar-echo-strength-profiles-v002
-https://data.nasa.gov/dataset/icebridge-accumulation-radar-l1b-geolocated-radar-echo-strength-profiles-version-1-927cd
 https://data.nasa.gov/dataset/icebridge-ares-l1b-geolocated-radar-echo-strength-profiles-v001
 https://data.nasa.gov/dataset/icebridge-atm-l1b-elevation-and-return-strength-v002
 https://data.nasa.gov/dataset/icebridge-atm-l1b-elevation-and-return-strength-with-waveforms-v001
@@ -25743,7 +25740,6 @@ https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0993-
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0993-v1-0-4868d
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0994-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0994-v1-0-d45a4
-https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0995-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0995-v1-0-9ec9b
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0996-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-comet-escort-3-0996-v1-0-33681
@@ -26578,7 +26574,6 @@ https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0293-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0294-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0294-v1-0-bd0d4
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0295-v1-0
-https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0295-v1-0-37009
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0296-v1-0
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0296-v1-0-bf2bb
 https://data.nasa.gov/dataset/rosetta-orbiter-67p-rsi-1-2-3-prelanding-0297-v1-0
@@ -31602,7 +31597,6 @@ https://data.nasa.gov/dataset/stereo-b-impact-in-situ-measurements-of-particles-
 https://data.nasa.gov/dataset/stereo-b-impact-in-situ-measurements-of-particles-and-cme-transients-suprathermal-ion-tele
 https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-from-the-magnetometer-and-th
 https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-impact-beacon
-https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-impact-burst-criteria
 https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-impact-fluxgate-magnetometer
 https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-impact-fluxgate-magnetometer-4144a
 https://data.nasa.gov/dataset/stereo-b-in-situ-measurements-of-particles-and-cme-transients-impact-fluxgate-magnetometer-72d3d
@@ -32309,7 +32303,6 @@ https://data.nasa.gov/dataset/themis-a-on-board-spin-fits-fit-of-electric-efi-an
 https://data.nasa.gov/dataset/themis-a-p5-electric-field-instrument-efi-spacecraft-measured-electric-field
 https://data.nasa.gov/dataset/themis-a-p5-electron-and-ion-moments-gmom-ground-calculated-particle-energy-fluxes-and-mom
 https://data.nasa.gov/dataset/themis-a-p5-orbit-ephemeris
-https://data.nasa.gov/dataset/themis-a-probe-electric-field-instrument-and-search-coil-magnetometer-instrument-digital-f
 https://data.nasa.gov/dataset/themis-a-search-coil-magnetometer-1-8s-1-128s-and-1-8192s-data
 https://data.nasa.gov/dataset/themis-a-solid-state-telescope-sst-energy-flux-spectrogram-electron-ion-ground-calculated-
 https://data.nasa.gov/dataset/themis-b-esa-electron-ion-energy-fluxes-and-moments

@@ -2,7 +2,7 @@
 
 [![Update NASA Open Data Portal Catalog & Sitemap](https://github.com/Oht8wooWi8yait9n/data-nasa-gov/actions/workflows/update-sitemap.yml/badge.svg)](https://github.com/Oht8wooWi8yait9n/data-nasa-gov/actions/workflows/update-sitemap.yml)
 
-Automated CKAN + DCAT-US 1.1 harvester, pre-rendered static HTML mirror, compressed JSONL catalog, and flat XML sitemaps for the **NASA Open Data Portal** ([https://data.nasa.gov](https://data.nasa.gov)) — NASA's central public catalog of **36,514 datasets** across Earth Science, Planetary Science, Heliophysics, Astrophysics, Biological & Physical Sciences, Space Science, Aerospace, and NASA Operations.
+Automated CKAN harvester, pre-rendered static HTML mirror, compressed JSONL catalog, and flat XML sitemaps for the **NASA Open Data Portal** ([https://data.nasa.gov](https://data.nasa.gov)) — NASA's central public catalog of **36,514 datasets** across Earth Science, Planetary Science, Heliophysics, Astrophysics, Biological & Physical Sciences, Space Science, Aerospace, and NASA Operations.
 
 ---
 
@@ -12,8 +12,8 @@ Automated CKAN + DCAT-US 1.1 harvester, pre-rendered static HTML mirror, compres
    - `https://data.nasa.gov/sitemap.xml` returns `404 Not Found`, preventing standard sitemap crawlers (including Onyx Web Connector) from discovering datasets directly.
 2. **Slow Live CKAN Pages & `Crawl-Delay: 10`**:
    - Uncached live dataset pages (`https://data.nasa.gov/dataset/<slug>`) take **6–9 seconds each** and `robots.txt` sets `Crawl-Delay: 10`. Live crawling all 36,514 dataset pages directly would take days and include ~50 KB of noisy CKAN navigation, sidebar, and view-counter boilerplate per page.
-3. **Hybrid CKAN Solr + DCAT-US 1.1 Harvesting (~4 Minutes Total)**:
-   - [`generate_data_nasa_gov_sitemap.py`](generate_data_nasa_gov_sitemap.py) harvests all **36,514** canonical dataset slugs and metadata via CKAN's Solr field-list search API (`GET /api/3/action/package_search?rows=1000&sort=id+asc&fl=...`), then enriches every record with NASA's official DCAT-US 1.1 Federal Enterprise Data Inventory (`https://data.nasa.gov/data.json`) for aligned distribution titles, formats, descriptions, contact points, and references.
+3. **Authoritative CKAN Solr Field-List Harvesting (~3.5 Minutes Total)**:
+   - [`generate_data_nasa_gov_sitemap.py`](generate_data_nasa_gov_sitemap.py) harvests all **36,514** canonical dataset slugs, metadata, DCAT extras, and resource distributions directly from CKAN's Solr search API (`GET /api/3/action/package_search?rows=1000&sort=id+asc&fl=...`). It intentionally bypasses NASA's nightly `/data.json` bulk export because `/data.json` periodically scrambles or drops `distribution` entries across unrelated datasets, whereas CKAN Solr's `res_url`/`res_format` fields remain authoritative and zero-churn.
 4. **1-to-1 Canonical URL Rewrite for Onyx**:
    - Every pre-rendered page on GitHub Pages mirrors the exact CKAN URL route on `https://data.nasa.gov/`:
      - `https://oht8woowi8yait9n.github.io/data-nasa-gov/dataset/<slug>` &rarr; `https://data.nasa.gov/dataset/<slug>`

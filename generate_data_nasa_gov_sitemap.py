@@ -3,13 +3,12 @@
 NASA Open Data Portal (data.nasa.gov) Harvester, Static Mirror & Sitemap Pipeline
 =================================================================================
 Harvests 100% of NASA's public Open Data Portal (CKAN) dataset catalog via:
-  1. High-speed CKAN Solr field-list pagination:
-     GET https://data.nasa.gov/api/3/action/package_search?rows=1000&sort=id+asc&fl=...
-     (retrieves all ~36,500+ canonical CKAN dataset slugs, metadata, and extras in ~35s)
-  2. Official NASA DCAT-US 1.1 Federal Enterprise Data Inventory enrichment:
-     GET https://data.nasa.gov/data.json
-     (enriches each dataset with aligned distribution titles, descriptions, mediaTypes,
-     contact points, references, temporal/spatial coverage, and keywords)
+  - High-speed CKAN Solr field-list pagination:
+    GET https://data.nasa.gov/api/3/action/package_search?rows=1000&sort=id+asc&fl=...
+    (retrieves all ~36,500+ canonical CKAN dataset slugs, metadata, authoritative
+    res_url/res_format distributions, and DCAT extras directly from CKAN Solr;
+    intentionally bypasses /data.json because NASA's nightly data.json exporter
+    periodically scrambles/drops distribution arrays across unrelated datasets)
 
 Generates:
   - Clean, semantic, boilerplate-free static HTML pages at dataset/<slug>.html
@@ -59,7 +58,6 @@ STYLE_CSS = os.path.join(ASSETS_DIR, "style.css")
 
 PORTAL_BASE = "https://data.nasa.gov"
 CKAN_SEARCH_URL = f"{PORTAL_BASE}/api/3/action/package_search"
-DCAT_JSON_URL = f"{PORTAL_BASE}/data.json"
 GH_PAGES_BASE = os.environ.get(
     "GH_PAGES_BASE", "https://oht8woowi8yait9n.github.io/data-nasa-gov"
 ).rstrip("/")
@@ -102,6 +100,7 @@ SOLR_FIELDS = ",".join([
 ])
 
 PAGE_SIZE = 1000
+PAGE_STEP = 950  # 50-record overlap eliminates offset-boundary skips during live CKAN updates
 MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "4"))
 CHUNK_SIZE = 10000
 MIN_EXPECTED_DATASETS = 30000
@@ -353,7 +352,9 @@ def harvest_ckan_catalog(force_refresh: bool = False) -> tuple[int, list[dict]]:
     all_results = list(first["results"])
     print(f"[ckan] Total reported datasets: {total_count:,} (page 0 fetched: {len(all_results)})", flush=True)
 
-    starts = list(range(PAGE_SIZE, total_count, PAGE_SIZE))
+    starts = list(range(PAGE_STEP, total_count, PAGE_STEP))
+    if not starts or starts[-1] + PAGE_SIZE < total_count + 50:
+        starts.append(max(total_count - 100, 0))
     page_results = {}
 
     def _worker(st):
@@ -382,158 +383,66 @@ def harvest_ckan_catalog(force_refresh: bool = False) -> tuple[int, list[dict]]:
     return total_count, all_results
 
 
-def harvest_dcat_enrichment(force_refresh: bool = False) -> tuple[dict[tuple[str, str], dict], dict[str, dict]]:
-    """
-    Download https://data.nasa.gov/data.json to enrich CKAN records with aligned
-    DCAT-US 1.1 distribution titles/descriptions/mediaTypes, contact points, and references.
-    Returns (by_id_and_title, by_unique_id).
-    """
-    cache_file = os.path.join(CACHE_DIR, "dcat_data.json")
-    datasets = []
-    try:
-        if not force_refresh and os.path.isfile(cache_file):
-            print(f"[cache] Loading DCAT data.json from {cache_file}", flush=True)
-            with open(cache_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            datasets = data.get("dataset", [])
-        else:
-            t0 = time.time()
-            session = create_session()
-            print(f"[dcat] Downloading {DCAT_JSON_URL}...", flush=True)
-            r = session.get(DCAT_JSON_URL, timeout=120)
-            r.raise_for_status()
-            data = r.json()
-            datasets = data.get("dataset", [])
-            os.makedirs(CACHE_DIR, exist_ok=True)
-            with open(cache_file, "w", encoding="utf-8") as f:
-                f.write(r.text)
-            print(f"[dcat] Downloaded {len(datasets):,} DCAT-US records in {time.time() - t0:.1f}s", flush=True)
-    except Exception as exc:
-        print(f"[warn] Could not download/load data.json enrichment ({exc}); continuing with CKAN Solr fields only.", flush=True)
-        return {}, {}
-
-    by_pair: dict[tuple[str, str], dict] = {}
-    id_counts: Counter = Counter()
-    id_last: dict[str, dict] = {}
-    for ds in datasets:
-        ident = str(ds.get("identifier") or "").strip()
-        title = str(ds.get("title") or "").strip()
-        if ident:
-            id_counts[ident] += 1
-            id_last[ident] = ds
-            if title:
-                by_pair[(ident, title.lower())] = ds
-    by_unique_id = {ident: ds for ident, ds in id_last.items() if id_counts[ident] == 1}
-    return by_pair, by_unique_id
-
-
-def normalize_record(raw: dict, dcat_by_pair: dict, dcat_by_uid: dict) -> dict | None:
+def normalize_record(raw: dict) -> dict | None:
     slug = str(raw.get("name") or "").strip()
     if not slug or not re.match(r"^[A-Za-z0-9._-]+$", slug):
         return None
 
     title = clean_text(raw.get("title")) or slug
     identifier = str(raw.get("identifier") or "").strip()
+    notes = clean_text(raw.get("notes"))
+    publisher = clean_text(raw.get("publisher")) or "NASA"
 
-    # Match DCAT-US record for rich distribution & contact metadata
-    dcat = dcat_by_pair.get((identifier, title.lower())) or (dcat_by_uid.get(identifier) if identifier else None) or {}
+    themes = sorted(parse_pg_array(raw.get("theme")), key=lambda s: s.lower())
+    tags = sorted(parse_pg_array(raw.get("tags")), key=lambda s: s.lower())
 
-    notes = clean_text(raw.get("notes")) or clean_text(dcat.get("description"))
-    publisher = clean_text(raw.get("publisher"))
-    if not publisher and isinstance(dcat.get("publisher"), dict):
-        publisher = clean_text(dcat["publisher"].get("name"))
-    if not publisher:
-        publisher = "NASA"
-
-    themes = parse_pg_array(raw.get("theme"))
-    if not themes and dcat.get("theme"):
-        themes = parse_pg_array(dcat.get("theme"))
-
-    tags = parse_pg_array(raw.get("tags"))
-    if dcat.get("keyword"):
-        dcat_kw = parse_pg_array(dcat.get("keyword"))
-        seen_t = {t.lower() for t in tags}
-        for kw in dcat_kw:
-            if kw.lower() not in seen_t:
-                seen_t.add(kw.lower())
-                tags.append(kw)
-    tags.sort(key=lambda s: s.lower())
-
-    landing_page = str(raw.get("landingPage") or dcat.get("landingPage") or "").strip()
-    license_url = str(raw.get("license") or dcat.get("license") or "").strip()
-    access_level = str(raw.get("accessLevel") or dcat.get("accessLevel") or "public").strip()
+    landing_page = str(raw.get("landingPage") or "").strip()
+    license_url = str(raw.get("license") or "").strip()
+    access_level = str(raw.get("accessLevel") or "public").strip()
     harvest_source = clean_text(raw.get("harvest_source_title"))
-    program_codes = parse_pg_array(raw.get("programCode") or dcat.get("programCode"))
-    bureau_codes = parse_pg_array(raw.get("bureauCode") or dcat.get("bureauCode"))
+    program_codes = sorted(parse_pg_array(raw.get("programCode")), key=lambda s: s.lower())
+    bureau_codes = sorted(parse_pg_array(raw.get("bureauCode")), key=lambda s: s.lower())
 
     # Prefer upstream DCAT modified date to avoid weekly harvest-touch churn on metadata_modified
     modified_date = (
         parse_date_ymd(raw.get("modified"))
-        or parse_date_ymd(dcat.get("modified"))
         or parse_date_ymd(raw.get("metadata_modified"))
     )
-    issued_date = parse_date_ymd(raw.get("issued")) or parse_date_ymd(dcat.get("issued"))
+    issued_date = parse_date_ymd(raw.get("issued"))
 
-    spatial = format_spatial(raw.get("spatial") or dcat.get("spatial"))
-    temporal = clean_text(raw.get("temporal") or dcat.get("temporal"))
-    accrual = clean_text(raw.get("accrualPeriodicity") or dcat.get("accrualPeriodicity"))
+    spatial = format_spatial(raw.get("spatial"))
+    temporal = clean_text(raw.get("temporal"))
+    accrual = clean_text(raw.get("accrualPeriodicity"))
     series_name = clean_text(raw.get("series-name"))
 
     contact_name = clean_text(raw.get("maintainer"))
     contact_email = clean_text(raw.get("maintainer_email"))
-    if isinstance(dcat.get("contactPoint"), dict):
-        cp = dcat["contactPoint"]
-        if not contact_name:
-            contact_name = clean_text(cp.get("fn"))
-        if not contact_email:
-            he = clean_text(cp.get("hasEmail")).replace("mailto:", "")
-            contact_email = he
+    references = sorted(parse_pg_array(raw.get("references")), key=lambda s: s.lower())
 
-    references = parse_pg_array(raw.get("references") or dcat.get("references"))
-
-    # Build aligned distribution/resource list
+    # Build authoritative, deterministically sorted resource list directly from CKAN Solr
     resources = []
     seen_res = set()
-    if isinstance(dcat.get("distribution"), list) and dcat["distribution"]:
-        for dist in dcat["distribution"]:
-            if not isinstance(dist, dict):
-                continue
-            rurl = str(dist.get("downloadURL") or dist.get("accessURL") or "").strip()
-            if not rurl:
-                continue
-            rfmt = clean_text(dist.get("format") or dist.get("mediaType") or "")
-            rtitle = clean_text(dist.get("title") or "")
-            rdesc = clean_text(dist.get("description") or "")
-            sig = (rurl, rfmt, rtitle)
-            if sig not in seen_res:
-                seen_res.add(sig)
-                resources.append({
-                    "url": rurl,
-                    "format": rfmt,
-                    "title": rtitle,
-                    "description": rdesc,
-                })
-    else:
-        raw_urls = raw.get("res_url") or []
-        raw_fmts = raw.get("res_format") or []
-        if isinstance(raw_urls, str):
-            raw_urls = [raw_urls]
-        if isinstance(raw_fmts, str):
-            raw_fmts = [raw_fmts]
-        for idx, rurl in enumerate(raw_urls):
-            rurl = str(rurl or "").strip()
-            if not rurl:
-                continue
-            rfmt = str(raw_fmts[idx]).strip() if idx < len(raw_fmts) else ""
-            sig = (rurl, rfmt, "")
-            if sig not in seen_res:
-                seen_res.add(sig)
-                resources.append({
-                    "url": rurl,
-                    "format": rfmt,
-                    "title": "",
-                    "description": "",
-                })
+    raw_urls = raw.get("res_url") or []
+    raw_fmts = raw.get("res_format") or []
+    if isinstance(raw_urls, str):
+        raw_urls = [raw_urls]
+    if isinstance(raw_fmts, str):
+        raw_fmts = [raw_fmts]
+    for idx, rurl in enumerate(raw_urls):
+        rurl = str(rurl or "").strip()
+        if not rurl:
+            continue
+        rfmt = str(raw_fmts[idx]).strip() if idx < len(raw_fmts) else ""
+        sig = (rurl, rfmt)
+        if sig not in seen_res:
+            seen_res.add(sig)
+            resources.append({
+                "url": rurl,
+                "format": rfmt,
+                "title": "",
+                "description": "",
+            })
+    resources.sort(key=lambda r: (r["url"], r["format"]))
 
     return {
         "id": str(raw.get("id") or "").strip(),
@@ -862,11 +771,10 @@ def main():
     force_refresh = os.environ.get("FORCE_REFRESH", "0") == "1" or "--force" in sys.argv
 
     reported_count, raw_ckan = harvest_ckan_catalog(force_refresh=force_refresh)
-    dcat_by_pair, dcat_by_uid = harvest_dcat_enrichment(force_refresh=force_refresh)
 
     by_slug: dict[str, dict] = {}
     for raw in raw_ckan:
-        rec = normalize_record(raw, dcat_by_pair, dcat_by_uid)
+        rec = normalize_record(raw)
         if rec:
             by_slug[rec["slug"]] = rec
 
